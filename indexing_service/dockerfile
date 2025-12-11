@@ -1,0 +1,5 @@
+FROM eclipse-temurin:17-jdk-jammy
+WORKDIR /app
+COPY target/indexing_service-1.0.0-shaded.jar app.jar
+EXPOSE 7002
+CMD ["java", "-jar", "app.jar"]

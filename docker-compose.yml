@@ -1,0 +1,66 @@
+version: "3.9"
+
+services:
+  ingestion:
+    build: ./ingestion_service
+    image: ingestion-service
+    container_name: ingestion
+    ports: ["7001:7001"]
+    volumes:
+      - ./data_repository:/app/data_repository
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:7001/ingest/list"]
+      interval: 10s
+      timeout: 2s
+      retries: 5
+
+  indexing:
+    build: ./indexing_service
+    image: indexing-service
+    container_name: indexing
+    ports: ["7002:7002"]
+    volumes:
+      - ./data_repository:/app/data_repository
+    restart: unless-stopped
+    depends_on:
+      ingestion:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:7002/index/status"]
+      interval: 10s
+      timeout: 2s
+      retries: 5
+
+  search:
+    build: ./search_service
+    image: search-service
+    container_name: search
+    ports: ["7003:7002"]
+    volumes:
+      - ./data_repository:/app/data_repository
+    restart: unless-stopped
+    depends_on:
+      indexing:
+        condition: service_started
+    environment:
+      SERVER_PORT: "7002"
+
+  control:
+    build: ./control_module
+    image: control-service
+    container_name: control
+    ports: ["7005:7000"]
+    restart: unless-stopped
+    depends_on:
+      ingestion:
+        condition: service_started
+      indexing:
+        condition: service_started
+      search:
+        condition: service_started
+    environment:
+      # Nutze Service-Namen statt localhost:
+      INGEST_URL: "http://ingestion:7001/ingest/"
+      INDEX_URL:  "http://indexing:7002/index/update/"
+      SEARCH_URL: "http://search:7002/search?q="

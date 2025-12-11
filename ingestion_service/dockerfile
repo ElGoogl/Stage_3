@@ -1,0 +1,5 @@
+FROM eclipse-temurin:17-jdk-jammy
+WORKDIR /app
+COPY target/ingestion_service-1.0.0.jar app.jar
+EXPOSE 7001
+CMD ["java", "-jar", "app.jar"]
