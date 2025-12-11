@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="indexin_service" />
+        <module name="control_module" />
+        <module name="ingestion_service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hausarbeit_i143_2025_i23c_c5" target="17" />
+      <module name="indexing_service" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
