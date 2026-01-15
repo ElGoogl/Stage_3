@@ -1,8 +1,7 @@
 package com.indexer;
 
-import com.example.indexing.core.IndexService;
-import com.example.indexing.core.PathResolver;
-import com.example.indexing.web.IndexController;
+import com.indexer.core.*;
+import com.indexer.web.IndexController;
 import com.google.gson.Gson;
 import io.javalin.Javalin;
 
