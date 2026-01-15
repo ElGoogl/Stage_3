@@ -1,8 +1,9 @@
 package com.indexer.web;
 
 import com.indexer.core.IndexService;
-import com.indexer.dto.*;
 import com.google.gson.Gson;
+import com.indexer.dto.IndexRequest;
+import com.indexer.dto.IndexResponse;
 import io.javalin.Javalin;
 
 import java.util.Map;
