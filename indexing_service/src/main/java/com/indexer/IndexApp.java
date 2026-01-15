@@ -14,6 +14,8 @@ import java.util.Map;
  *  GET  /index/status             → Return indexing statistics
  *  GET  /status                   → Health check
  */
+
+// Test comment by marco
 public class IndexApp {
 
     public static void main(String[] args) {
