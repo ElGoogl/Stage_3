@@ -1,7 +1,7 @@
 package com.indexer;
 
 import com.google.gson.Gson;
-import com.indexer.core.BookLoader;
+import com.indexer.core.BookParser;
 import com.indexer.core.IndexService;
 import com.indexer.core.PathResolver;
 import com.indexer.core.Tokenizer;
@@ -25,22 +25,24 @@ public final class App {
         String hzNode = System.getenv().getOrDefault("NODE_ID", "indexer-" + port);
 
         HazelcastProvider hzProvider = new HazelcastProvider(hzMembers, hzCluster, hzNode);
+
         InvertedIndexStore invertedIndex = new InvertedIndexStore(hzProvider.instance());
         ClaimStore claimStore = new ClaimStore(hzProvider.instance());
 
         Gson gson = new Gson();
-
-        PathResolver resolver = new PathResolver(lakeRoot);
-        BookLoader loader = new BookLoader(gson);
+        BookParser bookParser = new BookParser(gson);
         Tokenizer tokenizer = new Tokenizer();
 
-        IndexService indexService = new IndexService(resolver, loader, tokenizer, invertedIndex, claimStore);
-        IndexController controller = new IndexController(gson, indexService);
+        PathResolver resolver = new PathResolver(lakeRoot);
+        IndexService indexService = new IndexService(resolver, indexRoot, claimStore, invertedIndex, bookParser, tokenizer);
+        IndexController indexController = new IndexController(gson, indexService);
 
         Javalin app = Javalin.create(cfg -> cfg.http.defaultContentType = "application/json");
 
-        controller.registerRoutes(app);
+        // health + /index
+        indexController.registerRoutes(app);
 
+        // optional: smoke endpoint bleibt zum schnellen pruefen
         app.post("/hz/smoke", ctx -> {
             String term = java.util.Optional.ofNullable(ctx.queryParam("term")).orElse("hola");
             String idRaw = java.util.Optional.ofNullable(ctx.queryParam("id")).orElse("123");

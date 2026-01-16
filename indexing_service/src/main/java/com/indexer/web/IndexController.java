@@ -1,7 +1,7 @@
 package com.indexer.web;
 
-import com.indexer.core.IndexService;
 import com.google.gson.Gson;
+import com.indexer.core.IndexService;
 import com.indexer.dto.IndexRequest;
 import com.indexer.dto.IndexResponse;
 import io.javalin.Javalin;
@@ -22,6 +22,7 @@ public final class IndexController {
 
         app.get("/health", ctx -> ctx.result(gson.toJson(Map.of("status", "ok"))));
 
+        // jetzt: validiert + indexiert + schreibt index datei
         app.post("/index", ctx -> {
             IndexRequest req;
             try {
@@ -31,17 +32,18 @@ public final class IndexController {
                 return;
             }
 
-            if (req == null) {
-                ctx.status(400).result(gson.toJson(Map.of("error", "invalid json")));
+            if (req == null || req.lakePath() == null) {
+                ctx.status(400).result(gson.toJson(Map.of("error", "lakePath missing")));
                 return;
             }
 
-            IndexResponse resp = indexService.validateAndDescribe(req.lakePath());
+            IndexResponse resp = indexService.index(req.lakePath());
 
             int httpStatus = switch (resp.status()) {
-                case "indexed", "already_indexed" -> 200;
+                case "ok" -> 200;
                 case "bad_request" -> 400;
                 case "not_found" -> 404;
+                case "conflict" -> 409;
                 default -> 500;
             };
 

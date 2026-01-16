@@ -6,5 +6,8 @@ public record IndexResponse(
         String lakePath,
         String resolvedPath,
         Long fileSizeBytes,
+        String indexFilePath,
+        Integer tokensTotal,
+        Integer termsUnique,
         String error
 ) {}
