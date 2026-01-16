@@ -1,40 +1,43 @@
 #!/bin/bash
 
 # Example script to manually trigger indexing of a book
-# Usage: ./index_book.sh <book_id> <file_path>
+# Usage: ./index_book.sh <lake_path>
 
-if [ $# -ne 2 ]; then
-    echo "Usage: $0 <book_id> <file_path>"
-    echo "Example: $0 1342 data_repository/datalake_v1/1342.json"
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <lake_path>"
+    echo "Example: $0 datalake_node1/1342.json"
+    echo "         or: $0 20260112/23/1346.json"
     exit 1
 fi
 
-BOOK_ID=$1
-FILE_PATH=$2
+LAKE_PATH=$1
 
-if [ ! -f "$FILE_PATH" ]; then
-    echo "Error: File not found: $FILE_PATH"
-    exit 1
-fi
-
-# Create indexing event JSON
-EVENT_JSON=$(cat <<EOF
+# Create indexing request JSON
+REQUEST_JSON=$(cat <<EOF
 {
-  "bookId": "$BOOK_ID",
-  "filePath": "/app/$FILE_PATH",
-  "status": "READY"
+  "lakePath": "$LAKE_PATH"
 }
 EOF
 )
 
-echo "Publishing indexing event for book $BOOK_ID..."
+echo "Sending indexing request for: $LAKE_PATH..."
 
-# Send to ActiveMQ via REST API
-curl -X POST \
-  -u admin:admin \
+# Send to indexing service REST API
+RESPONSE=$(curl -X POST \
   -H "Content-Type: application/json" \
-  -d "$EVENT_JSON" \
-  "http://localhost:8161/api/message/books.ingested?type=queue"
+  -d "$REQUEST_JSON" \
+  -w "\nHTTP_CODE:%{http_code}" \
+  "http://localhost:7002/index" 2>/dev/null)
+
+HTTP_CODE=$(echo "$RESPONSE" | grep "HTTP_CODE" | cut -d':' -f2)
+BODY=$(echo "$RESPONSE" | grep -v "HTTP_CODE")
 
 echo ""
-echo "Event published successfully!"
+if [ "$HTTP_CODE" == "200" ]; then
+    echo "✓ Success! Book indexed."
+elif [ "$HTTP_CODE" == "409" ]; then
+    echo "⚠ Already indexed (conflict)."
+else
+    echo "✗ Error (HTTP $HTTP_CODE)"
+fi
+echo "Response: $BODY"

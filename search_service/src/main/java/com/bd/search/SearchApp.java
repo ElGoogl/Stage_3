@@ -9,6 +9,7 @@ import io.javalin.Javalin;
 import io.javalin.http.Context;
 
 import java.util.*;
+import java.util.Locale;
 import java.util.stream.Collectors;
 
 /**
@@ -19,7 +20,7 @@ import java.util.stream.Collectors;
 public class SearchApp {
     private static final Gson gson = new Gson();
     private static HazelcastInstance hazelcastClient;
-    private static MultiMap<String, String> invertedIndex;
+    private static MultiMap<String, Integer> invertedIndex;
     
     public static void main(String[] args) {
         // Get configuration from environment variables or use defaults
@@ -139,35 +140,60 @@ public class SearchApp {
             return Collections.emptyList();
         }
         
-        // Tokenize query into words
-        String[] words = query.toLowerCase().trim().split("\\s+");
+        // Tokenize query using same logic as indexer
+        List<String> tokens = tokenize(query);
         
-        if (words.length == 0) {
+        if (tokens.isEmpty()) {
             return Collections.emptyList();
         }
         
         // Count term frequency for each document
-        Map<String, Integer> documentScores = new HashMap<>();
+        Map<Integer, Integer> documentScores = new HashMap<>();
         
-        for (String word : words) {
-            Collection<String> docs = invertedIndex.get(word);
+        for (String token : tokens) {
+            Collection<Integer> docs = invertedIndex.get(token);
             if (docs != null) {
-                for (String doc : docs) {
-                    documentScores.put(doc, documentScores.getOrDefault(doc, 0) + 1);
+                for (Integer docId : docs) {
+                    documentScores.put(docId, documentScores.getOrDefault(docId, 0) + 1);
                 }
             }
         }
         
         // For multi-word queries, only keep documents that contain ALL terms (AND semantics)
-        if (words.length > 1) {
-            documentScores.entrySet().removeIf(entry -> entry.getValue() < words.length);
+        if (tokens.size() > 1) {
+            final int requiredMatches = tokens.size();
+            documentScores.entrySet().removeIf(entry -> entry.getValue() < requiredMatches);
         }
         
         // Sort by score (term frequency) descending, then by document ID
         return documentScores.entrySet().stream()
-            .sorted(Map.Entry.<String, Integer>comparingByValue().reversed()
+            .sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed()
                 .thenComparing(Map.Entry.comparingByKey()))
-            .map(Map.Entry::getKey)
+            .map(entry -> String.valueOf(entry.getKey()))
+            .collect(Collectors.toList());
+    }
+    
+    /**
+     * Tokenize text using same logic as the indexing service
+     * Matches Tokenizer.java: Unicode letters/digits, min length 2
+     */
+    private static List<String> tokenize(String text) {
+        if (text == null || text.isBlank()) {
+            return Collections.emptyList();
+        }
+        
+        // Normalize: lowercase, replace non-letter/digit with space
+        String cleaned = text.toLowerCase(Locale.ROOT)
+            .replaceAll("[^\\p{L}\\p{Nd}]+", " ")
+            .trim();
+        
+        if (cleaned.isEmpty()) {
+            return Collections.emptyList();
+        }
+        
+        // Split and filter by min length
+        return Arrays.stream(cleaned.split("\\s+"))
+            .filter(token -> token.length() >= 2)
             .collect(Collectors.toList());
     }
     
@@ -181,24 +207,24 @@ public class SearchApp {
             return Collections.emptySet();
         }
         
-        // Tokenize query into words
-        String[] words = query.toLowerCase().trim().split("\\s+");
+        // Tokenize query using same logic as indexer
+        List<String> tokens = tokenize(query);
         
-        if (words.length == 0) {
+        if (tokens.isEmpty()) {
             return Collections.emptySet();
         }
         
         // For single word query
-        if (words.length == 1) {
-            Collection<String> docs = invertedIndex.get(words[0]);
-            return docs != null ? new HashSet<>(docs) : Collections.emptySet();
+        if (tokens.size() == 1) {
+            Collection<Integer> docs = invertedIndex.get(tokens.get(0));
+            return docs != null ? docs.stream().map(String::valueOf).collect(Collectors.toSet()) : Collections.emptySet();
         }
         
         // For multi-word query, find intersection (AND semantics)
-        Set<String> result = null;
-        for (String word : words) {
-            Collection<String> docs = invertedIndex.get(word);
-            Set<String> docSet = docs != null ? new HashSet<>(docs) : Collections.emptySet();
+        Set<Integer> result = null;
+        for (String token : tokens) {
+            Collection<Integer> docs = invertedIndex.get(token);
+            Set<Integer> docSet = docs != null ? new HashSet<>(docs) : Collections.emptySet();
             
             if (result == null) {
                 result = docSet;
@@ -212,6 +238,6 @@ public class SearchApp {
             }
         }
         
-        return result != null ? result : Collections.emptySet();
+        return result != null ? result.stream().map(String::valueOf).collect(Collectors.toSet()) : Collections.emptySet();
     }
 }
