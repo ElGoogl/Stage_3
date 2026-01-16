@@ -22,7 +22,7 @@ public final class IndexController {
 
         app.get("/health", ctx -> ctx.result(gson.toJson(Map.of("status", "ok"))));
 
-        // jetzt: validiert + indexiert + schreibt index datei
+        // validate + index + write index datei
         app.post("/index", ctx -> {
             IndexRequest req;
             try {
