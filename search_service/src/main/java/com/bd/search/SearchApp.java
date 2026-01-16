@@ -3,6 +3,8 @@ package com.bd.search;
 import com.google.gson.Gson;
 import com.hazelcast.client.HazelcastClient;
 import com.hazelcast.client.config.ClientConfig;
+import com.hazelcast.config.Config;
+import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.multimap.MultiMap;
 import io.javalin.Javalin;
@@ -63,24 +65,46 @@ public class SearchApp {
     
     /**
      * Initialize Hazelcast client and connect to cluster
+     * Falls back to embedded instance if external cluster is unavailable
      */
     private static void initHazelcastClient(String host, int port) {
+        // Try to connect to external cluster first
         try {
+            System.out.println("[SEARCH-SERVICE] Attempting to connect to Hazelcast at " + host + ":" + port);
             ClientConfig clientConfig = new ClientConfig();
             clientConfig.setClusterName("search-cluster");
             clientConfig.getNetworkConfig().addAddress(host + ":" + port);
             
-            // Connection retry settings
+            // Shorter timeout for quick failover to embedded mode
             clientConfig.getConnectionStrategyConfig()
                 .getConnectionRetryConfig()
-                .setClusterConnectTimeoutMillis(10000);
+                .setClusterConnectTimeoutMillis(5000);
             
             hazelcastClient = HazelcastClient.newHazelcastClient(clientConfig);
             invertedIndex = hazelcastClient.getMultiMap("inverted-index");
             
-            System.out.println("[SEARCH-SERVICE] Hazelcast client initialized");
+            System.out.println("[SEARCH-SERVICE] Connected to external Hazelcast cluster");
+            return;
         } catch (Exception e) {
-            System.err.println("[SEARCH-SERVICE] Failed to connect to Hazelcast: " + e.getMessage());
+            System.out.println("[SEARCH-SERVICE] Failed to connect to external cluster: " + e.getMessage());
+            System.out.println("[SEARCH-SERVICE] Falling back to embedded Hazelcast instance");
+        }
+        
+        // Fall back to embedded Hazelcast instance
+        try {
+            Config config = new Config();
+            config.setClusterName("search-cluster-embedded");
+            
+            // Disable multicast and TCP-IP join for standalone mode
+            config.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
+            config.getNetworkConfig().getJoin().getTcpIpConfig().setEnabled(false);
+            
+            hazelcastClient = Hazelcast.newHazelcastInstance(config);
+            invertedIndex = hazelcastClient.getMultiMap("inverted-index");
+            
+            System.out.println("[SEARCH-SERVICE] Started embedded Hazelcast instance (standalone mode)");
+        } catch (Exception e) {
+            System.err.println("[SEARCH-SERVICE] Failed to start embedded Hazelcast: " + e.getMessage());
             e.printStackTrace();
         }
     }
