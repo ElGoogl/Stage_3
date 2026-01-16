@@ -1,12 +1,8 @@
 package com.indexer.hz;
 
-import com.hazelcast.config.Config;
-import com.hazelcast.config.JoinConfig;
-import com.hazelcast.config.MultiMapConfig;
-import com.hazelcast.config.NetworkConfig;
-import com.hazelcast.core.Hazelcast;
+import com.hazelcast.client.HazelcastClient;
+import com.hazelcast.client.config.ClientConfig;
 import com.hazelcast.core.HazelcastInstance;
-import com.indexer.index.InvertedIndexStore;
 
 import java.util.Arrays;
 
@@ -15,33 +11,35 @@ public final class HazelcastProvider {
     private final HazelcastInstance hz;
 
     public HazelcastProvider(String membersCsv, String clusterName, String instanceName) {
-        Config cfg = new Config();
-        if (clusterName != null && !clusterName.isBlank()) cfg.setClusterName(clusterName);
-        if (instanceName != null && !instanceName.isBlank()) cfg.setInstanceName(instanceName);
+        ClientConfig cfg = new ClientConfig();
+        if (clusterName != null && !clusterName.isBlank()) {
+            cfg.setClusterName(clusterName);
+        }
+        if (instanceName != null && !instanceName.isBlank()) {
+            cfg.setInstanceName(instanceName);
+        }
 
-        MultiMapConfig mm = new MultiMapConfig(InvertedIndexStore.MAP_NAME);
-        mm.setValueCollectionType(com.hazelcast.config.MultiMapConfig.ValueCollectionType.SET);
-        mm.setBackupCount(1);
-        mm.setAsyncBackupCount(0);
-        cfg.addMultiMapConfig(mm);
-
-        NetworkConfig net = cfg.getNetworkConfig();
-        JoinConfig join = net.getJoin();
-
+        // Configure connection to Hazelcast cluster members
         if (membersCsv != null && !membersCsv.isBlank()) {
-            join.getMulticastConfig().setEnabled(false);
-            join.getTcpIpConfig().setEnabled(true);
-
             Arrays.stream(membersCsv.split(","))
                     .map(String::trim)
                     .filter(s -> !s.isBlank())
-                    .forEach(m -> join.getTcpIpConfig().addMember(m));
+                    .forEach(m -> {
+                        // Add :5701 if no port specified
+                        String address = m.contains(":") ? m : m + ":5701";
+                        cfg.getNetworkConfig().addAddress(address);
+                    });
         } else {
-            join.getTcpIpConfig().setEnabled(false);
-            join.getMulticastConfig().setEnabled(true);
+            // Default to localhost if no members specified
+            cfg.getNetworkConfig().addAddress("localhost:5701");
         }
 
-        this.hz = Hazelcast.newHazelcastInstance(cfg);
+        // Connection retry settings
+        cfg.getConnectionStrategyConfig()
+            .getConnectionRetryConfig()
+            .setClusterConnectTimeoutMillis(10000);
+
+        this.hz = HazelcastClient.newHazelcastClient(cfg);
     }
 
     public HazelcastInstance instance() {
