@@ -34,9 +34,6 @@
 
         <hazelcast.version>5.3.6</hazelcast.version>
 
-        <activemq.version>5.17.6</activemq.version>
-        <javax.jms.version>2.0.1</javax.jms.version>
-
         <junit.version>5.10.2</junit.version>
         <jmh.version>1.37</jmh.version>
     </properties>
@@ -71,16 +68,14 @@
             <version>${hazelcast.version}</version>
         </dependency>
 
-        <!-- ActiveMQ consumer -->
+        <!-- ActiveMQ (ingestion events) -->
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-client</artifactId>
-            <version>${activemq.version}</version>
         </dependency>
         <dependency>
             <groupId>javax.jms</groupId>
             <artifactId>javax.jms-api</artifactId>
-            <version>${javax.jms.version}</version>
         </dependency>
 
         <!-- JMH for benchmarks -->
