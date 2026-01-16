@@ -11,7 +11,7 @@
         <module name="search-service" />
         <module name="ingestion_service" />
       </profile>
-      <profile name="Annotation profile for Stage_2" enabled="true">
+      <profile name="Annotation profile for Stage_3" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
