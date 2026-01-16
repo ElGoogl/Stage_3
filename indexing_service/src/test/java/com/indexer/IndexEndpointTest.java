@@ -9,6 +9,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -20,10 +21,17 @@ public final class IndexEndpointTest {
     private static Javalin app;
     private static int port;
 
+    private static Path lakeRoot;
+    private static Path indexRoot;
+
     @BeforeAll
     static void startServer() {
-        Path lakeRoot = Paths.get("data_repository/datalake_v1");
-        Path indexRoot = Paths.get("data_repository/indexes");
+        lakeRoot = Paths.get("..", "data_repository", "datalake_node1").normalize();
+        indexRoot = Paths.get("..", "data_repository", "indexes").normalize();
+
+        // sanity check: fail fast if the file isn't where we expect it
+        Path existing = lakeRoot.resolve("20260112/23/1346.json");
+        assertTrue(Files.exists(existing), "Test file missing at: " + existing.toAbsolutePath());
 
         app = App.start(0, lakeRoot, indexRoot);
         port = app.port();
@@ -52,6 +60,7 @@ public final class IndexEndpointTest {
 
         assertEquals(200, resp.statusCode());
         assertTrue(resp.body().contains("\"status\":\"ok\""));
+        assertTrue(resp.body().contains("\"bookId\":1346"));
     }
 
     @Test
