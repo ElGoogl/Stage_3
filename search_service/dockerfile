@@ -1,5 +1,32 @@
-FROM eclipse-temurin:17-jdk-jammy
+FROM maven:3.9-eclipse-temurin-17 AS builder
+
 WORKDIR /app
-COPY target/search-service-1.0.0.jar app.jar
-EXPOSE 7003
-CMD ["java", "-jar", "app.jar"]
+
+# Copy pom.xml and download dependencies
+COPY pom.xml .
+RUN mvn dependency:go-offline
+
+# Copy source code
+COPY src ./src
+
+# Build the application
+RUN mvn clean package -DskipTests
+
+# Runtime stage
+FROM eclipse-temurin:17-jre-alpine
+
+WORKDIR /app
+
+# Copy the built JAR from builder stage
+COPY --from=builder /app/target/search-service-1.0.0.jar app.jar
+
+# Expose the service port
+EXPOSE 8080
+
+# Set default environment variables
+ENV SERVER_PORT=8080
+ENV HAZELCAST_HOST=hazelcast
+ENV HAZELCAST_PORT=5701
+
+# Run the application
+ENTRYPOINT ["java", "-jar", "app.jar"]
