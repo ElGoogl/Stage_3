@@ -39,7 +39,7 @@ public final class IndexController {
             IndexResponse resp = indexService.validateAndDescribe(req.lakePath());
 
             int httpStatus = switch (resp.status()) {
-                case "ok" -> 200;
+                case "indexed", "already_indexed" -> 200;
                 case "bad_request" -> 400;
                 case "not_found" -> 404;
                 default -> 500;

@@ -1,9 +1,14 @@
 package com.indexer;
 
+import com.google.gson.Gson;
+import com.indexer.core.BookLoader;
+import com.indexer.core.IndexService;
+import com.indexer.core.PathResolver;
+import com.indexer.core.Tokenizer;
 import com.indexer.hz.HazelcastProvider;
 import com.indexer.index.ClaimStore;
 import com.indexer.index.InvertedIndexStore;
-import com.google.gson.Gson;
+import com.indexer.web.IndexController;
 import io.javalin.Javalin;
 
 import java.io.IOException;
@@ -25,7 +30,16 @@ public final class App {
 
         Gson gson = new Gson();
 
+        PathResolver resolver = new PathResolver(lakeRoot);
+        BookLoader loader = new BookLoader(gson);
+        Tokenizer tokenizer = new Tokenizer();
+
+        IndexService indexService = new IndexService(resolver, loader, tokenizer, invertedIndex, claimStore);
+        IndexController controller = new IndexController(gson, indexService);
+
         Javalin app = Javalin.create(cfg -> cfg.http.defaultContentType = "application/json");
+
+        controller.registerRoutes(app);
 
         app.post("/hz/smoke", ctx -> {
             String term = java.util.Optional.ofNullable(ctx.queryParam("term")).orElse("hola");
