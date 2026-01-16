@@ -68,6 +68,16 @@
             <version>${hazelcast.version}</version>
         </dependency>
 
+        <!-- ActiveMQ (ingestion events) -->
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>javax.jms-api</artifactId>
+        </dependency>
+
         <!-- JMH for benchmarks -->
         <dependency>
             <groupId>org.openjdk.jmh</groupId>

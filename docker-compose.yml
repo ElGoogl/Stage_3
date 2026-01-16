@@ -39,9 +39,7 @@ services:
       - hazelcast1
 
   # ActiveMQ message broker
-  # NOTE: The indexing service no longer consumes from ActiveMQ.
-  # This service is kept for backward compatibility with the ingestion service.
-  # Consider updating ingestion service to call indexing REST API directly.
+  # Used by ingestion to publish events and indexing to consume them.
   activemq:
     image: rmohr/activemq:latest
     container_name: activemq
@@ -140,6 +138,8 @@ services:
     volumes:
       - ./data_repository:/app/data_repository
     environment:
+      - ACTIVEMQ_URL=tcp://activemq:61616
+      - ACTIVEMQ_QUEUE=books.ingested
       - PORT=7002
       - HZ_MEMBERS=hazelcast1:5701,hazelcast2:5701,hazelcast3:5701
       - HZ_CLUSTER=search-cluster
@@ -147,6 +147,7 @@ services:
     networks:
       - search-net
     depends_on:
+      - activemq
       - hazelcast1
       - hazelcast2
       - hazelcast3

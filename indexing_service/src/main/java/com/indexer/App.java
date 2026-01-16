@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.indexer.core.*;
 import com.indexer.hz.HazelcastProvider;
 import com.indexer.index.*;
+import com.indexer.messaging.ActiveMqIndexer;
 import com.indexer.web.IndexController;
 import io.javalin.Javalin;
 
@@ -16,6 +17,8 @@ public final class App {
     public static Javalin start(int port, Path lakeRoot, Path indexRoot) {
         ensureDirExists(indexRoot);
 
+        String brokerUrl = System.getenv().getOrDefault("ACTIVEMQ_URL", "tcp://localhost:61616");
+        String queueName = System.getenv().getOrDefault("ACTIVEMQ_QUEUE", "books.ingested");
         String hzMembers = System.getenv().getOrDefault("HZ_MEMBERS", "");
         String hzCluster = System.getenv().getOrDefault("HZ_CLUSTER", "stage3");
         String hzNode = System.getenv().getOrDefault("NODE_ID", "indexer-" + port);
@@ -43,6 +46,8 @@ public final class App {
 
         IndexController indexController = new IndexController(gson, indexService);
 
+        ActiveMqIndexer mqIndexer = new ActiveMqIndexer(gson, indexService, brokerUrl, queueName);
+
         Javalin app = Javalin.create(cfg -> cfg.http.defaultContentType = "application/json");
 
         // /health + /index
@@ -64,9 +69,13 @@ public final class App {
             )));
         });
 
-        app.events(ev -> ev.serverStopping(hzProvider::shutdown));
+        app.events(ev -> ev.serverStopping(() -> {
+            mqIndexer.close();
+            hzProvider.shutdown();
+        }));
 
         app.start(port);
+        mqIndexer.start();
         return app;
     }
 
