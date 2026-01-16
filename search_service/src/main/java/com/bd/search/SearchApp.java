@@ -26,7 +26,7 @@ public class SearchApp {
         // Get configuration from environment variables or use defaults
         String hazelcastHost = System.getenv().getOrDefault("HAZELCAST_HOST", "localhost");
         int hazelcastPort = Integer.parseInt(System.getenv().getOrDefault("HAZELCAST_PORT", "5701"));
-        int serverPort = Integer.parseInt(System.getenv().getOrDefault("SERVER_PORT", "8080"));
+        int serverPort = Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
         
         // Initialize Hazelcast client
         initHazelcastClient(hazelcastHost, hazelcastPort);

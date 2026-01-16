@@ -60,7 +60,7 @@ services:
     build: ./search_service
     container_name: search1
     environment:
-      - SERVER_PORT=8080
+      - PORT=8080
       - HAZELCAST_HOST=hazelcast1
       - HAZELCAST_PORT=5701
     networks:
@@ -75,7 +75,7 @@ services:
     build: ./search_service
     container_name: search2
     environment:
-      - SERVER_PORT=8080
+      - PORT=8080
       - HAZELCAST_HOST=hazelcast1
       - HAZELCAST_PORT=5701
     networks:
@@ -90,7 +90,7 @@ services:
     build: ./search_service
     container_name: search3
     environment:
-      - SERVER_PORT=8080
+      - PORT=8080
       - HAZELCAST_HOST=hazelcast1
       - HAZELCAST_PORT=5701
     networks:
