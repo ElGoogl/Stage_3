@@ -1,9 +1,15 @@
 package com.indexer;
 
 import com.google.gson.Gson;
-import com.indexer.core.*;
+import com.indexer.core.BookParser;
+import com.indexer.core.IndexService;
+import com.indexer.core.PathResolver;
+import com.indexer.core.Tokenizer;
 import com.indexer.hz.HazelcastProvider;
-import com.indexer.index.*;
+import com.indexer.index.ClaimStore;
+import com.indexer.index.IndexedStore;
+import com.indexer.index.InvertedIndexStore;
+import com.indexer.mq.ActiveMqIngestConsumer;
 import com.indexer.web.IndexController;
 import io.javalin.Javalin;
 
@@ -13,12 +19,12 @@ import java.nio.file.Path;
 
 public final class App {
 
-    public static Javalin start(int port, Path lakeRoot, Path indexRoot) {
+    public static Javalin start(int httpPort, Path lakeRoot, Path indexRoot) {
         ensureDirExists(indexRoot);
 
-        String hzMembers = System.getenv().getOrDefault("HZ_MEMBERS", "");
+        String hzMembers = System.getenv().getOrDefault("HZ_MEMBERS", "localhost:5701");
         String hzCluster = System.getenv().getOrDefault("HZ_CLUSTER", "stage3");
-        String hzNode = System.getenv().getOrDefault("NODE_ID", "indexer-" + port);
+        String hzNode = System.getenv().getOrDefault("NODE_ID", "indexer_" + httpPort);
 
         HazelcastProvider hzProvider = new HazelcastProvider(hzMembers, hzCluster, hzNode);
 
@@ -45,10 +51,8 @@ public final class App {
 
         Javalin app = Javalin.create(cfg -> cfg.http.defaultContentType = "application/json");
 
-        // /health + /index
         indexController.registerRoutes(app);
 
-        // optional smoke endpoint
         app.post("/hz/smoke", ctx -> {
             String term = java.util.Optional.ofNullable(ctx.queryParam("term")).orElse("hola");
             String idRaw = java.util.Optional.ofNullable(ctx.queryParam("id")).orElse("123");
@@ -64,9 +68,18 @@ public final class App {
             )));
         });
 
-        app.events(ev -> ev.serverStopping(hzProvider::shutdown));
+        String brokerUrl = System.getenv().getOrDefault("ACTIVEMQ_URL", "tcp://localhost:61616");
+        String queueName = System.getenv().getOrDefault("ACTIVEMQ_QUEUE", "books.ingested");
 
-        app.start(port);
+        ActiveMqIngestConsumer mqConsumer = new ActiveMqIngestConsumer(gson, indexService, brokerUrl, queueName);
+        mqConsumer.start();
+
+        app.events(ev -> ev.serverStopping(() -> {
+            try { mqConsumer.close(); } catch (Exception ignored) {}
+            hzProvider.shutdown();
+        }));
+
+        app.start(httpPort);
         return app;
     }
 
@@ -80,17 +93,12 @@ public final class App {
     }
 
     public static void main(String[] args) {
-        int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "7002"));
+        int httpPort = Integer.parseInt(System.getenv().getOrDefault("PORT", "7002"));
 
-        Path lakeRoot = Path.of("data_repository", "datalake_node1").normalize();
+        // IMPORTANT: match ingestion_service DATA_DIR default (datalake_v1)
+        Path lakeRoot = Path.of("data_repository", "datalake_v1").normalize();
         Path indexRoot = Path.of("data_repository", "indexes").normalize();
 
-        start(port, lakeRoot, indexRoot);
+        start(httpPort, lakeRoot, indexRoot);
     }
 }
-
-/*
-curl -i -X POST "http://localhost:7002/index" \
-  -H "Content-Type: application/json" \
-  -d '{ "lakePath": "20260112/23/1346.json" }'
- */
