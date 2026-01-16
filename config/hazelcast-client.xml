@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hazelcast-client xmlns="http://www.hazelcast.com/schema/client-config"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://www.hazelcast.com/schema/client-config
+                  http://www.hazelcast.com/schema/client-config/hazelcast-client-config-5.3.xsd">
+
+    <!-- Cluster configuration -->
+    <cluster-name>stage3</cluster-name>
+    <instance-name>default-client</instance-name>
+
+    <!-- Network configuration for client connections -->
+    <network>
+        <!-- Default member addresses (can be overridden by environment variables) -->
+        <cluster-members>
+            <address>localhost:5701</address>
+        </cluster-members>
+        
+        <!-- Smart routing for better performance -->
+        <smart-routing>true</smart-routing>
+        
+        <!-- Connection retry configuration -->
+        <connection-timeout>5000</connection-timeout>
+        
+        <!-- Socket options -->
+        <socket-options>
+            <tcp-no-delay>true</tcp-no-delay>
+            <keep-alive>true</keep-alive>
+        </socket-options>
+    </network>
+
+    <!-- Connection strategy -->
+    <connection-strategy async-start="false" reconnect-mode="ON">
+        <connection-retry>
+            <initial-backoff-millis>1000</initial-backoff-millis>
+            <max-backoff-millis>30000</max-backoff-millis>
+            <multiplier>1.5</multiplier>
+            <cluster-connect-timeout-millis>10000</cluster-connect-timeout-millis>
+            <jitter>0.2</jitter>
+        </connection-retry>
+    </connection-strategy>
+
+    <!-- Properties -->
+    <properties>
+        <property name="hazelcast.client.statistics.enabled">true</property>
+        <property name="hazelcast.logging.type">slf4j</property>
+    </properties>
+
+</hazelcast-client>
