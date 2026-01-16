@@ -1,0 +1,18510 @@
+{
+  "bookId": 12767,
+  "sourceBookId": "12767",
+  "lakePath": "20260112/23/12767.json",
+  "resolvedPath": "data_repository/datalake_node1/20260112/23/12767.json",
+  "tokensTotal": 81703,
+  "termsUnique": 9250,
+  "hash": "dcaae9aff8ef0c3fce8d10dc53be5c01f0ef14a1e0bac41155d7f2b437ba8029",
+  "terms": {
+    "frowning": 1,
+
+    "cancel": 1,
+
+    "half": 30,
+
+    "disapproval": 1,
+
+    "hall": 2,
+
+    "dixwell": 1,
+
+    "northfield": 3,
+
+    "tea": 1,
+
+    "morton": 10,
+
+    "imperfect": 2,
+
+    "pick": 3,
+
+    "gloomy": 2,
+
+    "keayne": 2,
+
+    "tel": 1,
+
+    "ten": 15,
+
+    "daring": 3,
+
+    "energy": 4,
+
+    "conceal": 1,
+
+    "assowamsett": 1,
+
+    "switzerland": 3,
+
+    "spreading": 1,
+
+    "competent": 1,
+
+    "require": 5,
+
+    "standards": 1,
+
+    "poems": 2,
+
+    "triple": 1,
+
+    "amusing": 1,
+
+    "drums": 2,
+
+    "ferdinand": 1,
+
+    "newspaper": 2,
+
+    "telling": 2,
+
+    "squatting": 1,
+
+    "turf": 1,
+
+    "vengeance": 6,
+
+    "fearless": 3,
+
+    "1000": 3,
+
+    "essayed": 1,
+
+    "turn": 5,
+
+    "turk": 4,
+
+    "result": 22,
+
+    "opposition": 9,
+
+    "same": 60,
+
+    "wreak": 2,
+
+    "apoplexy": 1,
+
+    "commission": 2,
+
+    "after": 128,
+
+    "staircase": 1,
+
+    "rational": 4,
+
+    "connect": 1,
+
+    "hand": 30,
+
+    "ordered": 8,
+
+    "salt": 4,
+
+    "laden": 1,
+
+    "sombre": 2,
+
+    "artistic": 1,
+
+    "blood": 8,
+
+    "straight": 4,
+
+    "the": 6741,
+
+    "halt": 1,
+
+    "entering": 4,
+
+    "sale": 1,
+
+    "sunset": 2,
+
+    "obvious": 2,
+
+    "information": 10,
+
+    "dogged": 3,
+
+    "november": 5,
+
+    "thy": 1,
+
+    "resolve": 1,
+
+    "shoals": 1,
+
+    "converting": 2,
+
+    "good": 33,
+
+    "faithful": 3,
+
+    "empty": 1,
+
+    "amounted": 2,
+
+    "tie": 1,
+
+    "pigs": 1,
+
+    "huddle": 1,
+
+    "carlyle": 1,
+
+    "suffered": 7,
+
+    "copying": 4,
+
+    "besides": 4,
+
+    "serious": 9,
+
+    "wainscoting": 1,
+
+    "predicted": 1,
+
+    "rome": 24,
+
+    "owes": 2,
+
+    "pillaged": 1,
+
+    "suspecting": 2,
+
+    "savages": 33,
+
+    "grandchildren": 1,
+
+    "unchecked": 2,
+
+    "disguised": 1,
+
+    "gone": 19,
+
+    "divergence": 3,
+
+    "walked": 2,
+
+    "owed": 3,
+
+    "aside": 5,
+
+    "gorgeous": 1,
+
+    "slaying": 4,
+
+    "scholars": 1,
+
+    "sank": 1,
+
+    "barbadoes": 2,
+
+    "enjoined": 1,
+
+    "harm": 1,
+
+    "dexter": 4,
+
+    "provided": 8,
+
+    "hart": 1,
+
+    "representation": 18,
+
+    "abstracted": 1,
+
+    "muster": 2,
+
+    "adrift": 1,
+
+    "motive": 3,
+
+    "postmaster": 2,
+
+    "root": 3,
+
+    "hard": 19,
+
+    "colouring": 1,
+
+    "multiply": 1,
+
+    "assaults": 1,
+
+    "pioneers": 6,
+
+    "depriving": 1,
+
+    "roof": 5,
+
+    "curative": 1,
+
+    "rood": 2,
+
+    "quarters": 1,
+
+    "plotting": 1,
+
+    "guilford": 2,
+
+    "room": 8,
+
+    "better": 17,
+
+    "21st": 2,
+
+    "disturber": 1,
+
+    "permit": 1,
+
+    "apostles": 1,
+
+    "suitable": 1,
+
+    "bloodthirsty": 2,
+
+    "taking": 6,
+
+    "romance": 1,
+
+    "bereaved": 1,
+
+    "voters": 1,
+
+    "impeach": 2,
+
+    "pile": 1,
+
+    "immortal": 2,
+
+    "mountfield": 1,
+
+    "fiercer": 1,
+
+    "roundly": 1,
+
+    "discharged": 1,
+
+    "gained": 2,
+
+    "struck": 7,
+
+    "hate": 1,
+
+    "block": 5,
+
+    "poets": 1,
+
+    "hath": 1,
+
+    "reminds": 2,
+
+    "order": 28,
+
+    "protecting": 2,
+
+    "pressed": 3,
+
+    "pike": 1,
+
+    "reformed": 1,
+
+    "reform": 1,
+
+    "illustrated": 3,
+
+    "ogontz": 1,
+
+    "kirke": 3,
+
+    "women": 26,
+
+    "woman": 12,
+
+    "pine": 2,
+
+    "save": 12,
+
+    "protection": 10,
+
+    "palefaces": 3,
+
+    "aborigines": 1,
+
+    "soonest": 1,
+
+    "saul": 2,
+
+    "frankly": 1,
+
+    "hypertext": 1,
+
+    "ton": 1,
+
+    "tom": 1,
+
+    "top": 1,
+
+    "honesty": 1,
+
+    "too": 44,
+
+    "orderly": 1,
+
+    "have": 316,
+
+    "casting": 2,
+
+    "tow": 1,
+
+    "energetic": 2,
+
+    "avail": 1,
+
+    "famous": 12,
+
+    "implications": 1,
+
+    "additions": 1,
+
+    "question": 34,
+
+    "spirit": 68,
+
+    "intellectual": 7,
+
+    "wishing": 3,
+
+    "picture": 3,
+
+    "observances": 2,
+
+    "tortures": 1,
+
+    "willis": 1,
+
+    "regard": 10,
+
+    "cod": 8,
+
+    "rose": 2,
+
+    "captives": 6,
+
+    "thousand": 20,
+
+    "minstrelsy": 1,
+
+    "ezra": 1,
+
+    "alden": 1,
+
+    "abilities": 1,
+
+    "leicester": 3,
+
+    "owns": 2,
+
+    "pipe": 1,
+
+    "disapproved": 4,
+
+    "representative": 18,
+
+    "longitude": 1,
+
+    "ceasing": 2,
+
+    "circumstances": 17,
+
+    "including": 13,
+
+    "baltic": 1,
+
+    "supplants": 1,
+
+    "rout": 1,
+
+    "plenty": 3,
+
+    "alluding": 1,
+
+    "christmas": 2,
+
+    "anew": 2,
+
+    "200": 1,
+
+    "201": 1,
+
+    "202": 1,
+
+    "203": 1,
+
+    "obligation": 1,
+
+    "204": 2,
+
+    "205": 2,
+
+    "206": 1,
+
+    "207": 1,
+
+    "try": 4,
+
+    "208": 1,
+
+    "209": 1,
+
+    "constituted": 3,
+
+    "became": 36,
+
+    "ceded": 1,
+
+    "unenforceability": 1,
+
+    "effective": 3,
+
+    "210": 1,
+
+    "descension": 1,
+
+    "times": 25,
+
+    "211": 1,
+
+    "212": 1,
+
+    "haze": 1,
+
+    "213": 2,
+
+    "214": 2,
+
+    "215": 1,
+
+    "216": 1,
+
+    "217": 1,
+
+    "218": 1,
+
+    "219": 1,
+
+    "jelly": 1,
+
+    "says": 24,
+
+    "robsart": 1,
+
+    "direction": 7,
+
+    "ammunition": 1,
+
+    "twofold": 1,
+
+    "whence": 4,
+
+    "jinghis": 1,
+
+    "bachelor": 1,
+
+    "cry": 1,
+
+    "rows": 1,
+
+    "220": 1,
+
+    "221": 1,
+
+    "222": 2,
+
+    "223": 1,
+
+    "merchantability": 1,
+
+    "224": 1,
+
+    "appleton": 1,
+
+    "225": 1,
+
+    "stable": 3,
+
+    "226": 1,
+
+    "227": 1,
+
+    "228": 1,
+
+    "impatience": 1,
+
+    "unfamiliar": 1,
+
+    "229": 1,
+
+    "sketch": 1,
+
+    "incident": 4,
+
+    "witted": 2,
+
+    "caught": 6,
+
+    "concert": 1,
+
+    "caius": 1,
+
+    "dudley": 21,
+
+    "wequash": 1,
+
+    "pitt": 1,
+
+    "arousing": 1,
+
+    "concern": 3,
+
+    "230": 1,
+
+    "stubble": 1,
+
+    "231": 1,
+
+    "beautiful": 4,
+
+    "worked": 9,
+
+    "233": 2,
+
+    "234": 2,
+
+    "235": 1,
+
+    "refrain": 2,
+
+    "236": 1,
+
+    "237": 1,
+
+    "238": 1,
+
+    "penning": 1,
+
+    "239": 2,
+
+    "state": 59,
+
+    "contrasted": 6,
+
+    "defined": 3,
+
+    "element": 6,
+
+    "undue": 2,
+
+    "hopkins": 1,
+
+    "opposite": 7,
+
+    "240": 1,
+
+    "241": 1,
+
+    "watchful": 2,
+
+    "242": 2,
+
+    "243": 1,
+
+    "244": 1,
+
+    "245": 1,
+
+    "246": 1,
+
+    "247": 2,
+
+    "248": 1,
+
+    "offering": 1,
+
+    "249": 1,
+
+    "creating": 6,
+
+    "restrained": 1,
+
+    "reacted": 1,
+
+    "archery": 1,
+
+    "sweeping": 4,
+
+    "cut": 9,
+
+    "warrior": 1,
+
+    "probably": 19,
+
+    "revelations": 1,
+
+    "jurisdiction": 17,
+
+    "constitutional": 6,
+
+    "dread": 7,
+
+    "untrue": 1,
+
+    "250": 3,
+
+    "two": 114,
+
+    "251": 1,
+
+    "warmly": 1,
+
+    "shattering": 1,
+
+    "252": 2,
+
+    "moment": 43,
+
+    "253": 2,
+
+    "254": 2,
+
+    "255": 3,
+
+    "delawares": 3,
+
+    "256": 2,
+
+    "desired": 2,
+
+    "257": 2,
+
+    "258": 1,
+
+    "259": 1,
+
+    "attack": 20,
+
+    "humour": 2,
+
+    "reported": 4,
+
+    "distribute": 6,
+
+    "prevented": 5,
+
+    "creation": 1,
+
+    "immigrants": 3,
+
+    "think": 15,
+
+    "participate": 1,
+
+    "languages": 3,
+
+    "occurred": 7,
+
+    "desires": 1,
+
+    "forbidden": 1,
+
+    "rapacious": 1,
+
+    "accused": 3,
+
+    "replaced": 1,
+
+    "services": 10,
+
+    "260": 1,
+
+    "261": 1,
+
+    "262": 1,
+
+    "263": 1,
+
+    "264": 1,
+
+    "265": 1,
+
+    "torture": 4,
+
+    "filling": 1,
+
+    "266": 1,
+
+    "mistress": 1,
+
+    "267": 1,
+
+    "268": 2,
+
+    "watch": 3,
+
+    "269": 2,
+
+    "speech": 15,
+
+    "thing": 9,
+
+    "privileges": 5,
+
+    "vexatious": 2,
+
+    "tedious": 1,
+
+    "anne": 9,
+
+    "270": 2,
+
+    "271": 2,
+
+    "272": 1,
+
+    "273": 1,
+
+    "274": 1,
+
+    "domestic": 2,
+
+    "manor": 5,
+
+    "275": 1,
+
+    "glare": 1,
+
+    "276": 2,
+
+    "277": 1,
+
+    "terrestrial": 1,
+
+    "278": 1,
+
+    "paying": 4,
+
+    "punishing": 1,
+
+    "dying": 3,
+
+    "blows": 3,
+
+    "donation": 1,
+
+    "shoot": 1,
+
+    "actual": 4,
+
+    "glass": 1,
+
+    "undertook": 2,
+
+    "eastern": 15,
+
+    "reflection": 1,
+
+    "widely": 1,
+
+    "enlisted": 5,
+
+    "surprising": 2,
+
+    "286": 1,
+
+    "289": 2,
+
+    "suited": 3,
+
+    "shops": 2,
+
+    "smouldered": 1,
+
+    "assume": 4,
+
+    "johns": 1,
+
+    "gentile": 1,
+
+    "memory": 2,
+
+    "askance": 1,
+
+    "concept": 2,
+
+    "intercede": 1,
+
+    "farmers": 2,
+
+    "293": 1,
+
+    "house": 46,
+
+    "indefinite": 1,
+
+    "disaster": 5,
+
+    "ireton": 1,
+
+    "sachem": 20,
+
+    "agnostic": 1,
+
+    "gentleness": 1,
+
+    "taverns": 1,
+
+    "hours": 3,
+
+    "goaded": 2,
+
+    "libraries": 1,
+
+    "shore": 3,
+
+    "start": 5,
+
+    "earliest": 5,
+
+    "tilly": 1,
+
+    "wrung": 2,
+
+    "shorn": 1,
+
+    "hutton": 1,
+
+    "fallen": 5,
+
+    "short": 9,
+
+    "commonwealth": 17,
+
+    "reducing": 1,
+
+    "rewarding": 1,
+
+    "overhauled": 2,
+
+    "ninety": 4,
+
+    "obstacles": 2,
+
+    "truths": 3,
+
+    "listless": 1,
+
+    "imagined": 1,
+
+    "required": 10,
+
+    "measures": 13,
+
+    "teutonic": 28,
+
+    "golden": 3,
+
+    "episcopacy": 4,
+
+    "attain": 1,
+
+    "enter": 8,
+
+    "restoration": 7,
+
+    "groaning": 1,
+
+    "offing": 1,
+
+    "wretch": 1,
+
+    "destroy": 4,
+
+    "dates": 4,
+
+    "deemed": 8,
+
+    "doings": 1,
+
+    "creative": 2,
+
+    "statesmen": 1,
+
+    "coast": 21,
+
+    "welded": 1,
+
+    "reckoned": 3,
+
+    "flogged": 3,
+
+    "redistribute": 1,
+
+    "bright": 1,
+
+    "unknown": 4,
+
+    "frivolous": 1,
+
+    "consult": 1,
+
+    "gracious": 3,
+
+    "manners": 5,
+
+    "edwin": 1,
+
+    "survive": 4,
+
+    "hound": 1,
+
+    "blown": 1,
+
+    "walsingham": 1,
+
+    "precarious": 1,
+
+    "performed": 2,
+
+    "walled": 1,
+
+    "barely": 2,
+
+    "hanging": 1,
+
+    "outlines": 2,
+
+    "compact": 2,
+
+    "speedy": 2,
+
+    "friendly": 7,
+
+    "sixteenth": 4,
+
+    "outlay": 1,
+
+    "tell": 5,
+
+    "possession": 13,
+
+    "colonizing": 1,
+
+    "flames": 2,
+
+    "shores": 5,
+
+    "shows": 10,
+
+    "shown": 3,
+
+    "infusion": 3,
+
+    "celebrated": 1,
+
+    "tamerlane": 1,
+
+    "forcibly": 2,
+
+    "majesty": 3,
+
+    "migrated": 1,
+
+    "day": 61,
+
+    "depredation": 1,
+
+    "accustomed": 2,
+
+    "maverick": 10,
+
+    "trumpets": 1,
+
+    "ambush": 2,
+
+    "statesman": 1,
+
+    "artaxerxes": 1,
+
+    "claimants": 1,
+
+    "mildest": 1,
+
+    "created": 7,
+
+    "island": 44,
+
+    "format": 4,
+
+    "theological": 15,
+
+    "water": 8,
+
+    "fried": 1,
+
+    "formal": 5,
+
+    "forcible": 1,
+
+    "countless": 3,
+
+    "pierced": 2,
+
+    "tens": 1,
+
+    "entertain": 4,
+
+    "critical": 7,
+
+    "tabernacle": 1,
+
+    "boards": 1,
+
+    "elsewhere": 7,
+
+    "homogeneity": 1,
+
+    "guarded": 1,
+
+    "exceedingly": 2,
+
+    "englishwoman": 1,
+
+    "sixteen": 5,
+
+    "tones": 2,
+
+    "dated": 2,
+
+    "endowed": 4,
+
+    "introduction": 1,
+
+    "annals": 4,
+
+    "cursing": 1,
+
+    "revenge": 3,
+
+    "subscribe": 1,
+
+    "built": 11,
+
+    "illiberal": 1,
+
+    "lectures": 9,
+
+    "concentration": 2,
+
+    "heavily": 1,
+
+    "entertained": 2,
+
+    "colleague": 2,
+
+    "priests": 3,
+
+    "chamberlain": 1,
+
+    "overtook": 2,
+
+    "confession": 4,
+
+    "third": 10,
+
+    "kingly": 1,
+
+    "build": 4,
+
+    "disreputable": 1,
+
+    "exonerated": 1,
+
+    "further": 20,
+
+    "demands": 3,
+
+    "tolerate": 4,
+
+    "contracted": 1,
+
+    "presidents": 1,
+
+    "preached": 6,
+
+    "del": 1,
+
+    "parliament": 50,
+
+    "viewing": 1,
+
+    "shouted": 1,
+
+    "finds": 3,
+
+    "wasps": 1,
+
+    "burghers": 1,
+
+    "preacher": 10,
+
+    "incomparably": 1,
+
+    "swelled": 1,
+
+    "memoir": 1,
+
+    "prejudices": 3,
+
+    "servitude": 1,
+
+    "fined": 4,
+
+    "carefully": 2,
+
+    "banks": 2,
+
+    "going": 13,
+
+    "ashes": 1,
+
+    "pancake": 1,
+
+    "percolated": 1,
+
+    "whipped": 1,
+
+    "meddle": 3,
+
+    "beginnings": 25,
+
+    "distinctively": 1,
+
+    "flakes": 1,
+
+    "milder": 1,
+
+    "infidels": 1,
+
+    "nascent": 1,
+
+    "attitude": 7,
+
+    "treatment": 15,
+
+    "average": 2,
+
+    "compare": 1,
+
+    "turgot": 1,
+
+    "influential": 1,
+
+    "bodies": 5,
+
+    "virtues": 1,
+
+    "choosing": 5,
+
+    "assailants": 1,
+
+    "testaments": 2,
+
+    "vineyard": 5,
+
+    "journal": 3,
+
+    "weighty": 1,
+
+    "unlike": 6,
+
+    "hotel": 1,
+
+    "term": 1,
+
+    "rigid": 2,
+
+    "watchwords": 1,
+
+    "gallopped": 1,
+
+    "business": 10,
+
+    "oxen": 1,
+
+    "forbear": 1,
+
+    "cheeshahteaumuck": 1,
+
+    "staff": 2,
+
+    "indestructible": 3,
+
+    "partly": 7,
+
+    "right": 30,
+
+    "possible": 23,
+
+    "christless": 1,
+
+    "stealing": 2,
+
+    "misapplied": 1,
+
+    "edmund": 8,
+
+    "stage": 1,
+
+    "taught": 10,
+
+    "montesquieu": 1,
+
+    "returning": 3,
+
+    "complicated": 4,
+
+    "maximum": 1,
+
+    "under": 116,
+
+    "probert": 1,
+
+    "did": 84,
+
+    "quarter": 3,
+
+    "die": 3,
+
+    "battling": 1,
+
+    "tolerant": 3,
+
+    "dangerously": 1,
+
+    "exemplary": 1,
+
+    "fears": 1,
+
+    "plurality": 1,
+
+    "later": 26,
+
+    "passport": 1,
+
+    "philistines": 1,
+
+    "fruition": 2,
+
+    "midst": 2,
+
+    "forgotten": 3,
+
+    "evils": 4,
+
+    "possibly": 6,
+
+    "emancipation": 4,
+
+    "chartered": 1,
+
+    "seasons": 2,
+
+    "parcel": 3,
+
+    "stray": 5,
+
+    "hancock": 1,
+
+    "test": 1,
+
+    "journey": 3,
+
+    "puzzles": 1,
+
+    "originall": 1,
+
+    "finally": 6,
+
+    "learns": 1,
+
+    "remained": 17,
+
+    "thereafter": 1,
+
+    "conviction": 3,
+
+    "diversify": 1,
+
+    "publicly": 4,
+
+    "straw": 1,
+
+    "brown": 10,
+
+    "hideous": 5,
+
+    "sermon": 6,
+
+    "laced": 1,
+
+    "acceptance": 1,
+
+    "puzzled": 1,
+
+    "excursions": 3,
+
+    "final": 4,
+
+    "expiration": 1,
+
+    "twopence": 1,
+
+    "colours": 2,
+
+    "occasion": 20,
+
+    "virtual": 2,
+
+    "humours": 1,
+
+    "overwhelmed": 4,
+
+    "back": 26,
+
+    "training": 6,
+
+    "disparagingly": 1,
+
+    "states": 34,
+
+    "overrunning": 1,
+
+    "randolph": 14,
+
+    "propagating": 1,
+
+    "company": 63,
+
+    "thomas": 21,
+
+    "cathari": 5,
+
+    "relax": 1,
+
+    "length": 21,
+
+    "priest": 2,
+
+    "concerns": 1,
+
+    "grand": 15,
+
+    "josiah": 2,
+
+    "overwhelming": 1,
+
+    "baby": 1,
+
+    "fiendish": 1,
+
+    "indented": 2,
+
+    "grant": 17,
+
+    "showing": 5,
+
+    "newsletter": 1,
+
+    "qualified": 2,
+
+    "armies": 3,
+
+    "invincible": 1,
+
+    "helping": 1,
+
+    "oligarchical": 1,
+
+    "thirteenth": 16,
+
+    "attempt": 8,
+
+    "rivalry": 1,
+
+    "thick": 2,
+
+    "characterizes": 1,
+
+    "dartmouth": 4,
+
+    "balance": 1,
+
+    "revealed": 2,
+
+    "lock": 1,
+
+    "text": 11,
+
+    "latin": 8,
+
+    "fools": 1,
+
+    "weakening": 4,
+
+    "dearly": 1,
+
+    "kindness": 1,
+
+    "lying": 2,
+
+    "exceeded": 2,
+
+    "hardscrabble": 1,
+
+    "framing": 1,
+
+    "made": 112,
+
+    "madd": 1,
+
+    "1197": 1,
+
+    "being": 21,
+
+    "bade": 1,
+
+    "shawomet": 9,
+
+    "sidenote": 185,
+
+    "contents": 2,
+
+    "winsor": 1,
+
+    "curse": 2,
+
+    "warned": 3,
+
+    "filmer": 1,
+
+    "interval": 3,
+
+    "bullied": 1,
+
+    "status": 5,
+
+    "silenced": 2,
+
+    "trading": 1,
+
+    "nobility": 3,
+
+    "imperious": 1,
+
+    "diffusion": 1,
+
+    "archchaeologia": 1,
+
+    "shires": 2,
+
+    "sewel": 1,
+
+    "stamp": 2,
+
+    "operated": 1,
+
+    "overhanging": 1,
+
+    "bands": 1,
+
+    "ellis": 3,
+
+    "scattered": 5,
+
+    "exodus": 31,
+
+    "government": 120,
+
+    "oracles": 1,
+
+    "known": 32,
+
+    "joshua": 2,
+
+    "stream": 5,
+
+    "seemeth": 1,
+
+    "coalition": 1,
+
+    "crime": 2,
+
+    "stand": 4,
+
+    "rivulets": 1,
+
+    "knows": 2,
+
+    "pavement": 1,
+
+    "characterized": 5,
+
+    "peaked": 1,
+
+    "forward": 2,
+
+    "catholics": 3,
+
+    "jewsharp": 1,
+
+    "specimens": 1,
+
+    "quebec": 1,
+
+    "zealous": 3,
+
+    "deerfield": 6,
+
+    "300": 9,
+
+    "widest": 3,
+
+    "ebook": 11,
+
+    "shone": 1,
+
+    "keenest": 2,
+
+    "crouched": 1,
+
+    "fortifying": 1,
+
+    "warlike": 3,
+
+    "screened": 1,
+
+    "mail": 2,
+
+    "subject": 14,
+
+    "use": 28,
+
+    "edward": 26,
+
+    "tithing": 1,
+
+    "main": 7,
+
+    "liked": 4,
+
+    "headship": 3,
+
+    "revenue": 1,
+
+    "esteemed": 1,
+
+    "concentrated": 1,
+
+    "monopoly": 1,
+
+    "sapling": 1,
+
+    "continuous": 1,
+
+    "grain": 4,
+
+    "credit": 2,
+
+    "likes": 1,
+
+    "summoning": 1,
+
+    "waste": 1,
+
+    "cries": 2,
+
+    "brook": 5,
+
+    "approximation": 1,
+
+    "recanted": 1,
+
+    "curbing": 2,
+
+    "daybreak": 2,
+
+    "bearing": 3,
+
+    "broom": 1,
+
+    "understandings": 1,
+
+    "includes": 1,
+
+    "dry": 3,
+
+    "establishment": 7,
+
+    "poisoned": 1,
+
+    "crier": 1,
+
+    "storehouse": 2,
+
+    "messengers": 2,
+
+    "creditable": 2,
+
+    "321": 1,
+
+    "grafton": 1,
+
+    "originate": 1,
+
+    "compass": 2,
+
+    "324": 2,
+
+    "pithy": 1,
+
+    "deputies": 12,
+
+    "dispose": 3,
+
+    "cothren": 1,
+
+    "stain": 2,
+
+    "ball": 2,
+
+    "uncommon": 2,
+
+    "reckless": 2,
+
+    "hither": 3,
+
+    "threats": 3,
+
+    "transformed": 2,
+
+    "suppressed": 3,
+
+    "outdone": 1,
+
+    "fulfil": 1,
+
+    "make": 39,
+
+    "included": 8,
+
+    "reprehensible": 1,
+
+    "ingratitude": 1,
+
+    "hostilities": 1,
+
+    "opposed": 3,
+
+    "penetrated": 1,
+
+    "gregory": 4,
+
+    "rebuke": 2,
+
+    "questioned": 1,
+
+    "nantasket": 1,
+
+    "surpliced": 2,
+
+    "gentry": 2,
+
+    "rapidly": 4,
+
+    "tyrannical": 1,
+
+    "stake": 3,
+
+    "witness": 1,
+
+    "reprinted": 2,
+
+    "due": 23,
+
+    "conform": 2,
+
+    "threat": 6,
+
+    "invention": 1,
+
+    "judith": 2,
+
+    "avowed": 1,
+
+    "oppresses": 1,
+
+    "commit": 1,
+
+    "sorrow": 1,
+
+    "curb": 5,
+
+    "trees": 3,
+
+    "observed": 7,
+
+    "observes": 2,
+
+    "hiding": 3,
+
+    "happier": 1,
+
+    "bank": 1,
+
+    "entrenched": 1,
+
+    "oppressed": 3,
+
+    "meaning": 4,
+
+    "drawing": 1,
+
+    "orbit": 1,
+
+    "band": 2,
+
+    "released": 1,
+
+    "salutary": 2,
+
+    "10": 7,
+
+    "11": 3,
+
+    "12": 9,
+
+    "lothrop": 2,
+
+    "13": 3,
+
+    "14": 5,
+
+    "august": 12,
+
+    "15": 7,
+
+    "16": 5,
+
+    "17": 4,
+
+    "18": 5,
+
+    "19": 5,
+
+    "shortcoming": 1,
+
+    "entertaine": 1,
+
+    "allied": 3,
+
+    "coventry": 1,
+
+    "benefit": 3,
+
+    "highest": 7,
+
+    "369": 1,
+
+    "sober": 2,
+
+    "allies": 4,
+
+    "ministry": 5,
+
+    "20": 7,
+
+    "21": 5,
+
+    "22": 3,
+
+    "23": 3,
+
+    "24": 6,
+
+    "shelter": 4,
+
+    "expel": 2,
+
+    "25": 3,
+
+    "26": 10,
+
+    "27": 3,
+
+    "28": 6,
+
+    "experiments": 1,
+
+    "latitude": 4,
+
+    "29": 4,
+
+    "industry": 4,
+
+    "372": 1,
+
+    "long": 63,
+
+    "remember": 9,
+
+    "1st": 1,
+
+    "377": 1,
+
+    "thumbscrews": 1,
+
+    "378": 1,
+
+    "379": 1,
+
+    "grumbled": 1,
+
+    "podunks": 1,
+
+    "30": 6,
+
+    "31": 5,
+
+    "32": 4,
+
+    "33": 4,
+
+    "34": 4,
+
+    "35": 4,
+
+    "expression": 6,
+
+    "36": 3,
+
+    "childhood": 3,
+
+    "37": 4,
+
+    "38": 5,
+
+    "reprisals": 1,
+
+    "39": 3,
+
+    "380": 1,
+
+    "many": 74,
+
+    "grotesqueness": 1,
+
+    "stay": 11,
+
+    "seducer": 1,
+
+    "dedicate": 1,
+
+    "wisdome": 1,
+
+    "2d": 5,
+
+    "sovereigns": 1,
+
+    "extensive": 4,
+
+    "impart": 1,
+
+    "inspire": 1,
+
+    "increasing": 6,
+
+    "charlemagne": 1,
+
+    "progress": 9,
+
+    "respected": 2,
+
+    "40": 3,
+
+    "41": 3,
+
+    "42": 1,
+
+    "43": 2,
+
+    "mamma": 1,
+
+    "devote": 1,
+
+    "confederated": 3,
+
+    "44": 1,
+
+    "45": 3,
+
+    "treat": 8,
+
+    "agent": 6,
+
+    "wool": 2,
+
+    "46": 2,
+
+    "starving": 1,
+
+    "47": 2,
+
+    "militia": 3,
+
+    "48": 1,
+
+    "woodland": 2,
+
+    "wholly": 1,
+
+    "odious": 1,
+
+    "falsity": 1,
+
+    "bishop": 6,
+
+    "49": 1,
+
+    "susquehannocks": 2,
+
+    "rapid": 2,
+
+    "numbers": 10,
+
+    "expressing": 1,
+
+    "seven": 15,
+
+    "390": 1,
+
+    "391": 1,
+
+    "395": 1,
+
+    "3d": 2,
+
+    "loom": 1,
+
+    "curteous": 1,
+
+    "dynasty": 1,
+
+    "barn": 1,
+
+    "bark": 1,
+
+    "wood": 4,
+
+    "50": 6,
+
+    "51": 1,
+
+    "naples": 2,
+
+    "52": 1,
+
+    "cabots": 1,
+
+    "53": 1,
+
+    "woodbury": 1,
+
+    "54": 3,
+
+    "55": 1,
+
+    "surprise": 1,
+
+    "admitted": 7,
+
+    "56": 1,
+
+    "richness": 1,
+
+    "57": 3,
+
+    "58": 2,
+
+    "maps": 1,
+
+    "59": 1,
+
+    "murderer": 1,
+
+    "seeds": 11,
+
+    "invited": 3,
+
+    "complaints": 5,
+
+    "wont": 2,
+
+    "bridges": 1,
+
+    "warwick": 9,
+
+    "modification": 1,
+
+    "crushed": 3,
+
+    "look": 13,
+
+    "duress": 2,
+
+    "criminality": 1,
+
+    "grounds": 3,
+
+    "intercession": 1,
+
+    "salted": 1,
+
+    "achieving": 3,
+
+    "murdered": 8,
+
+    "nuts": 1,
+
+    "84116": 1,
+
+    "carnal": 1,
+
+    "purchasers": 1,
+
+    "saconet": 1,
+
+    "60": 4,
+
+    "61": 3,
+
+    "62": 2,
+
+    "eccentric": 3,
+
+    "63": 2,
+
+    "64": 2,
+
+    "callow": 1,
+
+    "65": 1,
+
+    "66": 2,
+
+    "67": 2,
+
+    "68": 1,
+
+    "knock": 1,
+
+    "69": 1,
+
+    "needed": 6,
+
+    "pierson": 2,
+
+    "mass": 10,
+
+    "lord": 32,
+
+    "revoke": 1,
+
+    "blankets": 2,
+
+    "jurisprudence": 1,
+
+    "speed": 1,
+
+    "auction": 1,
+
+    "admit": 2,
+
+    "common": 33,
+
+    "interest": 20,
+
+    "themselves": 60,
+
+    "twit": 1,
+
+    "ionic": 1,
+
+    "70": 3,
+
+    "71": 1,
+
+    "72": 2,
+
+    "73": 1,
+
+    "74": 2,
+
+    "75": 4,
+
+    "76": 1,
+
+    "77": 1,
+
+    "78": 2,
+
+    "79": 2,
+
+    "barbarian": 1,
+
+    "winning": 6,
+
+    "wessagusset": 4,
+
+    "apply": 3,
+
+    "politician": 1,
+
+    "starved": 1,
+
+    "mary": 18,
+
+    "separated": 3,
+
+    "histories": 3,
+
+    "foreseen": 1,
+
+    "eagerly": 1,
+
+    "landing": 4,
+
+    "disloyal": 1,
+
+    "yields": 1,
+
+    "80": 5,
+
+    "81": 1,
+
+    "milton": 10,
+
+    "step": 2,
+
+    "fisheries": 1,
+
+    "82": 2,
+
+    "83": 2,
+
+    "revolt": 14,
+
+    "disgust": 1,
+
+    "84": 2,
+
+    "85": 3,
+
+    "comrades": 1,
+
+    "mark": 3,
+
+    "tribute": 4,
+
+    "86": 1,
+
+    "miantonomo": 23,
+
+    "87": 1,
+
+    "88": 2,
+
+    "mussulman": 3,
+
+    "89": 1,
+
+    "swarms": 1,
+
+    "estates": 2,
+
+    "quincy": 2,
+
+    "pugnacious": 1,
+
+    "loss": 6,
+
+    "relate": 1,
+
+    "lost": 16,
+
+    "90": 3,
+
+    "91": 1,
+
+    "92": 2,
+
+    "trifling": 1,
+
+    "93": 1,
+
+    "emphasizing": 1,
+
+    "mahomet": 2,
+
+    "94": 2,
+
+    "preliminary": 1,
+
+    "95": 3,
+
+    "controlling": 1,
+
+    "96": 2,
+
+    "97": 1,
+
+    "repayment": 1,
+
+    "trastamare": 1,
+
+    "98": 2,
+
+    "99": 1,
+
+    "van": 3,
+
+    "worn": 1,
+
+    "work": 124,
+
+    "lose": 4,
+
+    "cattle": 6,
+
+    "skulking": 1,
+
+    "sterner": 1,
+
+    "rickety": 1,
+
+    "priceless": 3,
+
+    "courier": 1,
+
+    "providence": 27,
+
+    "convince": 1,
+
+    "delays": 1,
+
+    "irritating": 2,
+
+    "missionary": 5,
+
+    "wore": 1,
+
+    "word": 10,
+
+    "stated": 5,
+
+    "theory": 17,
+
+    "love": 9,
+
+    "extension": 4,
+
+    "foundation": 27,
+
+    "secret": 8,
+
+    "boldest": 1,
+
+    "unwise": 3,
+
+    "across": 9,
+
+    "agreeth": 1,
+
+    "rushed": 4,
+
+    "wellnigh": 2,
+
+    "massasoit": 9,
+
+    "eat": 2,
+
+    "congregation": 12,
+
+    "inaugurate": 1,
+
+    "europe": 33,
+
+    "mitigated": 1,
+
+    "reward": 1,
+
+    "loud": 2,
+
+    "prevailed": 7,
+
+    "simplest": 1,
+
+    "catcht": 1,
+
+    "revilings": 1,
+
+    "converts": 7,
+
+    "gathering": 4,
+
+    "hunted": 1,
+
+    "degenerate": 3,
+
+    "opinion": 20,
+
+    "insisting": 2,
+
+    "monastery": 1,
+
+    "soldier": 5,
+
+    "bartlett": 1,
+
+    "hotly": 1,
+
+    "devotion": 1,
+
+    "exists": 1,
+
+    "stir": 2,
+
+    "proofreaders": 1,
+
+    "indian": 53,
+
+    "insult": 2,
+
+    "escort": 1,
+
+    "nyantics": 2,
+
+    "wows": 1,
+
+    "existence": 21,
+
+    "pretence": 2,
+
+    "threshold": 2,
+
+    "unqualified": 1,
+
+    "expressive": 1,
+
+    "defendant": 1,
+
+    "ramifications": 2,
+
+    "aquedneck": 6,
+
+    "html": 1,
+
+    "hunter": 2,
+
+    "unscrupulously": 1,
+
+    "proverbial": 1,
+
+    "exploration": 2,
+
+    "unsettled": 1,
+
+    "townspeople": 2,
+
+    "rushes": 1,
+
+    "paymaster": 1,
+
+    "qualification": 2,
+
+    "bosphorus": 1,
+
+    "nottingham": 1,
+
+    "preparing": 3,
+
+    "provision": 5,
+
+    "assaulted": 2,
+
+    "bays": 1,
+
+    "thrust": 3,
+
+    "finis": 1,
+
+    "demeanour": 3,
+
+    "ineffaceable": 1,
+
+    "epochs": 2,
+
+    "seems": 24,
+
+    "scientific": 5,
+
+    "strung": 1,
+
+    "winter": 13,
+
+    "transacted": 1,
+
+    "platform": 6,
+
+    "enmity": 3,
+
+    "sojourn": 1,
+
+    "walking": 3,
+
+    "unheeded": 3,
+
+    "extinct": 3,
+
+    "sweetest": 1,
+
+    "entrapped": 1,
+
+    "fairness": 2,
+
+    "tenants": 1,
+
+    "heartily": 2,
+
+    "grave": 9,
+
+    "advantage": 8,
+
+    "stephen": 2,
+
+    "spent": 4,
+
+    "instead": 10,
+
+    "attacking": 1,
+
+    "brayton": 1,
+
+    "indies": 1,
+
+    "frederick": 3,
+
+    "stolen": 1,
+
+    "unlink": 1,
+
+    "disorderly": 4,
+
+    "slightest": 4,
+
+    "1207": 1,
+
+    "temporary": 2,
+
+    "hands": 21,
+
+    "transcendentalist": 1,
+
+    "egg": 1,
+
+    "canaan": 4,
+
+    "sufficiently": 4,
+
+    "year": 51,
+
+    "allowed": 9,
+
+    "cruelties": 1,
+
+    "staying": 3,
+
+    "awful": 2,
+
+    "branch": 6,
+
+    "heresiarchs": 1,
+
+    "neal": 1,
+
+    "1215": 1,
+
+    "yeere": 1,
+
+    "enclosure": 3,
+
+    "doctrinal": 3,
+
+    "vii": 6,
+
+    "understanding": 3,
+
+    "empire": 36,
+
+    "mayhew": 4,
+
+    "silence": 5,
+
+    "near": 24,
+
+    "dykes": 1,
+
+    "algernon": 1,
+
+    "victims": 7,
+
+    "sanctuary": 1,
+
+    "inspired": 3,
+
+    "economy": 2,
+
+    "community": 18,
+
+    "dyer": 6,
+
+    "disfranchisement": 3,
+
+    "version": 6,
+
+    "malcontents": 1,
+
+    "staunch": 3,
+
+    "stop": 4,
+
+    "humbled": 2,
+
+    "despotic": 8,
+
+    "consented": 2,
+
+    "usefulness": 1,
+
+    "boston": 135,
+
+    "crotchetty": 1,
+
+    "least": 15,
+
+    "ein": 1,
+
+    "drilled": 1,
+
+    "immediately": 9,
+
+    "twaine": 1,
+
+    "shiftless": 2,
+
+    "variations": 2,
+
+    "boldness": 1,
+
+    "computers": 2,
+
+    "agreed": 11,
+
+    "secretly": 1,
+
+    "cultivated": 1,
+
+    "fostering": 1,
+
+    "unfriendly": 5,
+
+    "wardwell": 1,
+
+    "learn": 9,
+
+    "munster": 1,
+
+    "dreary": 1,
+
+    "neck": 2,
+
+    "logical": 2,
+
+    "intrusion": 1,
+
+    "severe": 2,
+
+    "feathering": 1,
+
+    "lease": 2,
+
+    "exploit": 1,
+
+    "brandy": 1,
+
+    "instructions": 4,
+
+    "notes": 2,
+
+    "evidence": 3,
+
+    "communion": 3,
+
+    "errand": 1,
+
+    "1264": 1,
+
+    "official": 4,
+
+    "1263": 1,
+
+    "palatine": 1,
+
+    "ohio": 1,
+
+    "borough": 1,
+
+    "ethics": 1,
+
+    "brittany": 1,
+
+    "spring": 8,
+
+    "samson": 1,
+
+    "generated": 1,
+
+    "leave": 13,
+
+    "excluding": 3,
+
+    "cottage": 1,
+
+    "eulogy": 1,
+
+    "disown": 1,
+
+    "knave": 1,
+
+    "imperfectly": 1,
+
+    "faint": 1,
+
+    "peoples": 14,
+
+    "ell": 1,
+
+    "minister": 9,
+
+    "need": 15,
+
+    "vexed": 1,
+
+    "kingcraft": 2,
+
+    "puritanism": 21,
+
+    "shade": 1,
+
+    "often": 15,
+
+    "obtaining": 3,
+
+    "kindly": 4,
+
+    "tests": 1,
+
+    "ely": 1,
+
+    "canada": 2,
+
+    "traditions": 2,
+
+    "1267": 1,
+
+    "1265": 2,
+
+    "loose": 7,
+
+    "loathsome": 1,
+
+    "hardly": 22,
+
+    "useful": 4,
+
+    "lasting": 1,
+
+    "unmanageable": 1,
+
+    "liberally": 1,
+
+    "private": 12,
+
+    "10th": 1,
+
+    "complained": 2,
+
+    "braddock": 1,
+
+    "narcotic": 1,
+
+    "trespassers": 1,
+
+    "peopled": 1,
+
+    "precisely": 2,
+
+    "vol": 12,
+
+    "calamity": 2,
+
+    "bridgewater": 2,
+
+    "accomplish": 3,
+
+    "intentionally": 2,
+
+    "richards": 1,
+
+    "end": 52,
+
+    "bullet": 2,
+
+    "lines": 1,
+
+    "scum": 1,
+
+    "eng": 2,
+
+    "forty": 22,
+
+    "slippery": 3,
+
+    "noted": 1,
+
+    "special": 9,
+
+    "contempt": 1,
+
+    "environment": 1,
+
+    "undertaking": 1,
+
+    "royalties": 3,
+
+    "pulpit": 1,
+
+    "progressive": 2,
+
+    "achieved": 7,
+
+    "kickt": 1,
+
+    "shaft": 1,
+
+    "tries": 1,
+
+    "wanting": 3,
+
+    "education": 8,
+
+    "called": 40,
+
+    "churchman": 2,
+
+    "charter": 48,
+
+    "nationalities": 6,
+
+    "enthusiasts": 1,
+
+    "turns": 1,
+
+    "newly": 6,
+
+    "fullest": 1,
+
+    "vaster": 1,
+
+    "gradually": 10,
+
+    "tinctured": 1,
+
+    "tried": 10,
+
+    "meetinghouse": 1,
+
+    "charlestown": 4,
+
+    "aryan": 1,
+
+    "outbreak": 1,
+
+    "succeeding": 1,
+
+    "brave": 1,
+
+    "narrow": 11,
+
+    "stye": 1,
+
+    "proceedings": 13,
+
+    "pratings": 1,
+
+    "aped": 1,
+
+    "shape": 11,
+
+    "comport": 1,
+
+    "seventy": 13,
+
+    "momentous": 1,
+
+    "wrathful": 1,
+
+    "allegiance": 6,
+
+    "harassed": 1,
+
+    "hudson": 5,
+
+    "forth": 31,
+
+    "reinforced": 4,
+
+    "leverett": 5,
+
+    "thoroughness": 4,
+
+    "400": 4,
+
+    "seventh": 3,
+
+    "charming": 3,
+
+    "weapons": 1,
+
+    "prussia": 1,
+
+    "persecuted": 2,
+
+    "anabaptists": 1,
+
+    "skilfully": 5,
+
+    "accusations": 1,
+
+    "hadley": 9,
+
+    "melville": 5,
+
+    "valid": 3,
+
+    "ravaged": 1,
+
+    "asked": 7,
+
+    "pauper": 1,
+
+    "era": 7,
+
+    "rights": 12,
+
+    "administer": 2,
+
+    "ere": 1,
+
+    "share": 9,
+
+    "keyes": 1,
+
+    "thoroughly": 5,
+
+    "crucifixion": 1,
+
+    "chairman": 2,
+
+    "sharp": 3,
+
+    "persecutes": 1,
+
+    "temperament": 5,
+
+    "strongest": 9,
+
+    "flies": 1,
+
+    "indemnity": 1,
+
+    "degradation": 1,
+
+    "trial": 12,
+
+    "lollardism": 2,
+
+    "finest": 3,
+
+    "declares": 4,
+
+    "etc": 3,
+
+    "bridle": 1,
+
+    "churchmen": 2,
+
+    "doctrines": 16,
+
+    "links": 4,
+
+    "moist": 1,
+
+    "wielded": 1,
+
+    "subjected": 2,
+
+    "below": 8,
+
+    "voltaire": 1,
+
+    "remedies": 1,
+
+    "intimately": 1,
+
+    "woods": 2,
+
+    "surviving": 3,
+
+    "estate": 1,
+
+    "shall": 28,
+
+    "spicy": 1,
+
+    "metacom": 1,
+
+    "breasts": 1,
+
+    "anglia": 4,
+
+    "taunton": 5,
+
+    "rigorous": 1,
+
+    "followers": 14,
+
+    "foretell": 1,
+
+    "races": 2,
+
+    "tribe": 23,
+
+    "449": 1,
+
+    "joseph": 7,
+
+    "narragansetts": 28,
+
+    "millstone": 1,
+
+    "shame": 2,
+
+    "martha": 4,
+
+    "cornwall": 1,
+
+    "financial": 2,
+
+    "ferocity": 1,
+
+    "achaian": 1,
+
+    "tyndall": 1,
+
+    "righteousness": 1,
+
+    "running": 4,
+
+    "gospels": 1,
+
+    "eve": 1,
+
+    "credits": 1,
+
+    "chose": 4,
+
+    "whispers": 1,
+
+    "render": 1,
+
+    "betokening": 1,
+
+    "wampum": 5,
+
+    "republics": 3,
+
+    "declared": 13,
+
+    "bickerings": 1,
+
+    "relieve": 1,
+
+    "complying": 3,
+
+    "plots": 1,
+
+    "martin": 1,
+
+    "chord": 1,
+
+    "forms": 7,
+
+    "axiom": 1,
+
+    "summon": 3,
+
+    "victories": 4,
+
+    "achievements": 2,
+
+    "farther": 3,
+
+    "maintain": 3,
+
+    "establishing": 3,
+
+    "fairfield": 1,
+
+    "annihilate": 1,
+
+    "companies": 6,
+
+    "zunis": 1,
+
+    "476": 5,
+
+    "accusation": 2,
+
+    "differently": 2,
+
+    "pounds": 1,
+
+    "sicambrian": 1,
+
+    "represented": 12,
+
+    "remain": 6,
+
+    "psalme": 2,
+
+    "expected": 7,
+
+    "voices": 3,
+
+    "countries": 16,
+
+    "eye": 2,
+
+    "himself": 35,
+
+    "wanted": 3,
+
+    "psalms": 1,
+
+    "glaring": 1,
+
+    "treble": 1,
+
+    "springfield": 5,
+
+    "continent": 15,
+
+    "disturbance": 2,
+
+    "beguiling": 1,
+
+    "superposing": 1,
+
+    "argued": 2,
+
+    "simultaneous": 1,
+
+    "another": 38,
+
+    "enemy": 15,
+
+    "lowell": 2,
+
+    "darwinian": 1,
+
+    "gray": 1,
+
+    "drunken": 1,
+
+    "indemnify": 1,
+
+    "stillness": 1,
+
+    "magician": 1,
+
+    "centres": 1,
+
+    "bared": 1,
+
+    "cropping": 1,
+
+    "triumph": 5,
+
+    "horror": 2,
+
+    "defray": 1,
+
+    "ratification": 2,
+
+    "black": 5,
+
+    "rousseau": 1,
+
+    "fortunate": 5,
+
+    "such": 233,
+
+    "judicature": 1,
+
+    "recovered": 3,
+
+    "describe": 2,
+
+    "countenance": 1,
+
+    "defiles": 1,
+
+    "incorporation": 7,
+
+    "dwelt": 7,
+
+    "presently": 16,
+
+    "wealthy": 4,
+
+    "florida": 3,
+
+    "burrowes": 2,
+
+    "administration": 8,
+
+    "sterling": 1,
+
+    "dwell": 3,
+
+    "remains": 1,
+
+    "misgovernment": 1,
+
+    "clemency": 1,
+
+    "features": 12,
+
+    "incomplete": 1,
+
+    "openly": 3,
+
+    "charta": 2,
+
+    "sounded": 2,
+
+    "white": 55,
+
+    "briefe": 1,
+
+    "menacing": 1,
+
+    "huge": 3,
+
+    "occupants": 2,
+
+    "hugh": 3,
+
+    "biddings": 1,
+
+    "exclaimed": 1,
+
+    "might": 101,
+
+    "sharing": 2,
+
+    "expressions": 1,
+
+    "servants": 4,
+
+    "museum": 1,
+
+    "trumpet": 2,
+
+    "leads": 3,
+
+    "sued": 1,
+
+    "calvinistic": 6,
+
+    "patriotism": 1,
+
+    "clothing": 1,
+
+    "fields": 2,
+
+    "cousins": 3,
+
+    "thieving": 1,
+
+    "furnishing": 1,
+
+    "next": 25,
+
+    "bigotry": 3,
+
+    "apogee": 1,
+
+    "submit": 5,
+
+    "occupy": 6,
+
+    "import": 4,
+
+    "transcriber": 1,
+
+    "classes": 3,
+
+    "originator": 1,
+
+    "contrition": 1,
+
+    "conclusion": 2,
+
+    "durable": 1,
+
+    "habeas": 2,
+
+    "doubtless": 8,
+
+    "satraps": 1,
+
+    "central": 5,
+
+    "impose": 1,
+
+    "samoset": 1,
+
+    "trademark": 14,
+
+    "memorial": 6,
+
+    "supporting": 3,
+
+    "factor": 1,
+
+    "derived": 2,
+
+    "undoing": 1,
+
+    "severity": 1,
+
+    "news": 12,
+
+    "greek": 8,
+
+    "griffin": 1,
+
+    "green": 7,
+
+    "race": 7,
+
+    "effectively": 2,
+
+    "was": 1318,
+
+    "war": 89,
+
+    "grew": 8,
+
+    "way": 56,
+
+    "wagons": 2,
+
+    "grey": 1,
+
+    "signers": 2,
+
+    "sensation": 1,
+
+    "summons": 1,
+
+    "israel": 6,
+
+    "hurled": 3,
+
+    "attempted": 4,
+
+    "interpretable": 1,
+
+    "play": 4,
+
+    "peters": 4,
+
+    "yorktown": 1,
+
+    "fought": 4,
+
+    "foes": 1,
+
+    "quickly": 4,
+
+    "taxes": 6,
+
+    "decide": 7,
+
+    "mangle": 1,
+
+    "insurrection": 4,
+
+    "issues": 2,
+
+    "synonymous": 1,
+
+    "moribund": 1,
+
+    "instruments": 3,
+
+    "collections": 5,
+
+    "far": 72,
+
+    "fat": 1,
+
+    "raff": 1,
+
+    "taxed": 2,
+
+    "issued": 7,
+
+    "plan": 4,
+
+    "naseby": 3,
+
+    "stigmatized": 1,
+
+    "double": 1,
+
+    "erecting": 1,
+
+    "erasmus": 2,
+
+    "comprising": 1,
+
+    "rendering": 1,
+
+    "flimsiness": 1,
+
+    "horrid": 1,
+
+    "remunerated": 1,
+
+    "lowest": 1,
+
+    "papacy": 6,
+
+    "stoughton": 2,
+
+    "comfortable": 5,
+
+    "fagots": 1,
+
+    "institutes": 1,
+
+    "suit": 1,
+
+    "completely": 5,
+
+    "rested": 1,
+
+    "denial": 2,
+
+    "dividing": 1,
+
+    "intensify": 1,
+
+    "study": 16,
+
+    "widger": 1,
+
+    "differences": 9,
+
+    "irish": 1,
+
+    "fever": 3,
+
+    "vatican": 1,
+
+    "piety": 1,
+
+    "prelatical": 1,
+
+    "clothier": 1,
+
+    "gain": 2,
+
+    "burned": 12,
+
+    "conquering": 7,
+
+    "receiving": 2,
+
+    "hume": 1,
+
+    "web": 1,
+
+    "memories": 2,
+
+    "older": 1,
+
+    "physician": 1,
+
+    "relieved": 2,
+
+    "burnet": 1,
+
+    "quaint": 8,
+
+    "sided": 1,
+
+    "climate": 3,
+
+    "bigoted": 2,
+
+    "entrusted": 4,
+
+    "meanings": 1,
+
+    "great": 119,
+
+    "rags": 1,
+
+    "happened": 6,
+
+    "ferdinando": 13,
+
+    "ordained": 2,
+
+    "northward": 2,
+
+    "wanton": 1,
+
+    "discoveries": 1,
+
+    "proceeded": 7,
+
+    "aesop": 1,
+
+    "rage": 2,
+
+    "pleased": 2,
+
+    "sides": 5,
+
+    "indebted": 2,
+
+    "hull": 1,
+
+    "organizing": 3,
+
+    "grim": 8,
+
+    "dick": 1,
+
+    "christenings": 1,
+
+    "arrest": 1,
+
+    "distinction": 2,
+
+    "despised": 3,
+
+    "fee": 8,
+
+    "section": 8,
+
+    "discontent": 6,
+
+    "subservient": 2,
+
+    "originated": 1,
+
+    "centralized": 4,
+
+    "looks": 3,
+
+    "obscurely": 1,
+
+    "provoke": 1,
+
+    "sullenly": 1,
+
+    "presented": 5,
+
+    "descried": 1,
+
+    "theoretically": 1,
+
+    "enrich": 1,
+
+    "few": 45,
+
+    "unwittingly": 1,
+
+    "strain": 1,
+
+    "canaries": 1,
+
+    "heirs": 2,
+
+    "laughed": 1,
+
+    "sunk": 2,
+
+    "opened": 1,
+
+    "plea": 1,
+
+    "inner": 1,
+
+    "strait": 1,
+
+    "voyage": 7,
+
+    "produced": 5,
+
+    "baptized": 2,
+
+    "personally": 1,
+
+    "outside": 6,
+
+    "effect": 16,
+
+    "elementary": 1,
+
+    "explaining": 1,
+
+    "topic": 1,
+
+    "choked": 1,
+
+    "darkest": 2,
+
+    "who": 215,
+
+    "erection": 1,
+
+    "politics": 8,
+
+    "stigma": 1,
+
+    "game": 2,
+
+    "tryst": 1,
+
+    "volley": 1,
+
+    "faith": 5,
+
+    "why": 14,
+
+    "remark": 2,
+
+    "founders": 10,
+
+    "died": 20,
+
+    "mystical": 2,
+
+    "damned": 1,
+
+    "intelligible": 4,
+
+    "1311": 1,
+
+    "hospitality": 1,
+
+    "diet": 1,
+
+    "david": 2,
+
+    "dies": 1,
+
+    "win": 4,
+
+    "lawyer": 2,
+
+    "godhead": 1,
+
+    "wit": 2,
+
+    "barter": 1,
+
+    "dutchmen": 3,
+
+    "diminish": 2,
+
+    "recommended": 3,
+
+    "linguist": 2,
+
+    "quailed": 1,
+
+    "barriers": 1,
+
+    "sorcery": 1,
+
+    "stagnate": 2,
+
+    "matters": 10,
+
+    "administrative": 1,
+
+    "various": 14,
+
+    "attention": 6,
+
+    "visit": 7,
+
+    "denied": 7,
+
+    "extent": 15,
+
+    "smote": 1,
+
+    "pleasanter": 1,
+
+    "grunts": 1,
+
+    "voted": 1,
+
+    "losing": 3,
+
+    "fond": 3,
+
+    "skins": 1,
+
+    "venison": 1,
+
+    "fit": 10,
+
+    "analyzing": 1,
+
+    "albigensian": 2,
+
+    "familiarly": 1,
+
+    "fix": 3,
+
+    "honest": 4,
+
+    "biddeford": 1,
+
+    "rank": 5,
+
+    "pension": 1,
+
+    "assumption": 4,
+
+    "outlet": 1,
+
+    "rang": 1,
+
+    "preparatory": 2,
+
+    "deaths": 5,
+
+    "addition": 1,
+
+    "doubts": 1,
+
+    "skeats": 1,
+
+    "gang": 1,
+
+    "sure": 8,
+
+    "grow": 5,
+
+    "aggressions": 1,
+
+    "bothwell": 1,
+
+    "excited": 2,
+
+    "ancestor": 1,
+
+    "supremacy": 15,
+
+    "ordinarily": 1,
+
+    "proceeding": 2,
+
+    "am": 3,
+
+    "dreaded": 5,
+
+    "an": 243,
+
+    "former": 7,
+
+    "panic": 3,
+
+    "eventful": 1,
+
+    "extend": 4,
+
+    "as": 714,
+
+    "yonder": 1,
+
+    "at": 464,
+
+    "unanimously": 1,
+
+    "interpretation": 1,
+
+    "looking": 2,
+
+    "formed": 10,
+
+    "prove": 6,
+
+    "be": 400,
+
+    "cherished": 8,
+
+    "virus": 1,
+
+    "burgundians": 2,
+
+    "revocation": 2,
+
+    "accusing": 1,
+
+    "stripping": 1,
+
+    "notions": 5,
+
+    "systems": 1,
+
+    "sudden": 8,
+
+    "groundwork": 1,
+
+    "by": 584,
+
+    "plainest": 1,
+
+    "tumbled": 1,
+
+    "abandonment": 1,
+
+    "foot": 6,
+
+    "wills": 1,
+
+    "heralded": 1,
+
+    "charge": 12,
+
+    "keeping": 6,
+
+    "tawny": 2,
+
+    "laymen": 2,
+
+    "mythical": 1,
+
+    "familiar": 8,
+
+    "co": 1,
+
+    "breathe": 1,
+
+    "food": 5,
+
+    "tropical": 1,
+
+    "withdrew": 2,
+
+    "cx": 1,
+
+    "unfit": 1,
+
+    "presbyterians": 3,
+
+    "freely": 8,
+
+    "huts": 1,
+
+    "observers": 1,
+
+    "de": 5,
+
+    "11th": 2,
+
+    "admits": 2,
+
+    "interstices": 1,
+
+    "schism": 2,
+
+    "language": 12,
+
+    "do": 53,
+
+    "woe": 2,
+
+    "colonized": 1,
+
+    "secularization": 1,
+
+    "observe": 12,
+
+    "dr": 10,
+
+    "painfully": 3,
+
+    "furnish": 1,
+
+    "orestes": 1,
+
+    "natick": 2,
+
+    "accomplished": 3,
+
+    "attacks": 4,
+
+    "won": 14,
+
+    "rare": 6,
+
+    "strictness": 1,
+
+    "corpses": 1,
+
+    "encroachment": 1,
+
+    "preceded": 3,
+
+    "criticism": 1,
+
+    "needy": 1,
+
+    "ed": 3,
+
+    "gorges": 37,
+
+    "needs": 4,
+
+    "specious": 1,
+
+    "which": 522,
+
+    "terse": 1,
+
+    "coinage": 2,
+
+    "rebuking": 1,
+
+    "el": 1,
+
+    "er": 1,
+
+    "profound": 5,
+
+    "never": 49,
+
+    "cherishing": 2,
+
+    "rechristened": 1,
+
+    "piece": 3,
+
+    "intervened": 1,
+
+    "foe": 2,
+
+    "foible": 1,
+
+    "gaul": 6,
+
+    "tears": 2,
+
+    "unmistakable": 1,
+
+    "for": 595,
+
+    "twilight": 2,
+
+    "fox": 4,
+
+    "content": 1,
+
+    "jefferson": 5,
+
+    "isthmus": 1,
+
+    "dine": 1,
+
+    "fatherland": 2,
+
+    "perhaps": 42,
+
+    "plot": 1,
+
+    "alert": 2,
+
+    "terminology": 1,
+
+    "rate": 6,
+
+    "skill": 6,
+
+    "prophecy": 1,
+
+    "prosperity": 1,
+
+    "divide": 1,
+
+    "proprietor": 2,
+
+    "martyrdoms": 1,
+
+    "contrary": 2,
+
+    "covert": 1,
+
+    "contend": 1,
+
+    "covers": 2,
+
+    "governors": 3,
+
+    "thwart": 2,
+
+    "thence": 6,
+
+    "walters": 1,
+
+    "go": 25,
+
+    "layman": 1,
+
+    "brookfield": 12,
+
+    "surmises": 1,
+
+    "peveril": 1,
+
+    "form": 21,
+
+    "500": 3,
+
+    "501": 1,
+
+    "gate": 1,
+
+    "renew": 1,
+
+    "fort": 10,
+
+    "smouldering": 1,
+
+    "he": 354,
+
+    "lapsed": 1,
+
+    "placed": 10,
+
+    "transcription": 1,
+
+    "geneva": 1,
+
+    "parliaments": 1,
+
+    "divine": 7,
+
+    "welfare": 3,
+
+    "memorable": 6,
+
+    "coincided": 2,
+
+    "flourish": 1,
+
+    "foul": 1,
+
+    "appeared": 6,
+
+    "germinating": 1,
+
+    "else": 6,
+
+    "four": 29,
+
+    "contemplate": 1,
+
+    "easily": 8,
+
+    "schemed": 1,
+
+    "unwontedly": 1,
+
+    "if": 101,
+
+    "violently": 2,
+
+    "ii": 45,
+
+    "likely": 34,
+
+    "disputed": 2,
+
+    "fro": 1,
+
+    "maturity": 3,
+
+    "in": 2228,
+
+    "tutelar": 2,
+
+    "dismissed": 1,
+
+    "is": 395,
+
+    "doorway": 1,
+
+    "schemes": 11,
+
+    "it": 828,
+
+    "aimed": 5,
+
+    "iv": 6,
+
+    "disputes": 4,
+
+    "cuttyhunk": 1,
+
+    "ix": 1,
+
+    "talked": 5,
+
+    "spaniard": 3,
+
+    "lively": 2,
+
+    "avengers": 1,
+
+    "supplement": 1,
+
+    "contrast": 10,
+
+    "shakespeare": 1,
+
+    "alteration": 1,
+
+    "gave": 23,
+
+    "527": 1,
+
+    "crafty": 2,
+
+    "essex": 4,
+
+    "become": 41,
+
+    "johnston": 2,
+
+    "eagerness": 1,
+
+    "disposal": 1,
+
+    "settlement": 18,
+
+    "solemnize": 1,
+
+    "literature": 12,
+
+    "accomplices": 1,
+
+    "dire": 2,
+
+    "customary": 2,
+
+    "sending": 7,
+
+    "irreparable": 1,
+
+    "ability": 4,
+
+    "abyss": 1,
+
+    "belief": 2,
+
+    "ottawa": 1,
+
+    "delight": 2,
+
+    "vassal": 2,
+
+    "immigration": 1,
+
+    "roaming": 1,
+
+    "reclaimed": 1,
+
+    "suggestion": 5,
+
+    "knew": 10,
+
+    "sullen": 2,
+
+    "wearers": 1,
+
+    "wooded": 1,
+
+    "paganism": 1,
+
+    "fowl": 1,
+
+    "clearing": 1,
+
+    "disposition": 10,
+
+    "places": 7,
+
+    "nathaniel": 4,
+
+    "la": 1,
+
+    "troublesome": 3,
+
+    "wooden": 3,
+
+    "equals": 1,
+
+    "zion": 4,
+
+    "misunderstood": 1,
+
+    "trinity": 1,
+
+    "conscious": 2,
+
+    "accomplishment": 1,
+
+    "fur": 1,
+
+    "solitary": 2,
+
+    "political": 117,
+
+    "while": 113,
+
+    "second": 12,
+
+    "that": 872,
+
+    "morgan": 1,
+
+    "picked": 5,
+
+    "www": 9,
+
+    "sufficient": 3,
+
+    "than": 166,
+
+    "limit": 1,
+
+    "me": 11,
+
+    "locked": 1,
+
+    "communication": 2,
+
+    "succotash": 1,
+
+    "porter": 1,
+
+    "tolerance": 1,
+
+    "fasten": 1,
+
+    "profited": 1,
+
+    "baxter": 1,
+
+    "precedents": 2,
+
+    "tinge": 1,
+
+    "corpuscles": 1,
+
+    "foothold": 2,
+
+    "mr": 37,
+
+    "ms": 1,
+
+    "author": 7,
+
+    "possessed": 5,
+
+    "feeling": 22,
+
+    "my": 26,
+
+    "deities": 2,
+
+    "flowing": 1,
+
+    "expansion": 3,
+
+    "entry": 1,
+
+    "license": 19,
+
+    "disk": 1,
+
+    "dish": 1,
+
+    "dream": 2,
+
+    "preachers": 2,
+
+    "hobbes": 1,
+
+    "suggestive": 3,
+
+    "essay": 1,
+
+    "noble": 18,
+
+    "12767": 1,
+
+    "heat": 1,
+
+    "immortality": 1,
+
+    "no": 184,
+
+    "legacy": 1,
+
+    "chambers": 1,
+
+    "student": 6,
+
+    "palatinate": 2,
+
+    "careful": 4,
+
+    "mixed": 1,
+
+    "veritable": 1,
+
+    "scholarlike": 1,
+
+    "cassius": 1,
+
+    "head": 21,
+
+    "elapsed": 6,
+
+    "defaced": 1,
+
+    "belial": 1,
+
+    "of": 4373,
+
+    "reserve": 1,
+
+    "oh": 2,
+
+    "somehow": 2,
+
+    "peradventure": 1,
+
+    "heap": 1,
+
+    "hear": 4,
+
+    "mightier": 2,
+
+    "occupied": 10,
+
+    "evolutionist": 3,
+
+    "skilful": 3,
+
+    "on": 344,
+
+    "or": 326,
+
+    "embark": 1,
+
+    "tendencies": 4,
+
+    "disbanded": 1,
+
+    "adrianople": 1,
+
+    "families": 5,
+
+    "cousin": 4,
+
+    "intelligent": 4,
+
+    "newness": 1,
+
+    "laxity": 1,
+
+    "pa": 1,
+
+    "lechford": 1,
+
+    "pg": 2,
+
+    "easier": 2,
+
+    "luxury": 1,
+
+    "infringement": 1,
+
+    "sitting": 2,
+
+    "pp": 7,
+
+    "readily": 2,
+
+    "nation": 42,
+
+    "splendid": 2,
+
+    "registered": 4,
+
+    "convenience": 1,
+
+    "downfall": 3,
+
+    "falsehood": 2,
+
+    "discipline": 3,
+
+    "stretching": 1,
+
+    "merrimack": 4,
+
+    "596": 1,
+
+    "597": 1,
+
+    "extremely": 8,
+
+    "inevitably": 2,
+
+    "retribution": 1,
+
+    "adversaries": 1,
+
+    "hundreds": 4,
+
+    "insensibly": 1,
+
+    "recent": 9,
+
+    "they": 396,
+
+    "inevitable": 4,
+
+    "perpetually": 2,
+
+    "thee": 1,
+
+    "consciousness": 1,
+
+    "sanctification": 1,
+
+    "imprudence": 1,
+
+    "allowance": 3,
+
+    "them": 184,
+
+    "then": 69,
+
+    "apologue": 1,
+
+    "seat": 1,
+
+    "hyperbole": 1,
+
+    "seas": 1,
+
+    "re": 3,
+
+    "teachings": 7,
+
+    "mather": 15,
+
+    "donors": 1,
+
+    "bridge": 3,
+
+    "obtained": 14,
+
+    "singular": 2,
+
+    "commentary": 3,
+
+    "discovered": 7,
+
+    "strengthening": 3,
+
+    "seed": 1,
+
+    "swarming": 2,
+
+    "fairfax": 1,
+
+    "prelates": 1,
+
+    "executed": 2,
+
+    "innermost": 1,
+
+    "davenport": 11,
+
+    "seek": 8,
+
+    "eighteenth": 6,
+
+    "seen": 30,
+
+    "hengest": 1,
+
+    "seem": 24,
+
+    "quaff": 1,
+
+    "fourths": 1,
+
+    "covenant": 13,
+
+    "poisoning": 1,
+
+    "compelled": 2,
+
+    "doggerel": 1,
+
+    "origins": 1,
+
+    "samuel": 21,
+
+    "so": 209,
+
+    "email": 2,
+
+    "pierce": 1,
+
+    "apart": 4,
+
+    "nanhyganset": 1,
+
+    "calendar": 1,
+
+    "st": 14,
+
+    "tories": 1,
+
+    "necessary": 10,
+
+    "decision": 11,
+
+    "souls": 5,
+
+    "ministrations": 1,
+
+    "started": 10,
+
+    "neighbours": 9,
+
+    "heed": 5,
+
+    "flower": 1,
+
+    "closer": 1,
+
+    "single": 13,
+
+    "cement": 1,
+
+    "dissenters": 2,
+
+    "uttering": 1,
+
+    "molest": 2,
+
+    "sect": 10,
+
+    "humanitarianism": 1,
+
+    "flowed": 1,
+
+    "consequent": 1,
+
+    "compressed": 1,
+
+    "augusta": 1,
+
+    "to": 2320,
+
+    "tarrytown": 1,
+
+    "commercial": 5,
+
+    "joint": 4,
+
+    "remarkably": 1,
+
+    "separate": 9,
+
+    "reasonable": 3,
+
+    "generations": 11,
+
+    "sighted": 1,
+
+    "rules": 5,
+
+    "ruler": 2,
+
+    "aitolian": 1,
+
+    "loaded": 2,
+
+    "gosnold": 3,
+
+    "orgies": 1,
+
+    "direful": 1,
+
+    "ruled": 2,
+
+    "military": 22,
+
+    "up": 103,
+
+    "fifteenth": 3,
+
+    "us": 32,
+
+    "ut": 1,
+
+    "waters": 1,
+
+    "invading": 1,
+
+    "usual": 3,
+
+    "untold": 1,
+
+    "pleasantry": 1,
+
+    "this": 449,
+
+    "exclusiveness": 3,
+
+    "anarchy": 1,
+
+    "carnage": 1,
+
+    "thin": 1,
+
+    "remarkable": 16,
+
+    "archbishop": 2,
+
+    "swabian": 1,
+
+    "vi": 6,
+
+    "sees": 1,
+
+    "failure": 7,
+
+    "valiant": 1,
+
+    "know": 9,
+
+    "frightened": 1,
+
+    "suggesting": 1,
+
+    "suevi": 1,
+
+    "knox": 1,
+
+    "frontiersman": 1,
+
+    "changed": 7,
+
+    "ingenious": 1,
+
+    "divinely": 2,
+
+    "changes": 8,
+
+    "prophesy": 2,
+
+    "hearken": 1,
+
+    "we": 231,
+
+    "willingly": 1,
+
+    "prophets": 1,
+
+    "summoned": 11,
+
+    "similarity": 2,
+
+    "examination": 1,
+
+    "screw": 1,
+
+    "etext": 1,
+
+    "creations": 1,
+
+    "disposed": 2,
+
+    "emphasize": 1,
+
+    "gay": 1,
+
+    "slight": 9,
+
+    "previous": 3,
+
+    "securing": 3,
+
+    "huntingdon": 1,
+
+    "zenith": 1,
+
+    "reading": 5,
+
+    "argue": 1,
+
+    "dissentients": 1,
+
+    "xi": 1,
+
+    "uncovered": 1,
+
+    "planting": 9,
+
+    "deeper": 2,
+
+    "truculent": 6,
+
+    "monopolies": 2,
+
+    "outpost": 1,
+
+    "localities": 1,
+
+    "held": 41,
+
+    "annihilation": 2,
+
+    "southwestern": 1,
+
+    "courts": 4,
+
+    "fruitful": 4,
+
+    "ye": 3,
+
+    "type": 10,
+
+    "troops": 3,
+
+    "hell": 3,
+
+    "beyond": 10,
+
+    "april": 6,
+
+    "scrupulously": 2,
+
+    "forthwith": 9,
+
+    "scant": 2,
+
+    "terms": 29,
+
+    "deeply": 2,
+
+    "proof": 2,
+
+    "antinomians": 6,
+
+    "militant": 2,
+
+    "phase": 1,
+
+    "surrounding": 1,
+
+    "jukes": 1,
+
+    "atrocities": 3,
+
+    "contract": 1,
+
+    "veracity": 1,
+
+    "conclude": 1,
+
+    "churches": 18,
+
+    "susceptible": 1,
+
+    "insight": 1,
+
+    "provisions": 4,
+
+    "revolutionary": 3,
+
+    "fabric": 1,
+
+    "exact": 1,
+
+    "praying": 5,
+
+    "force": 20,
+
+    "proletariat": 1,
+
+    "ascertaining": 1,
+
+    "surrounded": 4,
+
+    "extortioner": 1,
+
+    "caprice": 1,
+
+    "precautions": 1,
+
+    "south": 15,
+
+    "periodic": 1,
+
+    "north": 23,
+
+    "forefathers": 15,
+
+    "tools": 2,
+
+    "salle": 1,
+
+    "counterfeit": 1,
+
+    "scoffed": 1,
+
+    "wilds": 3,
+
+    "get": 13,
+
+    "continues": 2,
+
+    "watchfulness": 1,
+
+    "course": 33,
+
+    "barber": 1,
+
+    "power": 73,
+
+    "stumblings": 1,
+
+    "musketry": 1,
+
+    "canonchet": 12,
+
+    "rivers": 1,
+
+    "thor": 1,
+
+    "pleasantly": 1,
+
+    "yielding": 2,
+
+    "queller": 1,
+
+    "sell": 3,
+
+    "industrious": 2,
+
+    "feuds": 2,
+
+    "continued": 12,
+
+    "wampanoags": 7,
+
+    "thou": 1,
+
+    "abide": 2,
+
+    "brain": 1,
+
+    "indiscriminately": 1,
+
+    "help": 13,
+
+    "forcing": 1,
+
+    "depth": 1,
+
+    "bigot": 1,
+
+    "massive": 1,
+
+    "1401": 1,
+
+    "mingle": 2,
+
+    "wherefrom": 1,
+
+    "monadnock": 1,
+
+    "frolicked": 1,
+
+    "ended": 16,
+
+    "self": 41,
+
+    "located": 7,
+
+    "exposition": 3,
+
+    "sele": 1,
+
+    "profaning": 1,
+
+    "dress": 1,
+
+    "unyielding": 1,
+
+    "addresses": 1,
+
+    "werewolf": 1,
+
+    "succeeds": 1,
+
+    "hindrance": 1,
+
+    "salem": 16,
+
+    "sound": 9,
+
+    "obliged": 9,
+
+    "treasures": 2,
+
+    "floundered": 1,
+
+    "sales": 1,
+
+    "scrooby": 10,
+
+    "disaffection": 2,
+
+    "indignation": 2,
+
+    "hanged": 4,
+
+    "barrier": 1,
+
+    "gable": 1,
+
+    "incisively": 1,
+
+    "create": 4,
+
+    "entitling": 1,
+
+    "criminal": 3,
+
+    "comforts": 1,
+
+    "marmaduke": 1,
+
+    "blasphemous": 3,
+
+    "uplifted": 1,
+
+    "curious": 7,
+
+    "proud": 5,
+
+    "xiv": 10,
+
+    "creatures": 1,
+
+    "earthquake": 1,
+
+    "judged": 3,
+
+    "tulloch": 2,
+
+    "sent": 55,
+
+    "addressed": 2,
+
+    "haughtily": 1,
+
+    "amidships": 1,
+
+    "purposes": 3,
+
+    "treasured": 1,
+
+    "send": 9,
+
+    "judges": 8,
+
+    "thereupon": 1,
+
+    "expenses": 4,
+
+    "concrete": 2,
+
+    "here": 25,
+
+    "ancestry": 2,
+
+    "regret": 1,
+
+    "purpose": 25,
+
+    "snake": 2,
+
+    "thinkers": 2,
+
+    "scale": 8,
+
+    "candles": 1,
+
+    "hero": 2,
+
+    "hers": 1,
+
+    "chaplain": 1,
+
+    "security": 1,
+
+    "unfriendliness": 1,
+
+    "salient": 1,
+
+    "scalp": 1,
+
+    "station": 2,
+
+    "feeble": 4,
+
+    "sudbury": 2,
+
+    "presbyterian": 6,
+
+    "shrill": 1,
+
+    "25th": 2,
+
+    "costs": 3,
+
+    "disfranchising": 1,
+
+    "follow": 7,
+
+    "exultant": 1,
+
+    "intent": 1,
+
+    "tyler": 1,
+
+    "ascendancy": 1,
+
+    "conned": 1,
+
+    "treaty": 11,
+
+    "edged": 1,
+
+    "vanishing": 1,
+
+    "harmless": 3,
+
+    "perishing": 1,
+
+    "illustrating": 2,
+
+    "german": 6,
+
+    "numerous": 5,
+
+    "teeming": 1,
+
+    "spacious": 2,
+
+    "recognized": 5,
+
+    "encumber": 1,
+
+    "youth": 2,
+
+    "without": 74,
+
+    "veils": 1,
+
+    "stratagem": 1,
+
+    "introduced": 5,
+
+    "virgil": 1,
+
+    "virgin": 3,
+
+    "inaugurators": 1,
+
+    "1453": 1,
+
+    "sovereignty": 11,
+
+    "discernible": 2,
+
+    "persistent": 1,
+
+    "whatsoever": 2,
+
+    "captors": 2,
+
+    "thus": 52,
+
+    "possess": 3,
+
+    "volunteers": 5,
+
+    "devise": 1,
+
+    "yeomen": 2,
+
+    "recognizes": 1,
+
+    "explorations": 3,
+
+    "much": 85,
+
+    "chapter": 17,
+
+    "entitled": 14,
+
+    "rejecting": 1,
+
+    "defence": 9,
+
+    "anybody": 2,
+
+    "misery": 3,
+
+    "1482": 1,
+
+    "mastery": 1,
+
+    "heathen": 8,
+
+    "miscalculation": 1,
+
+    "colonization": 12,
+
+    "allying": 1,
+
+    "lights": 1,
+
+    "resolved": 1,
+
+    "committed": 2,
+
+    "committee": 4,
+
+    "hardships": 1,
+
+    "union": 20,
+
+    "faculties": 1,
+
+    "ruined": 1,
+
+    "subtle": 2,
+
+    "1485": 2,
+
+    "illustration": 8,
+
+    "returned": 18,
+
+    "god": 37,
+
+    "prehistoric": 3,
+
+    "adopted": 15,
+
+    "novel": 4,
+
+    "standard": 5,
+
+    "reports": 5,
+
+    "reader": 3,
+
+    "completeness": 1,
+
+    "got": 14,
+
+    "institution": 6,
+
+    "ambition": 1,
+
+    "aspirations": 1,
+
+    "calvinism": 3,
+
+    "chieftain": 2,
+
+    "callous": 1,
+
+    "avert": 1,
+
+    "calvinist": 2,
+
+    "contributed": 7,
+
+    "area": 7,
+
+    "murder": 10,
+
+    "manifestation": 2,
+
+    "fiske": 3,
+
+    "european": 17,
+
+    "lack": 2,
+
+    "governmental": 1,
+
+    "neglected": 1,
+
+    "flayed": 1,
+
+    "600": 2,
+
+    "ingenuity": 2,
+
+    "success": 16,
+
+    "authority": 27,
+
+    "remarked": 2,
+
+    "cleared": 3,
+
+    "shocking": 1,
+
+    "blackstone": 2,
+
+    "unnaturally": 1,
+
+    "formats": 1,
+
+    "young": 12,
+
+    "avenge": 1,
+
+    "obsolete": 2,
+
+    "eloquence": 3,
+
+    "forlorn": 1,
+
+    "fairest": 1,
+
+    "sustaining": 2,
+
+    "negotiations": 3,
+
+    "evolution": 3,
+
+    "halfway": 5,
+
+    "tattered": 1,
+
+    "complains": 1,
+
+    "complaint": 3,
+
+    "lady": 8,
+
+    "purposely": 1,
+
+    "pocket": 2,
+
+    "cannibalism": 1,
+
+    "named": 8,
+
+    "considered": 8,
+
+    "channel": 3,
+
+    "delivered": 1,
+
+    "hamper": 1,
+
+    "minutely": 1,
+
+    "changing": 2,
+
+    "entire": 5,
+
+    "approach": 2,
+
+    "crowning": 2,
+
+    "doting": 1,
+
+    "ultra": 1,
+
+    "exaggeration": 1,
+
+    "usher": 1,
+
+    "decisive": 7,
+
+    "daredevil": 1,
+
+    "williams": 41,
+
+    "ordain": 1,
+
+    "deliverer": 1,
+
+    "sixpences": 2,
+
+    "write": 2,
+
+    "portsmouth": 8,
+
+    "passengers": 2,
+
+    "corporation": 3,
+
+    "understand": 23,
+
+    "dismiss": 1,
+
+    "suspended": 2,
+
+    "heaven": 9,
+
+    "intelligence": 5,
+
+    "vigorously": 2,
+
+    "harshly": 1,
+
+    "unhappy": 1,
+
+    "arrogance": 2,
+
+    "strongly": 7,
+
+    "manifested": 2,
+
+    "appearing": 2,
+
+    "despair": 2,
+
+    "champion": 1,
+
+    "larger": 3,
+
+    "disfavour": 1,
+
+    "gun": 2,
+
+    "queer": 2,
+
+    "iniquity": 1,
+
+    "wait": 1,
+
+    "hundred": 20,
+
+    "circuit": 1,
+
+    "dispensation": 3,
+
+    "pettyquamscott": 1,
+
+    "queen": 9,
+
+    "egyptian": 2,
+
+    "magnificent": 3,
+
+    "restrict": 1,
+
+    "instant": 1,
+
+    "prematurely": 1,
+
+    "exterminated": 3,
+
+    "mason": 21,
+
+    "654": 1,
+
+    "legislate": 1,
+
+    "native": 9,
+
+    "hitherto": 5,
+
+    "accordingly": 22,
+
+    "consequence": 8,
+
+    "laid": 16,
+
+    "particularly": 1,
+
+    "gothic": 2,
+
+    "contending": 2,
+
+    "dominant": 7,
+
+    "discussed": 3,
+
+    "lair": 1,
+
+    "opportunities": 3,
+
+    "pacific": 7,
+
+    "garments": 1,
+
+    "writ": 9,
+
+    "framework": 1,
+
+    "names": 10,
+
+    "messenger": 6,
+
+    "curiously": 2,
+
+    "twitched": 1,
+
+    "mohawks": 3,
+
+    "discerned": 2,
+
+    "entity": 3,
+
+    "chronicle": 2,
+
+    "tide": 3,
+
+    "franchise": 4,
+
+    "palisades": 2,
+
+    "threefold": 2,
+
+    "almost": 21,
+
+    "equally": 3,
+
+    "rationalist": 1,
+
+    "davison": 2,
+
+    "parkman": 2,
+
+    "supernatural": 5,
+
+    "rationalism": 1,
+
+    "associate": 1,
+
+    "scrupulous": 2,
+
+    "gleam": 1,
+
+    "earlier": 5,
+
+    "whipping": 1,
+
+    "palisaded": 2,
+
+    "charity": 5,
+
+    "whether": 23,
+
+    "stagnated": 1,
+
+    "vilest": 1,
+
+    "headstrong": 1,
+
+    "cropped": 1,
+
+    "beneath": 1,
+
+    "void": 2,
+
+    "ritual": 6,
+
+    "liability": 3,
+
+    "dispense": 1,
+
+    "4th": 4,
+
+    "chiefest": 1,
+
+    "sway": 8,
+
+    "basis": 1,
+
+    "affected": 4,
+
+    "resolute": 1,
+
+    "whereinto": 1,
+
+    "tutor": 1,
+
+    "pleasures": 1,
+
+    "army": 7,
+
+    "contentions": 1,
+
+    "arms": 8,
+
+    "october": 9,
+
+    "virginia": 19,
+
+    "governor": 53,
+
+    "lake": 1,
+
+    "jehovah": 2,
+
+    "5000": 1,
+
+    "replied": 4,
+
+    "unite": 8,
+
+    "muse": 1,
+
+    "manifestly": 1,
+
+    "unity": 5,
+
+    "sorely": 2,
+
+    "pursue": 3,
+
+    "twentieth": 1,
+
+    "ties": 1,
+
+    "busy": 5,
+
+    "luther": 3,
+
+    "land": 30,
+
+    "lane": 1,
+
+    "couched": 2,
+
+    "sacrifices": 1,
+
+    "tied": 2,
+
+    "performing": 3,
+
+    "tithes": 2,
+
+    "foremost": 11,
+
+    "doubtful": 3,
+
+    "bury": 1,
+
+    "conduct": 15,
+
+    "lamb": 1,
+
+    "palfrey": 4,
+
+    "tidy": 1,
+
+    "wall": 1,
+
+    "walk": 2,
+
+    "extending": 1,
+
+    "quietly": 4,
+
+    "refusing": 1,
+
+    "laps": 1,
+
+    "styled": 2,
+
+    "discussion": 13,
+
+    "incidental": 1,
+
+    "generalized": 1,
+
+    "hinted": 1,
+
+    "lesser": 1,
+
+    "sufferance": 1,
+
+    "arrangements": 1,
+
+    "welcome": 4,
+
+    "events": 19,
+
+    "drift": 2,
+
+    "germs": 1,
+
+    "englanders": 2,
+
+    "mankind": 14,
+
+    "edited": 11,
+
+    "abundant": 1,
+
+    "want": 6,
+
+    "disgraceful": 1,
+
+    "marshes": 1,
+
+    "discordance": 1,
+
+    "coronations": 1,
+
+    "induce": 2,
+
+    "vols": 31,
+
+    "winters": 1,
+
+    "knighton": 1,
+
+    "difference": 6,
+
+    "must": 71,
+
+    "circle": 1,
+
+    "populations": 2,
+
+    "headland": 1,
+
+    "reside": 1,
+
+    "ward": 1,
+
+    "accident": 3,
+
+    "pilgrims": 20,
+
+    "incompatible": 1,
+
+    "ironsides": 2,
+
+    "distasteful": 1,
+
+    "found": 72,
+
+    "knight": 1,
+
+    "antinomian": 1,
+
+    "arts": 3,
+
+    "limits": 5,
+
+    "ideals": 1,
+
+    "cruelty": 7,
+
+    "christ": 23,
+
+    "cranmer": 1,
+
+    "beating": 2,
+
+    "fanatics": 2,
+
+    "refresh": 1,
+
+    "intimate": 1,
+
+    "combining": 1,
+
+    "uncritical": 2,
+
+    "entirely": 5,
+
+    "entrust": 1,
+
+    "religion": 16,
+
+    "marts": 1,
+
+    "charm": 1,
+
+    "tragedy": 1,
+
+    "bermudas": 1,
+
+    "contrived": 8,
+
+    "crudity": 1,
+
+    "preface": 1,
+
+    "till": 13,
+
+    "buys": 2,
+
+    "antagonism": 2,
+
+    "attend": 2,
+
+    "waged": 2,
+
+    "whitehall": 2,
+
+    "goods": 2,
+
+    "voting": 1,
+
+    "had": 602,
+
+    "lynch": 1,
+
+    "secure": 10,
+
+    "guided": 2,
+
+    "servetus": 1,
+
+    "bedford": 2,
+
+    "culprits": 1,
+
+    "late": 10,
+
+    "school": 4,
+
+    "preserved": 4,
+
+    "subsisting": 1,
+
+    "proclaimed": 2,
+
+    "things": 45,
+
+    "hat": 2,
+
+    "passages": 4,
+
+    "immense": 2,
+
+    "has": 125,
+
+    "abounds": 1,
+
+    "definite": 5,
+
+    "last": 28,
+
+    "wash": 1,
+
+    "weight": 8,
+
+    "solicitor": 1,
+
+    "priestly": 5,
+
+    "warn": 1,
+
+    "warm": 4,
+
+    "checks": 1,
+
+    "measure": 20,
+
+    "harrison": 1,
+
+    "surrey": 1,
+
+    "waxed": 4,
+
+    "carelessly": 1,
+
+    "citing": 1,
+
+    "wars": 4,
+
+    "updated": 2,
+
+    "scotch": 3,
+
+    "warp": 1,
+
+    "stooped": 1,
+
+    "impossible": 12,
+
+    "harshness": 2,
+
+    "effort": 5,
+
+    "jewish": 2,
+
+    "brute": 2,
+
+    "settling": 4,
+
+    "vegetables": 1,
+
+    "wave": 4,
+
+    "weapon": 2,
+
+    "papists": 1,
+
+    "yea": 1,
+
+    "courageous": 1,
+
+    "awaking": 1,
+
+    "stronger": 2,
+
+    "ends": 5,
+
+    "lecky": 1,
+
+    "sturdiest": 2,
+
+    "steady": 1,
+
+    "vote": 13,
+
+    "naumkeag": 2,
+
+    "early": 43,
+
+    "earls": 2,
+
+    "commissioners": 39,
+
+    "bated": 1,
+
+    "loathe": 1,
+
+    "intruder": 2,
+
+    "tarratines": 4,
+
+    "yet": 57,
+
+    "childless": 1,
+
+    "formalities": 1,
+
+    "disposable": 1,
+
+    "alike": 11,
+
+    "colour": 1,
+
+    "laud": 5,
+
+    "delightful": 2,
+
+    "observing": 1,
+
+    "time": 139,
+
+    "horrifying": 1,
+
+    "watt": 1,
+
+    "flourishing": 2,
+
+    "aroused": 6,
+
+    "happy": 3,
+
+    "illustrative": 1,
+
+    "governments": 12,
+
+    "baptists": 3,
+
+    "disaffected": 1,
+
+    "digges": 1,
+
+    "sloop": 1,
+
+    "universities": 3,
+
+    "offence": 4,
+
+    "her": 79,
+
+    "authorized": 1,
+
+    "digged": 2,
+
+    "deprive": 3,
+
+    "molested": 2,
+
+    "slaves": 8,
+
+    "having": 9,
+
+    "laws": 46,
+
+    "twigs": 1,
+
+    "lesson": 3,
+
+    "deborah": 1,
+
+    "supreme": 7,
+
+    "philosophy": 6,
+
+    "slope": 2,
+
+    "pungent": 1,
+
+    "1500": 3,
+
+    "palaces": 1,
+
+    "tiny": 2,
+
+    "diatribes": 1,
+
+    "worship": 9,
+
+    "adams": 9,
+
+    "stubborn": 1,
+
+    "consecrated": 2,
+
+    "lazy": 1,
+
+    "dagon": 1,
+
+    "merits": 6,
+
+    "confirmed": 9,
+
+    "alien": 2,
+
+    "linguistic": 1,
+
+    "personage": 3,
+
+    "ways": 13,
+
+    "confusing": 1,
+
+    "deficient": 1,
+
+    "preponderance": 6,
+
+    "efficient": 2,
+
+    "chair": 1,
+
+    "consistent": 1,
+
+    "sword": 1,
+
+    "garrulous": 1,
+
+    "swore": 1,
+
+    "earnings": 1,
+
+    "1520": 1,
+
+    "garden": 1,
+
+    "waging": 1,
+
+    "opposers": 1,
+
+    "governed": 6,
+
+    "small": 23,
+
+    "gallant": 6,
+
+    "hid": 2,
+
+    "stockaded": 1,
+
+    "fiction": 1,
+
+    "before": 108,
+
+    "mendicancy": 1,
+
+    "him": 97,
+
+    "peremptory": 2,
+
+    "hit": 1,
+
+    "his": 483,
+
+    "brunswick": 1,
+
+    "beat": 5,
+
+    "grandfather": 2,
+
+    "bear": 7,
+
+    "rhine": 3,
+
+    "awaited": 2,
+
+    "bruised": 1,
+
+    "logically": 2,
+
+    "resist": 2,
+
+    "incarnate": 1,
+
+    "emboldened": 1,
+
+    "history": 137,
+
+    "grossly": 1,
+
+    "detectives": 1,
+
+    "26th": 2,
+
+    "careless": 1,
+
+    "square": 1,
+
+    "repairs": 1,
+
+    "camps": 1,
+
+    "twice": 1,
+
+    "interference": 3,
+
+    "fibre": 4,
+
+    "belonged": 9,
+
+    "anarchist": 1,
+
+    "colony": 85,
+
+    "beck": 1,
+
+    "allusion": 3,
+
+    "point": 27,
+
+    "wolves": 2,
+
+    "uttermost": 1,
+
+    "visits": 1,
+
+    "nipmuck": 2,
+
+    "brewing": 1,
+
+    "1555": 2,
+
+    "bunyan": 3,
+
+    "devolved": 2,
+
+    "smiting": 1,
+
+    "alias": 1,
+
+    "deserve": 2,
+
+    "tricked": 1,
+
+    "hubbard": 8,
+
+    "hereafter": 4,
+
+    "alternative": 3,
+
+    "crowded": 4,
+
+    "banner": 2,
+
+    "morally": 1,
+
+    "protectorate": 2,
+
+    "gushing": 2,
+
+    "1567": 1,
+
+    "mean": 7,
+
+    "mercurius": 1,
+
+    "1562": 1,
+
+    "meat": 2,
+
+    "nominated": 1,
+
+    "suggestions": 1,
+
+    "determining": 2,
+
+    "persisted": 2,
+
+    "abrogation": 1,
+
+    "attendance": 1,
+
+    "leyden": 10,
+
+    "romeo": 1,
+
+    "settlements": 11,
+
+    "pruning": 1,
+
+    "flinty": 1,
+
+    "been": 310,
+
+    "deane": 2,
+
+    "barry": 1,
+
+    "chesterton": 1,
+
+    "gardiner": 13,
+
+    "advance": 3,
+
+    "pithily": 1,
+
+    "appreciate": 1,
+
+    "1576": 1,
+
+    "1575": 1,
+
+    "1574": 1,
+
+    "foregoing": 1,
+
+    "murderous": 2,
+
+    "strict": 4,
+
+    "reflects": 1,
+
+    "you": 96,
+
+    "limitations": 2,
+
+    "giles": 1,
+
+    "edict": 6,
+
+    "1594": 1,
+
+    "delighted": 2,
+
+    "active": 3,
+
+    "opportunity": 2,
+
+    "lacked": 3,
+
+    "court": 37,
+
+    "walford": 1,
+
+    "1588": 1,
+
+    "1587": 1,
+
+    "1585": 1,
+
+    "deals": 1,
+
+    "dealt": 2,
+
+    "natives": 2,
+
+    "pondered": 1,
+
+    "justinian": 1,
+
+    "secluded": 1,
+
+    "advising": 1,
+
+    "mirror": 1,
+
+    "shiver": 1,
+
+    "cited": 4,
+
+    "liquor": 2,
+
+    "hot": 4,
+
+    "sassacus": 10,
+
+    "characteristic": 4,
+
+    "interior": 1,
+
+    "uncouth": 1,
+
+    "how": 61,
+
+    "1596": 1,
+
+    "assembly": 17,
+
+    "fallacy": 2,
+
+    "bulls": 2,
+
+    "wethersfield": 4,
+
+    "dooms": 1,
+
+    "subjects": 2,
+
+    "outraged": 1,
+
+    "secresie": 1,
+
+    "overcoming": 2,
+
+    "assemble": 1,
+
+    "dragged": 3,
+
+    "upbraided": 1,
+
+    "march": 21,
+
+    "meet": 8,
+
+    "answer": 9,
+
+    "regarded": 21,
+
+    "calls": 2,
+
+    "timidity": 2,
+
+    "farmstead": 1,
+
+    "700": 3,
+
+    "saints": 1,
+
+    "outrages": 1,
+
+    "restored": 1,
+
+    "thrive": 1,
+
+    "encroachments": 4,
+
+    "misplaced": 1,
+
+    "passions": 2,
+
+    "abused": 2,
+
+    "putting": 6,
+
+    "sometimes": 19,
+
+    "questions": 13,
+
+    "corpus": 2,
+
+    "promise": 9,
+
+    "easter": 1,
+
+    "scotland": 18,
+
+    "reckoning": 1,
+
+    "bridgenorth": 1,
+
+    "listened": 3,
+
+    "reply": 5,
+
+    "simplifying": 1,
+
+    "richard": 5,
+
+    "baron": 2,
+
+    "perpetrated": 1,
+
+    "spurned": 1,
+
+    "xvii": 1,
+
+    "communistic": 1,
+
+    "merrymount": 8,
+
+    "liberalize": 1,
+
+    "vision": 1,
+
+    "thereof": 1,
+
+    "horseback": 1,
+
+    "blame": 5,
+
+    "reckon": 1,
+
+    "abet": 1,
+
+    "carrying": 7,
+
+    "upbraid": 1,
+
+    "stein": 1,
+
+    "waiting": 2,
+
+    "beginning": 25,
+
+    "lorded": 1,
+
+    "prelacy": 1,
+
+    "partisans": 3,
+
+    "exposed": 5,
+
+    "annexed": 7,
+
+    "shameful": 3,
+
+    "outward": 2,
+
+    "notice": 8,
+
+    "bloody": 9,
+
+    "cockatrice": 1,
+
+    "grants": 5,
+
+    "highlands": 2,
+
+    "lumber": 1,
+
+    "grandson": 3,
+
+    "entailed": 4,
+
+    "asia": 3,
+
+    "mercenaries": 1,
+
+    "superintendence": 1,
+
+    "colonists": 18,
+
+    "killed": 9,
+
+    "entreaties": 1,
+
+    "michael": 2,
+
+    "although": 8,
+
+    "midian": 1,
+
+    "patriots": 2,
+
+    "fortunes": 2,
+
+    "president": 12,
+
+    "erred": 1,
+
+    "ransom": 2,
+
+    "reaches": 1,
+
+    "therein": 1,
+
+    "adventurous": 1,
+
+    "dropped": 3,
+
+    "quaker": 7,
+
+    "america": 50,
+
+    "superficial": 2,
+
+    "manfully": 2,
+
+    "surpasses": 1,
+
+    "translations": 1,
+
+    "religions": 1,
+
+    "manifold": 2,
+
+    "surpassed": 2,
+
+    "action": 7,
+
+    "oration": 1,
+
+    "suspected": 3,
+
+    "executioner": 1,
+
+    "feudalism": 2,
+
+    "ambuscade": 2,
+
+    "bell": 2,
+
+    "captains": 2,
+
+    "scraping": 1,
+
+    "accompanied": 6,
+
+    "bewitching": 1,
+
+    "afford": 6,
+
+    "fires": 3,
+
+    "sensitiveness": 2,
+
+    "explored": 2,
+
+    "reached": 20,
+
+    "explorer": 1,
+
+    "comprehended": 1,
+
+    "acting": 1,
+
+    "ably": 1,
+
+    "radicals": 1,
+
+    "dealings": 2,
+
+    "deliver": 4,
+
+    "caleb": 1,
+
+    "headed": 4,
+
+    "caled": 1,
+
+    "sparsely": 1,
+
+    "eight": 13,
+
+    "products": 2,
+
+    "periods": 2,
+
+    "accredit": 1,
+
+    "disapprove": 1,
+
+    "blake": 1,
+
+    "could": 151,
+
+    "bent": 1,
+
+    "strike": 3,
+
+    "smack": 1,
+
+    "5th": 4,
+
+    "heresy": 10,
+
+    "cruelly": 3,
+
+    "marks": 3,
+
+    "defining": 1,
+
+    "culmination": 3,
+
+    "withhold": 1,
+
+    "presumptuous": 1,
+
+    "trusted": 1,
+
+    "able": 14,
+
+    "stuart": 12,
+
+    "leavened": 1,
+
+    "codes": 1,
+
+    "charities": 1,
+
+    "concerned": 5,
+
+    "conscience": 1,
+
+    "inheritance": 2,
+
+    "british": 16,
+
+    "fogger": 1,
+
+    "trampled": 3,
+
+    "harboured": 1,
+
+    "solution": 1,
+
+    "downloading": 1,
+
+    "international": 1,
+
+    "calculated": 1,
+
+    "regardless": 1,
+
+    "emblem": 1,
+
+    "flagrant": 1,
+
+    "citizen": 4,
+
+    "cities": 4,
+
+    "accepts": 1,
+
+    "sooner": 3,
+
+    "dimly": 1,
+
+    "difficult": 11,
+
+    "steps": 2,
+
+    "friends": 19,
+
+    "undergone": 1,
+
+    "forget": 3,
+
+    "professor": 4,
+
+    "indiscreetly": 1,
+
+    "northampton": 1,
+
+    "bequeathed": 2,
+
+    "principles": 7,
+
+    "testifying": 1,
+
+    "present": 21,
+
+    "harvard": 18,
+
+    "problems": 3,
+
+    "arrested": 6,
+
+    "strife": 12,
+
+    "chauncey": 1,
+
+    "remodel": 2,
+
+    "best": 32,
+
+    "movements": 5,
+
+    "meagre": 1,
+
+    "advise": 2,
+
+    "rooted": 3,
+
+    "regulating": 1,
+
+    "magnitude": 1,
+
+    "genuine": 1,
+
+    "lordly": 2,
+
+    "certainly": 6,
+
+    "pretended": 1,
+
+    "impressive": 1,
+
+    "stern": 6,
+
+    "compound": 1,
+
+    "master": 6,
+
+    "discountenanced": 2,
+
+    "negro": 2,
+
+    "gortonoges": 2,
+
+    "concerning": 9,
+
+    "conventional": 1,
+
+    "intensely": 3,
+
+    "accommodation": 1,
+
+    "mere": 17,
+
+    "opinions": 20,
+
+    "scotchmen": 1,
+
+    "annoy": 1,
+
+    "profess": 1,
+
+    "favourites": 1,
+
+    "feared": 2,
+
+    "vices": 2,
+
+    "antichrist": 3,
+
+    "unregenerate": 1,
+
+    "cover": 6,
+
+    "reflect": 3,
+
+    "massacre": 6,
+
+    "statesmanship": 1,
+
+    "dissolved": 1,
+
+    "adventures": 2,
+
+    "temporal": 2,
+
+    "whitgift": 1,
+
+    "based": 17,
+
+    "onondaga": 1,
+
+    "ablatives": 1,
+
+    "herein": 1,
+
+    "premonitory": 1,
+
+    "something": 26,
+
+    "intention": 3,
+
+    "pointed": 2,
+
+    "rude": 8,
+
+    "fray": 1,
+
+    "thereby": 3,
+
+    "canonicus": 3,
+
+    "idolatrous": 2,
+
+    "impulse": 7,
+
+    "beholding": 2,
+
+    "shower": 1,
+
+    "religious": 50,
+
+    "sabbath": 5,
+
+    "nevertheless": 14,
+
+    "fact": 24,
+
+    "respectable": 2,
+
+    "fundamental": 10,
+
+    "deliberation": 1,
+
+    "christianized": 3,
+
+    "carping": 1,
+
+    "pieces": 10,
+
+    "upheld": 1,
+
+    "fade": 1,
+
+    "christian": 26,
+
+    "thrift": 2,
+
+    "wadsworth": 5,
+
+    "free": 23,
+
+    "equality": 1,
+
+    "dictation": 1,
+
+    "honour": 5,
+
+    "rebellion": 6,
+
+    "babes": 1,
+
+    "reaction": 1,
+
+    "intervening": 1,
+
+    "weary": 6,
+
+    "thorough": 5,
+
+    "entreth": 1,
+
+    "actually": 3,
+
+    "face": 12,
+
+    "oldest": 1,
+
+    "alsace": 1,
+
+    "afraid": 4,
+
+    "showed": 12,
+
+    "stagnation": 1,
+
+    "household": 2,
+
+    "calculation": 1,
+
+    "refugees": 4,
+
+    "instinct": 4,
+
+    "strype": 1,
+
+    "ice": 4,
+
+    "visitation": 2,
+
+    "independence": 23,
+
+    "melancholy": 3,
+
+    "afforded": 6,
+
+    "whenever": 4,
+
+    "beseech": 1,
+
+    "glimmer": 1,
+
+    "exactness": 1,
+
+    "loathing": 1,
+
+    "ruin": 5,
+
+    "icy": 1,
+
+    "commands": 1,
+
+    "vanilla": 2,
+
+    "independency": 2,
+
+    "quarrelling": 1,
+
+    "alienated": 1,
+
+    "please": 5,
+
+    "arnold": 6,
+
+    "finding": 2,
+
+    "elected": 4,
+
+    "enlarging": 2,
+
+    "protestants": 6,
+
+    "bursts": 1,
+
+    "clamoured": 1,
+
+    "wrentham": 1,
+
+    "scriptures": 6,
+
+    "inspect": 1,
+
+    "vital": 1,
+
+    "delusion": 1,
+
+    "detect": 2,
+
+    "rule": 19,
+
+    "prelate": 1,
+
+    "decrees": 1,
+
+    "poem": 2,
+
+    "gulf": 3,
+
+    "characteristics": 1,
+
+    "redskins": 1,
+
+    "decreed": 1,
+
+    "inferior": 2,
+
+    "lucidity": 1,
+
+    "refuge": 4,
+
+    "certainty": 1,
+
+    "commend": 1,
+
+    "theology": 14,
+
+    "indeed": 24,
+
+    "sands": 1,
+
+    "1602": 2,
+
+    "vicar": 1,
+
+    "1600": 1,
+
+    "deficiency": 2,
+
+    "pomeroy": 1,
+
+    "professed": 1,
+
+    "removal": 2,
+
+    "1609": 3,
+
+    "venerable": 1,
+
+    "comment": 2,
+
+    "hereof": 1,
+
+    "1607": 4,
+
+    "1606": 2,
+
+    "portrays": 1,
+
+    "1605": 3,
+
+    "1604": 1,
+
+    "fireside": 1,
+
+    "1603": 2,
+
+    "guns": 1,
+
+    "sturdy": 14,
+
+    "confronting": 1,
+
+    "comparatively": 9,
+
+    "discussions": 2,
+
+    "stamping": 1,
+
+    "fair": 6,
+
+    "fain": 5,
+
+    "compatible": 2,
+
+    "charitable": 2,
+
+    "critic": 1,
+
+    "politic": 4,
+
+    "enable": 1,
+
+    "overtaken": 2,
+
+    "safety": 6,
+
+    "slavery": 5,
+
+    "1617": 2,
+
+    "1616": 1,
+
+    "1615": 2,
+
+    "1614": 3,
+
+    "provisional": 1,
+
+    "arise": 3,
+
+    "besieged": 3,
+
+    "fruitless": 1,
+
+    "toleration": 15,
+
+    "annexes": 1,
+
+    "eminent": 6,
+
+    "1624": 4,
+
+    "doors": 5,
+
+    "1623": 2,
+
+    "fail": 7,
+
+    "scriptural": 1,
+
+    "1622": 6,
+
+    "1621": 2,
+
+    "1620": 4,
+
+    "emperor": 6,
+
+    "1629": 13,
+
+    "1628": 7,
+
+    "1627": 1,
+
+    "refund": 10,
+
+    "1625": 1,
+
+    "remnant": 3,
+
+    "hillsides": 2,
+
+    "narrowness": 1,
+
+    "hillside": 2,
+
+    "steep": 1,
+
+    "seize": 2,
+
+    "cushions": 1,
+
+    "triumphs": 2,
+
+    "church": 115,
+
+    "isolated": 1,
+
+    "classical": 2,
+
+    "iii": 18,
+
+    "immemorial": 1,
+
+    "alexandria": 1,
+
+    "chests": 1,
+
+    "privilege": 1,
+
+    "pictures": 1,
+
+    "foreign": 2,
+
+    "dialectical": 1,
+
+    "1635": 1,
+
+    "discontinue": 1,
+
+    "1634": 3,
+
+    "1633": 3,
+
+    "papal": 3,
+
+    "1632": 1,
+
+    "1631": 5,
+
+    "fall": 12,
+
+    "blaze": 1,
+
+    "1630": 2,
+
+    "mysterious": 3,
+
+    "evangelical": 1,
+
+    "ridges": 1,
+
+    "decisively": 1,
+
+    "boldly": 1,
+
+    "steer": 1,
+
+    "1639": 3,
+
+    "1638": 5,
+
+    "1637": 3,
+
+    "1636": 14,
+
+    "gratify": 1,
+
+    "abstract": 3,
+
+    "27th": 1,
+
+    "gladstone": 1,
+
+    "1646": 6,
+
+    "excel": 1,
+
+    "1644": 6,
+
+    "frothingham": 1,
+
+    "appearance": 2,
+
+    "1643": 12,
+
+    "1642": 1,
+
+    "1641": 3,
+
+    "culture": 2,
+
+    "1640": 8,
+
+    "runs": 1,
+
+    "1649": 5,
+
+    "1648": 5,
+
+    "bogomilians": 1,
+
+    "first": 122,
+
+    "1647": 4,
+
+    "emmanuel": 3,
+
+    "perfect": 2,
+
+    "roman": 79,
+
+    "lambert": 1,
+
+    "1660": 9,
+
+    "ascribe": 1,
+
+    "benedict": 3,
+
+    "clearly": 13,
+
+    "pole": 1,
+
+    "1657": 3,
+
+    "preferable": 1,
+
+    "1656": 1,
+
+    "conspiracy": 2,
+
+    "stoutest": 1,
+
+    "1654": 2,
+
+    "spite": 15,
+
+    "1652": 8,
+
+    "1651": 5,
+
+    "aristocratic": 3,
+
+    "1650": 1,
+
+    "nephew": 1,
+
+    "from": 397,
+
+    "segregation": 1,
+
+    "incorruptible": 1,
+
+    "1659": 6,
+
+    "1658": 2,
+
+    "resistless": 3,
+
+    "devilish": 2,
+
+    "1671": 1,
+
+    "likeness": 2,
+
+    "ill": 13,
+
+    "1670": 1,
+
+    "finished": 3,
+
+    "yeoman": 3,
+
+    "incalculable": 1,
+
+    "1668": 2,
+
+    "1667": 1,
+
+    "fortress": 7,
+
+    "1665": 3,
+
+    "connivance": 1,
+
+    "1664": 4,
+
+    "1663": 1,
+
+    "1662": 1,
+
+    "1661": 4,
+
+    "speaker": 3,
+
+    "fame": 1,
+
+    "replacement": 5,
+
+    "1669": 6,
+
+    "14th": 2,
+
+    "pond": 1,
+
+    "doore": 1,
+
+    "ruth": 1,
+
+    "death": 52,
+
+    "steal": 1,
+
+    "advice": 2,
+
+    "1682": 5,
+
+    "according": 12,
+
+    "1681": 1,
+
+    "1680": 1,
+
+    "denounced": 1,
+
+    "vincent": 1,
+
+    "powder": 3,
+
+    "bestow": 1,
+
+    "error": 4,
+
+    "despotism": 15,
+
+    "1679": 6,
+
+    "1678": 2,
+
+    "1677": 5,
+
+    "1676": 12,
+
+    "1675": 8,
+
+    "paper": 2,
+
+    "1674": 4,
+
+    "1673": 1,
+
+    "liberality": 2,
+
+    "unalterable": 1,
+
+    "1672": 2,
+
+    "endeavour": 1,
+
+    "concealed": 2,
+
+    "value": 16,
+
+    "enforced": 2,
+
+    "liberalism": 7,
+
+    "quantity": 1,
+
+    "fortune": 7,
+
+    "1693": 1,
+
+    "inn": 3,
+
+    "connecticut": 78,
+
+    "1692": 4,
+
+    "1691": 1,
+
+    "hertfordshire": 1,
+
+    "nipmucks": 14,
+
+    "exeter": 2,
+
+    "rush": 2,
+
+    "worthless": 3,
+
+    "1689": 12,
+
+    "1688": 3,
+
+    "1687": 3,
+
+    "1685": 3,
+
+    "1684": 6,
+
+    "1683": 1,
+
+    "stages": 4,
+
+    "fishermen": 3,
+
+    "aptly": 3,
+
+    "growth": 11,
+
+    "pope": 7,
+
+    "stivers": 1,
+
+    "objects": 2,
+
+    "texas": 1,
+
+    "republished": 4,
+
+    "fierceness": 1,
+
+    "raleigh": 2,
+
+    "properly": 3,
+
+    "dutch": 16,
+
+    "livings": 1,
+
+    "graduate": 3,
+
+    "husbandman": 1,
+
+    "poor": 8,
+
+    "unsatisfactory": 1,
+
+    "farm": 1,
+
+    "invented": 1,
+
+    "massacred": 2,
+
+    "ashamed": 1,
+
+    "sidney": 5,
+
+    "glimpses": 2,
+
+    "suppleness": 1,
+
+    "needful": 1,
+
+    "stiles": 3,
+
+    "enduring": 2,
+
+    "virtually": 2,
+
+    "excellent": 7,
+
+    "englishman": 3,
+
+    "fairly": 6,
+
+    "adapted": 2,
+
+    "untimely": 2,
+
+    "persons": 20,
+
+    "charges": 4,
+
+    "courtyard": 1,
+
+    "advancement": 1,
+
+    "800": 1,
+
+    "801": 1,
+
+    "charged": 2,
+
+    "shortly": 4,
+
+    "firmly": 2,
+
+    "809": 1,
+
+    "providing": 5,
+
+    "weeks": 8,
+
+    "fate": 12,
+
+    "frenchmen": 2,
+
+    "jamestown": 4,
+
+    "scantily": 1,
+
+    "nile": 1,
+
+    "successors": 4,
+
+    "manual": 1,
+
+    "prowess": 1,
+
+    "exchanging": 1,
+
+    "founding": 31,
+
+    "patentees": 1,
+
+    "aggressive": 3,
+
+    "close": 2,
+
+    "masson": 1,
+
+    "linked": 1,
+
+    "supporters": 2,
+
+    "densely": 1,
+
+    "instalment": 1,
+
+    "retainers": 1,
+
+    "assyrian": 2,
+
+    "irs": 1,
+
+    "distributor": 1,
+
+    "embarrassment": 1,
+
+    "massacres": 2,
+
+    "oblige": 1,
+
+    "stratum": 3,
+
+    "turbulent": 4,
+
+    "fast": 8,
+
+    "invasion": 4,
+
+    "precedent": 3,
+
+    "isa": 1,
+
+    "magistrates": 17,
+
+    "stronghold": 8,
+
+    "bolted": 1,
+
+    "citizens": 11,
+
+    "arrayed": 1,
+
+    "nine": 8,
+
+    "concurrence": 1,
+
+    "asserting": 1,
+
+    "presbytery": 2,
+
+    "rural": 4,
+
+    "concord": 2,
+
+    "fortunately": 1,
+
+    "norfolk": 2,
+
+    "negligence": 1,
+
+    "boniface": 1,
+
+    "weeds": 1,
+
+    "educational": 1,
+
+    "independents": 1,
+
+    "its": 234,
+
+    "remedy": 1,
+
+    "distorted": 1,
+
+    "suffolk": 3,
+
+    "seventeenth": 26,
+
+    "article": 2,
+
+    "respect": 10,
+
+    "holmes": 1,
+
+    "retreat": 3,
+
+    "fusion": 5,
+
+    "port": 3,
+
+    "civilis": 1,
+
+    "plymouth": 84,
+
+    "crooked": 1,
+
+    "adjustment": 1,
+
+    "feasts": 1,
+
+    "perfidy": 1,
+
+    "presbyterianism": 4,
+
+    "autocrats": 1,
+
+    "income": 2,
+
+    "joining": 2,
+
+    "romanism": 3,
+
+    "production": 1,
+
+    "plotted": 2,
+
+    "united": 30,
+
+    "smallest": 3,
+
+    "carlisle": 1,
+
+    "searching": 2,
+
+    "directors": 1,
+
+    "treachery": 1,
+
+    "choose": 5,
+
+    "peaceful": 2,
+
+    "miles": 14,
+
+    "monarch": 3,
+
+    "behave": 3,
+
+    "undo": 2,
+
+    "grandeur": 1,
+
+    "clearings": 1,
+
+    "strikes": 1,
+
+    "democratic": 5,
+
+    "bills": 1,
+
+    "colonel": 7,
+
+    "enacts": 1,
+
+    "marmion": 1,
+
+    "reigning": 1,
+
+    "identify": 1,
+
+    "citizenship": 3,
+
+    "pour": 1,
+
+    "steadfast": 5,
+
+    "pushed": 2,
+
+    "strewn": 1,
+
+    "enjoyed": 2,
+
+    "northmen": 3,
+
+    "college": 22,
+
+    "uncompromising": 5,
+
+    "temporized": 1,
+
+    "backus": 1,
+
+    "hardy": 1,
+
+    "farmington": 1,
+
+    "number": 22,
+
+    "fruitfulness": 1,
+
+    "obedience": 5,
+
+    "reformation": 13,
+
+    "punish": 3,
+
+    "grandest": 1,
+
+    "property": 12,
+
+    "incomprehensible": 1,
+
+    "bachanalians": 1,
+
+    "boarded": 1,
+
+    "nothing": 41,
+
+    "volumes": 5,
+
+    "distributed": 7,
+
+    "6th": 1,
+
+    "repaired": 2,
+
+    "urged": 2,
+
+    "resented": 2,
+
+    "iroquois": 5,
+
+    "catholic": 12,
+
+    "silver": 2,
+
+    "partial": 3,
+
+    "sundry": 1,
+
+    "artisans": 1,
+
+    "blessing": 1,
+
+    "bristol": 1,
+
+    "fathers": 3,
+
+    "preoccupied": 1,
+
+    "city": 7,
+
+    "exclusion": 2,
+
+    "torments": 1,
+
+    "epoch": 2,
+
+    "courage": 5,
+
+    "local": 17,
+
+    "darknesse": 1,
+
+    "oppressor": 1,
+
+    "yield": 4,
+
+    "stuarts": 4,
+
+    "decisions": 3,
+
+    "assertion": 4,
+
+    "cathedral": 1,
+
+    "incidentally": 1,
+
+    "unobtrusive": 1,
+
+    "rests": 2,
+
+    "filled": 8,
+
+    "satisfaction": 1,
+
+    "lewes": 1,
+
+    "lashed": 1,
+
+    "removed": 7,
+
+    "powerful": 25,
+
+    "objected": 1,
+
+    "alternated": 1,
+
+    "infamous": 2,
+
+    "shed": 2,
+
+    "smashed": 1,
+
+    "copied": 6,
+
+    "hamilton": 3,
+
+    "absorbed": 4,
+
+    "points": 16,
+
+    "clods": 1,
+
+    "rear": 4,
+
+    "copies": 7,
+
+    "modified": 7,
+
+    "presume": 1,
+
+    "maintained": 9,
+
+    "qualify": 2,
+
+    "border": 2,
+
+    "read": 27,
+
+    "touch": 6,
+
+    "shipmasters": 1,
+
+    "admission": 1,
+
+    "clock": 1,
+
+    "prompted": 1,
+
+    "real": 5,
+
+    "englishmen": 16,
+
+    "differed": 3,
+
+    "collect": 1,
+
+    "piedmont": 1,
+
+    "badly": 1,
+
+    "shattered": 1,
+
+    "adherents": 2,
+
+    "frowned": 1,
+
+    "theologians": 1,
+
+    "entertaining": 1,
+
+    "burleigh": 3,
+
+    "harbours": 1,
+
+    "domineering": 3,
+
+    "rebellious": 2,
+
+    "confiscated": 1,
+
+    "diminished": 2,
+
+    "reconnoitre": 1,
+
+    "headlong": 1,
+
+    "today": 2,
+
+    "parliamentary": 3,
+
+    "construction": 1,
+
+    "saying": 7,
+
+    "universal": 3,
+
+    "fifteen": 7,
+
+    "poultry": 1,
+
+    "radical": 3,
+
+    "degenerating": 1,
+
+    "poles": 2,
+
+    "looked": 9,
+
+    "denunciatory": 1,
+
+    "minute": 1,
+
+    "application": 1,
+
+    "rebels": 1,
+
+    "acre": 1,
+
+    "formally": 4,
+
+    "outran": 1,
+
+    "puppets": 1,
+
+    "comprehend": 5,
+
+    "reason": 15,
+
+    "germanic": 4,
+
+    "ship": 9,
+
+    "barking": 1,
+
+    "acts": 14,
+
+    "erect": 2,
+
+    "scottish": 2,
+
+    "exalted": 1,
+
+    "sacrificing": 3,
+
+    "identification": 1,
+
+    "jan": 1,
+
+    "annual": 3,
+
+    "exclusive": 2,
+
+    "gentle": 5,
+
+    "occasioned": 2,
+
+    "using": 8,
+
+    "deeds": 5,
+
+    "containing": 5,
+
+    "completed": 3,
+
+    "inchoate": 1,
+
+    "demand": 6,
+
+    "fugitives": 4,
+
+    "acquiesce": 1,
+
+    "unexplored": 1,
+
+    "turkey": 1,
+
+    "letter": 17,
+
+    "gently": 2,
+
+    "alternatives": 1,
+
+    "philosophical": 3,
+
+    "constantinople": 1,
+
+    "annually": 1,
+
+    "abrogates": 1,
+
+    "unimpeded": 1,
+
+    "frequently": 3,
+
+    "devil": 4,
+
+    "aristocracy": 3,
+
+    "handed": 5,
+
+    "doubting": 1,
+
+    "acquire": 6,
+
+    "worth": 10,
+
+    "notion": 6,
+
+    "auricular": 1,
+
+    "taken": 27,
+
+    "takes": 3,
+
+    "abstruse": 1,
+
+    "popular": 20,
+
+    "broken": 5,
+
+    "reconstructed": 1,
+
+    "shear": 1,
+
+    "missionaries": 3,
+
+    "intolerance": 5,
+
+    "lacking": 1,
+
+    "horseflesh": 1,
+
+    "fitted": 3,
+
+    "armed": 3,
+
+    "oliver": 5,
+
+    "rescinded": 1,
+
+    "shifted": 5,
+
+    "solace": 1,
+
+    "castle": 4,
+
+    "assailed": 1,
+
+    "bloodshed": 2,
+
+    "doughty": 1,
+
+    "eaton": 2,
+
+    "occasional": 1,
+
+    "indiscreet": 1,
+
+    "individuals": 4,
+
+    "treacherous": 3,
+
+    "repeated": 1,
+
+    "elton": 1,
+
+    "untrodden": 1,
+
+    "debate": 3,
+
+    "either": 12,
+
+    "preach": 3,
+
+    "protestantism": 13,
+
+    "recollection": 1,
+
+    "jew": 1,
+
+    "purest": 1,
+
+    "machinations": 1,
+
+    "gorton": 38,
+
+    "those": 58,
+
+    "estimates": 2,
+
+    "marquis": 1,
+
+    "jabberwok": 1,
+
+    "quotations": 1,
+
+    "knives": 1,
+
+    "motives": 3,
+
+    "edinburgh": 2,
+
+    "lifted": 3,
+
+    "significant": 7,
+
+    "complaisant": 1,
+
+    "arbitration": 2,
+
+    "worse": 3,
+
+    "catalogue": 1,
+
+    "screaming": 1,
+
+    "massilia": 1,
+
+    "difficulty": 8,
+
+    "watched": 1,
+
+    "longer": 7,
+
+    "everywhere": 12,
+
+    "senate": 1,
+
+    "consul": 1,
+
+    "parties": 5,
+
+    "selling": 1,
+
+    "worst": 6,
+
+    "parker": 2,
+
+    "leaving": 2,
+
+    "1702": 1,
+
+    "forbearance": 1,
+
+    "martyrdom": 2,
+
+    "shop": 1,
+
+    "hohenstauffen": 1,
+
+    "distance": 5,
+
+    "planted": 2,
+
+    "show": 10,
+
+    "heretic": 2,
+
+    "description": 4,
+
+    "cautious": 3,
+
+    "baronage": 1,
+
+    "disappear": 1,
+
+    "renounce": 1,
+
+    "peremptorily": 1,
+
+    "situated": 1,
+
+    "shot": 3,
+
+    "cracked": 1,
+
+    "quatrain": 1,
+
+    "1711": 1,
+
+    "malicious": 1,
+
+    "susquehanna": 1,
+
+    "vigilance": 3,
+
+    "street": 6,
+
+    "arrive": 1,
+
+    "plains": 2,
+
+    "hireling": 1,
+
+    "diocese": 1,
+
+    "1719": 1,
+
+    "hence": 9,
+
+    "1717": 2,
+
+    "1716": 1,
+
+    "fording": 1,
+
+    "1715": 1,
+
+    "molestation": 1,
+
+    "winthrop": 49,
+
+    "elizabeth": 25,
+
+    "unto": 6,
+
+    "debauching": 1,
+
+    "vanished": 1,
+
+    "norton": 8,
+
+    "learned": 13,
+
+    "nineteenth": 6,
+
+    "substance": 3,
+
+    "estimated": 2,
+
+    "frown": 1,
+
+    "tribal": 3,
+
+    "disused": 1,
+
+    "suddenly": 6,
+
+    "receipts": 1,
+
+    "1722": 1,
+
+    "earnestness": 1,
+
+    "guidance": 10,
+
+    "absorbing": 2,
+
+    "1729": 1,
+
+    "gookin": 2,
+
+    "stranger": 4,
+
+    "doomed": 2,
+
+    "penny": 2,
+
+    "fancy": 1,
+
+    "rebel": 1,
+
+    "judiciously": 1,
+
+    "poured": 3,
+
+    "rent": 2,
+
+    "carpenter": 1,
+
+    "gent": 2,
+
+    "largely": 9,
+
+    "awakened": 5,
+
+    "severely": 2,
+
+    "julius": 1,
+
+    "scantier": 1,
+
+    "eighteen": 4,
+
+    "hollow": 1,
+
+    "unification": 1,
+
+    "neponset": 1,
+
+    "sunday": 4,
+
+    "tinder": 1,
+
+    "marvelled": 2,
+
+    "rely": 1,
+
+    "bounds": 1,
+
+    "style": 5,
+
+    "1749": 1,
+
+    "purely": 6,
+
+    "souled": 1,
+
+    "guard": 2,
+
+    "harry": 3,
+
+    "settle": 2,
+
+    "harsh": 6,
+
+    "annulled": 5,
+
+    "powerfully": 3,
+
+    "parched": 1,
+
+    "pressing": 1,
+
+    "bleak": 3,
+
+    "1753": 1,
+
+    "freedom": 21,
+
+    "criminals": 1,
+
+    "architecture": 1,
+
+    "mischief": 8,
+
+    "fallaciousness": 1,
+
+    "consolation": 1,
+
+    "shortcomings": 1,
+
+    "libertines": 1,
+
+    "superfluous": 2,
+
+    "divines": 2,
+
+    "tiber": 1,
+
+    "consulted": 2,
+
+    "tribes": 39,
+
+    "1767": 1,
+
+    "1765": 2,
+
+    "1764": 2,
+
+    "1763": 1,
+
+    "swanzey": 7,
+
+    "sifted": 1,
+
+    "allowances": 2,
+
+    "superseded": 2,
+
+    "1769": 1,
+
+    "shut": 2,
+
+    "questionable": 1,
+
+    "amicable": 1,
+
+    "1781": 2,
+
+    "quakers": 49,
+
+    "bonds": 1,
+
+    "minded": 3,
+
+    "lucy": 1,
+
+    "devoured": 1,
+
+    "worshipped": 1,
+
+    "influence": 19,
+
+    "cloud": 2,
+
+    "1777": 1,
+
+    "magnolia": 1,
+
+    "amicably": 1,
+
+    "1776": 3,
+
+    "1774": 1,
+
+    "1771": 1,
+
+    "totally": 1,
+
+    "wrapped": 1,
+
+    "canterbury": 2,
+
+    "roused": 1,
+
+    "england": 418,
+
+    "adam": 1,
+
+    "interrupting": 1,
+
+    "crisis": 8,
+
+    "temporarily": 1,
+
+    "exceptionally": 1,
+
+    "germ": 2,
+
+    "1790": 1,
+
+    "glamour": 1,
+
+    "wayside": 1,
+
+    "resurrection": 2,
+
+    "denizen": 1,
+
+    "buffaloes": 1,
+
+    "important": 15,
+
+    "1787": 1,
+
+    "veteran": 1,
+
+    "phrase": 7,
+
+    "1784": 1,
+
+    "bones": 1,
+
+    "daily": 6,
+
+    "fervour": 3,
+
+    "job": 1,
+
+    "daughter": 4,
+
+    "erroneous": 1,
+
+    "limitation": 4,
+
+    "babbler": 1,
+
+    "piscataqua": 11,
+
+    "solicitation": 1,
+
+    "apocalyptic": 1,
+
+    "awaken": 3,
+
+    "captain": 28,
+
+    "footing": 1,
+
+    "1798": 1,
+
+    "1797": 1,
+
+    "1794": 1,
+
+    "1793": 1,
+
+    "sheer": 3,
+
+    "federalism": 5,
+
+    "destructiveness": 2,
+
+    "sheep": 3,
+
+    "adds": 1,
+
+    "rest": 7,
+
+    "administrations": 1,
+
+    "comply": 6,
+
+    "original": 15,
+
+    "adherence": 2,
+
+    "pestilence": 1,
+
+    "resenting": 1,
+
+    "kingdom": 14,
+
+    "contingents": 1,
+
+    "afternoon": 3,
+
+    "twelvemonth": 3,
+
+    "interruption": 1,
+
+    "plane": 2,
+
+    "pursuers": 3,
+
+    "wedge": 1,
+
+    "plague": 2,
+
+    "perpetual": 5,
+
+    "offer": 3,
+
+    "diplomatic": 2,
+
+    "unsatisfying": 1,
+
+    "westminster": 4,
+
+    "neighbourhood": 8,
+
+    "joab": 1,
+
+    "complex": 2,
+
+    "buzzard": 1,
+
+    "rubbish": 1,
+
+    "sheepfold": 1,
+
+    "calverts": 1,
+
+    "gaining": 1,
+
+    "wresting": 2,
+
+    "afterwards": 3,
+
+    "adequately": 2,
+
+    "metropolis": 1,
+
+    "wrongly": 1,
+
+    "disclaim": 2,
+
+    "narrowly": 1,
+
+    "newport": 4,
+
+    "mishaps": 1,
+
+    "astonishing": 2,
+
+    "otherworldliness": 1,
+
+    "rovers": 3,
+
+    "plant": 4,
+
+    "drive": 3,
+
+    "readiness": 2,
+
+    "intractable": 1,
+
+    "haereticum": 1,
+
+    "abasement": 1,
+
+    "fervid": 2,
+
+    "ransacked": 1,
+
+    "sixth": 4,
+
+    "servant": 1,
+
+    "offered": 7,
+
+    "civil": 24,
+
+    "subsequent": 1,
+
+    "national": 23,
+
+    "indicate": 4,
+
+    "skulked": 1,
+
+    "conquerors": 5,
+
+    "sixty": 3,
+
+    "shepheard": 1,
+
+    "contain": 3,
+
+    "incorrect": 1,
+
+    "euphrates": 3,
+
+    "founder": 1,
+
+    "benefited": 1,
+
+    "founded": 17,
+
+    "words": 14,
+
+    "medicine": 3,
+
+    "instructed": 3,
+
+    "dissatisfaction": 1,
+
+    "glowing": 5,
+
+    "gifted": 1,
+
+    "levermore": 2,
+
+    "stigmatize": 1,
+
+    "somewhat": 18,
+
+    "validity": 1,
+
+    "townships": 3,
+
+    "pillars": 1,
+
+    "oldham": 3,
+
+    "excused": 1,
+
+    "deepened": 1,
+
+    "needless": 1,
+
+    "developed": 5,
+
+    "nearest": 1,
+
+    "humorous": 1,
+
+    "shouts": 1,
+
+    "defamation": 1,
+
+    "smallness": 1,
+
+    "parish": 6,
+
+    "contact": 7,
+
+    "excuses": 1,
+
+    "detachment": 2,
+
+    "champions": 3,
+
+    "meekest": 1,
+
+    "epitaph": 1,
+
+    "familists": 3,
+
+    "parts": 14,
+
+    "western": 5,
+
+    "vigorous": 6,
+
+    "lucid": 2,
+
+    "party": 33,
+
+    "duties": 2,
+
+    "however": 34,
+
+    "sources": 1,
+
+    "trained": 3,
+
+    "homeward": 1,
+
+    "desisted": 1,
+
+    "related": 3,
+
+    "legendary": 1,
+
+    "captured": 7,
+
+    "lump": 1,
+
+    "views": 21,
+
+    "tenderness": 2,
+
+    "directed": 2,
+
+    "historic": 7,
+
+    "cavendish": 1,
+
+    "wearing": 1,
+
+    "false": 4,
+
+    "tyrant": 6,
+
+    "breed": 1,
+
+    "ignorantly": 1,
+
+    "stalwart": 1,
+
+    "candour": 1,
+
+    "985": 1,
+
+    "mowing": 1,
+
+    "farmer": 1,
+
+    "prompt": 3,
+
+    "elaborate": 6,
+
+    "crowd": 3,
+
+    "laity": 1,
+
+    "tirade": 1,
+
+    "sick": 4,
+
+    "counsels": 3,
+
+    "southold": 1,
+
+    "corner": 2,
+
+    "warranto": 3,
+
+    "warranty": 2,
+
+    "majority": 6,
+
+    "join": 5,
+
+    "costume": 1,
+
+    "crown": 34,
+
+    "sentence": 7,
+
+    "stealthily": 1,
+
+    "faithfully": 2,
+
+    "vain": 4,
+
+    "ordinary": 3,
+
+    "livres": 1,
+
+    "harmonious": 1,
+
+    "drink": 1,
+
+    "aquethneck": 1,
+
+    "verdict": 1,
+
+    "attracted": 2,
+
+    "theocratic": 27,
+
+    "john": 70,
+
+    "christopher": 2,
+
+    "recommending": 1,
+
+    "works": 44,
+
+    "brought": 51,
+
+    "proportion": 3,
+
+    "alive": 6,
+
+    "payments": 3,
+
+    "pursuit": 1,
+
+    "drawbacks": 1,
+
+    "tournament": 1,
+
+    "ruthless": 1,
+
+    "thinking": 6,
+
+    "steamboats": 1,
+
+    "world": 74,
+
+    "freaks": 1,
+
+    "composed": 2,
+
+    "russell": 2,
+
+    "prejudice": 2,
+
+    "dissolve": 1,
+
+    "december": 5,
+
+    "embarked": 1,
+
+    "urgent": 1,
+
+    "everything": 4,
+
+    "penal": 1,
+
+    "fanatic": 2,
+
+    "bundle": 1,
+
+    "italy": 7,
+
+    "cicero": 1,
+
+    "pence": 1,
+
+    "side": 16,
+
+    "4000": 3,
+
+    "break": 6,
+
+    "expressly": 7,
+
+    "willingness": 1,
+
+    "indirectly": 2,
+
+    "comfort": 3,
+
+    "bacon": 5,
+
+    "hide": 1,
+
+    "century": 96,
+
+    "overmuch": 1,
+
+    "candle": 1,
+
+    "report": 1,
+
+    "powers": 17,
+
+    "married": 1,
+
+    "severities": 1,
+
+    "lament": 1,
+
+    "invalidity": 1,
+
+    "sign": 1,
+
+    "outrage": 1,
+
+    "cotton": 23,
+
+    "saviour": 5,
+
+    "expresses": 1,
+
+    "precepts": 1,
+
+    "high": 20,
+
+    "falls": 2,
+
+    "sailed": 7,
+
+    "vane": 14,
+
+    "expressed": 6,
+
+    "administered": 8,
+
+    "directly": 4,
+
+    "different": 16,
+
+    "officially": 1,
+
+    "leddra": 2,
+
+    "unwonted": 2,
+
+    "reproving": 1,
+
+    "adjusted": 2,
+
+    "restrictions": 5,
+
+    "roots": 1,
+
+    "preserve": 8,
+
+    "establish": 5,
+
+    "proclaim": 2,
+
+    "belongs": 2,
+
+    "ebenezer": 3,
+
+    "attached": 5,
+
+    "warwickshire": 1,
+
+    "morocco": 1,
+
+    "oregon": 1,
+
+    "overthrown": 2,
+
+    "errors": 2,
+
+    "parents": 2,
+
+    "tudor": 4,
+
+    "consumed": 2,
+
+    "tastes": 1,
+
+    "scores": 1,
+
+    "musketeers": 1,
+
+    "preservation": 1,
+
+    "tasted": 2,
+
+    "total": 2,
+
+    "pursued": 4,
+
+    "countrymen": 1,
+
+    "savage": 24,
+
+    "informs": 1,
+
+    "omnivorousness": 1,
+
+    "pastorals": 1,
+
+    "console": 1,
+
+    "auspicious": 2,
+
+    "plays": 1,
+
+    "initiative": 1,
+
+    "social": 14,
+
+    "interesting": 19,
+
+    "outcasts": 2,
+
+    "raised": 9,
+
+    "cross": 7,
+
+    "control": 4,
+
+    "demanding": 1,
+
+    "knowles": 1,
+
+    "trajan": 1,
+
+    "editions": 4,
+
+    "declined": 2,
+
+    "acknowledge": 1,
+
+    "assyria": 1,
+
+    "earth": 15,
+
+    "implicated": 1,
+
+    "hereditary": 4,
+
+    "overthrow": 12,
+
+    "inflict": 1,
+
+    "cunning": 1,
+
+    "specialty": 1,
+
+    "threatening": 3,
+
+    "upper": 6,
+
+    "precept": 1,
+
+    "musket": 2,
+
+    "intercourse": 2,
+
+    "episode": 1,
+
+    "commanding": 3,
+
+    "facilitated": 1,
+
+    "behalf": 3,
+
+    "supposing": 2,
+
+    "injure": 1,
+
+    "scene": 15,
+
+    "deterred": 1,
+
+    "exert": 1,
+
+    "strengthen": 1,
+
+    "conant": 4,
+
+    "injury": 1,
+
+    "inclinations": 1,
+
+    "metaphysics": 1,
+
+    "vienna": 2,
+
+    "publishing": 2,
+
+    "lighted": 4,
+
+    "browbeaten": 1,
+
+    "squeezing": 1,
+
+    "assemblies": 11,
+
+    "ablest": 1,
+
+    "hurricane": 1,
+
+    "remaining": 4,
+
+    "accept": 3,
+
+    "yearning": 1,
+
+    "overthrew": 1,
+
+    "powwow": 1,
+
+    "stopping": 1,
+
+    "phokaians": 1,
+
+    "mystic": 1,
+
+    "lords": 6,
+
+    "clergymen": 11,
+
+    "surrendered": 5,
+
+    "access": 11,
+
+    "wiped": 1,
+
+    "primitive": 10,
+
+    "redeemed": 1,
+
+    "wamsutta": 1,
+
+    "harsher": 2,
+
+    "distinctness": 1,
+
+    "ken": 1,
+
+    "key": 3,
+
+    "surprised": 3,
+
+    "stirling": 1,
+
+    "silent": 5,
+
+    "stopped": 7,
+
+    "laying": 1,
+
+    "fancied": 1,
+
+    "loads": 1,
+
+    "headway": 1,
+
+    "persia": 1,
+
+    "hill": 5,
+
+    "courted": 1,
+
+    "appoint": 2,
+
+    "mortality": 3,
+
+    "stones": 2,
+
+    "1806": 1,
+
+    "fourth": 3,
+
+    "vast": 9,
+
+    "conspicuously": 1,
+
+    "inflamed": 1,
+
+    "declare": 2,
+
+    "guiding": 1,
+
+    "dislike": 1,
+
+    "revelation": 1,
+
+    "preeminently": 2,
+
+    "available": 4,
+
+    "biographies": 1,
+
+    "confine": 1,
+
+    "recognizable": 2,
+
+    "1818": 1,
+
+    "unusual": 1,
+
+    "extreme": 8,
+
+    "americanus": 1,
+
+    "1812": 1,
+
+    "huguenot": 3,
+
+    "recedes": 1,
+
+    "farmhouse": 1,
+
+    "clergyman": 1,
+
+    "sink": 1,
+
+    "degree": 9,
+
+    "dismal": 3,
+
+    "1822": 1,
+
+    "feathered": 1,
+
+    "1820": 2,
+
+    "especially": 16,
+
+    "dismay": 1,
+
+    "once": 47,
+
+    "expend": 1,
+
+    "hint": 1,
+
+    "1829": 1,
+
+    "1828": 1,
+
+    "counties": 8,
+
+    "1824": 2,
+
+    "sublime": 1,
+
+    "assessed": 2,
+
+    "records": 11,
+
+    "figures": 7,
+
+    "figured": 1,
+
+    "monument": 3,
+
+    "vivid": 1,
+
+    "kil": 1,
+
+    "1832": 1,
+
+    "kin": 1,
+
+    "mugwump": 1,
+
+    "1831": 2,
+
+    "1830": 2,
+
+    "infraction": 2,
+
+    "throughout": 4,
+
+    "swarthy": 1,
+
+    "assent": 2,
+
+    "1838": 3,
+
+    "virtue": 1,
+
+    "1836": 1,
+
+    "1834": 1,
+
+    "types": 2,
+
+    "corrupt": 1,
+
+    "hangman": 1,
+
+    "fleece": 1,
+
+    "extermination": 3,
+
+    "sips": 1,
+
+    "rationalistic": 2,
+
+    "1844": 1,
+
+    "1842": 1,
+
+    "speedily": 2,
+
+    "ones": 1,
+
+    "specially": 1,
+
+    "gentleman": 5,
+
+    "1846": 1,
+
+    "compromise": 3,
+
+    "1845": 3,
+
+    "botolph": 1,
+
+    "ribault": 1,
+
+    "reach": 3,
+
+    "comparative": 1,
+
+    "cruder": 2,
+
+    "displeasing": 1,
+
+    "lightly": 2,
+
+    "react": 2,
+
+    "1855": 2,
+
+    "1854": 2,
+
+    "hist": 6,
+
+    "1853": 3,
+
+    "positively": 1,
+
+    "1852": 2,
+
+    "1850": 2,
+
+    "rulers": 1,
+
+    "justify": 4,
+
+    "dreadful": 9,
+
+    "sight": 10,
+
+    "1859": 4,
+
+    "1858": 1,
+
+    "1857": 2,
+
+    "between": 92,
+
+    "1856": 2,
+
+    "exhibited": 1,
+
+    "overhead": 1,
+
+    "allsufficiency": 1,
+
+    "peasantry": 2,
+
+    "pillage": 3,
+
+    "deprived": 4,
+
+    "1866": 1,
+
+    "1865": 3,
+
+    "1862": 1,
+
+    "1861": 1,
+
+    "1860": 2,
+
+    "seventeen": 4,
+
+    "following": 24,
+
+    "kynaxa": 1,
+
+    "1869": 2,
+
+    "1868": 1,
+
+    "1867": 3,
+
+    "passaic": 1,
+
+    "overthrowing": 3,
+
+    "spasmodic": 2,
+
+    "promulgation": 1,
+
+    "aspersion": 1,
+
+    "1880": 2,
+
+    "wear": 2,
+
+    "dusky": 2,
+
+    "unsuccessful": 3,
+
+    "weak": 10,
+
+    "1877": 3,
+
+    "1876": 4,
+
+    "impress": 2,
+
+    "leak": 1,
+
+    "1875": 1,
+
+    "announcing": 1,
+
+    "1874": 2,
+
+    "seeing": 3,
+
+    "frigate": 1,
+
+    "blocked": 1,
+
+    "1872": 1,
+
+    "assert": 5,
+
+    "place": 32,
+
+    "1879": 1,
+
+    "regular": 5,
+
+    "objection": 1,
+
+    "1878": 2,
+
+    "picturesque": 2,
+
+    "informed": 1,
+
+    "dispute": 6,
+
+    "prominently": 3,
+
+    "tired": 3,
+
+    "offenders": 2,
+
+    "lead": 10,
+
+    "1888": 5,
+
+    "expect": 2,
+
+    "1887": 7,
+
+    "1886": 1,
+
+    "site": 11,
+
+    "1884": 1,
+
+    "assess": 1,
+
+    "1883": 2,
+
+    "1882": 1,
+
+    "1881": 3,
+
+    "gentlemen": 6,
+
+    "kindling": 1,
+
+    "1889": 2,
+
+    "passage": 3,
+
+    "adequate": 3,
+
+    "leaders": 13,
+
+    "knocking": 1,
+
+    "divert": 1,
+
+    "divers": 1,
+
+    "describing": 2,
+
+    "plain": 11,
+
+    "sacked": 2,
+
+    "1892": 1,
+
+    "blockhouse": 2,
+
+    "should": 77,
+
+    "only": 97,
+
+    "unintentional": 1,
+
+    "justice": 16,
+
+    "albigenses": 4,
+
+    "refrained": 1,
+
+    "furious": 2,
+
+    "enumerated": 1,
+
+    "officers": 6,
+
+    "individual": 13,
+
+    "loans": 1,
+
+    "netherlands": 10,
+
+    "accepted": 8,
+
+    "comparing": 1,
+
+    "excitement": 5,
+
+    "regards": 3,
+
+    "jonas": 1,
+
+    "testimony": 2,
+
+    "person": 12,
+
+    "enforce": 2,
+
+    "consciences": 2,
+
+    "week": 6,
+
+    "ferocious": 4,
+
+    "acknowledged": 3,
+
+    "gigantic": 3,
+
+    "preaching": 9,
+
+    "aragon": 1,
+
+    "paris": 3,
+
+    "ready": 18,
+
+    "studies": 1,
+
+    "greatest": 6,
+
+    "routed": 1,
+
+    "unconscious": 1,
+
+    "immunities": 1,
+
+    "limited": 6,
+
+    "romanized": 5,
+
+    "studied": 5,
+
+    "weakest": 3,
+
+    "hartford": 22,
+
+    "match": 2,
+
+    "reads": 1,
+
+    "fearful": 3,
+
+    "played": 11,
+
+    "corresponding": 1,
+
+    "resembled": 1,
+
+    "migrations": 3,
+
+    "clutches": 1,
+
+    "severalty": 1,
+
+    "seaport": 1,
+
+    "prepare": 5,
+
+    "crusade": 5,
+
+    "hamlet": 1,
+
+    "spoke": 8,
+
+    "fifty": 11,
+
+    "intrinsically": 1,
+
+    "withdrawn": 1,
+
+    "discourage": 1,
+
+    "rhapsodic": 1,
+
+    "owners": 1,
+
+    "satan": 2,
+
+    "approved": 7,
+
+    "would": 148,
+
+    "brooklyn": 2,
+
+    "electronically": 2,
+
+    "customs": 3,
+
+    "warrant": 2,
+
+    "scanty": 1,
+
+    "incomes": 1,
+
+    "overrate": 1,
+
+    "successfully": 2,
+
+    "sinfulness": 1,
+
+    "meanwhile": 7,
+
+    "narrative": 10,
+
+    "pitcht": 1,
+
+    "twiller": 3,
+
+    "persian": 4,
+
+    "diplomacy": 1,
+
+    "temper": 14,
+
+    "left": 27,
+
+    "reserved": 5,
+
+    "hairbreadth": 1,
+
+    "extracts": 2,
+
+    "dismembered": 1,
+
+    "eleven": 5,
+
+    "moors": 3,
+
+    "frantic": 1,
+
+    "talisman": 1,
+
+    "standeth": 1,
+
+    "statute": 6,
+
+    "object": 2,
+
+    "accessible": 1,
+
+    "infinite": 2,
+
+    "suffice": 2,
+
+    "notable": 4,
+
+    "unparalleled": 1,
+
+    "elect": 1,
+
+    "example": 9,
+
+    "minds": 16,
+
+    "characters": 3,
+
+    "levying": 1,
+
+    "feeding": 1,
+
+    "stirring": 2,
+
+    "quiet": 9,
+
+    "multiplication": 2,
+
+    "galloped": 1,
+
+    "raids": 3,
+
+    "resigned": 1,
+
+    "policy": 42,
+
+    "napoleon": 1,
+
+    "address": 3,
+
+    "rabble": 2,
+
+    "nichewaug": 1,
+
+    "emissaries": 2,
+
+    "obeying": 1,
+
+    "noblemen": 2,
+
+    "consisting": 3,
+
+    "heightened": 1,
+
+    "destroyed": 6,
+
+    "throw": 5,
+
+    "thank": 1,
+
+    "fifth": 4,
+
+    "violent": 9,
+
+    "inaccessible": 1,
+
+    "warded": 2,
+
+    "zealously": 2,
+
+    "torturing": 1,
+
+    "barrenness": 1,
+
+    "cutlass": 1,
+
+    "provocation": 1,
+
+    "bondage": 1,
+
+    "cloistered": 1,
+
+    "asseverated": 1,
+
+    "scholarship": 4,
+
+    "ascended": 2,
+
+    "furnifell": 1,
+
+    "others": 18,
+
+    "making": 43,
+
+    "sagacious": 1,
+
+    "beset": 3,
+
+    "check": 9,
+
+    "dorchester": 10,
+
+    "beacon": 2,
+
+    "survivors": 3,
+
+    "supposed": 11,
+
+    "anticipating": 1,
+
+    "wyclif": 15,
+
+    "virginian": 1,
+
+    "superstitious": 3,
+
+    "applied": 5,
+
+    "moaning": 1,
+
+    "indispensable": 2,
+
+    "lent": 1,
+
+    "disclaimers": 1,
+
+    "society": 61,
+
+    "arranged": 3,
+
+    "nowhere": 5,
+
+    "flows": 1,
+
+    "romantic": 9,
+
+    "screeching": 1,
+
+    "anticipation": 1,
+
+    "reinforcement": 3,
+
+    "ensuring": 1,
+
+    "lend": 1,
+
+    "purged": 1,
+
+    "windsor": 7,
+
+    "approval": 2,
+
+    "warding": 2,
+
+    "endeavoured": 1,
+
+    "realized": 6,
+
+    "expose": 1,
+
+    "concentrate": 1,
+
+    "cheer": 2,
+
+    "explosion": 1,
+
+    "drumclog": 1,
+
+    "stormed": 1,
+
+    "translation": 3,
+
+    "shielding": 1,
+
+    "well": 57,
+
+    "realizes": 2,
+
+    "handling": 2,
+
+    "phila": 1,
+
+    "outlook": 1,
+
+    "extinguished": 2,
+
+    "observance": 1,
+
+    "resentful": 1,
+
+    "severally": 1,
+
+    "oaken": 1,
+
+    "pioneer": 3,
+
+    "catholicism": 1,
+
+    "primacy": 3,
+
+    "weymouth": 7,
+
+    "manuscripts": 1,
+
+    "loved": 2,
+
+    "experiment": 4,
+
+    "implication": 2,
+
+    "apostle": 6,
+
+    "fierce": 5,
+
+    "oppressors": 2,
+
+    "reservation": 1,
+
+    "cordial": 1,
+
+    "attika": 1,
+
+    "enlisting": 1,
+
+    "went": 38,
+
+    "considering": 2,
+
+    "distant": 4,
+
+    "turbulence": 4,
+
+    "steered": 1,
+
+    "cooperating": 3,
+
+    "bringing": 6,
+
+    "daylight": 1,
+
+    "schools": 3,
+
+    "binary": 1,
+
+    "spots": 1,
+
+    "fermentation": 1,
+
+    "crazy": 1,
+
+    "orders": 4,
+
+    "schoole": 1,
+
+    "legislatures": 3,
+
+    "deferred": 1,
+
+    "successor": 6,
+
+    "leaked": 1,
+
+    "solemnly": 2,
+
+    "irony": 1,
+
+    "matter": 15,
+
+    "walls": 2,
+
+    "acquiring": 1,
+
+    "litus": 1,
+
+    "succession": 1,
+
+    "reformers": 2,
+
+    "contented": 1,
+
+    "wept": 2,
+
+    "walter": 2,
+
+    "lover": 2,
+
+    "goats": 2,
+
+    "discouraged": 1,
+
+    "produce": 2,
+
+    "aquinas": 1,
+
+    "walks": 2,
+
+    "justices": 3,
+
+    "reminded": 3,
+
+    "secession": 5,
+
+    "spaniards": 1,
+
+    "industries": 1,
+
+    "thanksgiving": 2,
+
+    "tormented": 1,
+
+    "communities": 13,
+
+    "capital": 4,
+
+    "pitted": 2,
+
+    "vandals": 1,
+
+    "minot": 1,
+
+    "fuel": 1,
+
+    "hostile": 9,
+
+    "flora": 1,
+
+    "arrows": 2,
+
+    "straits": 1,
+
+    "translated": 2,
+
+    "employee": 1,
+
+    "upon": 189,
+
+    "lad": 3,
+
+    "pray": 5,
+
+    "employed": 5,
+
+    "bulwark": 4,
+
+    "incontrovertible": 1,
+
+    "defective": 3,
+
+    "west": 8,
+
+    "raise": 8,
+
+    "quite": 36,
+
+    "lap": 1,
+
+    "hated": 4,
+
+    "lat": 1,
+
+    "tower": 1,
+
+    "frontiers": 1,
+
+    "law": 39,
+
+    "comparison": 5,
+
+    "lay": 18,
+
+    "anarchical": 4,
+
+    "hatch": 1,
+
+    "lest": 1,
+
+    "differs": 1,
+
+    "wales": 2,
+
+    "revert": 3,
+
+    "less": 54,
+
+    "successive": 1,
+
+    "conflicting": 3,
+
+    "institutions": 14,
+
+    "condition": 11,
+
+    "folsom": 1,
+
+    "inventions": 1,
+
+    "wholehearted": 1,
+
+    "ceremony": 1,
+
+    "improve": 1,
+
+    "were": 530,
+
+    "taxation": 5,
+
+    "university": 15,
+
+    "censure": 2,
+
+    "levy": 2,
+
+    "bryce": 1,
+
+    "wound": 2,
+
+    "teacher": 2,
+
+    "coolly": 1,
+
+    "generous": 2,
+
+    "repressed": 1,
+
+    "coincidence": 2,
+
+    "possibility": 2,
+
+    "wounded": 3,
+
+    "realizing": 2,
+
+    "distinguished": 6,
+
+    "opening": 3,
+
+    "declarations": 1,
+
+    "industrial": 3,
+
+    "toiling": 1,
+
+    "spoken": 4,
+
+    "foment": 1,
+
+    "skirmish": 1,
+
+    "contemporaries": 3,
+
+    "allyn": 1,
+
+    "barbarous": 1,
+
+    "lingered": 1,
+
+    "prey": 1,
+
+    "lieutenant": 2,
+
+    "expedition": 5,
+
+    "hadad": 1,
+
+    "led": 29,
+
+    "absorb": 2,
+
+    "allanson": 1,
+
+    "supply": 4,
+
+    "wherein": 2,
+
+    "integrity": 2,
+
+    "mountain": 4,
+
+    "separatism": 1,
+
+    "injunctions": 1,
+
+    "liable": 3,
+
+    "let": 15,
+
+    "separatist": 1,
+
+    "press": 3,
+
+    "cargo": 2,
+
+    "forsook": 1,
+
+    "subordinated": 1,
+
+    "night": 7,
+
+    "courtesy": 2,
+
+    "polity": 7,
+
+    "pack": 1,
+
+    "complied": 1,
+
+    "each": 27,
+
+    "devonshire": 5,
+
+    "thirty": 21,
+
+    "perfectly": 2,
+
+    "entertainment": 1,
+
+    "document": 5,
+
+    "killing": 2,
+
+    "colonist": 1,
+
+    "prayed": 1,
+
+    "steamers": 1,
+
+    "descendants": 8,
+
+    "promote": 3,
+
+    "does": 19,
+
+    "divorce": 1,
+
+    "appurtenance": 1,
+
+    "tonnage": 1,
+
+    "graphic": 1,
+
+    "bradford": 13,
+
+    "situation": 15,
+
+    "confederation": 6,
+
+    "legislation": 3,
+
+    "clad": 1,
+
+    "fraught": 5,
+
+    "thirst": 1,
+
+    "refused": 12,
+
+    "perplexed": 1,
+
+    "refuses": 2,
+
+    "stuffed": 2,
+
+    "haughty": 2,
+
+    "admitting": 2,
+
+    "prayer": 6,
+
+    "clan": 2,
+
+    "quit": 1,
+
+    "coincident": 1,
+
+    "demanded": 2,
+
+    "fashion": 3,
+
+    "insurance": 1,
+
+    "baylies": 1,
+
+    "surely": 4,
+
+    "principle": 27,
+
+    "surmounted": 1,
+
+    "quinsigamond": 1,
+
+    "lie": 1,
+
+    "source": 10,
+
+    "circulated": 2,
+
+    "unable": 2,
+
+    "separation": 2,
+
+    "vitality": 4,
+
+    "dogs": 3,
+
+    "homes": 6,
+
+    "weakened": 1,
+
+    "acquired": 2,
+
+    "historians": 7,
+
+    "sleuth": 1,
+
+    "firearms": 4,
+
+    "judgments": 1,
+
+    "merest": 2,
+
+    "doubt": 11,
+
+    "merit": 2,
+
+    "develop": 1,
+
+    "melchisedek": 1,
+
+    "foolishnesse": 1,
+
+    "pecuniary": 1,
+
+    "involved": 12,
+
+    "converted": 4,
+
+    "district": 2,
+
+    "page": 6,
+
+    "whereof": 1,
+
+    "nursed": 1,
+
+    "full": 34,
+
+    "monasteries": 1,
+
+    "destiny": 4,
+
+    "away": 39,
+
+    "aspects": 1,
+
+    "impersonal": 1,
+
+    "unmolested": 5,
+
+    "salamander": 1,
+
+    "blinding": 1,
+
+    "cared": 2,
+
+    "paulicians": 1,
+
+    "painful": 1,
+
+    "witchcraft": 2,
+
+    "convention": 1,
+
+    "harvest": 1,
+
+    "tacitus": 1,
+
+    "traverses": 1,
+
+    "churchyard": 1,
+
+    "appropriately": 1,
+
+    "prothero": 1,
+
+    "refusal": 1,
+
+    "purchase": 4,
+
+    "titles": 3,
+
+    "supper": 2,
+
+    "advised": 2,
+
+    "inaugurated": 3,
+
+    "manage": 1,
+
+    "milman": 3,
+
+    "wiser": 2,
+
+    "equal": 6,
+
+    "gravity": 3,
+
+    "moderation": 1,
+
+    "spared": 2,
+
+    "paid": 14,
+
+    "exterminations": 1,
+
+    "verses": 2,
+
+    "incur": 1,
+
+    "contemplating": 1,
+
+    "punitive": 1,
+
+    "hamlets": 2,
+
+    "bosnia": 1,
+
+    "three": 57,
+
+    "scituate": 2,
+
+    "ordeal": 1,
+
+    "remembered": 2,
+
+    "whoever": 3,
+
+    "colonize": 1,
+
+    "suppression": 4,
+
+    "season": 1,
+
+    "controversial": 2,
+
+    "payment": 3,
+
+    "latium": 1,
+
+    "lonely": 1,
+
+    "pale": 2,
+
+    "batten": 2,
+
+    "teutonism": 2,
+
+    "deputy": 5,
+
+    "threw": 3,
+
+    "suppressing": 1,
+
+    "roads": 2,
+
+    "pepys": 1,
+
+    "pennsylvania": 11,
+
+    "judicial": 4,
+
+    "provide": 7,
+
+    "primary": 8,
+
+    "masterful": 3,
+
+    "log": 4,
+
+    "enterprise": 14,
+
+    "paperwork": 1,
+
+    "teaching": 2,
+
+    "pawtuxet": 4,
+
+    "formation": 7,
+
+    "lop": 1,
+
+    "lot": 2,
+
+    "fuse": 1,
+
+    "computer": 2,
+
+    "aided": 5,
+
+    "wholesale": 12,
+
+    "low": 2,
+
+    "merely": 9,
+
+    "contradiction": 1,
+
+    "prow": 1,
+
+    "furs": 1,
+
+    "wealth": 6,
+
+    "meant": 12,
+
+    "means": 22,
+
+    "impracticable": 2,
+
+    "fury": 3,
+
+    "discourses": 1,
+
+    "crowbars": 1,
+
+    "rusty": 1,
+
+    "centre": 6,
+
+    "prof": 1,
+
+    "sharpshooters": 1,
+
+    "contemplation": 1,
+
+    "eternal": 5,
+
+    "redress": 1,
+
+    "besse": 1,
+
+    "abandoning": 1,
+
+    "fellow": 5,
+
+    "wodan": 1,
+
+    "advancing": 1,
+
+    "comers": 3,
+
+    "interests": 5,
+
+    "crushing": 3,
+
+    "commanded": 3,
+
+    "door": 6,
+
+    "quick": 6,
+
+    "alliance": 12,
+
+    "doom": 2,
+
+    "recognizing": 1,
+
+    "husband": 11,
+
+    "metamorphosed": 1,
+
+    "experience": 18,
+
+    "merry": 2,
+
+    "muskets": 6,
+
+    "commander": 3,
+
+    "renegade": 1,
+
+    "controversies": 1,
+
+    "disappeared": 4,
+
+    "propagate": 1,
+
+    "inscription": 2,
+
+    "checked": 2,
+
+    "prescribing": 1,
+
+    "affair": 11,
+
+    "revivify": 1,
+
+    "chelmsford": 1,
+
+    "orthodox": 2,
+
+    "combination": 5,
+
+    "obtain": 12,
+
+    "delicacies": 1,
+
+    "toulouse": 1,
+
+    "curiosity": 1,
+
+    "coasts": 2,
+
+    "suddenness": 2,
+
+    "summe": 1,
+
+    "sacrifice": 2,
+
+    "particular": 5,
+
+    "done": 28,
+
+    "pause": 1,
+
+    "unseemly": 2,
+
+    "perceived": 1,
+
+    "sectaries": 1,
+
+    "crudest": 1,
+
+    "cohesion": 2,
+
+    "relished": 1,
+
+    "inheritances": 1,
+
+    "ease": 1,
+
+    "alternately": 1,
+
+    "overrun": 1,
+
+    "relied": 1,
+
+    "insulted": 1,
+
+    "part": 69,
+
+    "huguenots": 10,
+
+    "jealousy": 3,
+
+    "banished": 7,
+
+    "principal": 13,
+
+    "groton": 3,
+
+    "east": 12,
+
+    "relies": 1,
+
+    "hearers": 2,
+
+    "leniently": 1,
+
+    "relief": 6,
+
+    "thither": 3,
+
+    "washed": 1,
+
+    "neighbourhoods": 1,
+
+    "whalley": 4,
+
+    "villages": 11,
+
+    "wigwam": 3,
+
+    "persuaded": 3,
+
+    "revellers": 1,
+
+    "xiii": 1,
+
+    "seeking": 3,
+
+    "ears": 7,
+
+    "calvin": 9,
+
+    "gratitude": 3,
+
+    "earn": 1,
+
+    "interaction": 2,
+
+    "earl": 14,
+
+    "behaved": 5,
+
+    "interfere": 3,
+
+    "earldoms": 1,
+
+    "fitting": 1,
+
+    "snowdrifts": 1,
+
+    "annexation": 3,
+
+    "regulated": 1,
+
+    "ambiguous": 1,
+
+    "beasts": 1,
+
+    "conducting": 1,
+
+    "infernal": 1,
+
+    "path": 5,
+
+    "impulsive": 1,
+
+    "palliate": 1,
+
+    "startled": 1,
+
+    "record": 6,
+
+    "goddes": 1,
+
+    "unrolled": 1,
+
+    "chicago": 3,
+
+    "accepting": 1,
+
+    "narratives": 1,
+
+    "bunker": 1,
+
+    "provinces": 6,
+
+    "preventing": 1,
+
+    "pass": 7,
+
+    "past": 9,
+
+    "nineteen": 1,
+
+    "mourning": 1,
+
+    "mild": 1,
+
+    "milk": 2,
+
+    "bill": 2,
+
+    "tributary": 1,
+
+    "whichever": 2,
+
+    "whose": 24,
+
+    "easy": 10,
+
+    "abbots": 1,
+
+    "domain": 4,
+
+    "omitted": 2,
+
+    "adopting": 1,
+
+    "oceans": 1,
+
+    "assigned": 2,
+
+    "diplomatist": 2,
+
+    "wherewith": 1,
+
+    "pokanokets": 1,
+
+    "profoundly": 4,
+
+    "supplanting": 1,
+
+    "existed": 9,
+
+    "adoption": 2,
+
+    "philadelphia": 4,
+
+    "rowlandson": 13,
+
+    "mine": 2,
+
+    "grateful": 1,
+
+    "mind": 21,
+
+    "reverence": 5,
+
+    "medieval": 4,
+
+    "unwillingness": 2,
+
+    "involve": 2,
+
+    "9th": 2,
+
+    "redemptioners": 2,
+
+    "sedition": 1,
+
+    "supersede": 1,
+
+    "inch": 1,
+
+    "phrases": 3,
+
+    "richest": 1,
+
+    "wretches": 1,
+
+    "dialect": 1,
+
+    "london": 72,
+
+    "added": 11,
+
+    "down": 46,
+
+    "shifting": 4,
+
+    "wretched": 7,
+
+    "champlain": 1,
+
+    "brings": 1,
+
+    "kingdoms": 4,
+
+    "habit": 4,
+
+    "clue": 1,
+
+    "adding": 2,
+
+    "club": 2,
+
+    "legal": 10,
+
+    "boundaries": 1,
+
+    "disintegration": 2,
+
+    "signal": 4,
+
+    "mutterings": 2,
+
+    "seated": 1,
+
+    "cajole": 1,
+
+    "varied": 5,
+
+    "intriguing": 1,
+
+    "interfered": 2,
+
+    "sallied": 1,
+
+    "regarding": 2,
+
+    "month": 9,
+
+    "occasions": 2,
+
+    "gratefully": 1,
+
+    "acres": 3,
+
+    "vehemently": 1,
+
+    "impossibility": 1,
+
+    "hampshire": 13,
+
+    "dispensed": 1,
+
+    "rather": 10,
+
+    "importance": 18,
+
+    "worthy": 9,
+
+    "stonington": 2,
+
+    "endless": 3,
+
+    "title": 11,
+
+    "papers": 8,
+
+    "incentives": 1,
+
+    "progenitors": 1,
+
+    "plantation": 2,
+
+    "busily": 3,
+
+    "keroualle": 1,
+
+    "human": 37,
+
+    "grantees": 2,
+
+    "prince": 9,
+
+    "poetry": 3,
+
+    "arrogant": 3,
+
+    "robinson": 9,
+
+    "ecstasy": 1,
+
+    "custom": 4,
+
+    "permission": 10,
+
+    "abode": 1,
+
+    "transplanted": 1,
+
+    "jesse": 1,
+
+    "considerations": 7,
+
+    "decidedly": 2,
+
+    "henry": 26,
+
+    "interpret": 1,
+
+    "arduous": 3,
+
+    "blanket": 1,
+
+    "engendered": 1,
+
+    "articles": 3,
+
+    "revealeth": 1,
+
+    "rhyming": 1,
+
+    "brothers": 1,
+
+    "triumphed": 1,
+
+    "bellows": 1,
+
+    "exhausted": 2,
+
+    "convert": 5,
+
+    "mohegan": 5,
+
+    "herulian": 1,
+
+    "navigation": 3,
+
+    "jests": 1,
+
+    "impaired": 3,
+
+    "testified": 1,
+
+    "supplies": 1,
+
+    "goodly": 1,
+
+    "usually": 7,
+
+    "whereas": 2,
+
+    "calamities": 1,
+
+    "feat": 1,
+
+    "letters": 6,
+
+    "fear": 15,
+
+    "epitomizes": 1,
+
+    "printer": 1,
+
+    "oriental": 14,
+
+    "signed": 1,
+
+    "sense": 23,
+
+    "removing": 1,
+
+    "thanehood": 1,
+
+    "printed": 4,
+
+    "physically": 1,
+
+    "jesus": 4,
+
+    "field": 7,
+
+    "causation": 1,
+
+    "served": 16,
+
+    "wilderness": 11,
+
+    "l500": 1,
+
+    "legitimate": 1,
+
+    "whereby": 6,
+
+    "verres": 1,
+
+    "serves": 1,
+
+    "skin": 4,
+
+    "grievances": 2,
+
+    "mention": 6,
+
+    "advocated": 1,
+
+    "legally": 1,
+
+    "herald": 1,
+
+    "grudge": 2,
+
+    "psal": 1,
+
+    "man": 81,
+
+    "despotisms": 3,
+
+    "leisure": 2,
+
+    "map": 2,
+
+    "twenty": 20,
+
+    "mystics": 1,
+
+    "listeners": 1,
+
+    "may": 111,
+
+    "advocates": 2,
+
+    "insinuation": 1,
+
+    "supplied": 4,
+
+    "wickford": 2,
+
+    "pilgrim": 5,
+
+    "ethical": 7,
+
+    "murders": 3,
+
+    "parley": 3,
+
+    "marvellous": 1,
+
+    "louise": 1,
+
+    "vividly": 1,
+
+    "princes": 1,
+
+    "statutes": 2,
+
+    "sweets": 1,
+
+    "ministering": 1,
+
+    "agonies": 1,
+
+    "unseen": 1,
+
+    "feet": 8,
+
+    "fees": 5,
+
+    "sprung": 1,
+
+    "recognition": 2,
+
+    "feel": 9,
+
+    "terribly": 4,
+
+    "circulating": 3,
+
+    "solidi": 1,
+
+    "terrible": 11,
+
+    "congregations": 2,
+
+    "ideal": 17,
+
+    "equipment": 3,
+
+    "busied": 1,
+
+    "ideas": 10,
+
+    "pressure": 3,
+
+    "tyrians": 1,
+
+    "becomes": 7,
+
+    "fences": 1,
+
+    "directions": 1,
+
+    "martial": 1,
+
+    "wrangle": 1,
+
+    "thriving": 2,
+
+    "handsome": 1,
+
+    "constitution": 18,
+
+    "ushered": 3,
+
+    "conceive": 1,
+
+    "diabolical": 1,
+
+    "trumbull": 5,
+
+    "nonsense": 1,
+
+    "breath": 3,
+
+    "repeat": 1,
+
+    "men": 212,
+
+    "louis": 15,
+
+    "justification": 2,
+
+    "physical": 4,
+
+    "met": 9,
+
+    "wicked": 3,
+
+    "repeal": 2,
+
+    "thenceforward": 2,
+
+    "wollaston": 1,
+
+    "submerged": 1,
+
+    "exactly": 3,
+
+    "constituting": 2,
+
+    "structure": 4,
+
+    "orange": 2,
+
+    "riper": 1,
+
+    "ripen": 1,
+
+    "woburn": 3,
+
+    "mercy": 1,
+
+    "doubtfully": 1,
+
+    "interpreting": 3,
+
+    "enters": 1,
+
+    "about": 81,
+
+    "danger": 21,
+
+    "granted": 17,
+
+    "character": 31,
+
+    "above": 8,
+
+    "tales": 4,
+
+    "disappearing": 1,
+
+    "goals": 1,
+
+    "height": 2,
+
+    "resident": 2,
+
+    "moderate": 3,
+
+    "beaten": 4,
+
+    "myself": 2,
+
+    "invent": 2,
+
+    "frozen": 4,
+
+    "urbanity": 1,
+
+    "surveyor": 1,
+
+    "received": 17,
+
+    "wonderful": 15,
+
+    "substantial": 3,
+
+    "quality": 1,
+
+    "avoided": 3,
+
+    "pillar": 1,
+
+    "afresh": 1,
+
+    "animal": 1,
+
+    "consistently": 1,
+
+    "sincere": 2,
+
+    "shared": 6,
+
+    "kelts": 1,
+
+    "outset": 7,
+
+    "armagnacs": 1,
+
+    "treatises": 2,
+
+    "mid": 1,
+
+    "association": 3,
+
+    "believe": 3,
+
+    "shares": 1,
+
+    "fell": 18,
+
+    "into": 149,
+
+    "ungovernable": 1,
+
+    "voyages": 2,
+
+    "greece": 1,
+
+    "glance": 2,
+
+    "gazes": 1,
+
+    "overlord": 1,
+
+    "destruction": 11,
+
+    "reverent": 1,
+
+    "stiff": 1,
+
+    "rudiments": 2,
+
+    "middle": 15,
+
+    "though": 30,
+
+    "preachment": 1,
+
+    "appeal": 14,
+
+    "swamp": 10,
+
+    "heavenly": 3,
+
+    "clearness": 2,
+
+    "balkan": 2,
+
+    "reverend": 1,
+
+    "pullman": 1,
+
+    "diary": 4,
+
+    "appear": 5,
+
+    "definitely": 1,
+
+    "texts": 4,
+
+    "monotonous": 1,
+
+    "associated": 14,
+
+    "descended": 1,
+
+    "infrequent": 1,
+
+    "open": 6,
+
+    "lateran": 1,
+
+    "salvation": 3,
+
+    "suffering": 2,
+
+    "forced": 8,
+
+    "project": 88,
+
+    "exclamation": 1,
+
+    "hawkins": 1,
+
+    "locks": 2,
+
+    "diameter": 1,
+
+    "roughly": 1,
+
+    "noonday": 1,
+
+    "displaying": 4,
+
+    "formidable": 8,
+
+    "beard": 2,
+
+    "gettysburg": 1,
+
+    "magdeburg": 1,
+
+    "uneasiness": 1,
+
+    "crank": 1,
+
+    "felt": 27,
+
+    "bears": 1,
+
+    "conquest": 19,
+
+    "sections": 1,
+
+    "effected": 10,
+
+    "assurance": 1,
+
+    "pestilent": 1,
+
+    "fortnight": 1,
+
+    "advisers": 1,
+
+    "surpassing": 1,
+
+    "paths": 1,
+
+    "hypothetical": 1,
+
+    "forces": 13,
+
+    "gospel": 6,
+
+    "secured": 6,
+
+    "rebuked": 1,
+
+    "locke": 2,
+
+    "allow": 4,
+
+    "romans": 1,
+
+    "befall": 1,
+
+    "ranges": 1,
+
+    "proper": 1,
+
+    "renaissance": 1,
+
+    "slain": 9,
+
+    "polls": 1,
+
+    "18th": 2,
+
+    "bitter": 8,
+
+    "peculiarly": 3,
+
+    "stocks": 1,
+
+    "sleepy": 1,
+
+    "performances": 1,
+
+    "organic": 2,
+
+    "dwells": 1,
+
+    "registry": 1,
+
+    "agag": 1,
+
+    "selectmen": 1,
+
+    "patron": 2,
+
+    "recently": 1,
+
+    "staked": 1,
+
+    "incredible": 1,
+
+    "flatly": 4,
+
+    "fens": 1,
+
+    "sherman": 5,
+
+    "renewed": 6,
+
+    "lodged": 1,
+
+    "stakes": 2,
+
+    "riches": 1,
+
+    "money": 14,
+
+    "richer": 2,
+
+    "unprotected": 1,
+
+    "forever": 3,
+
+    "gutenberg": 96,
+
+    "resided": 1,
+
+    "ireland": 1,
+
+    "endanger": 1,
+
+    "mob": 1,
+
+    "sunshine": 1,
+
+    "achievement": 1,
+
+    "claimed": 2,
+
+    "axes": 1,
+
+    "tradesmen": 1,
+
+    "whole": 33,
+
+    "fingers": 2,
+
+    "squires": 2,
+
+    "revolution": 22,
+
+    "nonproprietary": 1,
+
+    "relation": 7,
+
+    "altercations": 1,
+
+    "shillings": 4,
+
+    "ordination": 1,
+
+    "grindal": 1,
+
+    "obstacle": 3,
+
+    "attempts": 10,
+
+    "profits": 1,
+
+    "still": 35,
+
+    "isaac": 1,
+
+    "relating": 3,
+
+    "beastly": 1,
+
+    "resemblance": 1,
+
+    "enriched": 1,
+
+    "nicknamed": 1,
+
+    "beams": 1,
+
+    "reconnoitring": 1,
+
+    "toward": 47,
+
+    "books": 14,
+
+    "among": 84,
+
+    "patrician": 1,
+
+    "monks": 2,
+
+    "continental": 6,
+
+    "confederacy": 24,
+
+    "flock": 2,
+
+    "internal": 3,
+
+    "signature": 1,
+
+    "tongue": 2,
+
+    "republican": 1,
+
+    "literary": 15,
+
+    "unhewn": 1,
+
+    "enjoy": 2,
+
+    "defended": 3,
+
+    "ecclesiastical": 16,
+
+    "greeks": 5,
+
+    "ourselves": 2,
+
+    "specified": 2,
+
+    "indulges": 1,
+
+    "throwing": 1,
+
+    "slave": 2,
+
+    "rampart": 2,
+
+    "naturally": 10,
+
+    "beans": 1,
+
+    "writing": 10,
+
+    "federal": 27,
+
+    "believed": 5,
+
+    "persecuting": 4,
+
+    "include": 1,
+
+    "persecution": 34,
+
+    "repent": 1,
+
+    "perquisite": 1,
+
+    "aged": 4,
+
+    "haste": 2,
+
+    "buckle": 1,
+
+    "ceilings": 1,
+
+    "mrs": 37,
+
+    "altogether": 5,
+
+    "alexander": 4,
+
+    "palisade": 1,
+
+    "sleeve": 1,
+
+    "apocalypse": 1,
+
+    "censor": 1,
+
+    "cutting": 3,
+
+    "hasty": 1,
+
+    "ages": 20,
+
+    "pittsfield": 1,
+
+    "dimensions": 5,
+
+    "voice": 11,
+
+    "prepared": 5,
+
+    "anglian": 5,
+
+    "mss": 1,
+
+    "float": 1,
+
+    "barbarians": 1,
+
+    "tours": 2,
+
+    "dwarfed": 1,
+
+    "frittered": 2,
+
+    "parables": 1,
+
+    "coarse": 2,
+
+    "evade": 1,
+
+    "semitic": 1,
+
+    "cortes": 1,
+
+    "feud": 4,
+
+    "discover": 2,
+
+    "midday": 1,
+
+    "imply": 2,
+
+    "extremists": 1,
+
+    "excite": 1,
+
+    "capture": 1,
+
+    "mysteries": 1,
+
+    "failed": 8,
+
+    "estimation": 1,
+
+    "appointed": 12,
+
+    "wachusett": 1,
+
+    "sequence": 1,
+
+    "shipped": 2,
+
+    "invaded": 1,
+
+    "mud": 1,
+
+    "abolition": 1,
+
+    "elder": 2,
+
+    "latimer": 7,
+
+    "commonplace": 3,
+
+    "prescribed": 1,
+
+    "briskly": 1,
+
+    "notifies": 1,
+
+    "forerunner": 1,
+
+    "inculcated": 1,
+
+    "soundness": 1,
+
+    "notified": 1,
+
+    "controversy": 6,
+
+    "rapacity": 1,
+
+    "jack": 1,
+
+    "martyrs": 3,
+
+    "command": 10,
+
+    "swarm": 2,
+
+    "deductible": 1,
+
+    "prepares": 2,
+
+    "detach": 1,
+
+    "temple": 1,
+
+    "francis": 6,
+
+    "revised": 1,
+
+    "constituents": 1,
+
+    "perfection": 2,
+
+    "saved": 3,
+
+    "desperate": 4,
+
+    "leading": 19,
+
+    "firebrand": 2,
+
+    "winnowing": 1,
+
+    "politically": 2,
+
+    "urge": 1,
+
+    "cruiser": 1,
+
+    "endings": 1,
+
+    "music": 1,
+
+    "famine": 2,
+
+    "worshippers": 3,
+
+    "arraying": 1,
+
+    "because": 27,
+
+    "felony": 1,
+
+    "marched": 2,
+
+    "agreement": 20,
+
+    "dealing": 2,
+
+    "farthing": 2,
+
+    "merchant": 5,
+
+    "stoutly": 1,
+
+    "tendered": 1,
+
+    "vulgate": 1,
+
+    "contains": 6,
+
+    "prohibiting": 1,
+
+    "selection": 2,
+
+    "conception": 1,
+
+    "ensued": 1,
+
+    "science": 4,
+
+    "ferriage": 1,
+
+    "returns": 1,
+
+    "contravene": 1,
+
+    "detail": 1,
+
+    "fared": 4,
+
+    "wrenched": 3,
+
+    "forest": 7,
+
+    "debated": 2,
+
+    "worded": 1,
+
+    "occupations": 1,
+
+    "eloquent": 3,
+
+    "refuse": 2,
+
+    "antipathy": 2,
+
+    "banishing": 3,
+
+    "elevated": 1,
+
+    "prohibition": 2,
+
+    "flocking": 1,
+
+    "intimidated": 1,
+
+    "behavior": 1,
+
+    "sweep": 1,
+
+    "scalps": 1,
+
+    "website": 4,
+
+    "failures": 1,
+
+    "slay": 2,
+
+    "fourteenth": 2,
+
+    "evenings": 1,
+
+    "unlimited": 1,
+
+    "onset": 1,
+
+    "pushing": 1,
+
+    "descent": 1,
+
+    "assiduous": 2,
+
+    "normandy": 1,
+
+    "virile": 1,
+
+    "sweet": 1,
+
+    "anniversary": 1,
+
+    "deliverance": 1,
+
+    "eager": 2,
+
+    "republic": 7,
+
+    "historical": 16,
+
+    "lincolnshire": 6,
+
+    "boyhood": 1,
+
+    "fitness": 1,
+
+    "incorporated": 2,
+
+    "ebooks": 7,
+
+    "jericho": 1,
+
+    "tyrannies": 1,
+
+    "surrender": 13,
+
+    "cruel": 7,
+
+    "caste": 1,
+
+    "wrote": 11,
+
+    "journeyed": 1,
+
+    "exquisite": 3,
+
+    "originally": 3,
+
+    "intentions": 2,
+
+    "cardinal": 1,
+
+    "jail": 7,
+
+    "gather": 1,
+
+    "insist": 1,
+
+    "volume": 10,
+
+    "risen": 2,
+
+    "energies": 1,
+
+    "transact": 1,
+
+    "materials": 1,
+
+    "preeminent": 3,
+
+    "sailing": 1,
+
+    "protestant": 21,
+
+    "bored": 1,
+
+    "cynical": 1,
+
+    "defied": 3,
+
+    "coleman": 1,
+
+    "chroniclers": 2,
+
+    "technical": 1,
+
+    "respecting": 3,
+
+    "landmarks": 1,
+
+    "inconsistencies": 1,
+
+    "stretch": 2,
+
+    "chapels": 1,
+
+    "spirited": 4,
+
+    "irritate": 2,
+
+    "havoc": 1,
+
+    "responsible": 5,
+
+    "dating": 1,
+
+    "delirium": 1,
+
+    "mistake": 1,
+
+    "popes": 2,
+
+    "flounder": 1,
+
+    "toil": 2,
+
+    "rich": 3,
+
+    "chiefly": 9,
+
+    "tomahawked": 2,
+
+    "praise": 4,
+
+    "frenzy": 1,
+
+    "significance": 8,
+
+    "visited": 3,
+
+    "ipswich": 6,
+
+    "aloft": 1,
+
+    "inconsistency": 2,
+
+    "attacked": 8,
+
+    "family": 7,
+
+    "deliberate": 1,
+
+    "slew": 8,
+
+    "referred": 5,
+
+    "gift": 1,
+
+    "atmosphere": 1,
+
+    "copyright": 20,
+
+    "riff": 1,
+
+    "career": 8,
+
+    "rife": 1,
+
+    "told": 6,
+
+    "release": 2,
+
+    "abiding": 1,
+
+    "3000": 1,
+
+    "permeated": 3,
+
+    "moral": 16,
+
+    "foiled": 4,
+
+    "brethren": 6,
+
+    "pagan": 3,
+
+    "wenlock": 4,
+
+    "pillory": 1,
+
+    "luxuriant": 1,
+
+    "judge": 6,
+
+    "darkness": 1,
+
+    "jane": 1,
+
+    "similar": 10,
+
+    "nether": 1,
+
+    "leviticall": 1,
+
+    "partnership": 1,
+
+    "nay": 2,
+
+    "foundations": 4,
+
+    "sexton": 1,
+
+    "cottages": 1,
+
+    "angrier": 1,
+
+    "thousands": 2,
+
+    "crossing": 2,
+
+    "driven": 4,
+
+    "expulsion": 2,
+
+    "crossed": 3,
+
+    "gallows": 8,
+
+    "middleborough": 3,
+
+    "chelsea": 1,
+
+    "misfortunes": 1,
+
+    "tone": 4,
+
+    "indicated": 2,
+
+    "against": 92,
+
+    "materialist": 1,
+
+    "representations": 1,
+
+    "expounded": 1,
+
+    "pouring": 1,
+
+    "sublimity": 3,
+
+    "remind": 5,
+
+    "crude": 6,
+
+    "withstand": 1,
+
+    "savoy": 2,
+
+    "encourage": 1,
+
+    "pastors": 2,
+
+    "indicates": 1,
+
+    "charters": 7,
+
+    "punished": 1,
+
+    "thereabouts": 1,
+
+    "manufactured": 1,
+
+    "coronation": 1,
+
+    "obstinate": 1,
+
+    "honestly": 1,
+
+    "clustered": 1,
+
+    "nichols": 4,
+
+    "prophesyings": 1,
+
+    "outposts": 1,
+
+    "notables": 3,
+
+    "comprehending": 1,
+
+    "stored": 2,
+
+    "bushes": 2,
+
+    "anchor": 2,
+
+    "scorched": 1,
+
+    "preceding": 2,
+
+    "logic": 1,
+
+    "dawning": 2,
+
+    "francisco": 1,
+
+    "forgetful": 1,
+
+    "stedman": 1,
+
+    "languishing": 1,
+
+    "pages": 7,
+
+    "bradstreet": 8,
+
+    "intense": 9,
+
+    "took": 35,
+
+    "new": 406,
+
+    "thrifty": 5,
+
+    "positions": 1,
+
+    "chlodwig": 1,
+
+    "intervals": 3,
+
+    "unimpaired": 1,
+
+    "stimulating": 3,
+
+    "continuance": 1,
+
+    "tons": 1,
+
+    "bestowed": 1,
+
+    "franklin": 1,
+
+    "dunbar": 2,
+
+    "christianization": 1,
+
+    "boundary": 2,
+
+    "hosmer": 2,
+
+    "influenced": 2,
+
+    "dispelled": 1,
+
+    "befallen": 1,
+
+    "reaching": 8,
+
+    "media": 1,
+
+    "around": 3,
+
+    "impassable": 2,
+
+    "solway": 1,
+
+    "influences": 1,
+
+    "define": 1,
+
+    "frontier": 8,
+
+    "haven": 42,
+
+    "quarto": 1,
+
+    "intents": 1,
+
+    "lydia": 1,
+
+    "manifest": 4,
+
+    "whitmore": 1,
+
+    "regicide": 5,
+
+    "prelude": 1,
+
+    "enrage": 1,
+
+    "employment": 1,
+
+    "specific": 2,
+
+    "risks": 1,
+
+    "viciousness": 1,
+
+    "engage": 2,
+
+    "inherited": 4,
+
+    "adroit": 1,
+
+    "anchorites": 1,
+
+    "recantation": 1,
+
+    "sausamon": 7,
+
+    "remainder": 1,
+
+    "territory": 22,
+
+    "persuading": 1,
+
+    "epithets": 2,
+
+    "threshed": 1,
+
+    "shift": 1,
+
+    "johnson": 9,
+
+    "stevenson": 3,
+
+    "bargain": 3,
+
+    "grander": 3,
+
+    "professional": 1,
+
+    "decided": 18,
+
+    "disconcerted": 1,
+
+    "shoulder": 1,
+
+    "dance": 1,
+
+    "fully": 10,
+
+    "models": 2,
+
+    "ensuing": 1,
+
+    "imminent": 4,
+
+    "intrigues": 2,
+
+    "primeval": 1,
+
+    "forgiveness": 1,
+
+    "brooks": 2,
+
+    "rochelle": 3,
+
+    "mystery": 2,
+
+    "tory": 1,
+
+    "slow": 11,
+
+    "hovels": 1,
+
+    "graduated": 1,
+
+    "newtown": 7,
+
+    "widened": 1,
+
+    "recount": 1,
+
+    "flask": 1,
+
+    "tomahawk": 6,
+
+    "brooke": 3,
+
+    "undisputed": 1,
+
+    "students": 1,
+
+    "recommend": 1,
+
+    "literal": 1,
+
+    "prodigious": 2,
+
+    "disturbers": 1,
+
+    "danes": 1,
+
+    "permitted": 2,
+
+    "obeyed": 1,
+
+    "gortonites": 3,
+
+    "ripe": 3,
+
+    "mournful": 1,
+
+    "attribute": 1,
+
+    "superintending": 1,
+
+    "affliction": 1,
+
+    "jaws": 1,
+
+    "poison": 3,
+
+    "silly": 4,
+
+    "riot": 1,
+
+    "arouse": 2,
+
+    "addeth": 1,
+
+    "plantations": 4,
+
+    "persuade": 1,
+
+    "refinements": 1,
+
+    "sacking": 2,
+
+    "unitarian": 1,
+
+    "stayed": 3,
+
+    "lincoln": 4,
+
+    "absolute": 11,
+
+    "understood": 7,
+
+    "supported": 2,
+
+    "resulted": 2,
+
+    "chargeable": 1,
+
+    "documents": 8,
+
+    "encroached": 1,
+
+    "swung": 1,
+
+    "culminating": 1,
+
+    "solved": 1,
+
+    "objections": 1,
+
+    "19th": 1,
+
+    "philip": 58,
+
+    "pequod": 2,
+
+    "research": 4,
+
+    "sciences": 2,
+
+    "forgetting": 1,
+
+    "houses": 16,
+
+    "portland": 4,
+
+    "cambridge": 26,
+
+    "sovereign": 7,
+
+    "pequot": 13,
+
+    "attractive": 1,
+
+    "imagine": 2,
+
+    "town": 36,
+
+    "ahab": 1,
+
+    "indistinctly": 1,
+
+    "girl": 2,
+
+    "denizens": 1,
+
+    "whatever": 7,
+
+    "destroying": 3,
+
+    "ignorance": 3,
+
+    "threescore": 1,
+
+    "stamford": 3,
+
+    "designs": 7,
+
+    "trifle": 1,
+
+    "beheaded": 1,
+
+    "involving": 1,
+
+    "blind": 1,
+
+    "smelters": 1,
+
+    "brownists": 1,
+
+    "hidden": 1,
+
+    "string": 1,
+
+    "graduates": 2,
+
+    "nearly": 23,
+
+    "poundage": 1,
+
+    "intrude": 1,
+
+    "simplicity": 1,
+
+    "diocletian": 1,
+
+    "non": 5,
+
+    "nor": 20,
+
+    "not": 423,
+
+    "godly": 1,
+
+    "now": 112,
+
+    "statement": 4,
+
+    "carthage": 2,
+
+    "lived": 9,
+
+    "ascii": 2,
+
+    "thoughts": 7,
+
+    "mischievous": 1,
+
+    "election": 1,
+
+    "breaks": 1,
+
+    "continuity": 1,
+
+    "fluently": 1,
+
+    "what": 78,
+
+    "refer": 2,
+
+    "furthermore": 1,
+
+    "timely": 1,
+
+    "fortified": 6,
+
+    "risk": 6,
+
+    "battles": 2,
+
+    "hallowell": 1,
+
+    "flame": 1,
+
+    "rise": 6,
+
+    "occupant": 1,
+
+    "odovakar": 4,
+
+    "tarring": 1,
+
+    "innocence": 2,
+
+    "erects": 1,
+
+    "charles": 66,
+
+    "withheld": 1,
+
+    "when": 156,
+
+    "modest": 1,
+
+    "exiled": 1,
+
+    "entrusting": 1,
+
+    "hatred": 3,
+
+    "endured": 3,
+
+    "tremens": 1,
+
+    "struggling": 2,
+
+    "catch": 3,
+
+    "treason": 3,
+
+    "papist": 1,
+
+    "practicable": 1,
+
+    "give": 14,
+
+    "counsel": 4,
+
+    "guises": 3,
+
+    "lives": 10,
+
+    "depends": 2,
+
+    "probability": 1,
+
+    "limiting": 3,
+
+    "lofty": 1,
+
+    "grandly": 1,
+
+    "clifford": 1,
+
+    "explicit": 1,
+
+    "propriety": 2,
+
+    "invasions": 2,
+
+    "consequential": 1,
+
+    "ships": 11,
+
+    "farms": 2,
+
+    "determined": 6,
+
+    "pulpits": 1,
+
+    "prevail": 3,
+
+    "marblehead": 1,
+
+    "felling": 1,
+
+    "burdens": 2,
+
+    "explicitly": 1,
+
+    "sentences": 1,
+
+    "direct": 5,
+
+    "viceroyalty": 1,
+
+    "undeserved": 1,
+
+    "enabled": 7,
+
+    "commons": 11,
+
+    "hardship": 1,
+
+    "confuse": 1,
+
+    "acumen": 1,
+
+    "modern": 56,
+
+    "ashawonks": 1,
+
+    "sentenced": 1,
+
+    "acknowledging": 2,
+
+    "survives": 2,
+
+    "wharf": 1,
+
+    "bogies": 1,
+
+    "exiles": 3,
+
+    "shire": 2,
+
+    "theologian": 2,
+
+    "noteworthy": 2,
+
+    "biglow": 1,
+
+    "shirk": 1,
+
+    "episcopal": 13,
+
+    "mainbeam": 1,
+
+    "wrong": 7,
+
+    "inquisitorial": 4,
+
+    "shirt": 1,
+
+    "regicides": 2,
+
+    "monarchical": 3,
+
+    "organization": 6,
+
+    "hampered": 1,
+
+    "indefatigable": 1,
+
+    "toryism": 2,
+
+    "heads": 3,
+
+    "certain": 9,
+
+    "board": 18,
+
+    "offspring": 2,
+
+    "pursuing": 3,
+
+    "outgrown": 3,
+
+    "helvetian": 1,
+
+    "heretofore": 1,
+
+    "spelled": 1,
+
+    "eleventh": 1,
+
+    "whit": 1,
+
+    "used": 17,
+
+    "tomahawks": 2,
+
+    "whig": 2,
+
+    "letting": 1,
+
+    "otherwise": 6,
+
+    "marked": 11,
+
+    "respite": 1,
+
+    "recital": 1,
+
+    "visible": 3,
+
+    "borne": 4,
+
+    "survival": 2,
+
+    "stubbs": 1,
+
+    "transubstantiation": 2,
+
+    "market": 3,
+
+    "keen": 2,
+
+    "effects": 16,
+
+    "keep": 23,
+
+    "eagle": 2,
+
+    "cruise": 1,
+
+    "jeffreys": 1,
+
+    "solemn": 5,
+
+    "dictatorial": 1,
+
+    "unworthy": 1,
+
+    "schismatics": 2,
+
+    "almighty": 1,
+
+    "imprisonment": 3,
+
+    "deserves": 4,
+
+    "endurance": 1,
+
+    "rocky": 2,
+
+    "fares": 1,
+
+    "necessarily": 5,
+
+    "succumbs": 1,
+
+    "alone": 8,
+
+    "satirical": 1,
+
+    "jerusalem": 1,
+
+    "along": 12,
+
+    "parallel": 1,
+
+    "wearisome": 1,
+
+    "designed": 1,
+
+    "coining": 2,
+
+    "breach": 5,
+
+    "handful": 4,
+
+    "stimulus": 2,
+
+    "theologies": 1,
+
+    "thanking": 1,
+
+    "critics": 1,
+
+    "talcott": 1,
+
+    "contained": 8,
+
+    "approached": 2,
+
+    "uses": 1,
+
+    "user": 3,
+
+    "inhabitants": 7,
+
+    "vistula": 1,
+
+    "diminishing": 1,
+
+    "claverhouse": 1,
+
+    "butchery": 1,
+
+    "storming": 4,
+
+    "conciliatory": 1,
+
+    "plough": 2,
+
+    "bring": 12,
+
+    "percy": 1,
+
+    "northeastern": 3,
+
+    "volleys": 1,
+
+    "hearted": 3,
+
+    "popery": 2,
+
+    "colonial": 16,
+
+    "warfare": 16,
+
+    "pitiless": 2,
+
+    "rejoinder": 1,
+
+    "lyon": 2,
+
+    "neglect": 2,
+
+    "promoting": 2,
+
+    "employers": 1,
+
+    "seceded": 1,
+
+    "hierarchy": 4,
+
+    "league": 14,
+
+    "armenia": 1,
+
+    "thirds": 1,
+
+    "turning": 4,
+
+    "peace": 23,
+
+    "consideration": 2,
+
+    "brother": 11,
+
+    "insured": 1,
+
+    "exacerbate": 1,
+
+    "isabella": 1,
+
+    "ordering": 2,
+
+    "remotest": 1,
+
+    "consequently": 1,
+
+    "pontiac": 6,
+
+    "permanency": 1,
+
+    "reluctance": 1,
+
+    "rescued": 1,
+
+    "search": 4,
+
+    "extinction": 2,
+
+    "furnished": 6,
+
+    "nickname": 2,
+
+    "whom": 28,
+
+    "permanence": 1,
+
+    "blasphemy": 2,
+
+    "scarcely": 15,
+
+    "disclaimer": 3,
+
+    "humanity": 3,
+
+    "lurking": 1,
+
+    "alternate": 2,
+
+    "magna": 2,
+
+    "attainment": 1,
+
+    "mounted": 1,
+
+    "lasted": 1,
+
+    "survivor": 1,
+
+    "actor": 1,
+
+    "prospered": 1,
+
+    "decipher": 2,
+
+    "fueled": 1,
+
+    "empowered": 3,
+
+    "tigers": 1,
+
+    "essential": 11,
+
+    "vent": 2,
+
+    "horsemen": 1,
+
+    "presumed": 1,
+
+    "bristling": 1,
+
+    "girls": 1,
+
+    "stealthy": 1,
+
+    "fighters": 1,
+
+    "kent": 1,
+
+    "warning": 3,
+
+    "troopers": 1,
+
+    "commissioner": 1,
+
+    "utmost": 2,
+
+    "bandying": 2,
+
+    "image": 1,
+
+    "immeasurably": 1,
+
+    "succumbed": 3,
+
+    "mainland": 3,
+
+    "fourteen": 3,
+
+    "homogeneous": 3,
+
+    "worsted": 2,
+
+    "knife": 1,
+
+    "celebration": 1,
+
+    "commenting": 1,
+
+    "burst": 2,
+
+    "carry": 10,
+
+    "acadia": 3,
+
+    "arose": 4,
+
+    "thriftless": 1,
+
+    "necessity": 5,
+
+    "frame": 1,
+
+    "mountains": 4,
+
+    "compelling": 1,
+
+    "origin": 7,
+
+    "loveliness": 1,
+
+    "grappling": 1,
+
+    "mistaken": 2,
+
+    "burden": 1,
+
+    "random": 1,
+
+    "confirms": 1,
+
+    "oak": 4,
+
+    "patents": 1,
+
+    "trouble": 16,
+
+    "guiana": 1,
+
+    "class": 11,
+
+    "attended": 4,
+
+    "spanish": 8,
+
+    "flanders": 1,
+
+    "calvinists": 1,
+
+    "kept": 26,
+
+    "management": 5,
+
+    "drifts": 1,
+
+    "counted": 1,
+
+    "pinched": 1,
+
+    "hellenic": 1,
+
+    "promotion": 1,
+
+    "assign": 4,
+
+    "very": 84,
+
+    "practice": 8,
+
+    "beheld": 1,
+
+    "congress": 3,
+
+    "electing": 1,
+
+    "amusements": 1,
+
+    "legislative": 2,
+
+    "transcribe": 1,
+
+    "agony": 2,
+
+    "prynne": 1,
+
+    "william": 33,
+
+    "bitterness": 3,
+
+    "vessel": 3,
+
+    "sewall": 2,
+
+    "redskin": 1,
+
+    "jails": 2,
+
+    "french": 18,
+
+    "burns": 1,
+
+    "oct": 1,
+
+    "encouraging": 2,
+
+    "brigg": 1,
+
+    "dispatched": 1,
+
+    "issue": 8,
+
+    "townsmen": 1,
+
+    "lower": 7,
+
+    "verb": 1,
+
+    "lutterworth": 1,
+
+    "odd": 1,
+
+    "resulting": 3,
+
+    "overlords": 2,
+
+    "traditional": 1,
+
+    "decree": 4,
+
+    "separatists": 13,
+
+    "acted": 1,
+
+    "steele": 2,
+
+    "untiring": 1,
+
+    "continuing": 1,
+
+    "escaping": 3,
+
+    "wider": 3,
+
+    "semblance": 1,
+
+    "promptness": 2,
+
+    "turned": 6,
+
+    "indefinitely": 1,
+
+    "saracen": 1,
+
+    "dorset": 2,
+
+    "rhode": 31,
+
+    "settlers": 42,
+
+    "pembroke": 2,
+
+    "library": 3,
+
+    "mangled": 3,
+
+    "dependence": 1,
+
+    "peril": 3,
+
+    "veto": 3,
+
+    "theophilus": 1,
+
+    "remembrance": 1,
+
+    "sadly": 1,
+
+    "slums": 1,
+
+    "seemed": 31,
+
+    "slaughtered": 3,
+
+    "despot": 3,
+
+    "draw": 1,
+
+    "wandering": 2,
+
+    "caliphate": 1,
+
+    "off": 28,
+
+    "generally": 8,
+
+    "encroaching": 3,
+
+    "turner": 1,
+
+    "disabilities": 1,
+
+    "predilection": 1,
+
+    "hildebrand": 1,
+
+    "exploring": 1,
+
+    "contended": 1,
+
+    "shurtleff": 2,
+
+    "attaining": 2,
+
+    "tipped": 1,
+
+    "dissensions": 6,
+
+    "complete": 15,
+
+    "transaction": 1,
+
+    "slunk": 1,
+
+    "hutchinson": 29,
+
+    "greeted": 1,
+
+    "liturgy": 1,
+
+    "proverbs": 1,
+
+    "moderator": 1,
+
+    "edge": 1,
+
+    "ruling": 1,
+
+    "lucullus": 1,
+
+    "poole": 1,
+
+    "relentless": 1,
+
+    "claim": 18,
+
+    "widespread": 2,
+
+    "colonies": 67,
+
+    "chronic": 1,
+
+    "lancaster": 7,
+
+    "fittest": 1,
+
+    "coalescence": 3,
+
+    "purified": 1,
+
+    "months": 16,
+
+    "dominating": 1,
+
+    "windmill": 1,
+
+    "puritans": 69,
+
+    "confronted": 4,
+
+    "chosen": 15,
+
+    "daniel": 2,
+
+    "coat": 2,
+
+    "headquarters": 3,
+
+    "eldest": 1,
+
+    "hateful": 1,
+
+    "annexing": 1,
+
+    "conservatism": 1,
+
+    "magistrate": 3,
+
+    "survey": 3,
+
+    "termed": 3,
+
+    "favourable": 3,
+
+    "newark": 3,
+
+    "code": 5,
+
+    "passionate": 3,
+
+    "dreamer": 1,
+
+    "keys": 1,
+
+    "threshing": 2,
+
+    "incompetent": 1,
+
+    "preparations": 3,
+
+    "elders": 4,
+
+    "considerable": 7,
+
+    "favourably": 1,
+
+    "dreamed": 2,
+
+    "brick": 1,
+
+    "sympathy": 11,
+
+    "wattaconoges": 1,
+
+    "cumberland": 1,
+
+    "fight": 15,
+
+    "brief": 5,
+
+    "pretty": 3,
+
+    "recover": 1,
+
+    "determine": 1,
+
+    "yorkshire": 1,
+
+    "considerably": 3,
+
+    "voluntarily": 3,
+
+    "confer": 2,
+
+    "drew": 4,
+
+    "schoolmen": 1,
+
+    "wrought": 15,
+
+    "manuscript": 1,
+
+    "memorials": 1,
+
+    "sevenheaded": 1,
+
+    "bibliographical": 2,
+
+    "sigismund": 1,
+
+    "lands": 6,
+
+    "spiritual": 13,
+
+    "prophetic": 5,
+
+    "puritan": 118,
+
+    "remarks": 2,
+
+    "exercised": 2,
+
+    "regeneration": 1,
+
+    "wholesome": 6,
+
+    "promised": 5,
+
+    "evidently": 8,
+
+    "qualitie": 1,
+
+    "speaking": 1,
+
+    "bewray": 1,
+
+    "province": 11,
+
+    "agitator": 1,
+
+    "estimate": 2,
+
+    "promises": 2,
+
+    "breaking": 11,
+
+    "proposal": 1,
+
+    "spoils": 2,
+
+    "settled": 15,
+
+    "old": 65,
+
+    "opponents": 2,
+
+    "ancient": 17,
+
+    "consolidated": 1,
+
+    "twelve": 8,
+
+    "clarke": 1,
+
+    "madrid": 2,
+
+    "austria": 1,
+
+    "starting": 1,
+
+    "device": 1,
+
+    "royalist": 3,
+
+    "conservative": 6,
+
+    "conference": 5,
+
+    "activity": 4,
+
+    "inflicting": 3,
+
+    "cabin": 2,
+
+    "assisi": 1,
+
+    "incurring": 2,
+
+    "variety": 2,
+
+    "abolitionists": 3,
+
+    "disturb": 2,
+
+    "chaucer": 1,
+
+    "george": 13,
+
+    "aiding": 1,
+
+    "thompson": 1,
+
+    "scowls": 2,
+
+    "caution": 1,
+
+    "mohawk": 3,
+
+    "stormy": 1,
+
+    "daunted": 2,
+
+    "fights": 1,
+
+    "one": 219,
+
+    "incurred": 3,
+
+    "perdurable": 1,
+
+    "connected": 1,
+
+    "pull": 2,
+
+    "crowned": 2,
+
+    "materially": 1,
+
+    "belknap": 1,
+
+    "attained": 3,
+
+    "partially": 4,
+
+    "country": 44,
+
+    "exporting": 2,
+
+    "excellence": 2,
+
+    "wheelwright": 1,
+
+    "willing": 3,
+
+    "innumerable": 3,
+
+    "dover": 3,
+
+    "demons": 1,
+
+    "trivial": 3,
+
+    "sprang": 2,
+
+    "satisfactory": 4,
+
+    "details": 3,
+
+    "picton": 2,
+
+    "conscientious": 1,
+
+    "treated": 12,
+
+    "praised": 1,
+
+    "abolished": 2,
+
+    "smiling": 2,
+
+    "authoritative": 1,
+
+    "ensure": 1,
+
+    "emotions": 3,
+
+    "vouchsafed": 2,
+
+    "smoked": 1,
+
+    "epidemic": 1,
+
+    "suppose": 4,
+
+    "upright": 1,
+
+    "infliction": 2,
+
+    "incorrectly": 1,
+
+    "obscure": 2,
+
+    "explodes": 1,
+
+    "towns": 35,
+
+    "omnipresent": 1,
+
+    "region": 5,
+
+    "yearly": 3,
+
+    "support": 17,
+
+    "yells": 2,
+
+    "coll": 5,
+
+    "superficially": 1,
+
+    "yoke": 2,
+
+    "destination": 1,
+
+    "learning": 7,
+
+    "cold": 8,
+
+    "pure": 2,
+
+    "life": 81,
+
+    "settler": 1,
+
+    "lies": 4,
+
+    "lieu": 2,
+
+    "cases": 13,
+
+    "wide": 16,
+
+    "regime": 1,
+
+    "org": 9,
+
+    "coke": 2,
+
+    "fiercely": 2,
+
+    "lief": 1,
+
+    "premature": 1,
+
+    "superior": 5,
+
+    "restitution": 1,
+
+    "butchered": 1,
+
+    "succeed": 3,
+
+    "intimidation": 1,
+
+    "conn": 1,
+
+    "toughening": 1,
+
+    "vented": 1,
+
+    "none": 24,
+
+    "pupil": 1,
+
+    "lieutenants": 1,
+
+    "problem": 5,
+
+    "voluntary": 4,
+
+    "connection": 7,
+
+    "weston": 1,
+
+    "abandoned": 7,
+
+    "seized": 11,
+
+    "presence": 3,
+
+    "whosoever": 1,
+
+    "quainter": 1,
+
+    "method": 26,
+
+    "mildness": 1,
+
+    "ominous": 3,
+
+    "makers": 1,
+
+    "wife": 9,
+
+    "streams": 2,
+
+    "come": 71,
+
+    "fortifications": 1,
+
+    "push": 1,
+
+    "exist": 1,
+
+    "freshly": 1,
+
+    "ascension": 1,
+
+    "lift": 1,
+
+    "coveted": 1,
+
+    "frederic": 2,
+
+    "peculiarity": 3,
+
+    "conceived": 2,
+
+    "goths": 1,
+
+    "robes": 1,
+
+    "distribution": 8,
+
+    "our": 64,
+
+    "capacity": 3,
+
+    "cabal": 6,
+
+    "out": 95,
+
+    "consuming": 1,
+
+    "noon": 1,
+
+    "ghost": 3,
+
+    "exasperation": 1,
+
+    "dark": 3,
+
+    "precise": 1,
+
+    "copy": 12,
+
+    "gloomily": 1,
+
+    "dare": 2,
+
+    "sensible": 3,
+
+    "genealogical": 1,
+
+    "obstinacy": 1,
+
+    "cool": 1,
+
+    "sternest": 1,
+
+    "mentioning": 1,
+
+    "oblivion": 1,
+
+    "puts": 1,
+
+    "disciples": 2,
+
+    "fortieth": 1,
+
+    "owe": 3,
+
+    "perished": 8,
+
+    "roses": 4,
+
+    "vindication": 1,
+
+    "magic": 1,
+
+    "date": 11,
+
+    "rattlesnakes": 1,
+
+    "data": 2,
+
+    "despotically": 1,
+
+    "heartbroken": 1,
+
+    "garret": 1,
+
+    "corn": 4,
+
+    "murdering": 1,
+
+    "own": 55,
+
+    "ambushed": 1,
+
+    "drum": 1,
+
+    "hospitable": 2,
+
+    "balusters": 1,
+
+    "distributing": 7,
+
+    "bearer": 1,
+
+    "consequences": 5,
+
+    "avoiding": 2,
+
+    "blow": 10,
+
+    "climbing": 2,
+
+    "firebrands": 2,
+
+    "erudition": 1,
+
+    "development": 15,
+
+    "sedgmoor": 1,
+
+    "asserted": 5,
+
+    "like": 63,
+
+    "spiritually": 1,
+
+    "brisk": 1,
+
+    "branches": 1,
+
+    "prolonged": 1,
+
+    "prestige": 2,
+
+    "ending": 2,
+
+    "efforts": 7,
+
+    "proposed": 3,
+
+    "council": 26,
+
+    "intruders": 4,
+
+    "embassy": 2,
+
+    "repression": 1,
+
+    "ground": 20,
+
+    "dash": 1,
+
+    "visitor": 2,
+
+    "sagacity": 1,
+
+    "disencumbered": 1,
+
+    "note": 12,
+
+    "everybody": 6,
+
+    "moonlight": 2,
+
+    "line": 4,
+
+    "penalty": 9,
+
+    "riding": 1,
+
+    "conveyed": 2,
+
+    "undertakings": 1,
+
+    "intends": 2,
+
+    "isaiah": 1,
+
+    "colbert": 1,
+
+    "hearts": 5,
+
+    "retrogression": 1,
+
+    "affairs": 20,
+
+    "stories": 3,
+
+    "aims": 2,
+
+    "cost": 7,
+
+    "will": 48,
+
+    "sufficed": 1,
+
+    "fishing": 2,
+
+    "confidence": 3,
+
+    "arbitrary": 3,
+
+    "heresies": 3,
+
+    "groups": 3,
+
+    "allowing": 1,
+
+    "loopholes": 1,
+
+    "oath": 3,
+
+    "compliance": 5,
+
+    "narration": 1,
+
+    "york": 18,
+
+    "assured": 6,
+
+    "roasted": 2,
+
+    "challenge": 3,
+
+    "dignity": 6,
+
+    "locations": 1,
+
+    "coalesced": 1,
+
+    "cosy": 1,
+
+    "wild": 6,
+
+    "simplicitie": 2,
+
+    "chips": 1,
+
+    "functions": 3,
+
+    "govern": 3,
+
+    "tricksome": 1,
+
+    "your": 11,
+
+    "explanation": 7,
+
+    "remote": 7,
+
+    "rider": 3,
+
+    "colonizers": 2,
+
+    "these": 152,
+
+    "begins": 3,
+
+    "yearnings": 1,
+
+    "contributions": 4,
+
+    "protected": 7,
+
+    "framed": 2,
+
+    "essentials": 1,
+
+    "calculate": 1,
+
+    "somerset": 1,
+
+    "prison": 4,
+
+    "sister": 2,
+
+    "everlasting": 2,
+
+    "welding": 1,
+
+    "devices": 1,
+
+    "chimneys": 1,
+
+    "analysis": 2,
+
+    "lion": 1,
+
+    "melanchthon": 1,
+
+    "hordes": 1,
+
+    "apparent": 5,
+
+    "wink": 1,
+
+    "historically": 3,
+
+    "grope": 1,
+
+    "seizing": 5,
+
+    "beseeching": 1,
+
+    "southampton": 2,
+
+    "enlightened": 6,
+
+    "wing": 1,
+
+    "revived": 2,
+
+    "humble": 6,
+
+    "harbour": 9,
+
+    "folly": 3,
+
+    "flight": 6,
+
+    "airy": 1,
+
+    "airs": 1,
+
+    "independent": 23,
+
+    "ahead": 1,
+
+    "achieve": 4,
+
+    "alleged": 1,
+
+    "tribunal": 1,
+
+    "arrived": 8,
+
+    "insidious": 1,
+
+    "slothful": 1,
+
+    "fervent": 1,
+
+    "pulsifer": 1,
+
+    "merciful": 4,
+
+    "goffe": 7,
+
+    "licensed": 1,
+
+    "americana": 2,
+
+    "headwind": 1,
+
+    "kernel": 1,
+
+    "faced": 1,
+
+    "forests": 2,
+
+    "plentiful": 1,
+
+    "printing": 2,
+
+    "americans": 3,
+
+    "lips": 1,
+
+    "impartial": 3,
+
+    "overwhelm": 1,
+
+    "blue": 9,
+
+    "speaks": 2,
+
+    "concludes": 1,
+
+    "days": 38,
+
+    "combined": 4,
+
+    "faces": 2,
+
+    "imperial": 8,
+
+    "algonquin": 4,
+
+    "undone": 1,
+
+    "liberal": 13,
+
+    "senates": 1,
+
+    "harmony": 2,
+
+    "genial": 2,
+
+    "medfield": 1,
+
+    "sharply": 2,
+
+    "orthodoxy": 2,
+
+    "wish": 6,
+
+    "deadly": 19,
+
+    "homestead": 2,
+
+    "wise": 15,
+
+    "exceed": 1,
+
+    "grievance": 1,
+
+    "monarchy": 7,
+
+    "vicious": 1,
+
+    "monarchs": 2,
+
+    "invitation": 1,
+
+    "pay": 12,
+
+    "controversialist": 1,
+
+    "especial": 5,
+
+    "list": 1,
+
+    "rivals": 3,
+
+    "strange": 13,
+
+    "andrew": 3,
+
+    "inquired": 1,
+
+    "external": 1,
+
+    "fated": 1,
+
+    "circumstance": 2,
+
+    "sinking": 3,
+
+    "treasury": 1,
+
+    "scenes": 5,
+
+    "vanquished": 5,
+
+    "claims": 9,
+
+    "paramount": 2,
+
+    "preserving": 1,
+
+    "creature": 3,
+
+    "child": 13,
+
+    "legislature": 13,
+
+    "divided": 6,
+
+    "germany": 12,
+
+    "instrument": 3,
+
+    "medium": 6,
+
+    "remove": 2,
+
+    "wisdom": 5,
+
+    "fatal": 5,
+
+    "starvation": 2,
+
+    "fanatical": 3,
+
+    "germans": 1,
+
+    "nominatives": 1,
+
+    "fulness": 1,
+
+    "live": 6,
+
+    "ventured": 2,
+
+    "responded": 3,
+
+    "espoused": 2,
+
+    "hirelings": 1,
+
+    "victory": 20,
+
+    "worcester": 6,
+
+    "perform": 2,
+
+    "barclay": 1,
+
+    "peak": 1,
+
+    "occurring": 1,
+
+    "amended": 1,
+
+    "with": 646,
+
+    "maypole": 1,
+
+    "service": 13,
+
+    "there": 229,
+
+    "victors": 2,
+
+    "hopeless": 1,
+
+    "encumbered": 1,
+
+    "smuggled": 1,
+
+    "harbouring": 2,
+
+    "partook": 1,
+
+    "suppliants": 1,
+
+    "throats": 1,
+
+    "american": 46,
+
+    "exterminate": 2,
+
+    "growers": 1,
+
+    "russia": 1,
+
+    "heroes": 2,
+
+    "willard": 5,
+
+    "pen": 1,
+
+    "casements": 1,
+
+    "mediaeval": 11,
+
+    "ceased": 3,
+
+    "period": 19,
+
+    "amorphous": 1,
+
+    "proceed": 1,
+
+    "chancery": 3,
+
+    "acorns": 1,
+
+    "birth": 3,
+
+    "scullions": 1,
+
+    "confirmation": 1,
+
+    "slowly": 6,
+
+    "unwelcome": 2,
+
+    "loving": 3,
+
+    "ever": 29,
+
+    "uniting": 1,
+
+    "oakland": 1,
+
+    "even": 46,
+
+    "restriction": 9,
+
+    "meetings": 16,
+
+    "assumed": 3,
+
+    "engaged": 4,
+
+    "blackmail": 2,
+
+    "assumes": 1,
+
+    "doubted": 3,
+
+    "annulling": 2,
+
+    "conveyances": 1,
+
+    "irregular": 2,
+
+    "disgusted": 3,
+
+    "indicating": 3,
+
+    "restricting": 2,
+
+    "tainted": 1,
+
+    "discontentments": 1,
+
+    "lineal": 2,
+
+    "persecute": 3,
+
+    "violence": 3,
+
+    "quinnipiack": 1,
+
+    "gilbert": 1,
+
+    "piecemeal": 1,
+
+    "attributed": 1,
+
+    "bought": 3,
+
+    "boughs": 1,
+
+    "apprehended": 2,
+
+    "homely": 1,
+
+    "requiring": 1,
+
+    "misdirected": 1,
+
+    "sermons": 2,
+
+    "ineffectual": 1,
+
+    "attributes": 1,
+
+    "mirth": 1,
+
+    "hacked": 1,
+
+    "burying": 1,
+
+    "imposed": 2,
+
+    "tares": 1,
+
+    "rowed": 1,
+
+    "bearings": 4,
+
+    "arrow": 2,
+
+    "appropriated": 2,
+
+    "reign": 18,
+
+    "descendant": 2,
+
+    "manner": 5,
+
+    "foresee": 2,
+
+    "earthly": 2,
+
+    "pig": 4,
+
+    "perils": 2,
+
+    "dunster": 1,
+
+    "judgment": 6,
+
+    "members": 28,
+
+    "pit": 2,
+
+    "stock": 8,
+
+    "jammed": 1,
+
+    "suspend": 1,
+
+    "matthew": 1,
+
+    "sloping": 1,
+
+    "terror": 3,
+
+    "accumulation": 1,
+
+    "monmouth": 3,
+
+    "heroic": 1,
+
+    "kings": 10,
+
+    "strengthened": 2,
+
+    "guaranteed": 1,
+
+    "disagreed": 2,
+
+    "gleeful": 1,
+
+    "hymns": 1,
+
+    "confiscation": 1,
+
+    "cooping": 1,
+
+    "snow": 9,
+
+    "evil": 7,
+
+    "spooks": 1,
+
+    "seclusion": 1,
+
+    "unclean": 1,
+
+    "rising": 5,
+
+    "fruit": 4,
+
+    "prisoner": 3,
+
+    "cause": 11,
+
+    "overarching": 1,
+
+    "saxon": 2,
+
+    "maddening": 1,
+
+    "parlance": 1,
+
+    "vulgar": 1,
+
+    "intended": 6,
+
+    "attending": 1,
+
+    "design": 4,
+
+    "friday": 1,
+
+    "working": 10,
+
+    "saddest": 1,
+
+    "victim": 3,
+
+    "skull": 1,
+
+    "conformity": 4,
+
+    "department": 1,
+
+    "cosmical": 1,
+
+    "pastor": 13,
+
+    "liberties": 4,
+
+    "chief": 26,
+
+    "bloodthirstiness": 1,
+
+    "accord": 1,
+
+    "forfeit": 1,
+
+    "satisfying": 3,
+
+    "londonderry": 1,
+
+    "italian": 5,
+
+    "vigour": 3,
+
+    "despite": 2,
+
+    "followed": 22,
+
+    "burning": 11,
+
+    "merchandise": 1,
+
+    "groan": 1,
+
+    "obey": 4,
+
+    "labours": 4,
+
+    "plunder": 2,
+
+    "interested": 2,
+
+    "triumphant": 1,
+
+    "renamed": 1,
+
+    "formerly": 3,
+
+    "viands": 1,
+
+    "vessels": 2,
+
+    "meddling": 1,
+
+    "joints": 1,
+
+    "theocracy": 17,
+
+    "massawachusett": 1,
+
+    "liberty": 39,
+
+    "lawrence": 2,
+
+    "meeting": 30,
+
+    "portions": 4,
+
+    "landed": 6,
+
+    "dukedoms": 2,
+
+    "displayed": 1,
+
+    "wickedness": 2,
+
+    "bible": 29,
+
+    "absorption": 1,
+
+    "began": 40,
+
+    "thickly": 1,
+
+    "exerted": 1,
+
+    "recognize": 3,
+
+    "steadfastly": 1,
+
+    "repentance": 2,
+
+    "compounded": 1,
+
+    "imbibed": 1,
+
+    "abnormal": 1,
+
+    "foresaw": 1,
+
+    "shrewd": 2,
+
+    "reality": 2,
+
+    "shepard": 2,
+
+    "offend": 1,
+
+    "actions": 2,
+
+    "safeguard": 1,
+
+    "diligent": 1,
+
+    "penn": 2,
+
+    "sunrise": 1,
+
+    "fateful": 2,
+
+    "neatly": 1,
+
+    "dispersed": 2,
+
+    "nobles": 2,
+
+    "nobler": 1,
+
+    "coasted": 1,
+
+    "giving": 2,
+
+    "facts": 10,
+
+    "correspondency": 1,
+
+    "excuse": 1,
+
+    "pow": 1,
+
+    "sectional": 1,
+
+    "scripture": 2,
+
+    "reorganization": 1,
+
+    "enlist": 2,
+
+    "escape": 6,
+
+    "gives": 2,
+
+    "receive": 4,
+
+    "implied": 2,
+
+    "correspondence": 2,
+
+    "consulting": 4,
+
+    "theft": 1,
+
+    "declaration": 2,
+
+    "shaping": 2,
+
+    "unspeakable": 1,
+
+    "standing": 4,
+
+    "defiant": 3,
+
+    "philosophic": 2,
+
+    "leafed": 1,
+
+    "startling": 2,
+
+    "prosperous": 3,
+
+    "mayflower": 14,
+
+    "representatives": 9,
+
+    "feelings": 5,
+
+    "withal": 3,
+
+    "friendship": 2,
+
+    "rightfully": 1,
+
+    "smith": 12,
+
+    "banishment": 3,
+
+    "canaanites": 1,
+
+    "disappointed": 1,
+
+    "peopling": 1,
+
+    "incite": 1,
+
+    "continue": 1,
+
+    "cramping": 1,
+
+    "clerical": 3,
+
+    "denison": 1,
+
+    "inherent": 1,
+
+    "realize": 14,
+
+    "offers": 1,
+
+    "given": 24,
+
+    "pronounced": 1,
+
+    "perish": 1,
+
+    "marathon": 1,
+
+    "pastime": 1,
+
+    "crimes": 1,
+
+    "insufficient": 1,
+
+    "freed": 1,
+
+    "uncomfortable": 1,
+
+    "disappears": 1,
+
+    "guilty": 2,
+
+    "exaggerated": 2,
+
+    "vestige": 1,
+
+    "proximity": 1,
+
+    "receipt": 2,
+
+    "maritime": 2,
+
+    "coaxed": 1,
+
+    "employees": 1,
+
+    "pursuance": 4,
+
+    "asking": 2,
+
+    "alighted": 1,
+
+    "surroundings": 1,
+
+    "ceremonial": 1,
+
+    "refining": 1,
+
+    "anything": 10,
+
+    "newton": 1,
+
+    "agriculture": 4,
+
+    "standish": 4,
+
+    "prudent": 2,
+
+    "hooker": 19,
+
+    "thinker": 1,
+
+    "assembled": 6,
+
+    "writings": 2,
+
+    "cromwell": 33,
+
+    "gravely": 2,
+
+    "windows": 2,
+
+    "genius": 1,
+
+    "doyle": 10,
+
+    "heinous": 1,
+
+    "typical": 3,
+
+    "quotation": 1,
+
+    "bravery": 2,
+
+    "forming": 2,
+
+    "snares": 1,
+
+    "shadow": 3,
+
+    "striving": 1,
+
+    "dominion": 2,
+
+    "heretics": 16,
+
+    "infant": 5,
+
+    "continually": 1,
+
+    "put": 27,
+
+    "identified": 1,
+
+    "newhouse": 1,
+
+    "nameless": 1,
+
+    "struggle": 34,
+
+    "grows": 2,
+
+    "lancastrian": 1,
+
+    "pest": 1,
+
+    "meets": 1,
+
+    "subscribers": 1,
+
+    "conclusions": 5,
+
+    "baptism": 2,
+
+    "delinquencies": 1,
+
+    "infancy": 1,
+
+    "proprietors": 4,
+
+    "contemporaneously": 1,
+
+    "implants": 1,
+
+    "arber": 1,
+
+    "lapse": 1,
+
+    "latent": 3,
+
+    "unquestionable": 1,
+
+    "light": 29,
+
+    "apparently": 4,
+
+    "indomitable": 2,
+
+    "valuable": 12,
+
+    "methods": 21,
+
+    "marlborough": 2,
+
+    "enraged": 1,
+
+    "consenting": 1,
+
+    "theme": 1,
+
+    "grown": 9,
+
+    "instalments": 1,
+
+    "predatory": 1,
+
+    "henceforth": 10,
+
+    "desire": 9,
+
+    "supplanted": 1,
+
+    "touching": 2,
+
+    "lately": 9,
+
+    "adventurers": 8,
+
+    "encountered": 1,
+
+    "january": 5,
+
+    "antiquity": 2,
+
+    "permanent": 4,
+
+    "centralization": 3,
+
+    "organized": 10,
+
+    "faithless": 1,
+
+    "choice": 5,
+
+    "facility": 2,
+
+    "defeated": 5,
+
+    "civilization": 20,
+
+    "pym": 1,
+
+    "swooped": 1,
+
+    "intensified": 1,
+
+    "replace": 1,
+
+    "appointment": 2,
+
+    "listen": 1,
+
+    "assumptions": 2,
+
+    "major": 10,
+
+    "vindictive": 1,
+
+    "groped": 1,
+
+    "interrupt": 1,
+
+    "sobs": 1,
+
+    "feasible": 1,
+
+    "eighty": 4,
+
+    "consider": 6,
+
+    "proofread": 1,
+
+    "prescribe": 1,
+
+    "gravest": 2,
+
+    "group": 4,
+
+    "railed": 1,
+
+    "whither": 4,
+
+    "romanization": 1,
+
+    "gross": 2,
+
+    "tree": 7,
+
+    "tact": 5,
+
+    "epicure": 1,
+
+    "archive": 13,
+
+    "sailors": 2,
+
+    "distrust": 1,
+
+    "marian": 1,
+
+    "southward": 2,
+
+    "absolutely": 1,
+
+    "unharmed": 1,
+
+    "deserted": 1,
+
+    "openeth": 3,
+
+    "aggawam": 1,
+
+    "impalement": 1,
+
+    "sustain": 1,
+
+    "request": 4,
+
+    "composure": 1,
+
+    "yeomanry": 4,
+
+    "eliot": 21,
+
+    "their": 393,
+
+    "percent": 1,
+
+    "fuller": 1,
+
+    "thirteen": 7,
+
+    "inquisition": 6,
+
+    "general": 53,
+
+    "september": 12,
+
+    "requirements": 4,
+
+    "process": 5,
+
+    "eighth": 3,
+
+    "clear": 12,
+
+    "encounter": 1,
+
+    "disinclined": 1,
+
+    "governing": 6,
+
+    "marking": 1,
+
+    "neither": 9,
+
+    "glad": 5,
+
+    "cooper": 1,
+
+    "account": 14,
+
+    "uneasy": 1,
+
+    "unmasked": 1,
+
+    "irrepressible": 1,
+
+    "unforeseen": 1,
+
+    "conciliated": 1,
+
+    "repulse": 1,
+
+    "innocent": 8,
+
+    "safer": 2,
+
+    "emblazoned": 1,
+
+    "executing": 2,
+
+    "conqueror": 1,
+
+    "diligence": 1,
+
+    "tramp": 2,
+
+    "traitor": 2,
+
+    "vaulted": 1,
+
+    "hunting": 3,
+
+    "fictitious": 1,
+
+    "knowledge": 5,
+
+    "prime": 2,
+
+    "happen": 3,
+
+    "petie": 1,
+
+    "intellect": 1,
+
+    "devised": 2,
+
+    "july": 5,
+
+    "scornfully": 2,
+
+    "chapel": 4,
+
+    "venture": 1,
+
+    "meditated": 1,
+
+    "population": 13,
+
+    "atlantic": 7,
+
+    "hussies": 1,
+
+    "enthusiasm": 10,
+
+    "discern": 4,
+
+    "islands": 2,
+
+    "flexible": 2,
+
+    "trying": 3,
+
+    "millions": 1,
+
+    "quartered": 1,
+
+    "wisely": 1,
+
+    "zurich": 1,
+
+    "unwilling": 1,
+
+    "comes": 7,
+
+    "comer": 1,
+
+    "soil": 18,
+
+    "bottle": 1,
+
+    "honourable": 1,
+
+    "pursy": 1,
+
+    "fathoms": 1,
+
+    "manorial": 1,
+
+    "peter": 2,
+
+    "disparity": 1,
+
+    "augustine": 1,
+
+    "consisted": 2,
+
+    "hearing": 5,
+
+    "milford": 3,
+
+    "emigrants": 2,
+
+    "enrolled": 1,
+
+    "spare": 2,
+
+    "committing": 1,
+
+    "tail": 1,
+
+    "bargained": 1,
+
+    "headsman": 2,
+
+    "noticeable": 1,
+
+    "dante": 1,
+
+    "tells": 6,
+
+    "appeals": 4,
+
+    "chivalry": 1,
+
+    "prevails": 1,
+
+    "june": 16,
+
+    "glee": 1,
+
+    "series": 15,
+
+    "matchless": 1,
+
+    "ineffable": 1,
+
+    "escorted": 1,
+
+    "coligny": 1,
+
+    "thickness": 1,
+
+    "priesthood": 1,
+
+    "moscow": 1,
+
+    "inclined": 9,
+
+    "roxbury": 4,
+
+    "bohemia": 1,
+
+    "hold": 19,
+
+    "tale": 2,
+
+    "trail": 1,
+
+    "outdated": 1,
+
+    "absurd": 1,
+
+    "talk": 1,
+
+    "tall": 1,
+
+    "landmark": 1,
+
+    "impregnable": 1,
+
+    "train": 3,
+
+    "apostolic": 2,
+
+    "honourably": 2,
+
+    "commonly": 3,
+
+    "thrace": 1,
+
+    "ashore": 3,
+
+    "2001": 1,
+
+    "2000": 4,
+
+    "slowness": 1,
+
+    "scholar": 1,
+
+    "granting": 1,
+
+    "contradictory": 1,
+
+    "preeminence": 3,
+
+    "take": 36,
+
+    "immediate": 12,
+
+    "relatively": 1,
+
+    "some": 160,
+
+    "slanders": 1,
+
+    "higginson": 4,
+
+    "forbids": 1,
+
+    "branford": 2,
+
+    "session": 5,
+
+    "additional": 5,
+
+    "commonest": 1,
+
+    "nantucket": 2,
+
+    "subtleties": 1,
+
+    "trifles": 1,
+
+    "jokers": 1,
+
+    "carpathian": 1,
+
+    "2004": 1,
+
+    "offences": 3,
+
+    "ratcliffe": 1,
+
+    "passed": 25,
+
+    "reception": 1,
+
+    "presbyter": 1,
+
+    "just": 46,
+
+    "respects": 9,
+
+    "owner": 5,
+
+    "l1250": 2,
+
+    "sole": 2,
+
+    "sold": 7,
+
+    "midnight": 1,
+
+    "cranfield": 1,
+
+    "pounded": 1,
+
+    "jury": 4,
+
+    "evesham": 1,
+
+    "holy": 14,
+
+    "remembering": 1,
+
+    "foreshadowed": 3,
+
+    "pious": 1,
+
+    "home": 37,
+
+    "existing": 1,
+
+    "print": 1,
+
+    "material": 4,
+
+    "likened": 1,
+
+    "marching": 2,
+
+    "iron": 6,
+
+    "peculiar": 7,
+
+    "classmates": 1,
+
+    "unshaken": 2,
+
+    "rites": 1,
+
+    "intolerant": 2,
+
+    "curtailment": 1,
+
+    "explain": 6,
+
+    "illustrations": 2,
+
+    "answers": 2,
+
+    "royalty": 4,
+
+    "paragraphs": 3,
+
+    "hope": 11,
+
+    "soon": 48,
+
+    "executive": 1,
+
+    "tables": 1,
+
+    "sons": 4,
+
+    "fathom": 1,
+
+    "2024": 1,
+
+    "anticipated": 1,
+
+    "husbands": 1,
+
+    "hoot": 1,
+
+    "song": 2,
+
+    "idolatry": 2,
+
+    "protest": 6,
+
+    "unpublished": 1,
+
+    "vacant": 2,
+
+    "heavy": 5,
+
+    "narragansett": 20,
+
+    "forestalling": 1,
+
+    "deity": 1,
+
+    "machinery": 1,
+
+    "speculations": 1,
+
+    "summed": 2,
+
+    "longest": 1,
+
+    "britain": 14,
+
+    "conscientiousness": 1,
+
+    "painted": 2,
+
+    "conquered": 4,
+
+    "precincts": 1,
+
+    "moses": 5,
+
+    "summer": 17,
+
+    "trunks": 1,
+
+    "robert": 14,
+
+    "bereavements": 1,
+
+    "file": 3,
+
+    "austin": 3,
+
+    "member": 7,
+
+    "gatherer": 1,
+
+    "incidents": 7,
+
+    "lydian": 1,
+
+    "nourish": 1,
+
+    "creed": 6,
+
+    "together": 19,
+
+    "grease": 1,
+
+    "crecy": 1,
+
+    "within": 46,
+
+    "gathered": 4,
+
+    "favourite": 2,
+
+    "agents": 5,
+
+    "prospect": 3,
+
+    "mediterranean": 3,
+
+    "strafford": 3,
+
+    "refugee": 1,
+
+    "machine": 2,
+
+    "evening": 2,
+
+    "manichaean": 1,
+
+    "mustered": 2,
+
+    "return": 11,
+
+    "labouring": 1,
+
+    "townhouse": 1,
+
+    "seraphic": 1,
+
+    "dethronement": 1,
+
+    "bishops": 4,
+
+    "instance": 8,
+
+    "consonant": 1,
+
+    "bottomless": 2,
+
+    "practically": 5,
+
+    "teamsters": 1,
+
+    "reptile": 1,
+
+    "serve": 7,
+
+    "seats": 1,
+
+    "bosworth": 2,
+
+    "smile": 1,
+
+    "surrendering": 2,
+
+    "fine": 3,
+
+    "find": 43,
+
+    "delaware": 5,
+
+    "host": 2,
+
+    "weeden": 1,
+
+    "exegesis": 1,
+
+    "selected": 2,
+
+    "herbage": 1,
+
+    "occur": 1,
+
+    "pleasant": 6,
+
+    "drove": 2,
+
+    "illustrate": 3,
+
+    "seriously": 4,
+
+    "sort": 15,
+
+    "fill": 2,
+
+    "experiences": 1,
+
+    "hears": 2,
+
+    "transforming": 1,
+
+    "wanders": 1,
+
+    "heart": 10,
+
+    "trash": 2,
+
+    "task": 5,
+
+    "infer": 1,
+
+    "ousted": 1,
+
+    "befell": 1,
+
+    "flaws": 1,
+
+    "leaning": 1,
+
+    "true": 22,
+
+    "sore": 1,
+
+    "valley": 12,
+
+    "position": 20,
+
+    "petty": 1,
+
+    "since": 42,
+
+    "sentiment": 21,
+
+    "patent": 6,
+
+    "forewarned": 1,
+
+    "soul": 6,
+
+    "unnumbered": 1,
+
+    "abundance": 3,
+
+    "dangerous": 12,
+
+    "appears": 3,
+
+    "pontificates": 1,
+
+    "troubles": 6,
+
+    "lyell": 1,
+
+    "hour": 4,
+
+    "leadership": 2,
+
+    "alliances": 1,
+
+    "troubled": 2,
+
+    "heard": 13,
+
+    "discontented": 1,
+
+    "falling": 1,
+
+    "execution": 2,
+
+    "persecutions": 1,
+
+    "processes": 4,
+
+    "sought": 19,
+
+    "writers": 9,
+
+    "discredit": 1,
+
+    "extraordinary": 6,
+
+    "complicate": 1,
+
+    "privy": 2,
+
+    "canoes": 2,
+
+    "evident": 1,
+
+    "tracts": 7,
+
+    "online": 4,
+
+    "curiosities": 1,
+
+    "otis": 1,
+
+    "writer": 6,
+
+    "merchants": 6,
+
+    "coming": 20,
+
+    "villa": 1,
+
+    "ruthlessly": 1,
+
+    "disturbances": 1,
+
+    "briefer": 1,
+
+    "sturdily": 1,
+
+    "sown": 8,
+
+    "believers": 5,
+
+    "envelop": 1,
+
+    "firm": 3,
+
+    "procession": 1,
+
+    "ignorant": 1,
+
+    "fire": 17,
+
+    "descartes": 1,
+
+    "distinguish": 1,
+
+    "benefactors": 1,
+
+    "dissatisfied": 2,
+
+    "undertakes": 1,
+
+    "blasphemies": 1,
+
+    "greedily": 1,
+
+    "sachems": 5,
+
+    "gammell": 1,
+
+    "enthusiastic": 1,
+
+    "symptom": 4,
+
+    "undertaken": 2,
+
+    "buckingham": 4,
+
+    "disastrous": 1,
+
+    "wield": 1,
+
+    "rejoicings": 1,
+
+    "funeral": 1,
+
+    "pequots": 26,
+
+    "processing": 1,
+
+    "except": 23,
+
+    "kidnapped": 4,
+
+    "captor": 1,
+
+    "inflicted": 4,
+
+    "prominent": 3,
+
+    "superiority": 2,
+
+    "familistic": 1,
+
+    "saybrook": 5,
+
+    "knocked": 1,
+
+    "loathed": 1,
+
+    "skunks": 1,
+
+    "dogmas": 2,
+
+    "outline": 2,
+
+    "unless": 9,
+
+    "narrowest": 1,
+
+    "levitical": 1,
+
+    "torquemada": 2,
+
+    "perspective": 5,
+
+    "petitioners": 2,
+
+    "assizes": 1,
+
+    "bullets": 2,
+
+    "ought": 6,
+
+    "bribes": 1,
+
+    "accordance": 10,
+
+    "broadest": 2,
+
+    "people": 150,
+
+    "democracy": 4,
+
+    "peninsula": 5,
+
+    "simon": 11,
+
+    "abandon": 2,
+
+    "arminius": 2,
+
+    "fish": 5,
+
+    "bribed": 1,
+
+    "intolerable": 2,
+
+    "adverse": 1,
+
+    "operation": 2,
+
+    "rector": 4,
+
+    "alarming": 3,
+
+    "cannon": 1,
+
+    "afterward": 22,
+
+    "reputation": 1,
+
+    "inside": 1,
+
+    "naboth": 1,
+
+    "mainly": 2,
+
+    "redoubtable": 1,
+
+    "genesis": 5,
+
+    "dilating": 1,
+
+    "needlessly": 1,
+
+    "monumental": 1,
+
+    "five": 25,
+
+    "beforehand": 2,
+
+    "leaven": 1,
+
+    "admirable": 4,
+
+    "sufferings": 3,
+
+    "collection": 5,
+
+    "lorraine": 1,
+
+    "announced": 2,
+
+    "netherland": 2,
+
+    "channels": 1,
+
+    "owning": 1,
+
+    "youthful": 4,
+
+    "ghoulish": 1,
+
+    "slept": 1,
+
+    "campaign": 1,
+
+    "yawning": 1,
+
+    "misapprehension": 1,
+
+    "conflict": 7,
+
+    "engraving": 1,
+
+    "loudly": 2,
+
+    "rough": 3,
+
+    "reasons": 9,
+
+    "squaw": 2,
+
+    "traders": 1,
+
+    "father": 25,
+
+    "begging": 2,
+
+    "swept": 6,
+
+    "admirably": 1,
+
+    "derivative": 4,
+
+    "purge": 1,
+
+    "quo": 3,
+
+    "assistance": 4,
+
+    "usurps": 1,
+
+    "declaring": 5,
+
+    "wants": 1,
+
+    "definition": 1,
+
+    "causal": 1,
+
+    "wonder": 15,
+
+    "entrie": 1,
+
+    "every": 45,
+
+    "narrators": 1,
+
+    "summary": 3,
+
+    "akin": 1,
+
+    "answered": 4,
+
+    "manitous": 1,
+
+    "again": 30,
+
+    "indians": 111,
+
+    "ratified": 1,
+
+    "bestial": 1,
+
+    "kinsmen": 1,
+
+    "chronological": 1,
+
+    "outstripped": 1,
+
+    "effaced": 1,
+
+    "betrayer": 1,
+
+    "desirable": 3,
+
+    "fable": 1,
+
+    "during": 37,
+
+    "instill": 1,
+
+    "degrees": 9,
+
+    "consist": 2,
+
+    "grammar": 1,
+
+    "price": 5,
+
+    "defensive": 1,
+
+    "leagues": 2,
+
+    "briefly": 2,
+
+    "temples": 1,
+
+    "implanted": 1,
+
+    "cherish": 1,
+
+    "reduced": 2,
+
+    "agree": 11,
+
+    "atwater": 1,
+
+    "resistance": 4,
+
+    "federative": 1,
+
+    "welcomed": 1,
+
+    "itself": 48,
+
+    "nursery": 1,
+
+    "versions": 1,
+
+    "anyone": 5,
+
+    "betrayed": 3,
+
+    "pride": 1,
+
+    "accessions": 1,
+
+    "embodied": 1,
+
+    "patrons": 1,
+
+    "narrated": 1,
+
+    "distress": 1,
+
+    "spain": 18,
+
+    "civilized": 14,
+
+    "regions": 2,
+
+    "donations": 15,
+
+    "hoped": 7,
+
+    "irksome": 1,
+
+    "damages": 6,
+
+    "protector": 2,
+
+    "unrivalled": 3,
+
+    "avignon": 1,
+
+    "birds": 1,
+
+    "athisme": 1,
+
+    "uniform": 1,
+
+    "patrolled": 1,
+
+    "moreover": 10,
+
+    "causes": 5,
+
+    "scatter": 1,
+
+    "sandys": 1,
+
+    "event": 13,
+
+    "andros": 24,
+
+    "witnesses": 1,
+
+    "wherever": 5,
+
+    "outlying": 1,
+
+    "finger": 1,
+
+    "witnessed": 8,
+
+    "established": 24,
+
+    "sympathize": 2,
+
+    "romulus": 2,
+
+    "agency": 4,
+
+    "multitude": 1,
+
+    "comly": 1,
+
+    "sweetness": 1,
+
+    "fascinating": 2,
+
+    "planks": 1,
+
+    "prefects": 3,
+
+    "damaged": 1,
+
+    "anonymous": 1,
+
+    "cannot": 25,
+
+    "kinsman": 2,
+
+    "masterly": 1,
+
+    "struggled": 1,
+
+    "appealed": 7,
+
+    "space": 1,
+
+    "reference": 1,
+
+    "hypocracie": 1,
+
+    "chamber": 2,
+
+    "arrange": 1,
+
+    "inferred": 2,
+
+    "struggles": 1,
+
+    "doorways": 1,
+
+    "arresting": 1,
+
+    "bottom": 3,
+
+    "circuitous": 1,
+
+    "published": 18,
+
+    "winslow": 17,
+
+    "solicit": 3,
+
+    "fading": 1,
+
+    "halter": 1,
+
+    "disciple": 1,
+
+    "collision": 2,
+
+    "christi": 1,
+
+    "covered": 7,
+
+    "annihilated": 1,
+
+    "intervention": 2,
+
+    "bosom": 1,
+
+    "invariably": 2,
+
+    "subservience": 2,
+
+    "thrilling": 1,
+
+    "tract": 3,
+
+    "umbrage": 1,
+
+    "arrival": 13,
+
+    "whitfield": 1,
+
+    "frequent": 2,
+
+    "statements": 5,
+
+    "membership": 6,
+
+    "popham": 7,
+
+    "network": 1,
+
+    "aggregate": 1,
+
+    "holding": 10,
+
+    "trace": 6,
+
+    "pneumonia": 1,
+
+    "public": 20,
+
+    "array": 3,
+
+    "beers": 1,
+
+    "norwich": 1,
+
+    "underhill": 9,
+
+    "enslave": 1,
+
+    "maine": 13,
+
+    "roanoke": 1,
+
+    "traded": 1,
+
+    "resources": 2,
+
+    "heaviest": 1,
+
+    "unheard": 2,
+
+    "sisters": 1,
+
+    "nowise": 2,
+
+    "openings": 1,
+
+    "crept": 2,
+
+    "performance": 1,
+
+    "westward": 6,
+
+    "trade": 13,
+
+    "round": 1,
+
+    "garrison": 1,
+
+    "insisted": 1,
+
+    "derivation": 1,
+
+    "aiming": 3,
+
+    "horses": 1,
+
+    "normally": 1,
+
+    "vague": 1,
+
+    "gingerly": 1,
+
+    "references": 4,
+
+    "hosea": 1,
+
+    "accuracy": 1,
+
+    "redistribution": 2,
+
+    "warpath": 2,
+
+    "overbearing": 2,
+
+    "building": 9,
+
+    "setting": 12,
+
+    "quoth": 2,
+
+    "score": 5,
+
+    "isle": 1,
+
+    "favoured": 6,
+
+    "scorn": 3,
+
+    "improbable": 1,
+
+    "sorts": 1,
+
+    "ran": 1,
+
+    "baronies": 2,
+
+    "appendix": 1,
+
+    "younger": 11,
+
+    "sublimest": 1,
+
+    "redistributing": 2,
+
+    "authorities": 5,
+
+    "gainsay": 1,
+
+    "hurried": 1,
+
+    "skelton": 1,
+
+    "viceregal": 1,
+
+    "grazed": 2,
+
+    "encountering": 1,
+
+    "nationality": 8,
+
+    "invaders": 2,
+
+    "uncas": 15,
+
+    "endure": 2,
+
+    "despatched": 1,
+
+    "southern": 11,
+
+    "mediators": 1,
+
+    "essence": 1,
+
+    "uncertainty": 1,
+
+    "robbed": 3,
+
+    "posted": 4,
+
+    "dollar": 1,
+
+    "personages": 1,
+
+    "treatise": 3,
+
+    "cupidity": 1,
+
+    "aspect": 5,
+
+    "departments": 1,
+
+    "scott": 3,
+
+    "scots": 1,
+
+    "indulgence": 1,
+
+    "federation": 6,
+
+    "baneful": 1,
+
+    "memoirs": 1,
+
+    "mendon": 3,
+
+    "jesuit": 1,
+
+    "practised": 1,
+
+    "swine": 1,
+
+    "executions": 2,
+
+    "leisurely": 1,
+
+    "desperation": 2,
+
+    "calling": 2,
+
+    "loosely": 1,
+
+    "shallow": 2,
+
+    "register": 1,
+
+    "catharism": 1,
+
+    "fleet": 2,
+
+    "couple": 1,
+
+    "flees": 4,
+
+    "offended": 2,
+
+    "agreeing": 2,
+
+    "red": 25,
+
+    "act": 14,
+
+    "leicestershire": 1,
+
+    "awakening": 5,
+
+    "finish": 1,
+
+    "helped": 3,
+
+    "morrow": 1,
+
+    "lenox": 1,
+
+    "swift": 6,
+
+    "sheldon": 1,
+
+    "escapes": 1,
+
+    "assistants": 19,
+
+    "rev": 6,
+
+    "christians": 4,
+
+    "propitious": 1,
+
+    "benevolent": 2,
+
+    "consent": 4,
+
+    "unpopular": 5,
+
+    "helpless": 2,
+
+    "escaped": 4,
+
+    "coldest": 1,
+
+    "barbarism": 5,
+
+    "mutual": 3,
+
+    "peacefully": 1,
+
+    "merovingian": 1,
+
+    "begged": 2,
+
+    "therefore": 17,
+
+    "exchange": 1,
+
+    "washington": 8,
+
+    "heaped": 1,
+
+    "groans": 1,
+
+    "trust": 2,
+
+    "soldiers": 10,
+
+    "morals": 3,
+
+    "soldiery": 1,
+
+    "prevent": 8,
+
+    "benjamin": 2,
+
+    "disturbing": 1,
+
+    "sorry": 2,
+
+    "happiness": 2,
+
+    "scope": 3,
+
+    "nurtured": 1,
+
+    "usages": 1,
+
+    "humiliation": 1,
+
+    "incapable": 1,
+
+    "furthest": 1,
+
+    "judicious": 1,
+
+    "ghastly": 1,
+
+    "northeast": 1,
+
+    "coverdale": 1,
+
+    "recorded": 1,
+
+    "message": 9,
+
+    "irritation": 2,
+
+    "modify": 3,
+
+    "truth": 10,
+
+    "exempt": 2,
+
+    "crag": 1,
+
+    "township": 4,
+
+    "age": 28,
+
+    "shoulders": 1,
+
+    "iranian": 1,
+
+    "smaller": 2,
+
+    "tendency": 4,
+
+    "ago": 7,
+
+    "chronicler": 4,
+
+    "accessed": 1,
+
+    "gobemouche": 1,
+
+    "rid": 3,
+
+    "chronicles": 4,
+
+    "faults": 7,
+
+    "fisher": 5,
+
+    "years": 131,
+
+    "gestures": 1,
+
+    "meditating": 1,
+
+    "impaled": 1,
+
+    "disappointment": 1,
+
+    "defect": 5,
+
+    "reinforce": 1,
+
+    "strangely": 1,
+
+    "decline": 2,
+
+    "spoiler": 3,
+
+    "businesses": 1,
+
+    "morass": 1,
+
+    "conceded": 1,
+
+    "wallenstein": 1,
+
+    "episcopalians": 1,
+
+    "animates": 1,
+
+    "arundel": 1,
+
+    "carelessness": 1,
+
+    "6221541": 1,
+
+    "guise": 2,
+
+    "erected": 3,
+
+    "system": 22,
+
+    "defects": 2,
+
+    "spot": 16,
+
+    "shrunk": 1,
+
+    "animated": 4,
+
+    "mighty": 13,
+
+    "vagaries": 1,
+
+    "sleeves": 1,
+
+    "aid": 12,
+
+    "mobs": 1,
+
+    "other": 129,
+
+    "aim": 5,
+
+    "imprudent": 1,
+
+    "confederate": 1,
+
+    "barons": 3,
+
+    "portentous": 1,
+
+    "retain": 3,
+
+    "air": 5,
+
+    "skilled": 1,
+
+    "crew": 1,
+
+    "defeat": 4,
+
+    "decorum": 1,
+
+    "saracens": 1,
+
+    "tenacity": 2,
+
+    "electronic": 27,
+
+    "penobscot": 2,
+
+    "speak": 11,
+
+    "unsolicited": 1,
+
+    "outcome": 1,
+
+    "sacred": 14,
+
+    "tender": 3,
+
+    "craving": 1,
+
+    "infected": 3,
+
+    "horrors": 8,
+
+    "jews": 2,
+
+    "historian": 7,
+
+    "spoiled": 2,
+
+    "meantime": 1,
+
+    "boat": 1,
+
+    "moab": 2,
+
+    "tended": 4,
+
+    "future": 10,
+
+    "meditation": 1,
+
+    "mississippi": 5,
+
+    "signing": 1,
+
+    "movement": 13,
+
+    "royal": 33,
+
+    "workings": 1,
+
+    "duke": 4,
+
+    "glove": 1,
+
+    "impressed": 3,
+
+    "viceroy": 3,
+
+    "body": 21,
+
+    "bicameral": 1,
+
+    "missouri": 1,
+
+    "rioters": 1,
+
+    "amongst": 2,
+
+    "resounded": 2,
+
+    "cage": 1,
+
+    "thames": 4,
+
+    "closure": 1,
+
+    "respectability": 1,
+
+    "always": 16,
+
+    "all": 262,
+
+    "abhorrence": 2,
+
+    "already": 35,
+
+    "goodwin": 1,
+
+    "applicable": 3,
+
+    "barrels": 1,
+
+    "conducted": 4,
+
+    "strangers": 4,
+
+    "expense": 5,
+
+    "maintaining": 4,
+
+    "contemporary": 5,
+
+    "hoadly": 1,
+
+    "territorial": 5,
+
+    "toiled": 1,
+
+    "beleaguered": 1,
+
+    "backsliding": 1,
+
+    "interfering": 2,
+
+    "equipped": 2,
+
+    "rod": 1,
+
+    "accession": 8,
+
+    "amy": 1,
+
+    "favour": 11,
+
+    "confesse": 1,
+
+    "tacit": 3,
+
+    "weakness": 11,
+
+    "sternness": 2,
+
+    "and": 2615,
+
+    "ann": 2,
+
+    "guilt": 1,
+
+    "abroad": 2,
+
+    "blossom": 1,
+
+    "cruisers": 1,
+
+    "any": 121,
+
+    "duly": 4,
+
+    "caring": 1,
+
+    "suggested": 7,
+
+    "sundays": 4,
+
+    "compilation": 1,
+
+    "disavowed": 1,
+
+    "consists": 2,
+
+    "until": 57,
+
+    "fermenting": 1,
+
+    "dull": 3,
+
+    "collapse": 1,
+
+    "silently": 2,
+
+    "severed": 2,
+
+    "accurate": 2,
+
+    "thought": 33,
+
+    "legend": 4,
+
+    "taste": 2,
+
+    "anywhere": 4,
+
+    "bartholomew": 2,
+
+    "zuni": 1,
+
+    "oxford": 10,
+
+    "naught": 1,
+
+    "chiefs": 4,
+
+    "pamphlets": 2,
+
+    "english": 192,
+
+    "hired": 2,
+
+    "resort": 1,
+
+    "boil": 1,
+
+    "devoted": 6,
+
+    "broke": 6,
+
+    "nicholas": 1,
+
+    "apt": 12,
+
+    "hosts": 1,
+
+    "spirits": 4,
+
+    "males": 1,
+
+    "testament": 6,
+
+    "mount": 4,
+
+    "000": 18,
+
+    "warranties": 3,
+
+    "duchess": 1,
+
+    "pathetic": 1,
+
+    "hampton": 5,
+
+    "mound": 1,
+
+    "succeeded": 14,
+
+    "increased": 9,
+
+    "cellars": 1,
+
+    "assimilated": 1,
+
+    "rudest": 1,
+
+    "interminable": 1,
+
+    "quarrels": 3,
+
+    "cried": 4,
+
+    "diversity": 1,
+
+    "pockets": 1,
+
+    "varying": 1,
+
+    "fruits": 7,
+
+    "are": 125,
+
+    "patience": 2,
+
+    "grace": 4,
+
+    "came": 97,
+
+    "captive": 2,
+
+    "where": 72,
+
+    "ark": 1,
+
+    "stirred": 2,
+
+    "arm": 2,
+
+    "cleveland": 2,
+
+    "pglaf": 1,
+
+    "vice": 5,
+
+    "art": 7,
+
+    "waldron": 2,
+
+    "esteem": 1,
+
+    "windpipes": 1,
+
+    "noticed": 1,
+
+    "holder": 4,
+
+    "prattlings": 1,
+
+    "suppress": 3,
+
+    "describes": 1,
+
+    "abraham": 2,
+
+    "speculative": 1,
+
+    "call": 20,
+
+    "wilson": 5,
+
+    "ownership": 1,
+
+    "partners": 2,
+
+    "biscay": 1,
+
+    "theories": 3,
+
+    "ask": 3,
+
+    "astray": 1,
+
+    "philological": 1,
+
+    "relations": 20,
+
+    "gustavus": 1,
+
+    "climates": 1,
+
+    "professorship": 1,
+
+    "7000": 1,
+
+    "through": 41,
+
+    "uninhabitable": 1,
+
+    "becoming": 7,
+
+    "strength": 26,
+
+    "rug": 1,
+
+    "officer": 4,
+
+    "disregard": 1,
+
+    "justified": 4,
+
+    "run": 3,
+
+    "rum": 3,
+
+    "imprisoned": 4,
+
+    "mother": 12,
+
+    "protests": 2,
+
+    "view": 29,
+
+    "warriors": 11,
+
+    "delegated": 8,
+
+    "donate": 5,
+
+    "dust": 2,
+
+    "results": 16,
+
+    "defiance": 6,
+
+    "palace": 3,
+
+    "accomplishing": 2,
+
+    "holland": 16,
+
+    "roamings": 1,
+
+    "bold": 8,
+
+    "camp": 1,
+
+    "aug": 2,
+
+    "volunteer": 1,
+
+    "name": 30,
+
+    "bulgarian": 1,
+
+    "benefits": 1,
+
+    "truce": 2,
+
+    "boon": 1,
+
+    "presided": 2,
+
+    "mood": 3,
+
+    "absence": 2,
+
+    "abolish": 2,
+
+    "approaching": 4,
+
+    "book": 27,
+
+    "edition": 6,
+
+    "perplexity": 2,
+
+    "defend": 3,
+
+    "ally": 6,
+
+    "abounding": 2,
+
+    "dotted": 2,
+
+    "hapsburgs": 1,
+
+    "analogous": 1,
+
+    "scruples": 3,
+
+    "princely": 1,
+
+    "introduce": 4,
+
+    "surrenders": 1,
+
+    "awe": 1,
+
+    "thacher": 1,
+
+    "discourse": 1,
+
+    "target": 1,
+
+    "doggedly": 1,
+
+    "mouth": 5,
+
+    "nooks": 2,
+
+    "sowing": 1,
+
+    "assuming": 2,
+
+    "restricted": 3,
+
+    "duty": 10,
+
+    "cape": 11,
+
+    "leader": 8,
+
+    "blazing": 1,
+
+    "clearest": 1,
+
+    "assignments": 1,
+
+    "dangers": 9,
+
+    "republicans": 3,
+
+    "usage": 1,
+
+    "collected": 2,
+
+    "unremitting": 1,
+
+    "cart": 2,
+
+    "amnesty": 1,
+
+    "axe": 1,
+
+    "cast": 3,
+
+    "anxious": 5,
+
+    "slice": 1,
+
+    "cask": 1,
+
+    "broad": 5,
+
+    "truly": 8,
+
+    "cash": 1,
+
+    "greater": 14,
+
+    "case": 27,
+
+    "admired": 1,
+
+    "oppressive": 1,
+
+    "generation": 4,
+
+    "superintendent": 1,
+
+    "viii": 12,
+
+    "emigration": 8,
+
+    "trunk": 2,
+
+    "aye": 2,
+
+    "saving": 1,
+
+    "commandments": 1,
+
+    "moor": 3,
+
+    "excessive": 2,
+
+    "flesh": 3,
+
+    "armada": 3,
+
+    "diabolism": 1,
+
+    "card": 1,
+
+    "care": 1,
+
+    "participation": 1,
+
+    "glaciers": 1,
+
+    "damage": 6,
+
+    "assault": 6,
+
+    "compton": 1,
+
+    "tolerated": 5,
+
+    "alps": 1,
+
+    "abridgment": 1,
+
+    "portraits": 1,
+
+    "fulfilled": 1,
+
+    "exercise": 9,
+
+    "labour": 13,
+
+    "wigwams": 5,
+
+    "glorious": 5,
+
+    "seldom": 12,
+
+    "dared": 1,
+
+    "vile": 1,
+
+    "demon": 2,
+
+    "protect": 9,
+
+    "stubbornly": 2,
+
+    "antiquities": 1,
+
+    "wilmington": 1,
+
+    "reliance": 2,
+
+    "more": 202,
+
+    "display": 2,
+
+    "born": 7,
+
+    "dauntless": 3,
+
+    "usurpation": 1,
+
+    "freeman": 2,
+
+    "inaccurate": 1,
+
+    "bore": 2,
+
+    "reprieve": 1,
+
+    "disorder": 1,
+
+    "madding": 1,
+
+    "cato": 1,
+
+    "reluctantly": 1,
+
+    "parted": 1,
+
+    "accounts": 7,
+
+    "broadly": 1,
+
+    "trodden": 2,
+
+    "colossal": 3,
+
+    "habits": 7,
+
+    "tyranny": 11,
+
+    "navy": 1,
+
+    "persistently": 1,
+
+    "simple": 10,
+
+    "pastures": 1,
+
+    "choking": 1,
+
+    "prudently": 1,
+
+    "talent": 3,
+
+    "described": 4,
+
+    "negotiate": 2,
+
+    "cave": 1,
+
+    "king": 106,
+
+    "kind": 9,
+
+    "tumult": 2,
+
+    "kine": 1,
+
+    "amsterdam": 5,
+
+    "traces": 3,
+
+    "both": 23,
+
+    "most": 112,
+
+    "transfer": 4,
+
+    "affection": 3,
+
+    "unscrupulous": 2,
+
+    "morbid": 2,
+
+    "speedwell": 3,
+
+    "ascertain": 2,
+
+    "insert": 1,
+
+    "inspiration": 8,
+
+    "reject": 1,
+
+    "sad": 1,
+
+    "traced": 1,
+
+    "mentioned": 3,
+
+    "profit": 5,
+
+    "maimed": 1,
+
+    "safeguards": 2,
+
+    "san": 1,
+
+    "move": 1,
+
+    "amount": 3,
+
+    "deuteronomy": 1,
+
+    "arrant": 1,
+
+    "sat": 5,
+
+    "saw": 18,
+
+    "freemen": 11,
+
+    "rainsford": 1,
+
+    "earnestly": 3,
+
+    "also": 46,
+
+    "say": 23,
+
+    "enough": 44,
+
+    "increase": 11,
+
+    "feudal": 5,
+
+    "spread": 5,
+
+    "educated": 1,
+
+    "heights": 1,
+
+    "latter": 13,
+
+    "adhered": 1,
+
+    "treating": 2,
+
+    "simply": 14,
+
+    "punsters": 1,
+
+    "gloat": 1,
+
+    "uncalled": 1,
+
+    "alienate": 2,
+
+    "reflected": 1,
+
+    "boys": 2,
+
+    "completing": 1,
+
+    "kiss": 1,
+
+    "dissenting": 1,
+
+    "synod": 6,
+
+    "bar": 1,
+
+    "suffer": 1,
+
+    "sects": 3,
+
+    "congregationalist": 1,
+
+    "partake": 1,
+
+    "imputation": 2,
+
+    "augustus": 3,
+
+    "theocrats": 1,
+
+    "congregationalism": 2,
+
+    "nantes": 3,
+
+    "tenent": 3,
+
+    "bay": 32,
+
+    "drowned": 2,
+
+    "pamphlet": 8,
+
+    "prophesied": 1,
+
+    "kirk": 4,
+
+    "downright": 1,
+
+    "personal": 19,
+
+    "yonge": 1,
+
+    "angry": 3,
+
+    "violates": 1,
+
+    "submitted": 1,
+
+    "sonorous": 1,
+
+    "greatly": 6,
+
+    "victorious": 4,
+
+    "strong": 39,
+
+    "geographical": 2,
+
+    "deal": 12,
+
+    "abuse": 2,
+
+    "scheme": 21,
+
+    "affect": 1,
+
+    "scarcity": 1,
+
+    "refusals": 1,
+
+    "dead": 4,
+
+    "hebrew": 6,
+
+    "eyes": 5,
+
+    "ministers": 14,
+
+    "sea": 6,
+
+    "rumours": 4,
+
+    "amuse": 1,
+
+    "proved": 2,
+
+    "see": 80,
+
+    "inward": 4,
+
+    "responsibility": 6,
+
+    "ministery": 1,
+
+    "marston": 1,
+
+    "wheat": 2,
+
+    "dear": 2,
+
+    "compared": 3,
+
+    "completion": 2,
+
+    "litter": 1,
+
+    "set": 60,
+
+    "joined": 2,
+
+    "column": 1,
+
+    "biography": 1,
+
+    "barnet": 1,
+
+    "practices": 1,
+
+    "battle": 7,
+
+    "admiration": 1,
+
+    "petition": 13,
+
+    "joiner": 1,
+
+    "fighter": 1,
+
+    "auspices": 1,
+
+    "earnest": 6,
+
+    "river": 27,
+
+    "astonished": 2,
+
+    "lollards": 15,
+
+    "transferred": 1,
+
+    "beauty": 4,
+
+    "endicott": 31,
+
+    "felled": 1,
+
+    "denomination": 1,
+
+    "welsh": 1,
+
+    "marriages": 1,
+
+    "useless": 1,
+
+    "france": 35,
+
+    "antiquarians": 1,
+
+    "mackie": 1,
+
+    "instructive": 7,
+
+    "complain": 1,
+
+    "cromwellian": 1,
+
+    "zeal": 2,
+
+    "she": 66,
+
+    "girdled": 1,
+
+    "wandereth": 1,
+
+    "danforth": 1,
+
+    "lessened": 1,
+
+    "resumed": 1,
+
+    "debt": 3,
+
+    "little": 82,
+
+    "deep": 6,
+
+    "confined": 4,
+
+    "humane": 3,
+
+    "deletions": 1,
+
+    "maryland": 1,
+
+    "forgive": 1,
+
+    "capable": 3,
+
+    "caesar": 2,
+
+    "collector": 1,
+
+    "repress": 1,
+
+    "getting": 8,
+
+    "liking": 1,
+
+    "shawmut": 1,
+
+    "appalling": 1,
+
+    "jersey": 2,
+
+    "supervision": 3,
+
+    "savagery": 4,
+
+    "unfair": 1,
+
+    "sin": 6,
+
+    "sir": 40,
+
+    "sit": 3,
+
+    "pretensions": 3,
+
+    "naively": 1,
+
+    "over": 94,
+
+    "brilliant": 6,
+
+    "six": 16,
+
+    "living": 11,
+
+    "practical": 10,
+
+    "bound": 7,
+
+    "episcopius": 1,
+
+    "cobbler": 1,
+
+    "embers": 1,
+
+    "resents": 1,
+
+    "disfranchised": 2,
+
+    "stroke": 1,
+
+    "retained": 3,
+
+    "prerogative": 2,
+
+    "avoid": 3,
+
+    "uttered": 1,
+
+    "fresh": 7,
+
+    "comprehensive": 1,
+
+    "manifestations": 3,
+
+    "big": 2,
+
+    "frustrated": 1,
+
+    "select": 2,
+
+    "atheism": 1,
+
+    "advanced": 8,
+
+    "peers": 1,
+
+    "nations": 10,
+
+    "bit": 3,
+
+    "boded": 2,
+
+    "slaughter": 13,
+
+    "thanks": 1,
+
+    "improved": 4,
+
+    "austerfield": 2,
+
+    "striking": 10,
+
+    "convinced": 3,
+
+    "welshman": 1,
+
+    "steadfastness": 1,
+
+    "imagery": 1,
+
+    "philologist": 1,
+
+    "model": 1,
+
+    "beside": 1,
+
+    "animals": 3,
+
+    "idolized": 1,
+
+    "conflicted": 1,
+
+    "inquire": 2,
+
+    "bloudy": 4,
+
+    "large": 8,
+
+    "surface": 4,
+
+    "satisfied": 2,
+
+    "commemorated": 1,
+
+    "transactions": 1,
+
+    "foresight": 1,
+
+    "alludes": 1,
+
+    "exclusively": 5,
+
+    "noddle": 2,
+
+    "defy": 4,
+
+    "reconsider": 1,
+
+    "embarkation": 1,
+
+    "doctrine": 12,
+
+    "secondly": 3,
+
+    "valleys": 2,
+
+    "begin": 6,
+
+    "paragraph": 11,
+
+    "prophet": 3,
+
+    "hatfield": 2,
+
+    "neighbour": 3,
+
+    "finishing": 1,
+
+    "vassals": 1,
+
+    "legends": 1,
+
+    "inquiry": 3,
+
+    "viewed": 5,
+
+    "vassall": 5,
+
+    "clergy": 18,
+
+    "tradition": 3,
+
+    "convicted": 2,
+
+    "table": 2,
+
+    "change": 14,
+
+    "wampanoag": 4,
+
+    "systematic": 2,
+
+    "extremes": 1,
+
+    "templars": 1,
+
+    "likewise": 2,
+
+    "punishment": 3,
+
+    "stupendous": 3,
+
+    "corporate": 4,
+
+    "instruction": 2,
+
+    "discovery": 1,
+
+    "christison": 6,
+
+    "theirs": 1,
+
+    "constant": 3,
+
+    "cursed": 1,
+
+    "manliness": 1,
+
+    "mislead": 1,
+
+    "several": 17,
+
+    "snatches": 1,
+
+    "angel": 1,
+
+    "office": 11,
+
+    "northern": 15,
+
+    "posts": 2,
+
+    "roger": 24,
+
+    "communal": 1,
+
+    "instructing": 1,
+
+    "stands": 7,
+
+    "proceeds": 1,
+
+    "son": 25,
+
+    "perilous": 2,
+
+    "barefoot": 1,
+
+    "dismantled": 1,
+
+    "praemunire": 1,
+
+    "emperors": 2,
+
+    "sow": 2,
+
+    "civilizations": 1,
+
+    "lollard": 3,
+
+    "discretion": 2,
+
+    "franks": 2,
+
+    "feebleness": 2,
+
+    "thrown": 9,
+
+    "permanently": 1,
+
+    "rations": 1,
+
+    "rewarded": 1,
+
+    "enacted": 7,
+
+    "comprised": 1,
+
+    "signification": 1,
+
+    "reverted": 1,
+
+    "behind": 11,
+
+    "tenth": 1,
+
+    "sparing": 1,
+
+    "decorous": 3,
+
+    "thanet": 1,
+
+    "sentiments": 3,
+
+    "mental": 3,
+
+    "bow": 2,
+
+    "hostility": 7,
+
+    "eminently": 1,
+
+    "boy": 2,
+
+    "curbed": 1,
+
+    "hinman": 1,
+
+    "highly": 1,
+
+    "popish": 1,
+
+    "unfortunate": 8,
+
+    "missive": 3,
+
+    "chance": 5,
+
+    "nature": 10,
+
+    "proviso": 1,
+
+    "frightful": 8,
+
+    "sojourners": 1,
+
+    "mazzini": 1,
+
+    "restive": 1,
+
+    "100": 4,
+
+    "101": 1,
+
+    "shaded": 1,
+
+    "102": 2,
+
+    "103": 1,
+
+    "104": 1,
+
+    "105": 2,
+
+    "quarrel": 10,
+
+    "106": 1,
+
+    "107": 1,
+
+    "108": 1,
+
+    "essentially": 5,
+
+    "109": 1,
+
+    "tempting": 1,
+
+    "inland": 1,
+
+    "reprimanded": 1,
+
+    "longland": 1,
+
+    "murderers": 2,
+
+    "squalid": 2,
+
+    "baltimore": 1,
+
+    "counts": 1,
+
+    "county": 9,
+
+    "buried": 4,
+
+    "dwelling": 2,
+
+    "stood": 10,
+
+    "miserably": 1,
+
+    "pains": 2,
+
+    "pilgrimage": 1,
+
+    "fighting": 5,
+
+    "110": 1,
+
+    "111": 2,
+
+    "encouraged": 1,
+
+    "eastward": 1,
+
+    "113": 1,
+
+    "zeno": 1,
+
+    "114": 1,
+
+    "heroism": 1,
+
+    "geography": 1,
+
+    "116": 2,
+
+    "horrible": 3,
+
+    "paine": 1,
+
+    "friend": 9,
+
+    "119": 2,
+
+    "drawn": 9,
+
+    "societies": 2,
+
+    "extremity": 1,
+
+    "yankee": 2,
+
+    "horribly": 1,
+
+    "closely": 2,
+
+    "miserable": 1,
+
+    "pleasure": 3,
+
+    "glory": 4,
+
+    "morning": 4,
+
+    "120": 5,
+
+    "horse": 3,
+
+    "121": 1,
+
+    "actors": 1,
+
+    "122": 1,
+
+    "requested": 1,
+
+    "mission": 7,
+
+    "123": 2,
+
+    "124": 1,
+
+    "noblest": 4,
+
+    "125": 1,
+
+    "127": 1,
+
+    "128": 1,
+
+    "129": 1,
+
+    "invoked": 1,
+
+    "autumn": 5,
+
+    "interpreted": 3,
+
+    "tarry": 1,
+
+    "conditions": 7,
+
+    "lessons": 3,
+
+    "reinstated": 1,
+
+    "dungeons": 1,
+
+    "overcome": 9,
+
+    "persecutors": 1,
+
+    "unusually": 1,
+
+    "undisturbed": 1,
+
+    "sum": 3,
+
+    "ports": 2,
+
+    "sun": 2,
+
+    "extended": 6,
+
+    "130": 2,
+
+    "serving": 2,
+
+    "131": 1,
+
+    "132": 1,
+
+    "133": 1,
+
+    "current": 2,
+
+    "134": 2,
+
+    "secretary": 6,
+
+    "135": 1,
+
+    "136": 1,
+
+    "137": 1,
+
+    "managed": 2,
+
+    "138": 2,
+
+    "actively": 1,
+
+    "plainly": 3,
+
+    "overweening": 1,
+
+    "unreal": 3,
+
+    "bewitch": 1,
+
+    "preferred": 6,
+
+    "offensive": 1,
+
+    "christendom": 3,
+
+    "storm": 2,
+
+    "manager": 2,
+
+    "texture": 1,
+
+    "makes": 8,
+
+    "maker": 1,
+
+    "strangling": 1,
+
+    "enemies": 10,
+
+    "amid": 6,
+
+    "threatened": 13,
+
+    "store": 5,
+
+    "140": 5,
+
+    "condemned": 7,
+
+    "141": 1,
+
+    "142": 1,
+
+    "kennebec": 6,
+
+    "143": 1,
+
+    "144": 1,
+
+    "uppermost": 2,
+
+    "145": 2,
+
+    "146": 1,
+
+    "147": 1,
+
+    "paralyzed": 1,
+
+    "148": 1,
+
+    "149": 1,
+
+    "story": 17,
+
+    "detriment": 1,
+
+    "dissent": 5,
+
+    "but": 419,
+
+    "symbol": 1,
+
+    "munchausen": 1,
+
+    "buy": 1,
+
+    "wished": 8,
+
+    "unequal": 1,
+
+    "express": 4,
+
+    "advocate": 1,
+
+    "150": 2,
+
+    "151": 1,
+
+    "152": 1,
+
+    "153": 2,
+
+    "154": 1,
+
+    "155": 1,
+
+    "instantly": 1,
+
+    "156": 1,
+
+    "subjection": 2,
+
+    "157": 1,
+
+    "burial": 1,
+
+    "158": 2,
+
+    "159": 1,
+
+    "austerity": 1,
+
+    "distinctions": 1,
+
+    "wishes": 5,
+
+    "written": 19,
+
+    "passion": 2,
+
+    "bellingham": 2,
+
+    "beaver": 1,
+
+    "polemics": 1,
+
+    "actings": 1,
+
+    "oracle": 1,
+
+    "tubs": 1,
+
+    "hastened": 2,
+
+    "sequestered": 3,
+
+    "160": 2,
+
+    "161": 2,
+
+    "162": 1,
+
+    "163": 2,
+
+    "165": 1,
+
+    "166": 1,
+
+    "nutshell": 1,
+
+    "167": 1,
+
+    "168": 1,
+
+    "novelties": 1,
+
+    "169": 1,
+
+    "ocean": 8,
+
+    "naval": 1,
+
+    "achan": 1,
+
+    "midsummer": 1,
+
+    "alfred": 1,
+
+    "higher": 7,
+
+    "renouncing": 1,
+
+    "divinity": 1,
+
+    "doing": 9,
+
+    "mortar": 1,
+
+    "idea": 48,
+
+    "throne": 15,
+
+    "prisoners": 5,
+
+    "170": 1,
+
+    "throng": 2,
+
+    "171": 1,
+
+    "172": 1,
+
+    "173": 1,
+
+    "174": 1,
+
+    "175": 1,
+
+    "177": 2,
+
+    "178": 1,
+
+    "179": 2,
+
+    "proprietary": 4,
+
+    "accusers": 1,
+
+    "missing": 1,
+
+    "disorganized": 1,
+
+    "dugdale": 1,
+
+    "successful": 2,
+
+    "lovely": 1,
+
+    "normal": 1,
+
+    "brutal": 4,
+
+    "figure": 9,
+
+    "gradual": 3,
+
+    "welde": 2,
+
+    "weaker": 3,
+
+    "180": 1,
+
+    "181": 1,
+
+    "182": 1,
+
+    "middletown": 1,
+
+    "weaken": 3,
+
+    "183": 1,
+
+    "184": 1,
+
+    "185": 2,
+
+    "stone": 3,
+
+    "186": 1,
+
+    "norman": 3,
+
+    "187": 1,
+
+    "188": 1,
+
+    "189": 2,
+
+    "thurtell": 1,
+
+    "migration": 20,
+
+    "passing": 5,
+
+    "streets": 3,
+
+    "brewster": 13,
+
+    "humility": 2,
+
+    "tested": 1,
+
+    "prefatory": 1,
+
+    "christianity": 9,
+
+    "potent": 6,
+
+    "190": 2,
+
+    "191": 2,
+
+    "192": 1,
+
+    "193": 1,
+
+    "194": 2,
+
+    "195": 1,
+
+    "commencement": 1,
+
+    "196": 1,
+
+    "saco": 2,
+
+    "197": 1,
+
+    "198": 2,
+
+    "inches": 1,
+
+    "199": 1,
+
+    "interspersed": 2,
+
+    "road": 6,
+
+    "children": 25,
+
+    "review": 2,
+
+    "massachusetts": 212,
+
+    "wrath": 6,
+
+    "weather": 1,
+
+    "nobody": 2,
+
+    "guide": 3,
+
+    "efficiency": 2,
+
+    "spectacle": 3,
+
+    "natural": 13,
+
+    "arising": 2,
+
+    "drank": 1,
+
+    "rightly": 3,
+
+    "comprehension": 2,
+
+    "merciless": 2,
+
+    "kingston": 1,
+
+    "stately": 1,
+
+    "goad": 2,
+
+    "substantially": 2,
+
+    "vehemence": 1,
+
+    "neighbouring": 6,
+
+    "ravenspur": 1,
+
+    "flag": 1,
+
+    "insignificant": 2,
+
+    "gods": 1,
+
+    "languid": 1,
+
+    "james": 43,
+
+    "montfort": 2,
+
+    "derive": 1,
+
+    "gazette": 1,
+
+    "rock": 1,
+
+    "feature": 7,
+
+    "mohegans": 13,
+
+    "variously": 1,
+
+    "courtier": 1,
+
+    "sickening": 1,
+
+    "overstate": 1,
+
+    "kebir": 1,
+
+    "generals": 1,
+
+    "watertown": 10,
+
+    "twisted": 1,
+
+    "suggest": 1,
+
+    "token": 2,
+
+    "ploughman": 1,
+
+    "emotion": 1,
+
+    "hampden": 3,
+
+    "cease": 4,
+
+    "fanaticism": 4,
+
+    "robe": 1,
+
+    "elements": 3,
+
+    "spectator": 1,
+
+    "greenwich": 1,
+
+    "submission": 3,
+
+    "behaviour": 7,
+
+    "scarce": 1,
+
+    "delilah": 1,
+
+    "argument": 6,
+
+    "utter": 5,
+
+    "uniformity": 4,
+
+    "begun": 20,
+
+    "strode": 1,
+
+    "hopeful": 1,
+
+    "andover": 2,
+
+    "dozen": 9,
+
+    "tremendous": 5,
+
+    "growing": 5,
+
+    "utterly": 2,
+
+    "deciding": 1,
+
+    "humber": 1,
+
+    "twelfth": 1,
+
+    "sage": 1,
+
+    "conspicuous": 7,
+
+    "confessed": 1,
+
+    "drake": 3,
+
+    "verse": 2,
+
+    "tenure": 1,
+
+    "clothed": 2,
+
+    "readable": 2,
+
+    "incursions": 2,
+
+    "centuries": 24,
+
+    "indirect": 3,
+
+    "goes": 3,
+
+    "ugly": 2,
+
+    "delft": 2,
+
+    "tax": 10,
+
+    "towards": 2,
+
+    "foulest": 1,
+
+    "suffrage": 16,
+
+    "barbaric": 3,
+
+    "ranks": 1,
+
+    "flung": 1,
+
+    "safe": 4,
+
+    "files": 1,
+
+    "destined": 3,
+
+    "gideon": 1,
+
+    "departure": 8,
+
+    "herself": 6,
+
+    "covering": 3,
+
+    "sail": 9,
+
+    "instances": 10,
+
+    "stout": 3,
+
+    "flee": 3,
+
+    "distinct": 4,
+
+    "fled": 7,
+
+    "gallio": 1,
+
+    "marvellously": 1,
+
+    "tune": 1,
+
+    "cal": 1,
+
+    "aware": 2,
+
+    "can": 54,
+
+    "cap": 3,
+
+    "instanced": 1,
+
+    "congregational": 4,
+
+    "car": 1,
+
+    "marriage": 3,
+
+    "alarm": 3,
+
+    "village": 28,
+
+    "said": 30,
+
+    "privately": 2,
+
+    "cabins": 2,
+
+    "carried": 19,
+
+    "illustrious": 3,
+
+    "motion": 1,
+
+    "shaftesbury": 1,
+
+    "satisfy": 1,
+
+    "idle": 6,
+
+    "endicot": 1,
+
+    "homelike": 2,
+
+    "february": 11,
+
+    "fault": 1,
+
+    "ceaseth": 1,
+
+    "balmy": 1,
+
+    "incoherent": 1,
+
+    "passive": 1,
+
+    "clothes": 1,
+
+    "efficacy": 1,
+
+    "really": 12,
+
+    "carries": 1,
+
+    "response": 1,
+
+    "abhorred": 3,
+
+    "arguments": 6,
+
+    "covetous": 1,
+
+    "rival": 7,
+
+    "tends": 1,
+
+    "misinterpreted": 3
+  }
+}
