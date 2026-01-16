@@ -72,4 +72,13 @@ public final class App {
             throw new RuntimeException("Failed to create dir: " + dir, e);
         }
     }
+
+    public static void main(String[] args) {
+        int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "7002"));
+
+        Path lakeRoot  = Path.of("data_repository", "datalake_node1").normalize();
+        Path indexRoot = Path.of("data_repository", "indexes").normalize();
+
+        start(port, lakeRoot, indexRoot);
+    }
 }

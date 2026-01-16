@@ -98,7 +98,7 @@ public final class IndexService {
             file.put("termsUnique", termsUnique);
             file.put("terms", counts);
 
-            Files.writeString(out, gson.toJson(file), StandardCharsets.UTF_8);
+            IndexFileWriter.writePrettyWithBlankLines(out, file);
 
             long size = safeSize(resolved);
 
