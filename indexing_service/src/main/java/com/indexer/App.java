@@ -1,13 +1,9 @@
 package com.indexer;
 
 import com.google.gson.Gson;
-import com.indexer.core.BookParser;
-import com.indexer.core.IndexService;
-import com.indexer.core.PathResolver;
-import com.indexer.core.Tokenizer;
+import com.indexer.core.*;
 import com.indexer.hz.HazelcastProvider;
-import com.indexer.index.ClaimStore;
-import com.indexer.index.InvertedIndexStore;
+import com.indexer.index.*;
 import com.indexer.web.IndexController;
 import io.javalin.Javalin;
 
@@ -28,21 +24,31 @@ public final class App {
 
         InvertedIndexStore invertedIndex = new InvertedIndexStore(hzProvider.instance());
         ClaimStore claimStore = new ClaimStore(hzProvider.instance());
+        IndexedStore indexedStore = new IndexedStore(hzProvider.instance());
 
         Gson gson = new Gson();
         BookParser bookParser = new BookParser(gson);
         Tokenizer tokenizer = new Tokenizer();
 
         PathResolver resolver = new PathResolver(lakeRoot);
-        IndexService indexService = new IndexService(resolver, indexRoot, claimStore, invertedIndex, bookParser, tokenizer);
+        IndexService indexService = new IndexService(
+                resolver,
+                indexRoot,
+                claimStore,
+                invertedIndex,
+                indexedStore,
+                bookParser,
+                tokenizer
+        );
+
         IndexController indexController = new IndexController(gson, indexService);
 
         Javalin app = Javalin.create(cfg -> cfg.http.defaultContentType = "application/json");
 
-        // health + /index
+        // /health + /index
         indexController.registerRoutes(app);
 
-        // optional: smoke endpoint bleibt zum schnellen pruefen
+        // optional smoke endpoint
         app.post("/hz/smoke", ctx -> {
             String term = java.util.Optional.ofNullable(ctx.queryParam("term")).orElse("hola");
             String idRaw = java.util.Optional.ofNullable(ctx.queryParam("id")).orElse("123");
@@ -76,9 +82,15 @@ public final class App {
     public static void main(String[] args) {
         int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "7002"));
 
-        Path lakeRoot  = Path.of("data_repository", "datalake_node1").normalize();
+        Path lakeRoot = Path.of("data_repository", "datalake_node1").normalize();
         Path indexRoot = Path.of("data_repository", "indexes").normalize();
 
         start(port, lakeRoot, indexRoot);
     }
 }
+
+/*
+curl -i -X POST "http://localhost:7002/index" \
+  -H "Content-Type: application/json" \
+  -d '{ "lakePath": "20260112/23/1346.json" }'
+ */

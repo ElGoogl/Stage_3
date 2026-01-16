@@ -2,9 +2,11 @@ package com.indexer.hz;
 
 import com.hazelcast.config.Config;
 import com.hazelcast.config.JoinConfig;
+import com.hazelcast.config.MultiMapConfig;
 import com.hazelcast.config.NetworkConfig;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
+import com.indexer.index.InvertedIndexStore;
 
 import java.util.Arrays;
 
@@ -16,6 +18,12 @@ public final class HazelcastProvider {
         Config cfg = new Config();
         if (clusterName != null && !clusterName.isBlank()) cfg.setClusterName(clusterName);
         if (instanceName != null && !instanceName.isBlank()) cfg.setInstanceName(instanceName);
+
+        MultiMapConfig mm = new MultiMapConfig(InvertedIndexStore.MAP_NAME);
+        mm.setValueCollectionType(com.hazelcast.config.MultiMapConfig.ValueCollectionType.SET);
+        mm.setBackupCount(1);
+        mm.setAsyncBackupCount(0);
+        cfg.addMultiMapConfig(mm);
 
         NetworkConfig net = cfg.getNetworkConfig();
         JoinConfig join = net.getJoin();

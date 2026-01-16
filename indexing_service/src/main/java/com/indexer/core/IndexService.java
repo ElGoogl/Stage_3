@@ -3,14 +3,16 @@ package com.indexer.core;
 import com.google.gson.Gson;
 import com.indexer.dto.IndexResponse;
 import com.indexer.index.ClaimStore;
+import com.indexer.index.IndexedStore;
 import com.indexer.index.InvertedIndexStore;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.LinkedHashMap;
+import java.security.MessageDigest;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -18,8 +20,11 @@ public final class IndexService {
 
     private final PathResolver resolver;
     private final Path indexRoot;
+
     private final ClaimStore claims;
     private final InvertedIndexStore invertedIndex;
+    private final IndexedStore indexedStore;
+
     private final BookParser bookParser;
     private final Tokenizer tokenizer;
 
@@ -30,6 +35,7 @@ public final class IndexService {
             Path indexRoot,
             ClaimStore claims,
             InvertedIndexStore invertedIndex,
+            IndexedStore indexedStore,
             BookParser bookParser,
             Tokenizer tokenizer
     ) {
@@ -37,6 +43,7 @@ public final class IndexService {
         this.indexRoot = indexRoot;
         this.claims = claims;
         this.invertedIndex = invertedIndex;
+        this.indexedStore = indexedStore;
         this.bookParser = bookParser;
         this.tokenizer = tokenizer;
     }
@@ -58,9 +65,10 @@ public final class IndexService {
             return error(lakePath, resolved, "cannot parse book id from filename");
         }
 
+        boolean claimed = false;
         if (claims != null) {
-            boolean ok = claims.tryClaim(bookId);
-            if (!ok) {
+            claimed = claims.tryClaim(bookId);
+            if (!claimed) {
                 return conflict(lakePath, resolved, bookId, "book already claimed");
             }
         }
@@ -71,6 +79,29 @@ public final class IndexService {
             String text = book.combinedText();
             if (text == null || text.isBlank()) {
                 return error(lakePath, resolved, "no indexable text found in json");
+            }
+
+            String hash = sha256Hex(text);
+
+            Files.createDirectories(indexRoot);
+            Path out = indexRoot.resolve(bookId + ".index.json");
+            boolean indexFileExists = Files.exists(out);
+
+            String existingHash = indexedStore != null ? indexedStore.getHash(bookId) : null;
+
+            if (existingHash != null && existingHash.equals(hash) && indexFileExists) {
+                long size = safeSize(resolved);
+                return new IndexResponse(
+                        "already_indexed",
+                        bookId,
+                        lakePath,
+                        normalize(resolved),
+                        size,
+                        normalize(out),
+                        0,
+                        0,
+                        null
+                );
             }
 
             List<String> tokens = tokenizer.tokenize(text);
@@ -86,9 +117,6 @@ public final class IndexService {
                 invertedIndex.put(term, bookId);
             }
 
-            Files.createDirectories(indexRoot);
-            Path out = indexRoot.resolve(bookId + ".index.json");
-
             Map<String, Object> file = new LinkedHashMap<>();
             file.put("bookId", bookId);
             file.put("sourceBookId", book.id());
@@ -96,9 +124,14 @@ public final class IndexService {
             file.put("resolvedPath", normalize(resolved));
             file.put("tokensTotal", tokensTotal);
             file.put("termsUnique", termsUnique);
+            file.put("hash", hash);
             file.put("terms", counts);
 
             IndexFileWriter.writePrettyWithBlankLines(out, file);
+
+            if (indexedStore != null) {
+                indexedStore.putHash(bookId, hash);
+            }
 
             long size = safeSize(resolved);
 
@@ -119,7 +152,7 @@ public final class IndexService {
         } catch (Exception e) {
             return error(lakePath, resolved, "indexing failed: " + e.getMessage());
         } finally {
-            if (claims != null) {
+            if (claims != null && claimed) {
                 claims.release(bookId);
             }
         }
@@ -138,6 +171,21 @@ public final class IndexService {
             return Files.size(p);
         } catch (IOException e) {
             return -1L;
+        }
+    }
+
+    private String sha256Hex(String s) {
+        try {
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
+            byte[] dig = md.digest(s.getBytes(StandardCharsets.UTF_8));
+            StringBuilder sb = new StringBuilder(dig.length * 2);
+            for (byte b : dig) {
+                sb.append(Character.forDigit((b >> 4) & 0xF, 16));
+                sb.append(Character.forDigit(b & 0xF, 16));
+            }
+            return sb.toString();
+        } catch (Exception e) {
+            throw new RuntimeException("hash failed", e);
         }
     }
 
