@@ -1,44 +1,51 @@
 package com.indexer;
 
-import com.indexer.core.IndexService;
-import com.indexer.core.PathResolver;
-import com.indexer.web.IndexController;
+import com.indexer.hz.HazelcastProvider;
+import com.indexer.index.ClaimStore;
+import com.indexer.index.InvertedIndexStore;
 import com.google.gson.Gson;
 import io.javalin.Javalin;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public final class App {
 
     public static Javalin start(int port, Path lakeRoot, Path indexRoot) {
         ensureDirExists(indexRoot);
 
+        String hzMembers = System.getenv().getOrDefault("HZ_MEMBERS", "");
+        String hzCluster = System.getenv().getOrDefault("HZ_CLUSTER", "stage3");
+        String hzNode = System.getenv().getOrDefault("NODE_ID", "indexer-" + port);
+
+        HazelcastProvider hzProvider = new HazelcastProvider(hzMembers, hzCluster, hzNode);
+        InvertedIndexStore invertedIndex = new InvertedIndexStore(hzProvider.instance());
+        ClaimStore claimStore = new ClaimStore(hzProvider.instance());
+
         Gson gson = new Gson();
 
-        PathResolver resolver = new PathResolver(lakeRoot);
-        IndexService indexService = new IndexService(resolver);
-        IndexController controller = new IndexController(gson, indexService);
-
         Javalin app = Javalin.create(cfg -> cfg.http.defaultContentType = "application/json");
-        controller.registerRoutes(app);
+
+        app.post("/hz/smoke", ctx -> {
+            String term = java.util.Optional.ofNullable(ctx.queryParam("term")).orElse("hola");
+            String idRaw = java.util.Optional.ofNullable(ctx.queryParam("id")).orElse("123");
+            int id = Integer.parseInt(idRaw);
+
+            invertedIndex.put(term, id);
+
+            ctx.result(gson.toJson(java.util.Map.of(
+                    "status", "ok",
+                    "term", term,
+                    "count", invertedIndex.valueCount(term),
+                    "docs", invertedIndex.get(term)
+            )));
+        });
+
+        app.events(ev -> ev.serverStopping(hzProvider::shutdown));
 
         app.start(port);
         return app;
-    }
-
-    public static void main(String[] args) {
-        Path lakeRoot = Paths.get(System.getProperty("lakeRoot", "data_repository/datalake_v1"));
-        Path indexRoot = Paths.get(System.getProperty("indexRoot", "data_repository/indexes"));
-        int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "7002"));
-
-        Javalin app = start(port, lakeRoot, indexRoot);
-
-        System.out.println("[INDEX] Started on port " + app.port());
-        System.out.println("[INDEX] LAKE_ROOT  : " + lakeRoot.toAbsolutePath());
-        System.out.println("[INDEX] INDEX_ROOT : " + indexRoot.toAbsolutePath());
     }
 
     private static void ensureDirExists(Path dir) {
