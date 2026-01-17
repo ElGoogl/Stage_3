@@ -47,7 +47,7 @@ run_load_test() {
     
     # Run Apache Bench test
     local ab_output=$(ab -n $total_requests -c $concurrent -g /tmp/ab_plot.tsv \
-        "http://localhost/search?q=${search_query}&limit=10" 2>&1)
+        "http://localhost:8000/search?q==${search_query}&limit=10" 2>&1)
     
     # Extract metrics
     local avg_latency=$(echo "$ab_output" | grep "Time per request" | head -1 | awk '{print $4}')
@@ -55,11 +55,12 @@ run_load_test() {
     local total_time=$(echo "$ab_output" | grep "Time taken for tests" | awk '{print $5}')
     local failed=$(echo "$ab_output" | grep "Failed requests" | awk '{print $3}')
     
-    # Calculate percentiles from plot data
-    local p50=$(awk '{print $5}' /tmp/ab_plot.tsv | sort -n | awk 'NR==int(NR*0.5){print}')
-    local p95=$(awk '{print $5}' /tmp/ab_plot.tsv | sort -n | awk 'NR==int(NR*0.95){print}')
-    local p99=$(awk '{print $5}' /tmp/ab_plot.tsv | sort -n | awk 'NR==int(NR*0.99){print}')
-    local max=$(awk '{print $5}' /tmp/ab_plot.tsv | sort -n | tail -1)
+    # Calculate percentiles from plot data (tab-separated, header in first row)
+    local latencies=$(awk -F'\t' 'NR>1 {print $5}' /tmp/ab_plot.tsv | sort -n)
+    local p50=$(echo "$latencies" | awk '{a[NR]=$1} END {if (NR==0) {print ""} else {print a[int((NR-1)*0.50)+1]}}')
+    local p95=$(echo "$latencies" | awk '{a[NR]=$1} END {if (NR==0) {print ""} else {print a[int((NR-1)*0.95)+1]}}')
+    local p99=$(echo "$latencies" | awk '{a[NR]=$1} END {if (NR==0) {print ""} else {print a[int((NR-1)*0.99)+1]}}')
+    local max=$(echo "$latencies" | tail -1)
     
     # Get resource utilization
     local cpu_usage=$(docker stats --no-stream --format "{{.CPUPerc}}" search1 search2 search3 2>/dev/null | \
