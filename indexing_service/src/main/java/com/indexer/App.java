@@ -89,7 +89,7 @@ public final class App {
     }
 
     public static void main(String[] args) {
-        int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "7002"));
+        int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "7003"));
 
         Path lakeRoot = Path.of("data_repository", "datalake_node1").normalize();
         Path indexRoot = Path.of("data_repository", "indexes").normalize();

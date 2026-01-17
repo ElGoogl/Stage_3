@@ -155,7 +155,7 @@ services:
     build: ./indexing_service
     container_name: indexing
     ports:
-      - "7002:7002"
+      - "7003:7003"
     volumes:
       - ./data_repository:/app/data_repository
     environment:
