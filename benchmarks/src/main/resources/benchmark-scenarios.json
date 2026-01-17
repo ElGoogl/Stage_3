@@ -1,0 +1,103 @@
+{
+  "baseline": {
+    "ingestionUrl": "http://localhost:7001",
+    "indexingUrl": "http://localhost:7002",
+    "searchUrl": "http://localhost:8000",
+    "bookIds": [
+      1342,
+      2701,
+      98,
+      11,
+      1661
+    ],
+    "queries": [
+      "adventure",
+      "love story",
+      "mystery",
+      "history war"
+    ],
+    "ingestionConcurrency": 2,
+    "indexingConcurrency": 2,
+    "searchConcurrency": 8,
+    "searchDurationSeconds": 20
+  },
+  "scaling": {
+    "sets": [
+      {
+        "name": "baseline-1",
+        "ingestionUrls": ["http://localhost:7001"],
+        "indexingUrls": ["http://localhost:7002"],
+        "searchUrls": ["http://localhost:8000"]
+      },
+      {
+        "name": "scale-3",
+        "ingestionUrls": ["http://localhost:7001"],
+        "indexingUrls": ["http://localhost:7002"],
+        "searchUrls": [
+          "http://localhost:8000",
+          "http://localhost:8001",
+          "http://localhost:8002"
+        ]
+      }
+    ],
+    "bookIds": [
+      1342,
+      2701,
+      98,
+      11,
+      1661,
+      84,
+      1952
+    ],
+    "queries": [
+      "adventure",
+      "love story",
+      "mystery",
+      "history war",
+      "science fiction"
+    ],
+    "ingestionConcurrency": 3,
+    "indexingConcurrency": 3,
+    "searchConcurrency": 12,
+    "searchDurationSeconds": 30
+  },
+  "load": {
+    "searchUrls": [
+      "http://localhost:8000"
+    ],
+    "queries": [
+      "adventure",
+      "love story",
+      "mystery",
+      "history war",
+      "science fiction",
+      "romance"
+    ],
+    "concurrency": 20,
+    "durationSeconds": 60
+  },
+  "failure": {
+    "failureCommand": "docker stop search2",
+    "healthUrls": [
+      "http://localhost:8000/status",
+      "http://localhost:7001/ingest/list",
+      "http://localhost:7002/health"
+    ],
+    "recoveryTimeoutSeconds": 180,
+    "pollIntervalSeconds": 5
+  },
+  "dockerStats": {
+    "enabled": true,
+    "containers": [
+      "ingestion",
+      "indexing",
+      "search1",
+      "search2",
+      "search3",
+      "hazelcast1",
+      "hazelcast2",
+      "hazelcast3",
+      "activemq"
+    ]
+  }
+}
