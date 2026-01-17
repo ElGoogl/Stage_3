@@ -115,10 +115,10 @@ services:
       - search3
     restart: unless-stopped
 
-  # Ingestion service (crawler)
-  ingestion:
+  # Ingestion service (crawler) - Node 1
+  ingestion1:
     build: ./ingestion_service
-    container_name: ingestion
+    container_name: ingestion1
     ports:
       - "7001:7001"
     volumes:
@@ -127,9 +127,30 @@ services:
       - search-net
     depends_on:
       - activemq
+    environment:
+      - PORT=7001
+      - NODE_ID=ingest-node-1
     restart: unless-stopped
 
-  # Indexing service with embedded Hazelcast node
+  # Ingestion service (crawler) - Node 2
+  ingestion2:
+    build: ./ingestion_service
+    container_name: ingestion2
+    ports:
+      - "7002:7002"
+    volumes:
+      - ./data_repository:/app/data_repository
+    networks:
+      - search-net
+    depends_on:
+      - activemq
+    environment:
+      - PORT=7002
+      - NODE_ID=ingest-node-2
+    restart: unless-stopped
+
+
+    # Indexing service with embedded Hazelcast node
   indexing:
     build: ./indexing_service
     container_name: indexing
