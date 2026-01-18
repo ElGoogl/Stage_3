@@ -37,12 +37,16 @@ public final class HazelcastProvider {
                     });
         } else {
             config.getNetworkConfig().getJoin().getTcpIpConfig().setEnabled(false);
+            config.getNetworkConfig().setPort(0).setPortAutoIncrement(true);
+            config.getNetworkConfig().getInterfaces().setEnabled(true).addInterface("127.0.0.1");
         }
 
         config.getMapConfig(DocumentMetadataStore.MAP_NAME)
                 .setBackupCount(2)
                 .setAsyncBackupCount(1);
-        config.getCPSubsystemConfig().setCPMemberCount(3);
+        if (countMembers(membersCsv) >= 3) {
+            config.getCPSubsystemConfig().setCPMemberCount(3);
+        }
 
         return Hazelcast.newHazelcastInstance(config);
     }
@@ -56,5 +60,15 @@ public final class HazelcastProvider {
             hz.shutdown();
         } catch (Exception ignored) {
         }
+    }
+
+    private int countMembers(String membersCsv) {
+        if (membersCsv == null || membersCsv.isBlank()) {
+            return 0;
+        }
+        return (int) Arrays.stream(membersCsv.split(","))
+                .map(String::trim)
+                .filter(s -> !s.isBlank())
+                .count();
     }
 }

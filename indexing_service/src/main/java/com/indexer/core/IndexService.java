@@ -1,13 +1,13 @@
 package com.indexer.core;
 
 import com.google.gson.Gson;
-import com.hazelcast.cp.lock.FencedLock;
 import com.indexer.dto.DocumentMetadata;
 import com.indexer.dto.IndexResponse;
 import com.indexer.index.ClaimStore;
 import com.indexer.index.DocumentMetadataStore;
 import com.indexer.index.IndexedStore;
 import com.indexer.index.InvertedIndexStore;
+import com.indexer.index.MetadataLock;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -100,7 +100,7 @@ public final class IndexService {
             Files.createDirectories(indexRoot);
             Path out = indexRoot.resolve(bookId + ".index.json");
 
-            FencedLock lock = metadataStore != null ? metadataStore.lockFor(bookId) : null;
+            MetadataLock lock = metadataStore != null ? metadataStore.lockFor(bookId) : null;
             if (lock != null) {
                 lock.lock();
             }

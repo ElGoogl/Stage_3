@@ -51,10 +51,10 @@ public final class MetadataIdempotencyTest {
 
         Config config = new Config();
         config.setClusterName("test-cluster");
+        config.getNetworkConfig().setPort(0).setPortAutoIncrement(true);
+        config.getNetworkConfig().getInterfaces().setEnabled(true).addInterface("127.0.0.1");
         config.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
         config.getNetworkConfig().getJoin().getTcpIpConfig().setEnabled(false);
-        config.getCPSubsystemConfig().setCPMemberCount(1);
-
         hz = Hazelcast.newHazelcastInstance(config);
 
         InvertedIndexStore invertedIndex = new InvertedIndexStore(hz);
