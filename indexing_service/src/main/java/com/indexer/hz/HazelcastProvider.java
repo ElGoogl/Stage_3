@@ -37,7 +37,7 @@ public final class HazelcastProvider {
                     });
         } else {
             config.getNetworkConfig().getJoin().getTcpIpConfig().setEnabled(false);
-            config.getNetworkConfig().setPort(0).setPortAutoIncrement(true);
+            config.getNetworkConfig().setPort(5701).setPortAutoIncrement(true).setPortCount(100);
             config.getNetworkConfig().getInterfaces().setEnabled(true).addInterface("127.0.0.1");
         }
 
