@@ -59,6 +59,10 @@ public final class IndexService {
     }
 
     public IndexResponse index(String lakePath) {
+        return index(lakePath, false);
+    }
+
+    public IndexResponse index(String lakePath, boolean forceReindex) {
 
         if (lakePath == null || lakePath.isBlank()) {
             return badRequest(lakePath, "lakePath missing");
@@ -116,7 +120,8 @@ public final class IndexService {
                         && hash.equals(existingMd.contentHash())
                         && existingMd.status() == DocumentMetadata.Status.INDEXED;
 
-                if ((sameHash && indexFileExists) || (sameMetadata && indexFileExists)) {
+                boolean alreadyIndexed = (sameHash && indexFileExists) || (sameMetadata && indexFileExists);
+                if (alreadyIndexed && !forceReindex) {
                     if (metadataStore != null && existingMd == null && sameHash) {
                         metadataStore.put(bookId, new DocumentMetadata(
                                 bookId,

@@ -5,6 +5,8 @@ import com.google.gson.Gson;
 import java.net.http.*;
 import java.net.URI;
 import java.time.Duration;
+import java.time.Instant;
+import java.util.HashMap;
 import java.util.Map;
 
 public class App {
@@ -20,6 +22,10 @@ public class App {
     private static final String SEARCH_URL = "http://localhost:7003/search?q=";
 
     public static void main(String[] args) {
+
+        String brokerUrl = System.getenv().getOrDefault("ACTIVEMQ_URL", "tcp://localhost:61616");
+        String reindexQueue = System.getenv().getOrDefault("ACTIVEMQ_REINDEX_QUEUE", "books.reindex");
+        ActiveMqPublisher reindexPublisher = new ActiveMqPublisher(brokerUrl, reindexQueue);
 
         Javalin app = Javalin.create(config -> config.http.defaultContentType = "application/json")
                 .start(7000);
@@ -49,6 +55,46 @@ public class App {
             String query = ctx.queryParam("q");
             String result = sendRequest(SEARCH_URL + query, "GET");
             ctx.result(result);
+        });
+
+        // trigger cluster-wide reindex request via broker
+        app.post("/control/reindex", ctx -> {
+            String lakePath = ctx.queryParam("lakePath");
+            Integer bookId = null;
+
+            if (lakePath == null || lakePath.isBlank()) {
+                try {
+                    Map<?, ?> body = gson.fromJson(ctx.body(), Map.class);
+                    if (body != null) {
+                        Object lp = body.get("lakePath");
+                        Object id = body.get("bookId");
+                        lakePath = lp != null ? lp.toString() : null;
+                        if (id != null) {
+                            try {
+                                bookId = Integer.parseInt(id.toString());
+                            } catch (NumberFormatException ignored) {
+                            }
+                        }
+                    }
+                } catch (Exception ignored) {
+                }
+            }
+
+            if (lakePath == null || lakePath.isBlank()) {
+                ctx.status(400).json(Map.of("error", "lakePath is required"));
+                return;
+            }
+
+            Map<String, Object> event = new HashMap<>();
+            event.put("eventType", "reindex_request");
+            event.put("lakePath", lakePath);
+            event.put("requestedAt", Instant.now().toString());
+            if (bookId != null) {
+                event.put("bookId", bookId);
+            }
+
+            reindexPublisher.publish(gson.toJson(event));
+            ctx.json(Map.of("status", "queued", "queue", reindexQueue, "lakePath", lakePath));
         });
 
         // start whole pipeline (ingestion + indexing)

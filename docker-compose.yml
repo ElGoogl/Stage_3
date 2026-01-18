@@ -146,6 +146,8 @@ services:
     environment:
       - ACTIVEMQ_URL=tcp://activemq:61616
       - ACTIVEMQ_QUEUE=books.ingested
+      - ACTIVEMQ_REINDEX_QUEUE=books.reindex
+      - ACTIVEMQ_INDEXED_QUEUE=books.indexed
       - PORT=7002
       - HZ_MEMBERS=hazelcast1:5701,hazelcast2:5701,hazelcast3:5701
       - HZ_CLUSTER=search-cluster

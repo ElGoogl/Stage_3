@@ -20,6 +20,8 @@ public final class App {
 
         String brokerUrl = System.getenv().getOrDefault("ACTIVEMQ_URL", "tcp://localhost:61616");
         String queueName = System.getenv().getOrDefault("ACTIVEMQ_QUEUE", "books.ingested");
+        String reindexQueue = System.getenv().getOrDefault("ACTIVEMQ_REINDEX_QUEUE", "books.reindex");
+        String indexedQueue = System.getenv().getOrDefault("ACTIVEMQ_INDEXED_QUEUE", "books.indexed");
         String hzMembers = System.getenv().getOrDefault("HZ_MEMBERS", "");
         String hzCluster = System.getenv().getOrDefault("HZ_CLUSTER", "stage3");
         String hzNode = System.getenv().getOrDefault("NODE_ID", "indexer-" + port);
@@ -51,7 +53,15 @@ public final class App {
         IndexController indexController = new IndexController(gson, indexService);
         MetadataController metadataController = new MetadataController(gson, metadataStore);
 
-        ActiveMqIndexer mqIndexer = new ActiveMqIndexer(gson, indexService, brokerUrl, queueName);
+        ActiveMqIndexer mqIndexer = new ActiveMqIndexer(
+                gson,
+                indexService,
+                brokerUrl,
+                queueName,
+                reindexQueue,
+                indexedQueue,
+                hzNode
+        );
 
         Javalin app = Javalin.create(cfg -> cfg.http.defaultContentType = "application/json");
 

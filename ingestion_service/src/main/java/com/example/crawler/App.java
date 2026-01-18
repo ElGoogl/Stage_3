@@ -241,6 +241,7 @@ public class App {
 
             // 4) Publish event to ActiveMQ only after replication succeeded
             Map<String, Object> event = new LinkedHashMap<>();
+            event.put("eventType", "document_ingested");
             event.put("bookId", bookId);
             event.put("lakePath", savedPath.toString().replace("\\", "/"));
             event.put("ingestedAt", now.toString());
