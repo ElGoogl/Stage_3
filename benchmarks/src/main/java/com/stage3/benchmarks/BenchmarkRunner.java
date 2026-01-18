@@ -49,10 +49,7 @@ public final class BenchmarkRunner {
         String outputDir = options.getOrDefault("output-dir", "benchmark_results");
 
         if (options.containsKey("reset")) {
-            String defaultReset = isWindows()
-                    ? "benchmarks/reset_cluster.ps1"
-                    : "benchmarks/reset_cluster.sh";
-            runResetScript(options.getOrDefault("reset-script", defaultReset));
+            runResetScript(options.getOrDefault("reset-script", defaultResetScript()));
         }
 
         BenchmarkConfig config = BenchmarkConfig.load(configPath);
@@ -98,7 +95,8 @@ public final class BenchmarkRunner {
     private static void runScaling(BenchmarkConfig config, Path outputDir, String runId) throws Exception {
         BenchmarkConfig.ScalingScenario scenario = config.scaling;
         List<Map<String, Object>> scaleResults = new ArrayList<>();
-        for (BenchmarkConfig.ScaleSet set : scenario.sets) {
+        for (int i = 0; i < scenario.sets.size(); i++) {
+            BenchmarkConfig.ScaleSet set = scenario.sets.get(i);
             waitForIngestionReady(set.ingestionUrls);
             EndpointPool ingestionPool = EndpointPool.roundRobin(set.ingestionUrls);
             EndpointPool indexingPool = EndpointPool.roundRobin(set.indexingUrls);
@@ -117,6 +115,9 @@ public final class BenchmarkRunner {
             setResult.put("system_stats", DockerStatsCollector.collect(config.dockerStats));
             scaleResults.add(setResult);
 
+            if (i < scenario.sets.size() - 1) {
+                runResetScript(defaultResetScript());
+            }
         }
 
         Map<String, Object> result = new LinkedHashMap<>();
@@ -651,6 +652,10 @@ public final class BenchmarkRunner {
         if (exit != 0) {
             throw new IOException("Reset script failed with exit code: " + exit);
         }
+    }
+
+    private static String defaultResetScript() {
+        return isWindows() ? "benchmarks/reset_cluster.ps1" : "benchmarks/reset_cluster.sh";
     }
 
     private static boolean isWindows() {
