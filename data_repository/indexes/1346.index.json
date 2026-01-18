@@ -2,7 +2,7 @@
   "bookId": 1346,
   "sourceBookId": "1346",
   "lakePath": "20260112/23/1346.json",
-  "resolvedPath": "../data_repository/datalake_node1/20260112/23/1346.json",
+  "resolvedPath": "data_repository/datalake_node1/20260112/23/1346.json",
   "tokensTotal": 42978,
   "termsUnique": 5973,
   "hash": "2f3504bd3c774137f60e86f588903d62dac74fbaa627ca0df139f65856f71492",
