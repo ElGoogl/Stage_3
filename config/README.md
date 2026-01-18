@@ -102,6 +102,23 @@ All services use these standardized Hazelcast data structures:
 - **`claim-store`** (Map): Document ID → Indexer instance claim
 - **`indexed-store`** (Set): Set of indexed document IDs
 
+## Messaging Events (ActiveMQ)
+
+The system uses JSON events with an `eventType` field:
+
+- `document_ingested` (crawler → broker → indexer)
+- `document_indexed` (indexer → broker)
+- `reindex_request` (control → broker → indexer)
+
+Queue names are configurable via environment variables:
+`ACTIVEMQ_QUEUE` (ingest), `ACTIVEMQ_REINDEX_QUEUE` (reindex), `ACTIVEMQ_INDEXED_QUEUE` (indexed).
+
+## Caching and Eviction
+
+The inverted index is designed to be memory-resident, so eviction/expiration is intentionally disabled on the server side (`eviction-policy=NONE` in `hazelcast.xml` for maps). MultiMap does not expose eviction settings; the cluster is expected to be sized to hold the full index in memory.
+
+Search clients can enable a **Near Cache** for read-heavy workloads. See `config/hazelcast-client.xml` for a sample Near Cache config for `inverted-index` (invalidate-on-change, binary format).
+
 ## Migration Guide
 
 To migrate an existing service to use the global config:

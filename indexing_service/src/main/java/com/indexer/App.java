@@ -6,6 +6,7 @@ import com.indexer.hz.HazelcastProvider;
 import com.indexer.index.*;
 import com.indexer.messaging.ActiveMqIndexer;
 import com.indexer.web.IndexController;
+import com.indexer.web.MetadataController;
 import io.javalin.Javalin;
 
 import java.io.IOException;
@@ -19,6 +20,8 @@ public final class App {
 
         String brokerUrl = System.getenv().getOrDefault("ACTIVEMQ_URL", "tcp://localhost:61616");
         String queueName = System.getenv().getOrDefault("ACTIVEMQ_QUEUE", "books.ingested");
+        String reindexQueue = System.getenv().getOrDefault("ACTIVEMQ_REINDEX_QUEUE", "books.reindex");
+        String indexedQueue = System.getenv().getOrDefault("ACTIVEMQ_INDEXED_QUEUE", "books.indexed");
         String hzMembers = System.getenv().getOrDefault("HZ_MEMBERS", "");
         String hzCluster = System.getenv().getOrDefault("HZ_CLUSTER", "stage3");
         String hzNode = System.getenv().getOrDefault("NODE_ID", "indexer-" + port);
@@ -28,6 +31,7 @@ public final class App {
         InvertedIndexStore invertedIndex = new InvertedIndexStore(hzProvider.instance());
         ClaimStore claimStore = new ClaimStore(hzProvider.instance());
         IndexedStore indexedStore = new IndexedStore(hzProvider.instance());
+        DocumentMetadataStore metadataStore = new DocumentMetadataStore(hzProvider.instance());
 
         Gson gson = new Gson();
         BookParser bookParser = new BookParser(gson);
@@ -40,18 +44,30 @@ public final class App {
                 claimStore,
                 invertedIndex,
                 indexedStore,
+                metadataStore,
+                hzNode,
                 bookParser,
                 tokenizer
         );
 
         IndexController indexController = new IndexController(gson, indexService);
+        MetadataController metadataController = new MetadataController(gson, metadataStore);
 
-        ActiveMqIndexer mqIndexer = new ActiveMqIndexer(gson, indexService, brokerUrl, queueName);
+        ActiveMqIndexer mqIndexer = new ActiveMqIndexer(
+                gson,
+                indexService,
+                brokerUrl,
+                queueName,
+                reindexQueue,
+                indexedQueue,
+                hzNode
+        );
 
         Javalin app = Javalin.create(cfg -> cfg.http.defaultContentType = "application/json");
 
         // /health + /index
         indexController.registerRoutes(app);
+        metadataController.registerRoutes(app);
 
         // optional smoke endpoint
         app.post("/hz/smoke", ctx -> {
@@ -74,7 +90,7 @@ public final class App {
             hzProvider.shutdown();
         }));
 
-        app.start(port);
+        app.start("0.0.0.0", port);
         mqIndexer.start();
         return app;
     }

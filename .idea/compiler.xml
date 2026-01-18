@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="control_module" />
         <module name="benchmarks" />
-        <module name="search-service" />
         <module name="ingestion_service" />
+        <module name="search_service" />
       </profile>
       <profile name="Annotation profile for Stage_3" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />

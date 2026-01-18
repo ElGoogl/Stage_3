@@ -21,6 +21,10 @@
         </join>
     </network>
 
+    <cp-subsystem>
+        <cp-member-count>3</cp-member-count>
+    </cp-subsystem>
+
     <!-- MultiMap configuration for inverted index -->
     <multimap name="inverted-index">
         <backup-count>2</backup-count>

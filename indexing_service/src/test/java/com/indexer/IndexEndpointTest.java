@@ -9,9 +9,10 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -23,14 +24,21 @@ public final class IndexEndpointTest {
 
     private static Path lakeRoot;
     private static Path indexRoot;
+    private static Path tempRoot;
 
     @BeforeAll
-    static void startServer() {
-        lakeRoot = Paths.get("..", "data_repository", "datalake_node1").normalize();
-        indexRoot = Paths.get("..", "data_repository", "indexes").normalize();
+    static void startServer() throws Exception {
+        tempRoot = Files.createTempDirectory("indexing-service-test-");
+        lakeRoot = tempRoot.resolve("datalake_node1").normalize();
+        indexRoot = tempRoot.resolve("indexes").normalize();
 
         // sanity check: fail fast if the file isn't where we expect it
         Path existing = lakeRoot.resolve("20260112/23/1346.json");
+        Files.createDirectories(existing.getParent());
+        String json = """
+                { "id": "1346", "header": "Header", "content": "Some content for indexing.", "footer": "Footer" }
+                """;
+        Files.writeString(existing, json, StandardCharsets.UTF_8);
         assertTrue(Files.exists(existing), "Test file missing at: " + existing.toAbsolutePath());
 
         app = App.start(0, lakeRoot, indexRoot);
@@ -40,6 +48,21 @@ public final class IndexEndpointTest {
     @AfterAll
     static void stopServer() {
         if (app != null) app.stop();
+        if (tempRoot != null) {
+            try {
+                Files.walk(tempRoot)
+                        .sorted(Comparator.reverseOrder())
+                        .forEach(path -> {
+                            try {
+                                Files.deleteIfExists(path);
+                            } catch (Exception ignored) {
+                                // best-effort cleanup for test temp dir
+                            }
+                        });
+            } catch (Exception ignored) {
+                // best-effort cleanup for test temp dir
+            }
+        }
     }
 
     @Test

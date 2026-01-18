@@ -4,6 +4,11 @@ import com.google.gson.Gson;
 import com.hazelcast.client.HazelcastClient;
 import com.hazelcast.client.config.ClientConfig;
 import com.hazelcast.config.Config;
+import com.hazelcast.config.EvictionConfig;
+import com.hazelcast.config.EvictionPolicy;
+import com.hazelcast.config.InMemoryFormat;
+import com.hazelcast.config.MaxSizePolicy;
+import com.hazelcast.config.NearCacheConfig;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.multimap.MultiMap;
@@ -29,9 +34,10 @@ public class SearchApp {
         String hazelcastHost = System.getenv().getOrDefault("HAZELCAST_HOST", "localhost");
         int hazelcastPort = Integer.parseInt(System.getenv().getOrDefault("HAZELCAST_PORT", "5701"));
         int serverPort = Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
+        String clusterName = System.getenv().getOrDefault("HZ_CLUSTER", "search-cluster");
         
         // Initialize Hazelcast client
-        initHazelcastClient(hazelcastHost, hazelcastPort);
+        initHazelcastClient(hazelcastHost, hazelcastPort, clusterName);
         
         // Create Javalin REST API
         Javalin app = Javalin.create(config -> {
@@ -67,13 +73,11 @@ public class SearchApp {
      * Initialize Hazelcast client and connect to cluster
      * Falls back to embedded instance if external cluster is unavailable
      */
-    private static void initHazelcastClient(String host, int port) {
+    private static void initHazelcastClient(String host, int port, String clusterName) {
         // Try to connect to external cluster first
         try {
             System.out.println("[SEARCH-SERVICE] Attempting to connect to Hazelcast at " + host + ":" + port);
-            ClientConfig clientConfig = new ClientConfig();
-            clientConfig.setClusterName("search-cluster");
-            clientConfig.getNetworkConfig().addAddress(host + ":" + port);
+            ClientConfig clientConfig = buildClientConfig(host, port, clusterName);
             
             // Shorter timeout for quick failover to embedded mode
             clientConfig.getConnectionStrategyConfig()
@@ -107,6 +111,24 @@ public class SearchApp {
             System.err.println("[SEARCH-SERVICE] Failed to start embedded Hazelcast: " + e.getMessage());
             e.printStackTrace();
         }
+    }
+
+    private static ClientConfig buildClientConfig(String host, int port, String clusterName) {
+        ClientConfig clientConfig = new ClientConfig();
+        clientConfig.setClusterName(clusterName);
+        clientConfig.getNetworkConfig().addAddress(host + ":" + port);
+
+        NearCacheConfig nearCache = new NearCacheConfig("inverted-index");
+        nearCache.setInvalidateOnChange(true);
+        nearCache.setInMemoryFormat(InMemoryFormat.BINARY);
+        nearCache.setCacheLocalEntries(true);
+        nearCache.setEvictionConfig(new EvictionConfig()
+            .setEvictionPolicy(EvictionPolicy.NONE)
+            .setMaxSizePolicy(MaxSizePolicy.PER_NODE)
+            .setSize(0));
+        clientConfig.addNearCacheConfig(nearCache);
+
+        return clientConfig;
     }
     
     /**

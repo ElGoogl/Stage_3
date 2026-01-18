@@ -105,6 +105,8 @@ services:
     container_name: nginx_lb
     ports:
       - "8000:80"
+      - "8001:80"
+      - "8002:80"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     networks:
@@ -115,7 +117,7 @@ services:
       - search3
     restart: unless-stopped
 
-  # Ingestion service (crawler) - Node 1
+  # Ingestion services (crawler)
   ingestion1:
     build: ./ingestion_service
     container_name: ingestion1
@@ -129,15 +131,21 @@ services:
       - activemq
     environment:
       - PORT=7001
-      - NODE_ID=ingest-node-1
+      - NODE_ID=crawler-7001
+      - ACTIVEMQ_URL=tcp://activemq:61616
+      - ACTIVEMQ_QUEUE=books.ingested
+      - HZ_MEMBERS=hazelcast1:5701,hazelcast2:5701,hazelcast3:5701
+      - HZ_CLUSTER=search-cluster
+      - REPLICATION_FACTOR=2
+      - REPLICA_PEERS=http://ingestion2:7001,http://ingestion3:7001
+      - JAVA_TOOL_OPTIONS=-DdataRepo=data_repository/datalake_node1
     restart: unless-stopped
 
-  # Ingestion service (crawler) - Node 2
   ingestion2:
     build: ./ingestion_service
     container_name: ingestion2
     ports:
-      - "7002:7002"
+      - "7002:7001"
     volumes:
       - ./data_repository:/app/data_repository
     networks:
@@ -145,26 +153,107 @@ services:
     depends_on:
       - activemq
     environment:
-      - PORT=7002
-      - NODE_ID=ingest-node-2
+      - PORT=7001
+      - NODE_ID=crawler-7002
+      - ACTIVEMQ_URL=tcp://activemq:61616
+      - ACTIVEMQ_QUEUE=books.ingested
+      - HZ_MEMBERS=hazelcast1:5701,hazelcast2:5701,hazelcast3:5701
+      - HZ_CLUSTER=search-cluster
+      - REPLICATION_FACTOR=2
+      - REPLICA_PEERS=http://ingestion1:7001,http://ingestion3:7001
+      - JAVA_TOOL_OPTIONS=-DdataRepo=data_repository/datalake_node2
     restart: unless-stopped
 
-
-    # Indexing service with embedded Hazelcast node
-  indexing:
-    build: ./indexing_service
-    container_name: indexing
+  ingestion3:
+    build: ./ingestion_service
+    container_name: ingestion3
     ports:
-      - "7003:7003"
+      - "7003:7001"
+    volumes:
+      - ./data_repository:/app/data_repository
+    networks:
+      - search-net
+    depends_on:
+      - activemq
+    environment:
+      - PORT=7001
+      - NODE_ID=crawler-7003
+      - ACTIVEMQ_URL=tcp://activemq:61616
+      - ACTIVEMQ_QUEUE=books.ingested
+      - HZ_MEMBERS=hazelcast1:5701,hazelcast2:5701,hazelcast3:5701
+      - HZ_CLUSTER=search-cluster
+      - REPLICATION_FACTOR=2
+      - REPLICA_PEERS=http://ingestion1:7001,http://ingestion2:7001
+      - JAVA_TOOL_OPTIONS=-DdataRepo=data_repository/datalake_node3
+    restart: unless-stopped
+
+  # Indexing services with embedded Hazelcast node
+  indexing1:
+    build: ./indexing_service
+    container_name: indexing1
+    ports:
+      - "7101:7002"
     volumes:
       - ./data_repository:/app/data_repository
     environment:
       - ACTIVEMQ_URL=tcp://activemq:61616
       - ACTIVEMQ_QUEUE=books.ingested
+      - ACTIVEMQ_REINDEX_QUEUE=books.reindex
+      - ACTIVEMQ_INDEXED_QUEUE=books.indexed
       - PORT=7002
       - HZ_MEMBERS=hazelcast1:5701,hazelcast2:5701,hazelcast3:5701
       - HZ_CLUSTER=search-cluster
       - NODE_ID=indexer-node1
+    networks:
+      - search-net
+    depends_on:
+      - activemq
+      - hazelcast1
+      - hazelcast2
+      - hazelcast3
+    restart: unless-stopped
+
+  indexing2:
+    build: ./indexing_service
+    container_name: indexing2
+    ports:
+      - "7102:7002"
+    volumes:
+      - ./data_repository:/app/data_repository
+    environment:
+      - ACTIVEMQ_URL=tcp://activemq:61616
+      - ACTIVEMQ_QUEUE=books.ingested
+      - ACTIVEMQ_REINDEX_QUEUE=books.reindex
+      - ACTIVEMQ_INDEXED_QUEUE=books.indexed
+      - PORT=7002
+      - HZ_MEMBERS=hazelcast1:5701,hazelcast2:5701,hazelcast3:5701
+      - HZ_CLUSTER=search-cluster
+      - NODE_ID=indexer-node2
+    networks:
+      - search-net
+    depends_on:
+      - activemq
+      - hazelcast1
+      - hazelcast2
+      - hazelcast3
+    restart: unless-stopped
+
+  indexing3:
+    build: ./indexing_service
+    container_name: indexing3
+    ports:
+      - "7103:7002"
+    volumes:
+      - ./data_repository:/app/data_repository
+    environment:
+      - ACTIVEMQ_URL=tcp://activemq:61616
+      - ACTIVEMQ_QUEUE=books.ingested
+      - ACTIVEMQ_REINDEX_QUEUE=books.reindex
+      - ACTIVEMQ_INDEXED_QUEUE=books.indexed
+      - PORT=7002
+      - HZ_MEMBERS=hazelcast1:5701,hazelcast2:5701,hazelcast3:5701
+      - HZ_CLUSTER=search-cluster
+      - NODE_ID=indexer-node3
     networks:
       - search-net
     depends_on:
