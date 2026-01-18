@@ -84,14 +84,12 @@ public final class BenchmarkRunner {
         result.put("search", searchResult);
         result.put("system_stats", DockerStatsCollector.collect(config.dockerStats));
 
-        writeResults(outputDir, "baseline", runId, result, searchResult);
+        writeResults(outputDir, "baseline", runId, result, Map.of());
     }
 
     private static void runScaling(BenchmarkConfig config, Path outputDir, String runId) throws Exception {
         BenchmarkConfig.ScalingScenario scenario = config.scaling;
         List<Map<String, Object>> scaleResults = new ArrayList<>();
-        List<Map<String, Object>> latencyRows = new ArrayList<>();
-
         for (BenchmarkConfig.ScaleSet set : scenario.sets) {
             EndpointPool ingestionPool = EndpointPool.roundRobin(set.ingestionUrls);
             EndpointPool indexingPool = EndpointPool.roundRobin(set.indexingUrls);
@@ -110,21 +108,13 @@ public final class BenchmarkRunner {
             setResult.put("system_stats", DockerStatsCollector.collect(config.dockerStats));
             scaleResults.add(setResult);
 
-            List<Long> latencies = castLatencyList(searchResult.get("latencies_ms"));
-            for (Long latency : latencies) {
-                Map<String, Object> row = new LinkedHashMap<>();
-                row.put("scenario", "scaling");
-                row.put("set", set.name);
-                row.put("latency_ms", latency);
-                latencyRows.add(row);
-            }
         }
 
         Map<String, Object> result = new LinkedHashMap<>();
         result.put("scenario", "scaling");
         result.put("sets", scaleResults);
 
-        writeResults(outputDir, "scaling", runId, result, Map.of("latency_rows", latencyRows));
+        writeResults(outputDir, "scaling", runId, result, Map.of());
     }
 
     private static void runLoad(BenchmarkConfig config, Path outputDir, String runId) throws Exception {
@@ -138,7 +128,7 @@ public final class BenchmarkRunner {
         result.put("search", searchResult);
         result.put("system_stats", DockerStatsCollector.collect(config.dockerStats));
 
-        writeResults(outputDir, "load", runId, result, searchResult);
+        writeResults(outputDir, "load", runId, result, Map.of());
     }
 
     private static void runFailure(BenchmarkConfig config, Path outputDir, String runId) throws Exception {
@@ -213,12 +203,15 @@ public final class BenchmarkRunner {
             }
         }
 
+        LatencyStats stats = LatencyStats.from(latencies);
         Map<String, Object> result = new LinkedHashMap<>();
         result.put("requested", bookIds.size());
         result.put("successful", successful.size());
         result.put("duration_ms", durationMs);
         result.put("docs_per_second", docsPerSecond);
-        result.put("latencies_ms", new ArrayList<>(latencies));
+        result.put("latency_avg_ms", stats.averageMs);
+        result.put("latency_p95_ms", stats.p95Ms);
+        result.put("latency_max_ms", stats.maxMs);
         result.put("responses", successful);
         return result;
     }
@@ -290,13 +283,16 @@ public final class BenchmarkRunner {
 
         double tokensPerSecond = durationMs > 0 ? (totalTokens * 1000.0 / durationMs) : 0.0;
 
+        LatencyStats stats = LatencyStats.from(latencies);
         Map<String, Object> result = new LinkedHashMap<>();
         result.put("requested", responses.size());
         result.put("successful", successful.size());
         result.put("duration_ms", durationMs);
         result.put("tokens_total", totalTokens);
         result.put("tokens_per_second", tokensPerSecond);
-        result.put("latencies_ms", new ArrayList<>(latencies));
+        result.put("latency_avg_ms", stats.averageMs);
+        result.put("latency_p95_ms", stats.p95Ms);
+        result.put("latency_max_ms", stats.maxMs);
         result.put("responses", successful);
         return result;
     }
@@ -344,7 +340,6 @@ public final class BenchmarkRunner {
         result.put("avg_ms", stats.averageMs);
         result.put("p95_ms", stats.p95Ms);
         result.put("max_ms", stats.maxMs);
-        result.put("latencies_ms", new ArrayList<>(latencies));
         result.put("status_codes", summarizeStatuses(statuses));
         return result;
     }
@@ -407,26 +402,7 @@ public final class BenchmarkRunner {
         Path jsonPath = outputDir.resolve(scenario + "-" + runId + ".json");
         Files.writeString(jsonPath, GSON.toJson(result), StandardCharsets.UTF_8);
 
-        List<Map<String, Object>> latencyRows = new ArrayList<>();
-        if (searchResult.containsKey("latencies_ms")) {
-            List<Long> latencies = castLatencyList(searchResult.get("latencies_ms"));
-            for (Long latency : latencies) {
-                Map<String, Object> row = new LinkedHashMap<>();
-                row.put("scenario", scenario);
-                row.put("latency_ms", latency);
-                latencyRows.add(row);
-            }
-        }
-        if (searchResult.containsKey("latency_rows")) {
-            @SuppressWarnings("unchecked")
-            List<Map<String, Object>> providedRows = (List<Map<String, Object>>) searchResult.get("latency_rows");
-            latencyRows.addAll(providedRows);
-        }
-
-        if (!latencyRows.isEmpty()) {
-            Path csvPath = outputDir.resolve(scenario + "-" + runId + "-latency.csv");
-            writeCsv(csvPath, latencyRows);
-        }
+        // Only summary metrics are persisted to keep result files small.
     }
 
     private static void writeCsv(Path path, List<Map<String, Object>> rows) throws IOException {
