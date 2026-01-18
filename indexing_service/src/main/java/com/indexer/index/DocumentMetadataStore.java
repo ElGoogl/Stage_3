@@ -24,8 +24,8 @@ public final class DocumentMetadataStore {
     public DocumentMetadataStore(HazelcastInstance hz) {
         this.map = hz.getMap(MAP_NAME);
         this.cp = hz.getCPSubsystem();
-        int cpMembers = hz.getConfig().getCPSubsystemConfig().getCPMemberCount();
-        this.cpAvailable = cpMembers >= 3;
+        // Client connections cannot access cluster config, default to local locks
+        this.cpAvailable = false;
     }
 
     public MetadataLock lockFor(int bookId) {
