@@ -90,8 +90,8 @@ public final class App {
             hzProvider.shutdown();
         }));
 
-        app.start("0.0.0.0", port);
         mqIndexer.start();
+        app.start("0.0.0.0", port);
         return app;
     }
 

@@ -57,10 +57,16 @@ services:
   search1:
     build: ./search_service
     container_name: search1
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./data_repository:/app/data_repository
     environment:
       - PORT=8080
       - HAZELCAST_HOST=hazelcast1
       - HAZELCAST_PORT=5701
+      - HZ_CLUSTER=search-cluster
+      - DATA_REPOSITORY_PATH=/app/data_repository
     networks:
       - search-net
     depends_on:
@@ -72,10 +78,16 @@ services:
   search2:
     build: ./search_service
     container_name: search2
+    ports:
+      - "8082:8080"
+    volumes:
+      - ./data_repository:/app/data_repository
     environment:
       - PORT=8080
       - HAZELCAST_HOST=hazelcast1
       - HAZELCAST_PORT=5701
+      - HZ_CLUSTER=search-cluster
+      - DATA_REPOSITORY_PATH=/app/data_repository
     networks:
       - search-net
     depends_on:
@@ -87,10 +99,16 @@ services:
   search3:
     build: ./search_service
     container_name: search3
+    ports:
+      - "8083:8080"
+    volumes:
+      - ./data_repository:/app/data_repository
     environment:
       - PORT=8080
       - HAZELCAST_HOST=hazelcast1
       - HAZELCAST_PORT=5701
+      - HZ_CLUSTER=search-cluster
+      - DATA_REPOSITORY_PATH=/app/data_repository
     networks:
       - search-net
     depends_on:

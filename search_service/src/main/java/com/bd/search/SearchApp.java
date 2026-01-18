@@ -28,6 +28,7 @@ public class SearchApp {
     private static final Gson gson = new Gson();
     private static HazelcastInstance hazelcastClient;
     private static MultiMap<String, Integer> invertedIndex;
+    private static String dataRepositoryPath;
     
     public static void main(String[] args) {
         // Get configuration from environment variables or use defaults
@@ -35,6 +36,7 @@ public class SearchApp {
         int hazelcastPort = Integer.parseInt(System.getenv().getOrDefault("HAZELCAST_PORT", "5701"));
         int serverPort = Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
         String clusterName = System.getenv().getOrDefault("HZ_CLUSTER", "search-cluster");
+        dataRepositoryPath = System.getenv().getOrDefault("DATA_REPOSITORY_PATH", "../data_repository");
         
         // Initialize Hazelcast client
         initHazelcastClient(hazelcastHost, hazelcastPort, clusterName);
@@ -57,8 +59,11 @@ public class SearchApp {
             ctx.json(status);
         });
         
-        // Main search endpoint
+        // Main search endpoint (with metadata and ranking)
         app.get("/search", SearchApp::handleSearch);
+        
+        // Legacy simple search endpoint (returns only IDs)
+        app.get("/search/simple", SearchApp::handleSimpleSearch);
         
         // Shutdown hook
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
@@ -132,12 +137,87 @@ public class SearchApp {
     }
     
     /**
-     * Handle search requests
+     * Handle search requests with metadata and ranking
+     * Query parameters:
+     *   - q: search query (required)
+     *   - author: filter by author (optional)
+     *   - language: filter by language (optional)
+     *   - year: filter by year (optional)
+     *   - limit: max results to return (optional, default 100)
+     */
+    private static void handleSearch(Context ctx) {
+        try {
+            // Extract query parameters
+            String query = ctx.queryParam("q");
+            if (query == null || query.trim().isEmpty()) {
+                ctx.status(400).json(Map.of("error", "Query parameter 'q' is required"));
+                return;
+            }
+            
+            String author = ctx.queryParam("author");
+            String language = ctx.queryParam("language");
+            String yearStr = ctx.queryParam("year");
+            String limitParam = ctx.queryParam("limit");
+            
+            Integer year = null;
+            if (yearStr != null && !yearStr.trim().isEmpty()) {
+                try {
+                    year = Integer.parseInt(yearStr);
+                } catch (NumberFormatException e) {
+                    ctx.status(400).json(Map.of("error", "Invalid year format"));
+                    return;
+                }
+            }
+            
+            int limit = limitParam != null ? Integer.parseInt(limitParam) : 100;
+            
+            // Perform search with metadata and ranking
+            long startTime = System.currentTimeMillis();
+            List<RankedBook> rankedResults = searchWithMetadata(query, author, language, year);
+            long searchTime = System.currentTimeMillis() - startTime;
+            
+            // Limit results
+            List<RankedBook> limitedResults = rankedResults.stream()
+                .limit(limit)
+                .collect(Collectors.toList());
+            
+            // Build filters object
+            Map<String, Object> filters = new HashMap<>();
+            if (author != null && !author.trim().isEmpty()) {
+                filters.put("author", author);
+            }
+            if (language != null && !language.trim().isEmpty()) {
+                filters.put("language", language);
+            }
+            if (year != null) {
+                filters.put("year", year);
+            }
+            
+            // Build response
+            Map<String, Object> response = new HashMap<>();
+            response.put("query", query);
+            response.put("filters", filters);
+            response.put("total_results", rankedResults.size());
+            response.put("returned_results", limitedResults.size());
+            response.put("search_time_ms", searchTime);
+            response.put("results", limitedResults);
+            
+            ctx.json(response);
+            
+        } catch (Exception e) {
+            System.err.println("[SEARCH-SERVICE] Error handling search: " + e.getMessage());
+            e.printStackTrace();
+            ctx.status(500).json(Map.of("error", "Internal server error: " + e.getMessage()));
+        }
+    }
+    
+    /**
+     * Handle simple search requests (legacy - returns only IDs)
      * Query parameters:
      *   - q: search query (required)
      *   - limit: max results to return (optional, default 100)
      */
-    private static void handleSearch(Context ctx) {
+    private static void handleSimpleSearch(Context ctx) {
         try {
             // Extract query parameter
             String query = ctx.queryParam("q");
@@ -217,6 +297,149 @@ public class SearchApp {
                 .thenComparing(Map.Entry.comparingByKey()))
             .map(entry -> String.valueOf(entry.getKey()))
             .collect(Collectors.toList());
+    }
+    
+    /**
+     * Search with metadata extraction and TF-IDF ranking
+     */
+    private static List<RankedBook> searchWithMetadata(String query, String author, 
+                                                       String language, Integer year) {
+        if (invertedIndex == null) {
+            System.err.println("[SEARCH-SERVICE] Inverted index not available");
+            return Collections.emptyList();
+        }
+        
+        // Step 1: Get matching document IDs from inverted index
+        Set<Integer> matchingBookIds = searchInInvertedIndex(query);
+        
+        // If no text query, we might want all books (for metadata-only search)
+        boolean hasTextQuery = query != null && !query.trim().isEmpty();
+        
+        // Step 2: Extract metadata for matching books
+        List<Book> books = new ArrayList<>();
+        
+        if (hasTextQuery && matchingBookIds.isEmpty()) {
+            // No matches from text search
+            return Collections.emptyList();
+        }
+        
+        // Get books with metadata
+        Set<Integer> idsToFetch = hasTextQuery ? matchingBookIds : getAllBookIds();
+        
+        for (Integer bookId : idsToFetch) {
+            BookMetadata metadata = MetadataExtractor.getMetadata(bookId, dataRepositoryPath);
+            
+            if (metadata != null) {
+                // Apply metadata filters
+                if (!matchesFilters(metadata, author, language, year)) {
+                    continue;
+                }
+                
+                Book book = new Book(
+                    metadata.getBookId(),
+                    metadata.getTitle(),
+                    metadata.getAuthor(),
+                    metadata.getLanguage(),
+                    metadata.getYear()
+                );
+                books.add(book);
+            }
+        }
+        
+        // Step 3: Rank books using TF-IDF if we have a text query
+        if (hasTextQuery && !books.isEmpty()) {
+            return RankingService.rankBooks(books, query, hazelcastClient);
+        }
+        
+        // No ranking needed, just return as RankedBooks
+        return books.stream()
+            .map(RankedBook::new)
+            .collect(Collectors.toList());
+    }
+    
+    /**
+     * Search in inverted index and return matching document IDs
+     */
+    private static Set<Integer> searchInInvertedIndex(String query) {
+        Set<Integer> matchingIds = new HashSet<>();
+        
+        if (query == null || query.trim().isEmpty()) {
+            return matchingIds;
+        }
+        
+        List<String> tokens = tokenize(query);
+        if (tokens.isEmpty()) {
+            return matchingIds;
+        }
+        
+        boolean firstTerm = true;
+        
+        for (String token : tokens) {
+            Collection<Integer> termMatches = invertedIndex.get(token);
+            Set<Integer> termSet = termMatches != null ? new HashSet<>(termMatches) : Collections.emptySet();
+            
+            if (firstTerm) {
+                matchingIds.addAll(termSet);
+                firstTerm = false;
+            } else {
+                // AND semantics: intersection
+                matchingIds.retainAll(termSet);
+            }
+            
+            // Early exit if no matches
+            if (matchingIds.isEmpty()) {
+                break;
+            }
+        }
+        
+        return matchingIds;
+    }
+    
+    /**
+     * Check if metadata matches the given filters
+     */
+    private static boolean matchesFilters(BookMetadata metadata, String author, 
+                                         String language, Integer year) {
+        if (author != null && !author.trim().isEmpty()) {
+            if (metadata.getAuthor() == null || 
+                !metadata.getAuthor().toLowerCase().contains(author.toLowerCase())) {
+                return false;
+            }
+        }
+        
+        if (language != null && !language.trim().isEmpty()) {
+            if (metadata.getLanguage() == null || 
+                !metadata.getLanguage().equalsIgnoreCase(language)) {
+                return false;
+            }
+        }
+        
+        if (year != null) {
+            if (metadata.getYear() == null || !metadata.getYear().equals(year)) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+    
+    /**
+     * Get all book IDs from inverted index (for metadata-only search)
+     * Limited to prevent memory issues
+     */
+    private static Set<Integer> getAllBookIds() {
+        Set<Integer> allIds = new HashSet<>();
+        
+        try {
+            // This is a fallback for metadata-only search
+            // In practice, this should have a limit or use a different approach
+            // For now, return empty to avoid performance issues
+            System.out.println("[SEARCH-SERVICE] Metadata-only search not fully supported yet");
+        } catch (Exception e) {
+            System.err.println("[SEARCH-SERVICE] Error getting all book IDs: " + e.getMessage());
+        }
+        
+        return allIds;
     }
     
     /**
