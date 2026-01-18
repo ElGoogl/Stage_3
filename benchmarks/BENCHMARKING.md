@@ -37,6 +37,22 @@ java -jar benchmarks/target/benchmarks.jar load
 java -jar benchmarks/target/benchmarks.jar failure
 ```
 
+## Reset + Run
+
+If you need a clean Docker state between benchmark runs, use:
+
+```bash
+benchmarks/run_with_reset.sh baseline
+```
+
+This stops the cluster, clears `data_repository` (keeps `.gitignore`/`.gitkeep`), starts the cluster again, and then runs the scenario.
+
+You can also run the reset from the benchmark runner:
+
+```bash
+java -jar benchmarks/target/benchmarks.jar baseline --reset
+```
+
 ## Output
 
 Results are stored in `benchmark_results/`:

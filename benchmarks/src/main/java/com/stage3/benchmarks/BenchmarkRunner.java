@@ -48,6 +48,10 @@ public final class BenchmarkRunner {
         String configPath = options.get("config");
         String outputDir = options.getOrDefault("output-dir", "benchmark_results");
 
+        if (options.containsKey("reset")) {
+            runResetScript(options.getOrDefault("reset-script", "benchmarks/reset_cluster.sh"));
+        }
+
         BenchmarkConfig config = BenchmarkConfig.load(configPath);
         Path outputPath = Path.of(outputDir);
         Files.createDirectories(outputPath);
@@ -561,7 +565,22 @@ public final class BenchmarkRunner {
     }
 
     private static void printUsage() {
-        System.out.println("Usage: java -jar benchmarks.jar <baseline|scaling|load|failure> [--config path] [--output-dir path]");
+        System.out.println("Usage: java -jar benchmarks.jar <baseline|scaling|load|failure> [--config path] [--output-dir path] [--reset] [--reset-script path]");
+    }
+
+    private static void runResetScript(String scriptPath) throws IOException, InterruptedException {
+        Path script = Path.of(scriptPath).normalize();
+        if (!Files.isRegularFile(script)) {
+            throw new IOException("Reset script not found: " + script.toAbsolutePath());
+        }
+
+        ProcessBuilder pb = new ProcessBuilder("bash", script.toString());
+        pb.inheritIO();
+        Process proc = pb.start();
+        int exit = proc.waitFor();
+        if (exit != 0) {
+            throw new IOException("Reset script failed with exit code: " + exit);
+        }
     }
 
     private static final class EndpointPool {
