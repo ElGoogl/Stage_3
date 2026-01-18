@@ -107,5 +107,5 @@ Cluster configuration lives in:
 ## Demo Video
 
 YouTube link:
-(https://youtu.be/giKp1LuNHcM)
+(https://www.youtube.com/watch?v=uktg_78I49E)
 
