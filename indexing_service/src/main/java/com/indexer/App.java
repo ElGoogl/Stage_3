@@ -1,11 +1,7 @@
 package com.indexer;
 
 public final class App {
-    public static void main(String[] args) {
-        int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "7002"));
-        java.nio.file.Path lakeRoot = java.nio.file.Path.of("data_repository", "datalake_node1").normalize();
-        java.nio.file.Path indexRoot = java.nio.file.Path.of("data_repository", "indexes").normalize();
-
+    public static io.javalin.Javalin start(int port, java.nio.file.Path lakeRoot, java.nio.file.Path indexRoot) {
         String brokerUrl = System.getenv().getOrDefault("ACTIVEMQ_URL", "tcp://localhost:61616");
         String queueName = System.getenv().getOrDefault("ACTIVEMQ_QUEUE", "books.ingested");
         String reindexQueue = System.getenv().getOrDefault("ACTIVEMQ_REINDEX_QUEUE", "books.reindex");
@@ -26,6 +22,14 @@ public final class App {
                 hzCluster,
                 hzNode
         );
-        app.start();
+        return app.start();
+    }
+
+    public static void main(String[] args) {
+        int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "7002"));
+        java.nio.file.Path lakeRoot = java.nio.file.Path.of("data_repository", "datalake_node1").normalize();
+        java.nio.file.Path indexRoot = java.nio.file.Path.of("data_repository", "indexes").normalize();
+
+        start(port, lakeRoot, indexRoot);
     }
 }
