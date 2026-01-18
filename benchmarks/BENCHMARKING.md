@@ -53,6 +53,8 @@ You can also run the reset from the benchmark runner:
 java -jar benchmarks/target/benchmarks.jar baseline --reset
 ```
 
+On Windows, `--reset` uses `benchmarks/reset_cluster.ps1`. On macOS/Linux it uses `benchmarks/reset_cluster.sh`.
+
 ## Output
 
 Results are stored in `benchmark_results/`:

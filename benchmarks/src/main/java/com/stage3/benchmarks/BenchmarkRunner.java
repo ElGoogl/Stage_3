@@ -49,7 +49,10 @@ public final class BenchmarkRunner {
         String outputDir = options.getOrDefault("output-dir", "benchmark_results");
 
         if (options.containsKey("reset")) {
-            runResetScript(options.getOrDefault("reset-script", "benchmarks/reset_cluster.sh"));
+            String defaultReset = isWindows()
+                    ? "benchmarks/reset_cluster.ps1"
+                    : "benchmarks/reset_cluster.sh";
+            runResetScript(options.getOrDefault("reset-script", defaultReset));
         }
 
         BenchmarkConfig config = BenchmarkConfig.load(configPath);
@@ -574,13 +577,30 @@ public final class BenchmarkRunner {
             throw new IOException("Reset script not found: " + script.toAbsolutePath());
         }
 
-        ProcessBuilder pb = new ProcessBuilder("bash", script.toString());
+        List<String> command = new ArrayList<>();
+        if (isWindows() || script.toString().toLowerCase(Locale.ROOT).endsWith(".ps1")) {
+            command.add("powershell");
+            command.add("-ExecutionPolicy");
+            command.add("Bypass");
+            command.add("-File");
+            command.add(script.toString());
+        } else {
+            command.add("bash");
+            command.add(script.toString());
+        }
+
+        ProcessBuilder pb = new ProcessBuilder(command);
         pb.inheritIO();
         Process proc = pb.start();
         int exit = proc.waitFor();
         if (exit != 0) {
             throw new IOException("Reset script failed with exit code: " + exit);
         }
+    }
+
+    private static boolean isWindows() {
+        String os = System.getProperty("os.name", "").toLowerCase(Locale.ROOT);
+        return os.contains("win");
     }
 
     private static final class EndpointPool {
