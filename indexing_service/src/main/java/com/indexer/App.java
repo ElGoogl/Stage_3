@@ -6,6 +6,7 @@ import com.indexer.hz.HazelcastProvider;
 import com.indexer.index.*;
 import com.indexer.messaging.ActiveMqIndexer;
 import com.indexer.web.IndexController;
+import com.indexer.web.MetadataController;
 import io.javalin.Javalin;
 
 import java.io.IOException;
@@ -28,6 +29,7 @@ public final class App {
         InvertedIndexStore invertedIndex = new InvertedIndexStore(hzProvider.instance());
         ClaimStore claimStore = new ClaimStore(hzProvider.instance());
         IndexedStore indexedStore = new IndexedStore(hzProvider.instance());
+        DocumentMetadataStore metadataStore = new DocumentMetadataStore(hzProvider.instance());
 
         Gson gson = new Gson();
         BookParser bookParser = new BookParser(gson);
@@ -40,11 +42,14 @@ public final class App {
                 claimStore,
                 invertedIndex,
                 indexedStore,
+                metadataStore,
+                hzNode,
                 bookParser,
                 tokenizer
         );
 
         IndexController indexController = new IndexController(gson, indexService);
+        MetadataController metadataController = new MetadataController(gson, metadataStore);
 
         ActiveMqIndexer mqIndexer = new ActiveMqIndexer(gson, indexService, brokerUrl, queueName);
 
@@ -52,6 +57,7 @@ public final class App {
 
         // /health + /index
         indexController.registerRoutes(app);
+        metadataController.registerRoutes(app);
 
         // optional smoke endpoint
         app.post("/hz/smoke", ctx -> {

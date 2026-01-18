@@ -1,8 +1,11 @@
 package com.indexer.core;
 
 import com.google.gson.Gson;
+import com.hazelcast.cp.lock.FencedLock;
+import com.indexer.dto.DocumentMetadata;
 import com.indexer.dto.IndexResponse;
 import com.indexer.index.ClaimStore;
+import com.indexer.index.DocumentMetadataStore;
 import com.indexer.index.IndexedStore;
 import com.indexer.index.InvertedIndexStore;
 
@@ -11,6 +14,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.MessageDigest;
+import java.time.Instant;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -24,6 +28,8 @@ public final class IndexService {
     private final ClaimStore claims;
     private final InvertedIndexStore invertedIndex;
     private final IndexedStore indexedStore;
+    private final DocumentMetadataStore metadataStore;
+    private final String nodeId;
 
     private final BookParser bookParser;
     private final Tokenizer tokenizer;
@@ -36,6 +42,8 @@ public final class IndexService {
             ClaimStore claims,
             InvertedIndexStore invertedIndex,
             IndexedStore indexedStore,
+            DocumentMetadataStore metadataStore,
+            String nodeId,
             BookParser bookParser,
             Tokenizer tokenizer
     ) {
@@ -44,6 +52,8 @@ public final class IndexService {
         this.claims = claims;
         this.invertedIndex = invertedIndex;
         this.indexedStore = indexedStore;
+        this.metadataStore = metadataStore;
+        this.nodeId = nodeId;
         this.bookParser = bookParser;
         this.tokenizer = tokenizer;
     }
@@ -73,6 +83,10 @@ public final class IndexService {
             }
         }
 
+        String hash = null;
+        int tokensTotal = 0;
+        int termsUnique = 0;
+
         try {
             BookParser.ParsedBook book = bookParser.parse(resolved);
 
@@ -81,75 +95,156 @@ public final class IndexService {
                 return error(lakePath, resolved, "no indexable text found in json");
             }
 
-            String hash = sha256Hex(text);
+            hash = sha256Hex(text);
 
             Files.createDirectories(indexRoot);
             Path out = indexRoot.resolve(bookId + ".index.json");
-            boolean indexFileExists = Files.exists(out);
 
-            String existingHash = indexedStore != null ? indexedStore.getHash(bookId) : null;
+            FencedLock lock = metadataStore != null ? metadataStore.lockFor(bookId) : null;
+            if (lock != null) {
+                lock.lock();
+            }
 
-            if (existingHash != null && existingHash.equals(hash) && indexFileExists) {
+            try {
+                boolean indexFileExists = Files.exists(out);
+                String existingHash = indexedStore != null ? indexedStore.getHash(bookId) : null;
+                DocumentMetadata existingMd = metadataStore != null ? metadataStore.get(bookId) : null;
+
+                boolean sameHash = hash != null && hash.equals(existingHash);
+                boolean sameMetadata = existingMd != null
+                        && hash != null
+                        && hash.equals(existingMd.contentHash())
+                        && existingMd.status() == DocumentMetadata.Status.INDEXED;
+
+                if ((sameHash && indexFileExists) || (sameMetadata && indexFileExists)) {
+                    if (metadataStore != null && existingMd == null && sameHash) {
+                        metadataStore.put(bookId, new DocumentMetadata(
+                                bookId,
+                                hash,
+                                Instant.now().toString(),
+                                0,
+                                nodeId,
+                                DocumentMetadata.Status.INDEXED
+                        ));
+                    }
+                    long size = safeSize(resolved);
+                    return new IndexResponse(
+                            "already_indexed",
+                            bookId,
+                            lakePath,
+                            normalize(resolved),
+                            size,
+                            normalize(out),
+                            0,
+                            0,
+                            null
+                    );
+                }
+
+                List<String> tokens = tokenizer.tokenize(text);
+                if (tokens.isEmpty()) {
+                    return error(lakePath, resolved, "no tokens after tokenization");
+                }
+
+                Map<String, Integer> counts = toCounts(tokens);
+                tokensTotal = tokens.size();
+                termsUnique = counts.size();
+
+                for (String term : counts.keySet()) {
+                    invertedIndex.put(term, bookId);
+                }
+
+                Map<String, Object> file = new LinkedHashMap<>();
+                file.put("bookId", bookId);
+                file.put("sourceBookId", book.id());
+                file.put("lakePath", lakePath);
+                file.put("resolvedPath", normalize(resolved));
+                file.put("tokensTotal", tokensTotal);
+                file.put("termsUnique", termsUnique);
+                file.put("hash", hash);
+                file.put("terms", counts);
+
+                IndexFileWriter.writePrettyWithBlankLines(out, file);
+
+                if (indexedStore != null) {
+                    indexedStore.putHash(bookId, hash);
+                }
+                if (metadataStore != null) {
+                    metadataStore.put(bookId, new DocumentMetadata(
+                            bookId,
+                            hash,
+                            Instant.now().toString(),
+                            tokensTotal,
+                            nodeId,
+                            DocumentMetadata.Status.INDEXED
+                    ));
+                }
+
                 long size = safeSize(resolved);
+
                 return new IndexResponse(
-                        "already_indexed",
+                        "ok",
                         bookId,
                         lakePath,
                         normalize(resolved),
                         size,
                         normalize(out),
-                        0,
-                        0,
+                        tokensTotal,
+                        termsUnique,
                         null
                 );
+            } catch (IOException e) {
+                if (metadataStore != null && bookId != null) {
+                    metadataStore.put(bookId, new DocumentMetadata(
+                            bookId,
+                            hash,
+                            Instant.now().toString(),
+                            tokensTotal,
+                            nodeId,
+                            DocumentMetadata.Status.FAILED
+                    ));
+                }
+                return error(lakePath, resolved, "io error: " + e.getMessage());
+            } catch (Exception e) {
+                if (metadataStore != null && bookId != null) {
+                    metadataStore.put(bookId, new DocumentMetadata(
+                            bookId,
+                            hash,
+                            Instant.now().toString(),
+                            tokensTotal,
+                            nodeId,
+                            DocumentMetadata.Status.FAILED
+                    ));
+                }
+                return error(lakePath, resolved, "indexing failed: " + e.getMessage());
+            } finally {
+                if (lock != null) {
+                    lock.unlock();
+                }
             }
-
-            List<String> tokens = tokenizer.tokenize(text);
-            if (tokens.isEmpty()) {
-                return error(lakePath, resolved, "no tokens after tokenization");
-            }
-
-            Map<String, Integer> counts = toCounts(tokens);
-            int tokensTotal = tokens.size();
-            int termsUnique = counts.size();
-
-            for (String term : counts.keySet()) {
-                invertedIndex.put(term, bookId);
-            }
-
-            Map<String, Object> file = new LinkedHashMap<>();
-            file.put("bookId", bookId);
-            file.put("sourceBookId", book.id());
-            file.put("lakePath", lakePath);
-            file.put("resolvedPath", normalize(resolved));
-            file.put("tokensTotal", tokensTotal);
-            file.put("termsUnique", termsUnique);
-            file.put("hash", hash);
-            file.put("terms", counts);
-
-            IndexFileWriter.writePrettyWithBlankLines(out, file);
-
-            if (indexedStore != null) {
-                indexedStore.putHash(bookId, hash);
-            }
-
-            long size = safeSize(resolved);
-
-            return new IndexResponse(
-                    "ok",
-                    bookId,
-                    lakePath,
-                    normalize(resolved),
-                    size,
-                    normalize(out),
-                    tokensTotal,
-                    termsUnique,
-                    null
-            );
-
         } catch (IOException e) {
+            if (metadataStore != null && bookId != null) {
+                metadataStore.put(bookId, new DocumentMetadata(
+                        bookId,
+                        hash,
+                        Instant.now().toString(),
+                        tokensTotal,
+                        nodeId,
+                        DocumentMetadata.Status.FAILED
+                ));
+            }
             return error(lakePath, resolved, "io error: " + e.getMessage());
         } catch (Exception e) {
+            if (metadataStore != null && bookId != null) {
+                metadataStore.put(bookId, new DocumentMetadata(
+                        bookId,
+                        hash,
+                        Instant.now().toString(),
+                        tokensTotal,
+                        nodeId,
+                        DocumentMetadata.Status.FAILED
+                ));
+            }
             return error(lakePath, resolved, "indexing failed: " + e.getMessage());
         } finally {
             if (claims != null && claimed) {
