@@ -22,29 +22,6 @@ Properties-based configuration for simple key-value settings. Easy to read and o
 HazelcastProvider provider = HazelcastProvider.fromProperties("config/hazelcast.properties");
 ```
 
-### 3. `HazelcastProvider.java`
-Centralized Java provider class that can be copied to each service. Supports multiple configuration sources:
-
-1. **Environment Variables** (highest priority):
-   - `HZ_MEMBERS` - comma-separated list of Hazelcast member addresses
-   - `HZ_CLUSTER` - cluster name
-   - `NODE_ID` - instance name
-
-2. **Properties File**:
-   ```java
-   HazelcastProvider.fromProperties("config/hazelcast.properties")
-   ```
-
-3. **XML Configuration**:
-   ```java
-   new HazelcastProvider("config/hazelcast-client.xml")
-   ```
-
-4. **Programmatic** (lowest priority):
-   ```java
-   new HazelcastProvider(members, cluster, instance)
-   ```
-
 ## Configuration Properties
 
 | Property | Default | Description |
@@ -61,22 +38,10 @@ Centralized Java provider class that can be copied to each service. Supports mul
 
 ## Using in Services
 
-### Indexing Service
-```java
-String hzMembers = System.getenv().getOrDefault("HZ_MEMBERS", "");
-String hzCluster = System.getenv().getOrDefault("HZ_CLUSTER", "stage3");
-String hzNode = System.getenv().getOrDefault("NODE_ID", "indexer-" + port);
-
-HazelcastProvider provider = new HazelcastProvider(hzMembers, hzCluster, hzNode);
-HazelcastInstance hz = provider.instance();
-```
-
-### Search Service
-```java
-String hzMembers = System.getenv().getOrDefault("HZ_MEMBERS", "localhost:5701");
-HazelcastProvider provider = new HazelcastProvider(hzMembers, "stage3", "search-service");
-HazelcastInstance hz = provider.instance();
-```
+Each service has its own Hazelcast setup. See the service source for exact configuration:
+- `indexing_service/src/main/java/com/indexer/hz/HazelcastProvider.java`
+- `search_service/src/main/java/com/bd/search/HazelcastClientProvider.java`
+- `ingestion_service/src/main/java/com/example/crawler/HazelcastClientFactory.java`
 
 ### Docker Compose
 ```yaml
@@ -123,8 +88,6 @@ Search clients can enable a **Near Cache** for read-heavy workloads. See `config
 
 To migrate an existing service to use the global config:
 
-1. Copy `HazelcastProvider.java` to your service's package
-2. Update imports and package declaration
-3. Replace custom Hazelcast initialization with `HazelcastProvider`
-4. Set environment variables in deployment config
-5. Test connection to Hazelcast cluster
+1. Update the service-specific Hazelcast client/member setup to read `config/hazelcast-client.xml` or `config/hazelcast.properties`
+2. Replace hardcoded members with `HZ_MEMBERS` and cluster name with `HZ_CLUSTER`
+3. Test connection to the Hazelcast cluster

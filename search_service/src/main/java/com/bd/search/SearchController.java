@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.hazelcast.core.HazelcastInstance;
 import io.javalin.Javalin;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,12 +14,14 @@ final class SearchController {
     private final SearchService searchService;
     private final HazelcastInstance hazelcastClient;
     private final int serverPort;
+    private final String hostname;
 
     SearchController(Gson gson, SearchService searchService, HazelcastInstance hazelcastClient, int serverPort) {
         this.gson = gson;
         this.searchService = searchService;
         this.hazelcastClient = hazelcastClient;
         this.serverPort = serverPort;
+        this.hostname = resolveHostname();
     }
 
     void registerRoutes(Javalin app) {
@@ -48,8 +52,22 @@ final class SearchController {
             response.put("returned_results", result.documents.size());
             response.put("search_time_ms", result.searchTimeMs);
             response.put("documents", result.documents);
+            response.put("served_by", hostname);
 
+            ctx.header("X-Served-By", hostname);
             ctx.result(gson.toJson(response));
         });
+    }
+
+    private static String resolveHostname() {
+        String envHostname = System.getenv("HOSTNAME");
+        if (envHostname != null && !envHostname.isBlank()) {
+            return envHostname;
+        }
+        try {
+            return InetAddress.getLocalHost().getHostName();
+        } catch (UnknownHostException e) {
+            return "unknown";
+        }
     }
 }
