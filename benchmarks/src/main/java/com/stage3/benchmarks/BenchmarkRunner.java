@@ -76,6 +76,7 @@ public final class BenchmarkRunner {
 
     private static void runBaseline(BenchmarkConfig config, Path outputDir, String runId) throws Exception {
         BenchmarkConfig.BaselineScenario scenario = config.baseline;
+        waitForIngestionReady(collectBaselineIngestionUrls(config));
         EndpointPool ingestionPool = EndpointPool.single(scenario.ingestionUrl);
         EndpointPool indexingPool = EndpointPool.single(scenario.indexingUrl);
         EndpointPool searchPool = EndpointPool.single(scenario.searchUrl);
@@ -98,6 +99,7 @@ public final class BenchmarkRunner {
         BenchmarkConfig.ScalingScenario scenario = config.scaling;
         List<Map<String, Object>> scaleResults = new ArrayList<>();
         for (BenchmarkConfig.ScaleSet set : scenario.sets) {
+            waitForIngestionReady(set.ingestionUrls);
             EndpointPool ingestionPool = EndpointPool.roundRobin(set.ingestionUrls);
             EndpointPool indexingPool = EndpointPool.roundRobin(set.indexingUrls);
             EndpointPool searchPool = EndpointPool.roundRobin(set.searchUrls);
@@ -490,6 +492,59 @@ public final class BenchmarkRunner {
             Thread.sleep(pollIntervalSeconds * 1000L);
         }
         return -1;
+    }
+
+    private static List<String> collectBaselineIngestionUrls(BenchmarkConfig config) {
+        List<String> urls = new ArrayList<>();
+        if (config.baseline != null && config.baseline.ingestionUrl != null) {
+            urls.add(config.baseline.ingestionUrl);
+        }
+        if (config.scaling != null && config.scaling.sets != null) {
+            for (BenchmarkConfig.ScaleSet set : config.scaling.sets) {
+                if (set.ingestionUrls != null) {
+                    urls.addAll(set.ingestionUrls);
+                }
+            }
+        }
+        return urls.stream().distinct().toList();
+    }
+
+    private static void waitForIngestionReady(List<String> ingestionUrls) throws Exception {
+        if (ingestionUrls == null || ingestionUrls.isEmpty()) {
+            return;
+        }
+        HttpClient client = HttpClient.newHttpClient();
+        int attempts = 30;
+        int waitSeconds = 2;
+
+        List<String> pending = new ArrayList<>(ingestionUrls);
+        for (int attempt = 1; attempt <= attempts && !pending.isEmpty(); attempt++) {
+            List<String> nextPending = new ArrayList<>();
+            for (String baseUrl : pending) {
+                String url = baseUrl.replaceAll("/+$", "") + "/ingest/list";
+                HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(url))
+                    .timeout(Duration.ofSeconds(5))
+                    .GET()
+                    .build();
+                try {
+                    HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+                    if (response.statusCode() != 200) {
+                        nextPending.add(baseUrl);
+                    }
+                } catch (IOException | InterruptedException ex) {
+                    nextPending.add(baseUrl);
+                }
+            }
+            pending = nextPending;
+            if (!pending.isEmpty()) {
+                Thread.sleep(waitSeconds * 1000L);
+            }
+        }
+
+        if (!pending.isEmpty()) {
+            throw new IllegalStateException("Ingestion endpoints not ready: " + pending);
+        }
     }
 
     private static Map<String, Object> parseJson(String body) {
