@@ -19,11 +19,13 @@ public final class DocumentMetadataStore {
     private final IMap<Integer, DocumentMetadata> map;
     private final CPSubsystem cp;
     private final ConcurrentMap<Integer, ReentrantLock> localLocks = new ConcurrentHashMap<>();
-    private volatile boolean cpAvailable = true;
+    private volatile boolean cpAvailable;
 
     public DocumentMetadataStore(HazelcastInstance hz) {
         this.map = hz.getMap(MAP_NAME);
         this.cp = hz.getCPSubsystem();
+        int cpMembers = hz.getConfig().getCPSubsystemConfig().getCPMemberCount();
+        this.cpAvailable = cpMembers >= 3;
     }
 
     public MetadataLock lockFor(int bookId) {
