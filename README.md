@@ -106,6 +106,6 @@ Cluster configuration lives in:
 
 ## Demo Video
 
-YouTube link (required):
-- TODO: add the unlisted link here
+YouTube link:
+(https://youtu.be/giKp1LuNHcM)
 
