@@ -128,7 +128,9 @@ services:
     depends_on:
       - activemq
     environment:
+      - ACTIVEMQ_URL=tcp://activemq:61616
       - REPLICATION_FACTOR=1
+      - JAVA_TOOL_OPTIONS=-DdataRepo=data_repository/datalake_node1
     restart: unless-stopped
 
   # Indexing service with embedded Hazelcast node
