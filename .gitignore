@@ -10,6 +10,7 @@ out/
 
 # Maven
 **/target/
+**/dependency-reduced-pom.xml
 
 # optional: Logs
 *.log

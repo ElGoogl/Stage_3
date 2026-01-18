@@ -34,6 +34,33 @@ Optional smoke test:
 ./test_cluster.sh
 ```
 
+## Run Stage 3 Demo Script
+
+The demo script runs the full Stage 3 video flow (deployment, ingestion, indexing, load balancing, scaling, and failure recovery).
+
+Start the demo (build + deploy the cluster, then run the flow):
+```bash
+./demo_stage3.sh
+```
+
+Optional environment configuration (custom ports, book IDs, or timing):
+```bash
+set -a
+. scripts/demo_config.env.example
+set +a
+./demo_stage3.sh
+```
+
+Cleanup after the demo (stop and remove containers):
+```bash
+./demo_stage3.sh --cleanup
+```
+
+Quick run + cleanup (one-liner):
+```bash
+./demo_stage3.sh && ./demo_stage3.sh --cleanup
+```
+
 ## Service Endpoints
 
 Load balancer (Nginx):
@@ -66,12 +93,12 @@ curl "http://localhost:8000/search?q=love%20story&limit=10"
 
 The system-level benchmark harness is in `benchmarks/` and produces JSON and CSV outputs in `benchmark_results/`.
 
-Build the benchmarks:
+Build the benchmarks (creates `benchmarks/target/benchmarks.jar`):
 ```bash
 mvn -pl benchmarks -am package
 ```
 
-Run the scenarios:
+Run a scenario against the running cluster:
 ```bash
 java -jar benchmarks/target/benchmarks.jar baseline
 java -jar benchmarks/target/benchmarks.jar scaling
@@ -79,7 +106,7 @@ java -jar benchmarks/target/benchmarks.jar load
 java -jar benchmarks/target/benchmarks.jar failure
 ```
 
-Optional clean reset between runs:
+Optional clean reset between runs (stops cluster, clears `data_repository`, restarts):
 ```bash
 benchmarks/run_with_reset.sh scaling
 benchmarks/run_with_reset.sh load
@@ -106,6 +133,5 @@ Cluster configuration lives in:
 
 ## Demo Video
 
-YouTube link:
-(https://www.youtube.com/watch?v=uktg_78I49E)
-
+YouTube link (required):
+- TODO: add the unlisted link here
