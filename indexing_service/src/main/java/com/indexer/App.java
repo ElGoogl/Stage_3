@@ -3,6 +3,7 @@ package com.indexer;
 import com.google.gson.Gson;
 import com.indexer.core.*;
 import com.indexer.hz.HazelcastClientProvider;
+import com.indexer.hz.HazelcastProvider;
 import com.indexer.index.*;
 import com.indexer.messaging.ActiveMqIndexer;
 import com.indexer.web.IndexController;
@@ -26,12 +27,19 @@ public final class App {
         String hzCluster = System.getenv().getOrDefault("HZ_CLUSTER", "stage3");
         String hzNode = System.getenv().getOrDefault("NODE_ID", "indexer-" + port);
 
-        HazelcastClientProvider hzProvider = new HazelcastClientProvider(hzMembers, hzCluster);
+        HazelcastClientProvider clientProvider = null;
+        HazelcastProvider memberProvider = null;
+        if (hzMembers == null || hzMembers.isBlank()) {
+            memberProvider = new HazelcastProvider("", hzCluster, hzNode);
+        } else {
+            clientProvider = new HazelcastClientProvider(hzMembers, hzCluster);
+        }
+        var hzInstance = (clientProvider != null) ? clientProvider.instance() : memberProvider.instance();
 
-        InvertedIndexStore invertedIndex = new InvertedIndexStore(hzProvider.instance());
-        ClaimStore claimStore = new ClaimStore(hzProvider.instance());
-        IndexedStore indexedStore = new IndexedStore(hzProvider.instance());
-        DocumentMetadataStore metadataStore = new DocumentMetadataStore(hzProvider.instance());
+        InvertedIndexStore invertedIndex = new InvertedIndexStore(hzInstance);
+        ClaimStore claimStore = new ClaimStore(hzInstance);
+        IndexedStore indexedStore = new IndexedStore(hzInstance);
+        DocumentMetadataStore metadataStore = new DocumentMetadataStore(hzInstance);
 
         Gson gson = new Gson();
         BookParser bookParser = new BookParser(gson);
@@ -91,9 +99,15 @@ public final class App {
             )));
         });
 
+        final HazelcastClientProvider clientProviderFinal = clientProvider;
+        final HazelcastProvider memberProviderFinal = memberProvider;
         app.events(ev -> ev.serverStopping(() -> {
             mqIndexer.close();
-            hzProvider.shutdown();
+            if (clientProviderFinal != null) {
+                clientProviderFinal.shutdown();
+            } else if (memberProviderFinal != null) {
+                memberProviderFinal.shutdown();
+            }
         }));
 
         mqIndexer.start();
