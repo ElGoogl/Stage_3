@@ -5,42 +5,40 @@
   "recovery_time_seconds": 0,
   "recovered": true,
   "system_stats": {
-    "exit_code": 0,
-    "enabled": true,
     "stats": [
       {
         "container": "ingestion1",
-        "cpu": "0.79%",
-        "memory": "165.7MiB / 7.653GiB"
+        "cpu": "3.67%",
+        "memory": "203.5MiB / 7.653GiB"
       },
       {
         "container": "ingestion2",
-        "cpu": "0.58%",
-        "memory": "179.1MiB / 7.653GiB"
+        "cpu": "1.13%",
+        "memory": "174.5MiB / 7.653GiB"
       },
       {
         "container": "ingestion3",
-        "cpu": "0.61%",
-        "memory": "184.2MiB / 7.653GiB"
+        "cpu": "1.98%",
+        "memory": "152.2MiB / 7.653GiB"
       },
       {
         "container": "indexing1",
-        "cpu": "2.36%",
-        "memory": "324.3MiB / 7.653GiB"
+        "cpu": "1.53%",
+        "memory": "289.5MiB / 7.653GiB"
       },
       {
         "container": "indexing2",
-        "cpu": "2.83%",
-        "memory": "261.5MiB / 7.653GiB"
+        "cpu": "1.28%",
+        "memory": "226.3MiB / 7.653GiB"
       },
       {
         "container": "indexing3",
-        "cpu": "1.88%",
-        "memory": "243.9MiB / 7.653GiB"
+        "cpu": "1.01%",
+        "memory": "275.3MiB / 7.653GiB"
       },
       {
         "container": "search1",
-        "cpu": "0.99%",
+        "cpu": "0.34%",
         "memory": "164.8MiB / 7.653GiB"
       },
       {
@@ -50,32 +48,34 @@
       },
       {
         "container": "search3",
-        "cpu": "0.93%",
-        "memory": "161.7MiB / 7.653GiB"
+        "cpu": "1.43%",
+        "memory": "169.4MiB / 7.653GiB"
       },
       {
         "container": "hazelcast1",
-        "cpu": "2.31%",
-        "memory": "414.9MiB / 7.653GiB"
+        "cpu": "3.90%",
+        "memory": "410.4MiB / 7.653GiB"
       },
       {
         "container": "hazelcast2",
-        "cpu": "1.88%",
-        "memory": "315.7MiB / 7.653GiB"
+        "cpu": "3.65%",
+        "memory": "340MiB / 7.653GiB"
       },
       {
         "container": "hazelcast3",
-        "cpu": "3.59%",
-        "memory": "365.4MiB / 7.653GiB"
+        "cpu": "3.02%",
+        "memory": "322.7MiB / 7.653GiB"
       },
       {
         "container": "activemq",
-        "cpu": "0.75%",
-        "memory": "452.3MiB / 7.653GiB"
+        "cpu": "0.42%",
+        "memory": "400.2MiB / 7.653GiB"
       }
-    ]
+    ],
+    "exit_code": 0,
+    "enabled": true
   },
   "timings": {
-    "total_duration_seconds": 2
+    "total_duration_seconds": 3
   }
 }

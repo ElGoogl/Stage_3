@@ -1,0 +1,84 @@
+{
+  "scenario": "load",
+  "search": {
+    "requests": 493424,
+    "avg_ms": 1.928384107785596,
+    "p95_ms": 3,
+    "max_ms": 46,
+    "status_codes": {
+      "502": 10,
+      "200": 493414
+    }
+  },
+  "system_stats": {
+    "enabled": true,
+    "exit_code": 0,
+    "stats": [
+      {
+        "container": "ingestion1",
+        "cpu": "0.58%",
+        "memory": "201.4MiB / 7.653GiB"
+      },
+      {
+        "container": "ingestion2",
+        "cpu": "0.75%",
+        "memory": "174.5MiB / 7.653GiB"
+      },
+      {
+        "container": "ingestion3",
+        "cpu": "0.83%",
+        "memory": "152.2MiB / 7.653GiB"
+      },
+      {
+        "container": "indexing1",
+        "cpu": "1.06%",
+        "memory": "289.4MiB / 7.653GiB"
+      },
+      {
+        "container": "indexing2",
+        "cpu": "6.05%",
+        "memory": "226.2MiB / 7.653GiB"
+      },
+      {
+        "container": "indexing3",
+        "cpu": "1.08%",
+        "memory": "275.2MiB / 7.653GiB"
+      },
+      {
+        "container": "search1",
+        "cpu": "0.45%",
+        "memory": "164.8MiB / 7.653GiB"
+      },
+      {
+        "container": "search2",
+        "cpu": "0.49%",
+        "memory": "164.8MiB / 7.653GiB"
+      },
+      {
+        "container": "search3",
+        "cpu": "0.46%",
+        "memory": "169.4MiB / 7.653GiB"
+      },
+      {
+        "container": "hazelcast1",
+        "cpu": "3.68%",
+        "memory": "410.2MiB / 7.653GiB"
+      },
+      {
+        "container": "hazelcast2",
+        "cpu": "1.36%",
+        "memory": "337.9MiB / 7.653GiB"
+      },
+      {
+        "container": "hazelcast3",
+        "cpu": "0.86%",
+        "memory": "322.5MiB / 7.653GiB"
+      },
+      {
+        "container": "activemq",
+        "cpu": "1.03%",
+        "memory": "400.2MiB / 7.653GiB"
+      }
+    ]
+  }
+}

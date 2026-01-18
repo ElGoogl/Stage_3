@@ -160,6 +160,7 @@ final class BenchmarkOperations {
         double tokensPerSecond = durationMs > 0 ? (tokensTotal * 1000.0 / durationMs) : 0.0;
 
         LatencyStats stats = LatencyStats.from(latencies);
+        Map<String, Object> metadataLookup = runMetadataLookup(pool, indexedResponses, concurrency);
         Map<String, Object> result = new LinkedHashMap<>();
         result.put("requested", indexedResponses.size());
         result.put("successful", indexedResponses.size());
@@ -170,6 +171,7 @@ final class BenchmarkOperations {
         result.put("latency_p95_ms", stats.p95Ms);
         result.put("latency_max_ms", stats.maxMs);
         result.put("responses", indexedResponses);
+        result.put("metadata_lookup", metadataLookup);
         return result;
     }
 
@@ -289,6 +291,84 @@ final class BenchmarkOperations {
             fallback.put("raw", body);
             return fallback;
         }
+    }
+
+    private Map<String, Object> runMetadataLookup(EndpointPool pool,
+                                                  Queue<Map<String, Object>> indexedResponses,
+                                                  int concurrency) throws Exception {
+        List<Integer> bookIds = new ArrayList<>();
+        for (Map<String, Object> response : indexedResponses) {
+            Object bookIdRaw = response.get("bookId");
+            if (bookIdRaw instanceof Number) {
+                bookIds.add(((Number) bookIdRaw).intValue());
+            }
+        }
+        if (bookIds.isEmpty()) {
+            return Map.of(
+                    "requests", 0,
+                    "avg_ms", 0.0,
+                    "p95_ms", 0,
+                    "max_ms", 0,
+                    "status_codes", Map.of(),
+                    "responses", List.of()
+            );
+        }
+
+        ExecutorService executor = Executors.newFixedThreadPool(Math.max(1, concurrency));
+        Queue<Long> latencies = new ConcurrentLinkedQueue<>();
+        Queue<Integer> statuses = new ConcurrentLinkedQueue<>();
+        Queue<Map<String, Object>> responses = new ConcurrentLinkedQueue<>();
+
+        List<Future<Void>> futures = new ArrayList<>();
+        for (Integer bookId : bookIds) {
+            futures.add(executor.submit(() -> {
+                String endpoint = pool.next();
+                String url = endpoint + "/metadata/" + bookId;
+                Map<String, Object> entry = new LinkedHashMap<>();
+                entry.put("bookId", bookId);
+                entry.put("endpoint", endpoint);
+                Instant requestStart = Instant.now();
+                try {
+                    HttpRequest request = HttpRequest.newBuilder()
+                            .uri(URI.create(url))
+                            .timeout(Duration.ofSeconds(10))
+                            .GET()
+                            .build();
+                    HttpResponse<String> responseMd = client.send(request, HttpResponse.BodyHandlers.ofString());
+                    long latency = Duration.between(requestStart, Instant.now()).toMillis();
+                    latencies.add(latency);
+                    statuses.add(responseMd.statusCode());
+                    entry.put("http_status", responseMd.statusCode());
+                    entry.put("latency_ms", latency);
+                    entry.put("metadata", parseJson(responseMd.body()));
+                } catch (Exception e) {
+                    long latency = Duration.between(requestStart, Instant.now()).toMillis();
+                    latencies.add(latency);
+                    statuses.add(0);
+                    entry.put("http_status", 0);
+                    entry.put("latency_ms", latency);
+                    entry.put("error", e.getMessage());
+                }
+                responses.add(entry);
+                return null;
+            }));
+        }
+
+        for (Future<Void> future : futures) {
+            future.get();
+        }
+        executor.shutdown();
+        executor.awaitTermination(1, TimeUnit.MINUTES);
+
+        LatencyStats stats = LatencyStats.from(latencies);
+        Map<String, Object> result = new LinkedHashMap<>();
+        result.put("requests", responses.size());
+        result.put("avg_ms", stats.averageMs);
+        result.put("p95_ms", stats.p95Ms);
+        result.put("max_ms", stats.maxMs);
+        result.put("status_codes", summarizeStatuses(statuses));
+        result.put("responses", responses);
+        return result;
     }
 
     private Map<Integer, Integer> summarizeStatuses(Queue<Integer> statuses) {

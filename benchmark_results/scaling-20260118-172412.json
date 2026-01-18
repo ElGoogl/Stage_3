@@ -1,0 +1,761 @@
+{
+  "scenario": "scaling",
+  "sets": [
+    {
+      "name": "baseline-1",
+      "ingestion": {
+        "requested": 7,
+        "successful": 7,
+        "duration_ms": 1973,
+        "docs_per_second": 3.5478966041561075,
+        "latency_avg_ms": 469.57142857142856,
+        "latency_p95_ms": 1958,
+        "latency_max_ms": 1958,
+        "responses": [
+          {
+            "book_id": 1342.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node1/20260118/17",
+            "file": "1342.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7001"
+            ],
+            "event_sent": false,
+            "queue": "books.ingested",
+            "note": "already_claimed_using_existing_file",
+            "http_status": 200,
+            "endpoint": "http://localhost:7001"
+          },
+          {
+            "book_id": 98.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node1/20260118/17",
+            "file": "98.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7001"
+            ],
+            "event_sent": false,
+            "queue": "books.ingested",
+            "note": "already_claimed_using_existing_file",
+            "http_status": 200,
+            "endpoint": "http://localhost:7001"
+          },
+          {
+            "book_id": 1966.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node1/20260118/17",
+            "file": "1966.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7001"
+            ],
+            "event_sent": false,
+            "queue": "books.ingested",
+            "note": "already_claimed_using_existing_file",
+            "http_status": 200,
+            "endpoint": "http://localhost:7001"
+          },
+          {
+            "book_id": 1661.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node1/20260118/17",
+            "file": "1661.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7001"
+            ],
+            "event_sent": false,
+            "queue": "books.ingested",
+            "note": "already_claimed_using_existing_file",
+            "http_status": 200,
+            "endpoint": "http://localhost:7001"
+          },
+          {
+            "book_id": 11.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node1/20260118/17",
+            "file": "11.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7001"
+            ],
+            "event_sent": false,
+            "queue": "books.ingested",
+            "note": "already_claimed_using_existing_file",
+            "http_status": 200,
+            "endpoint": "http://localhost:7001"
+          },
+          {
+            "book_id": 1952.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node1/20260118/17",
+            "file": "1952.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7001",
+              "http://ingestion2:7001"
+            ],
+            "event_sent": true,
+            "queue": "books.ingested",
+            "http_status": 200,
+            "endpoint": "http://localhost:7001"
+          },
+          {
+            "book_id": 84.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node1/20260118/17",
+            "file": "84.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7001",
+              "http://ingestion2:7001"
+            ],
+            "event_sent": true,
+            "queue": "books.ingested",
+            "http_status": 200,
+            "endpoint": "http://localhost:7001"
+          }
+        ]
+      },
+      "indexing": {
+        "requested": 7,
+        "successful": 7,
+        "duration_ms": 71,
+        "tokens_total": 0,
+        "tokens_per_second": 0.0,
+        "latency_avg_ms": 26.428571428571427,
+        "latency_p95_ms": 42,
+        "latency_max_ms": 42,
+        "responses": [
+          {
+            "status": "already_indexed",
+            "bookId": 1342,
+            "lakePath": "data_repository/datalake_node1/20260118/17/1342.json",
+            "resolvedPath": "data_repository/datalake_node1/20260118/17/1342.json",
+            "fileSizeBytes": 802199.0,
+            "indexFilePath": "data_repository/indexes/1342.index.json",
+            "tokensTotal": 0.0,
+            "termsUnique": 0.0,
+            "endpoint": "http://localhost:7101",
+            "http_status": 200
+          },
+          {
+            "status": "already_indexed",
+            "bookId": 1966,
+            "lakePath": "data_repository/datalake_node1/20260118/17/1966.json",
+            "resolvedPath": "data_repository/datalake_node1/20260118/17/1966.json",
+            "fileSizeBytes": 516974.0,
+            "indexFilePath": "data_repository/indexes/1966.index.json",
+            "tokensTotal": 0.0,
+            "termsUnique": 0.0,
+            "endpoint": "http://localhost:7101",
+            "http_status": 200
+          },
+          {
+            "status": "already_indexed",
+            "bookId": 98,
+            "lakePath": "data_repository/datalake_node1/20260118/17/98.json",
+            "resolvedPath": "data_repository/datalake_node1/20260118/17/98.json",
+            "fileSizeBytes": 839749.0,
+            "indexFilePath": "data_repository/indexes/98.index.json",
+            "tokensTotal": 0.0,
+            "termsUnique": 0.0,
+            "endpoint": "http://localhost:7101",
+            "http_status": 200
+          },
+          {
+            "status": "already_indexed",
+            "bookId": 11,
+            "lakePath": "data_repository/datalake_node1/20260118/17/11.json",
+            "resolvedPath": "data_repository/datalake_node1/20260118/17/11.json",
+            "fileSizeBytes": 181836.0,
+            "indexFilePath": "data_repository/indexes/11.index.json",
+            "tokensTotal": 0.0,
+            "termsUnique": 0.0,
+            "endpoint": "http://localhost:7101",
+            "http_status": 200
+          },
+          {
+            "status": "already_indexed",
+            "bookId": 1661,
+            "lakePath": "data_repository/datalake_node1/20260118/17/1661.json",
+            "resolvedPath": "data_repository/datalake_node1/20260118/17/1661.json",
+            "fileSizeBytes": 632230.0,
+            "indexFilePath": "data_repository/indexes/1661.index.json",
+            "tokensTotal": 0.0,
+            "termsUnique": 0.0,
+            "endpoint": "http://localhost:7101",
+            "http_status": 200
+          },
+          {
+            "status": "already_indexed",
+            "bookId": 1952,
+            "lakePath": "data_repository/datalake_node1/20260118/17/1952.json",
+            "resolvedPath": "data_repository/datalake_node1/20260118/17/1952.json",
+            "fileSizeBytes": 54999.0,
+            "indexFilePath": "data_repository/indexes/1952.index.json",
+            "tokensTotal": 0.0,
+            "termsUnique": 0.0,
+            "endpoint": "http://localhost:7101",
+            "http_status": 200
+          },
+          {
+            "status": "conflict",
+            "bookId": 84,
+            "lakePath": "data_repository/datalake_node1/20260118/17/84.json",
+            "resolvedPath": "data_repository/datalake_node1/20260118/17/84.json",
+            "error": "book already claimed",
+            "endpoint": "http://localhost:7101",
+            "http_status": 409
+          }
+        ],
+        "metadata_lookup": {
+          "requests": 7,
+          "avg_ms": 6.571428571428571,
+          "p95_ms": 9,
+          "max_ms": 9,
+          "status_codes": {
+            "404": 1,
+            "200": 6
+          },
+          "responses": [
+            {
+              "bookId": 1966,
+              "endpoint": "http://localhost:7101",
+              "http_status": 200,
+              "latency_ms": 7,
+              "metadata": {
+                "bookId": 1966.0,
+                "contentHash": "135f8670a670068b2a67ebe3f9d474d5f10732203d61992c648c135309c71ddb",
+                "indexedAt": "2026-01-18T17:23:49.536038125Z",
+                "tokenCount": 85224.0,
+                "indexingNodeId": "indexer-node1",
+                "status": "INDEXED"
+              }
+            },
+            {
+              "bookId": 1342,
+              "endpoint": "http://localhost:7101",
+              "http_status": 200,
+              "latency_ms": 7,
+              "metadata": {
+                "bookId": 1342.0,
+                "contentHash": "7cbd917e720cfda5d1c1119be1a454fbe885bf3d6a0e066e07f400c1b15947e5",
+                "indexedAt": "2026-01-18T17:23:48.857629708Z",
+                "tokenCount": 126755.0,
+                "indexingNodeId": "indexer-node3",
+                "status": "INDEXED"
+              }
+            },
+            {
+              "bookId": 98,
+              "endpoint": "http://localhost:7101",
+              "http_status": 200,
+              "latency_ms": 9,
+              "metadata": {
+                "bookId": 98.0,
+                "contentHash": "4940ffb22a9864a6f126f03fb2f864efcad3b765b765c78537f56e3ce5d992cc",
+                "indexedAt": "2026-01-18T17:23:49.586296167Z",
+                "tokenCount": 135429.0,
+                "indexingNodeId": "indexer-node2",
+                "status": "INDEXED"
+              }
+            },
+            {
+              "bookId": 1952,
+              "endpoint": "http://localhost:7101",
+              "http_status": 200,
+              "latency_ms": 4,
+              "metadata": {
+                "bookId": 1952.0,
+                "contentHash": "214cdbdd21b8c97f4debb29da8195a88548ccb7c3cb3bd3303622a139993d602",
+                "indexedAt": "2026-01-18T17:24:13.863542886Z",
+                "tokenCount": 8650.0,
+                "indexingNodeId": "indexer-node1",
+                "status": "INDEXED"
+              }
+            },
+            {
+              "bookId": 11,
+              "endpoint": "http://localhost:7101",
+              "http_status": 200,
+              "latency_ms": 6,
+              "metadata": {
+                "bookId": 11.0,
+                "contentHash": "21525c519ac5b2f4ebcc12030c0647fb9a7454ba1f99d46344d4416c67f56c96",
+                "indexedAt": "2026-01-18T17:23:47.435591721Z",
+                "tokenCount": 28645.0,
+                "indexingNodeId": "indexer-node1",
+                "status": "INDEXED"
+              }
+            },
+            {
+              "bookId": 1661,
+              "endpoint": "http://localhost:7101",
+              "http_status": 200,
+              "latency_ms": 9,
+              "metadata": {
+                "bookId": 1661.0,
+                "contentHash": "111534af6bda42869a8eb806d3dcabe1a416c46e2b86e7253bdf40e2193f8cd3",
+                "indexedAt": "2026-01-18T17:23:49.144765250Z",
+                "tokenCount": 102609.0,
+                "indexingNodeId": "indexer-node1",
+                "status": "INDEXED"
+              }
+            },
+            {
+              "bookId": 84,
+              "endpoint": "http://localhost:7101",
+              "http_status": 404,
+              "latency_ms": 4,
+              "metadata": {
+                "error": "not_found"
+              }
+            }
+          ]
+        }
+      },
+      "search": {
+        "requests": 211201,
+        "avg_ms": 1.2245728003181804,
+        "p95_ms": 2,
+        "max_ms": 74,
+        "status_codes": {
+          "502": 1,
+          "200": 211200
+        }
+      },
+      "system_stats": {
+        "stats": [
+          {
+            "container": "ingestion1",
+            "cpu": "0.59%",
+            "memory": "182.6MiB / 7.653GiB"
+          },
+          {
+            "container": "ingestion2",
+            "cpu": "0.50%",
+            "memory": "128.5MiB / 7.653GiB"
+          },
+          {
+            "container": "ingestion3",
+            "cpu": "0.74%",
+            "memory": "118.3MiB / 7.653GiB"
+          },
+          {
+            "container": "indexing1",
+            "cpu": "1.82%",
+            "memory": "310MiB / 7.653GiB"
+          },
+          {
+            "container": "indexing2",
+            "cpu": "2.09%",
+            "memory": "290MiB / 7.653GiB"
+          },
+          {
+            "container": "indexing3",
+            "cpu": "2.89%",
+            "memory": "287.6MiB / 7.653GiB"
+          },
+          {
+            "container": "search1",
+            "cpu": "0.45%",
+            "memory": "161MiB / 7.653GiB"
+          },
+          {
+            "container": "search2",
+            "cpu": "0.46%",
+            "memory": "160.9MiB / 7.653GiB"
+          },
+          {
+            "container": "search3",
+            "cpu": "0.47%",
+            "memory": "163.8MiB / 7.653GiB"
+          },
+          {
+            "container": "hazelcast1",
+            "cpu": "1.54%",
+            "memory": "407.1MiB / 7.653GiB"
+          },
+          {
+            "container": "hazelcast2",
+            "cpu": "1.46%",
+            "memory": "293.6MiB / 7.653GiB"
+          },
+          {
+            "container": "hazelcast3",
+            "cpu": "1.40%",
+            "memory": "350.7MiB / 7.653GiB"
+          },
+          {
+            "container": "activemq",
+            "cpu": "1.48%",
+            "memory": "473.8MiB / 7.653GiB"
+          }
+        ],
+        "exit_code": 0,
+        "enabled": true
+      }
+    },
+    {
+      "name": "scale-3",
+      "ingestion": {
+        "requested": 7,
+        "successful": 7,
+        "duration_ms": 2234,
+        "docs_per_second": 3.1333930170098476,
+        "latency_avg_ms": 897.1428571428571,
+        "latency_p95_ms": 1680,
+        "latency_max_ms": 1680,
+        "responses": [
+          {
+            "book_id": 98.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node3/20260118/17",
+            "file": "98.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7003",
+              "http://ingestion1:7001"
+            ],
+            "event_sent": true,
+            "queue": "books.ingested",
+            "http_status": 200,
+            "endpoint": "http://localhost:7003"
+          },
+          {
+            "book_id": 1966.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node2/20260118/17",
+            "file": "1966.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7002",
+              "http://ingestion1:7001"
+            ],
+            "event_sent": true,
+            "queue": "books.ingested",
+            "http_status": 200,
+            "endpoint": "http://localhost:7002"
+          },
+          {
+            "book_id": 1342.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node1/20260118/17",
+            "file": "1342.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7001",
+              "http://ingestion2:7001"
+            ],
+            "event_sent": true,
+            "queue": "books.ingested",
+            "http_status": 200,
+            "endpoint": "http://localhost:7001"
+          },
+          {
+            "book_id": 11.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node1/20260118/17",
+            "file": "11.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7001",
+              "http://ingestion2:7001"
+            ],
+            "event_sent": true,
+            "queue": "books.ingested",
+            "http_status": 200,
+            "endpoint": "http://localhost:7001"
+          },
+          {
+            "book_id": 1661.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node2/20260118/17",
+            "file": "1661.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7002",
+              "http://ingestion1:7001"
+            ],
+            "event_sent": true,
+            "queue": "books.ingested",
+            "http_status": 200,
+            "endpoint": "http://localhost:7002"
+          },
+          {
+            "book_id": 84.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node3/20260118/17",
+            "file": "84.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7003",
+              "http://ingestion1:7001"
+            ],
+            "event_sent": true,
+            "queue": "books.ingested",
+            "http_status": 200,
+            "endpoint": "http://localhost:7003"
+          },
+          {
+            "book_id": 1952.0,
+            "status": "downloaded",
+            "path": "data_repository/datalake_node1/20260118/17",
+            "file": "1952.json",
+            "replication_factor": 2.0,
+            "replicas": [
+              "crawler-7001",
+              "http://ingestion2:7001"
+            ],
+            "event_sent": true,
+            "queue": "books.ingested",
+            "http_status": 200,
+            "endpoint": "http://localhost:7001"
+          }
+        ]
+      },
+      "indexing": {
+        "requested": 7,
+        "successful": 7,
+        "duration_ms": 3320,
+        "tokens_total": 8650,
+        "tokens_per_second": 2605.421686746988,
+        "latency_avg_ms": 481.85714285714283,
+        "latency_p95_ms": 3297,
+        "latency_max_ms": 3297,
+        "responses": [
+          {
+            "status": "not_found",
+            "bookId": 98,
+            "lakePath": "data_repository/datalake_node3/20260118/17/98.json",
+            "resolvedPath": "data_repository/datalake_node1/data_repository/datalake_node3/20260118/17/98.json",
+            "error": "file not found",
+            "endpoint": "http://localhost:7101",
+            "http_status": 404
+          },
+          {
+            "status": "not_found",
+            "bookId": 1966,
+            "lakePath": "data_repository/datalake_node2/20260118/17/1966.json",
+            "resolvedPath": "data_repository/datalake_node1/data_repository/datalake_node2/20260118/17/1966.json",
+            "error": "file not found",
+            "endpoint": "http://localhost:7102",
+            "http_status": 404
+          },
+          {
+            "status": "conflict",
+            "bookId": 1342,
+            "lakePath": "data_repository/datalake_node1/20260118/17/1342.json",
+            "resolvedPath": "data_repository/datalake_node1/20260118/17/1342.json",
+            "error": "book already claimed",
+            "endpoint": "http://localhost:7103",
+            "http_status": 409
+          },
+          {
+            "status": "not_found",
+            "bookId": 1661,
+            "lakePath": "data_repository/datalake_node2/20260118/17/1661.json",
+            "resolvedPath": "data_repository/datalake_node1/data_repository/datalake_node2/20260118/17/1661.json",
+            "error": "file not found",
+            "endpoint": "http://localhost:7102",
+            "http_status": 404
+          },
+          {
+            "status": "not_found",
+            "bookId": 84,
+            "lakePath": "data_repository/datalake_node3/20260118/17/84.json",
+            "resolvedPath": "data_repository/datalake_node1/data_repository/datalake_node3/20260118/17/84.json",
+            "error": "file not found",
+            "endpoint": "http://localhost:7103",
+            "http_status": 404
+          },
+          {
+            "status": "conflict",
+            "bookId": 11,
+            "lakePath": "data_repository/datalake_node1/20260118/17/11.json",
+            "resolvedPath": "data_repository/datalake_node1/20260118/17/11.json",
+            "error": "book already claimed",
+            "endpoint": "http://localhost:7101",
+            "http_status": 409
+          },
+          {
+            "status": "ok",
+            "bookId": 1952,
+            "lakePath": "data_repository/datalake_node1/20260118/17/1952.json",
+            "resolvedPath": "data_repository/datalake_node1/20260118/17/1952.json",
+            "fileSizeBytes": 54999.0,
+            "indexFilePath": "data_repository/indexes/1952.index.json",
+            "tokensTotal": 8650.0,
+            "termsUnique": 1722.0,
+            "endpoint": "http://localhost:7101",
+            "http_status": 200
+          }
+        ],
+        "metadata_lookup": {
+          "requests": 7,
+          "avg_ms": 13.285714285714286,
+          "p95_ms": 35,
+          "max_ms": 35,
+          "status_codes": {
+            "404": 6,
+            "200": 1
+          },
+          "responses": [
+            {
+              "bookId": 1342,
+              "endpoint": "http://localhost:7101",
+              "http_status": 404,
+              "latency_ms": 9,
+              "metadata": {
+                "error": "not_found"
+              }
+            },
+            {
+              "bookId": 98,
+              "endpoint": "http://localhost:7102",
+              "http_status": 404,
+              "latency_ms": 12,
+              "metadata": {
+                "error": "not_found"
+              }
+            },
+            {
+              "bookId": 84,
+              "endpoint": "http://localhost:7103",
+              "http_status": 404,
+              "latency_ms": 7,
+              "metadata": {
+                "error": "not_found"
+              }
+            },
+            {
+              "bookId": 1661,
+              "endpoint": "http://localhost:7102",
+              "http_status": 404,
+              "latency_ms": 13,
+              "metadata": {
+                "error": "not_found"
+              }
+            },
+            {
+              "bookId": 11,
+              "endpoint": "http://localhost:7101",
+              "http_status": 404,
+              "latency_ms": 5,
+              "metadata": {
+                "error": "not_found"
+              }
+            },
+            {
+              "bookId": 1952,
+              "endpoint": "http://localhost:7102",
+              "http_status": 200,
+              "latency_ms": 12,
+              "metadata": {
+                "bookId": 1952.0,
+                "contentHash": "214cdbdd21b8c97f4debb29da8195a88548ccb7c3cb3bd3303622a139993d602",
+                "indexedAt": "2026-01-18T17:25:14.074871178Z",
+                "tokenCount": 8650.0,
+                "indexingNodeId": "indexer-node1",
+                "status": "INDEXED"
+              }
+            },
+            {
+              "bookId": 1966,
+              "endpoint": "http://localhost:7103",
+              "http_status": 404,
+              "latency_ms": 35,
+              "metadata": {
+                "error": "not_found"
+              }
+            }
+          ]
+        }
+      },
+      "search": {
+        "requests": 185831,
+        "avg_ms": 1.4423373925771266,
+        "p95_ms": 3,
+        "max_ms": 159,
+        "status_codes": {
+          "502": 3,
+          "200": 185828
+        }
+      },
+      "system_stats": {
+        "stats": [
+          {
+            "container": "ingestion1",
+            "cpu": "0.51%",
+            "memory": "198.3MiB / 7.653GiB"
+          },
+          {
+            "container": "ingestion2",
+            "cpu": "0.49%",
+            "memory": "168.1MiB / 7.653GiB"
+          },
+          {
+            "container": "ingestion3",
+            "cpu": "0.65%",
+            "memory": "151.4MiB / 7.653GiB"
+          },
+          {
+            "container": "indexing1",
+            "cpu": "6.40%",
+            "memory": "291.1MiB / 7.653GiB"
+          },
+          {
+            "container": "indexing2",
+            "cpu": "6.42%",
+            "memory": "235.9MiB / 7.653GiB"
+          },
+          {
+            "container": "indexing3",
+            "cpu": "5.12%",
+            "memory": "265.8MiB / 7.653GiB"
+          },
+          {
+            "container": "search1",
+            "cpu": "0.52%",
+            "memory": "162.9MiB / 7.653GiB"
+          },
+          {
+            "container": "search2",
+            "cpu": "0.47%",
+            "memory": "158.6MiB / 7.653GiB"
+          },
+          {
+            "container": "search3",
+            "cpu": "0.47%",
+            "memory": "167.5MiB / 7.653GiB"
+          },
+          {
+            "container": "hazelcast1",
+            "cpu": "1.70%",
+            "memory": "360MiB / 7.653GiB"
+          },
+          {
+            "container": "hazelcast2",
+            "cpu": "2.21%",
+            "memory": "301.5MiB / 7.653GiB"
+          },
+          {
+            "container": "hazelcast3",
+            "cpu": "1.34%",
+            "memory": "302.9MiB / 7.653GiB"
+          },
+          {
+            "container": "activemq",
+            "cpu": "1.18%",
+            "memory": "398.1MiB / 7.653GiB"
+          }
+        ],
+        "exit_code": 0,
+        "enabled": true
+      }
+    }
+  ]
+}
