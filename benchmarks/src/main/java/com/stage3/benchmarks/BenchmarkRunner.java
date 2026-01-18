@@ -240,7 +240,15 @@ public final class BenchmarkRunner {
 
         for (Map<String, Object> payload : responses) {
             futures.add(executor.submit(() -> {
+                boolean eventSent = isEventSent(payload.get("event_sent"));
                 String endpoint = pool.next();
+                if (eventSent) {
+                    Map<String, Object> responsePayload = waitForIndexingByMetadata(client, endpoint, payload);
+                    indexResponses.add(responsePayload);
+                    latencies.add((Long) responsePayload.getOrDefault("latency_ms", 0L));
+                    return null;
+                }
+
                 String lakePath = payload.get("path") + "/" + payload.get("file");
                 String url = endpoint + "/index";
                 String body = GSON.toJson(Map.of("lakePath", lakePath));
@@ -272,7 +280,13 @@ public final class BenchmarkRunner {
         long totalTokens = 0L;
         List<Map<String, Object>> successful = new ArrayList<>();
         for (Map<String, Object> payload : indexResponses) {
-            if ("ok".equals(payload.get("status"))) {
+            Object status = payload.get("status");
+            Object httpStatus = payload.get("http_status");
+            boolean ok = "ok".equals(status) || "already_indexed".equals(status);
+            if (!ok && httpStatus instanceof Number) {
+                ok = ((Number) httpStatus).intValue() == 200;
+            }
+            if (ok) {
                 successful.add(payload);
                 Number tokens = (Number) payload.get("tokensTotal");
                 if (tokens != null) {
@@ -298,6 +312,7 @@ public final class BenchmarkRunner {
     }
 
     private static Map<String, Object> runSearchLoad(EndpointPool pool, List<String> queries, int concurrency, int durationSeconds) throws Exception {
+        waitForSearchReady(pool, queries, Duration.ofSeconds(60));
         HttpClient client = HttpClient.newHttpClient();
         ExecutorService executor = Executors.newFixedThreadPool(concurrency);
         Queue<Long> latencies = new ConcurrentLinkedQueue<>();
@@ -342,6 +357,100 @@ public final class BenchmarkRunner {
         result.put("max_ms", stats.maxMs);
         result.put("status_codes", summarizeStatuses(statuses));
         return result;
+    }
+
+    private static void waitForSearchReady(EndpointPool pool, List<String> queries, Duration timeout) throws Exception {
+        if (queries.isEmpty()) {
+            return;
+        }
+        HttpClient client = HttpClient.newHttpClient();
+        Instant deadline = Instant.now().plus(timeout);
+        String query = queries.get(0);
+
+        while (Instant.now().isBefore(deadline)) {
+            String endpoint = pool.next();
+            String url = endpoint + "/search?q=" + URLEncoder.encode(query, StandardCharsets.UTF_8);
+            HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(url))
+                .timeout(Duration.ofSeconds(10))
+                .GET()
+                .build();
+            try {
+                HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+                if (response.statusCode() == 200) {
+                    return;
+                }
+            } catch (Exception ignored) {
+            }
+            Thread.sleep(500);
+        }
+    }
+
+    private static boolean isEventSent(Object raw) {
+        if (raw == null) {
+            return false;
+        }
+        if (raw instanceof Boolean) {
+            return (Boolean) raw;
+        }
+        return "true".equalsIgnoreCase(raw.toString());
+    }
+
+    private static Map<String, Object> waitForIndexingByMetadata(HttpClient client, String endpoint, Map<String, Object> payload) throws Exception {
+        Map<String, Object> responsePayload = new LinkedHashMap<>();
+        Object idRaw = payload.get("book_id");
+        Integer bookId = idRaw instanceof Number ? ((Number) idRaw).intValue() : null;
+        String lakePath = payload.get("path") + "/" + payload.get("file");
+
+        responsePayload.put("bookId", bookId);
+        responsePayload.put("lakePath", lakePath);
+        responsePayload.put("endpoint", endpoint);
+
+        if (bookId == null) {
+            responsePayload.put("status", "error");
+            responsePayload.put("http_status", 400);
+            responsePayload.put("latency_ms", 0L);
+            return responsePayload;
+        }
+
+        Instant start = Instant.now();
+        Instant deadline = start.plusSeconds(120);
+
+        while (Instant.now().isBefore(deadline)) {
+            String url = endpoint + "/metadata/" + bookId;
+            HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(url))
+                .timeout(Duration.ofSeconds(10))
+                .GET()
+                .build();
+            try {
+                HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+                if (response.statusCode() == 200) {
+                    Map<String, Object> md = parseJson(response.body());
+                    Object status = md.get("status");
+                    if ("INDEXED".equals(status)) {
+                        responsePayload.put("status", "ok");
+                        responsePayload.put("http_status", 200);
+                        responsePayload.put("tokensTotal", md.get("tokenCount"));
+                        responsePayload.put("latency_ms", Duration.between(start, Instant.now()).toMillis());
+                        return responsePayload;
+                    }
+                    if ("FAILED".equals(status)) {
+                        responsePayload.put("status", "failed");
+                        responsePayload.put("http_status", 500);
+                        responsePayload.put("latency_ms", Duration.between(start, Instant.now()).toMillis());
+                        return responsePayload;
+                    }
+                }
+            } catch (Exception ignored) {
+            }
+            Thread.sleep(500);
+        }
+
+        responsePayload.put("status", "timeout");
+        responsePayload.put("http_status", 408);
+        responsePayload.put("latency_ms", Duration.between(start, Instant.now()).toMillis());
+        return responsePayload;
     }
 
     private static long waitForRecovery(List<String> healthUrls, int timeoutSeconds, int pollIntervalSeconds) throws Exception {

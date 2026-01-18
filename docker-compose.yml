@@ -135,6 +135,7 @@ services:
       - ACTIVEMQ_URL=tcp://activemq:61616
       - ACTIVEMQ_QUEUE=books.ingested
       - HZ_MEMBERS=hazelcast1:5701,hazelcast2:5701,hazelcast3:5701
+      - HZ_CLUSTER=search-cluster
       - REPLICATION_FACTOR=2
       - REPLICA_PEERS=http://ingestion2:7001,http://ingestion3:7001
       - JAVA_TOOL_OPTIONS=-DdataRepo=data_repository/datalake_node1
@@ -157,6 +158,7 @@ services:
       - ACTIVEMQ_URL=tcp://activemq:61616
       - ACTIVEMQ_QUEUE=books.ingested
       - HZ_MEMBERS=hazelcast1:5701,hazelcast2:5701,hazelcast3:5701
+      - HZ_CLUSTER=search-cluster
       - REPLICATION_FACTOR=2
       - REPLICA_PEERS=http://ingestion1:7001,http://ingestion3:7001
       - JAVA_TOOL_OPTIONS=-DdataRepo=data_repository/datalake_node2
@@ -179,6 +181,7 @@ services:
       - ACTIVEMQ_URL=tcp://activemq:61616
       - ACTIVEMQ_QUEUE=books.ingested
       - HZ_MEMBERS=hazelcast1:5701,hazelcast2:5701,hazelcast3:5701
+      - HZ_CLUSTER=search-cluster
       - REPLICATION_FACTOR=2
       - REPLICA_PEERS=http://ingestion1:7001,http://ingestion2:7001
       - JAVA_TOOL_OPTIONS=-DdataRepo=data_repository/datalake_node3

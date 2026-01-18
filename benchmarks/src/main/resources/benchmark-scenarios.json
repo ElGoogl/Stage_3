@@ -1,7 +1,7 @@
 {
   "baseline": {
     "ingestionUrl": "http://localhost:7001",
-    "indexingUrl": "http://localhost:7002",
+    "indexingUrl": "http://localhost:7101",
     "searchUrl": "http://localhost:8000",
     "bookIds": [
       1342,
@@ -26,13 +26,21 @@
       {
         "name": "baseline-1",
         "ingestionUrls": ["http://localhost:7001"],
-        "indexingUrls": ["http://localhost:7002"],
+        "indexingUrls": ["http://localhost:7101"],
         "searchUrls": ["http://localhost:8000"]
       },
       {
         "name": "scale-3",
-        "ingestionUrls": ["http://localhost:7001"],
-        "indexingUrls": ["http://localhost:7002"],
+        "ingestionUrls": [
+          "http://localhost:7001",
+          "http://localhost:7002",
+          "http://localhost:7003"
+        ],
+        "indexingUrls": [
+          "http://localhost:7101",
+          "http://localhost:7102",
+          "http://localhost:7103"
+        ],
         "searchUrls": [
           "http://localhost:8000",
           "http://localhost:8001",
@@ -81,7 +89,7 @@
     "healthUrls": [
       "http://localhost:8000/status",
       "http://localhost:7001/ingest/list",
-      "http://localhost:7002/health"
+      "http://localhost:7101/health"
     ],
     "recoveryTimeoutSeconds": 180,
     "pollIntervalSeconds": 5
@@ -89,8 +97,12 @@
   "dockerStats": {
     "enabled": true,
     "containers": [
-      "ingestion",
-      "indexing",
+      "ingestion1",
+      "ingestion2",
+      "ingestion3",
+      "indexing1",
+      "indexing2",
+      "indexing3",
       "search1",
       "search2",
       "search3",

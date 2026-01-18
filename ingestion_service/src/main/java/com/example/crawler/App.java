@@ -59,8 +59,9 @@ public class App {
         String nodeId = System.getenv().getOrDefault("NODE_ID", "crawler-" + port);
 
         String hzMembers = System.getenv().getOrDefault("HZ_MEMBERS", "");
-        HazelcastInstance hz = tryCreateHazelcastClient(hzMembers);
-        ISet<Integer> claimedBooks = (hz != null) ? hz.getSet("claimed-books") : null;
+        String hzCluster = System.getenv().getOrDefault("HZ_CLUSTER", "");
+        HazelcastInstance hz = tryCreateHazelcastClient(hzMembers, hzCluster);
+        ISet<Integer> claimedBooks = (hz != null) ? hz.getSet("claimed-books-ingestion") : null;
 
         ActiveMqPublisher publisher = new ActiveMqPublisher(brokerUrl, queueName);
         HttpClient http = HttpClient.newBuilder()
@@ -78,7 +79,7 @@ public class App {
         }
 
         Javalin app = Javalin.create(cfg -> cfg.http.defaultContentType = "application/json")
-                .start(port);
+                .start("0.0.0.0", port);
 
         // --
         // Replication endpoint
@@ -139,6 +140,22 @@ public class App {
             if (claimedBooks != null) {
                 boolean acquired = claimedBooks.add(bookId);
                 if (!acquired) {
+                    Optional<Path> existing = findFileRecursively(DATA_DIR, bookId + ".json");
+                    if (existing.isPresent()) {
+                        Path existingPath = existing.get();
+                        Map<String, Object> resp = new LinkedHashMap<>();
+                        resp.put("book_id", bookId);
+                        resp.put("status", "downloaded");
+                        resp.put("path", existingPath.getParent().toString().replace("\\", "/"));
+                        resp.put("file", existingPath.getFileName().toString());
+                        resp.put("replication_factor", replicationFactor);
+                        resp.put("replicas", List.of(nodeId));
+                        resp.put("event_sent", false);
+                        resp.put("queue", queueName);
+                        resp.put("note", "already_claimed_using_existing_file");
+                        ctx.result(gson.toJson(resp));
+                        return;
+                    }
                     ctx.status(409).result(gson.toJson(Map.of(
                             "book_id", bookId,
                             "status", "already_claimed"
@@ -148,6 +165,22 @@ public class App {
             } else {
                 // Fallback (single-node only). Not enough for Stage 3, but avoids crashes if Hazelcast is down.
                 if (!LocalClaimFallback.tryClaim(bookId)) {
+                    Optional<Path> existing = findFileRecursively(DATA_DIR, bookId + ".json");
+                    if (existing.isPresent()) {
+                        Path existingPath = existing.get();
+                        Map<String, Object> resp = new LinkedHashMap<>();
+                        resp.put("book_id", bookId);
+                        resp.put("status", "downloaded");
+                        resp.put("path", existingPath.getParent().toString().replace("\\", "/"));
+                        resp.put("file", existingPath.getFileName().toString());
+                        resp.put("replication_factor", replicationFactor);
+                        resp.put("replicas", List.of(nodeId));
+                        resp.put("event_sent", false);
+                        resp.put("queue", queueName);
+                        resp.put("note", "already_claimed_local_using_existing_file");
+                        ctx.result(gson.toJson(resp));
+                        return;
+                    }
                     ctx.status(409).result(gson.toJson(Map.of(
                             "book_id", bookId,
                             "status", "already_claimed_local_fallback"
@@ -343,7 +376,7 @@ public class App {
         }
     }
 
-    private static HazelcastInstance tryCreateHazelcastClient(String hzMembersCsv) {
+    private static HazelcastInstance tryCreateHazelcastClient(String hzMembersCsv, String clusterName) {
         if (hzMembersCsv == null || hzMembersCsv.isBlank()) {
             System.out.println("[HZ] HZ_MEMBERS not set -> Hazelcast de-dup disabled (NOT Stage-3 complete).");
             return null;
@@ -351,11 +384,17 @@ public class App {
 
         try {
             ClientConfig cfg = new ClientConfig();
+            if (clusterName != null && !clusterName.isBlank()) {
+                cfg.setClusterName(clusterName);
+            }
             // Example: "hazelcast1:5701,hazelcast2:5701"
             for (String addr : hzMembersCsv.split(",")) {
                 String a = addr.trim();
                 if (!a.isEmpty()) cfg.getNetworkConfig().addAddress(a);
             }
+            cfg.getConnectionStrategyConfig()
+                    .getConnectionRetryConfig()
+                    .setClusterConnectTimeoutMillis(5000);
             HazelcastInstance hz = HazelcastClient.newHazelcastClient(cfg);
             System.out.println("[HZ] Connected to Hazelcast cluster: " + hzMembersCsv);
             return hz;
@@ -381,6 +420,17 @@ public class App {
                     .anyMatch(p -> p.getFileName().toString().equals(fileName));
         } catch (IOException e) {
             return false;
+        }
+    }
+
+    private static Optional<Path> findFileRecursively(Path root, String fileName) {
+        try (var stream = Files.walk(root)) {
+            return stream
+                    .filter(Files::isRegularFile)
+                    .filter(p -> p.getFileName().toString().equals(fileName))
+                    .findFirst();
+        } catch (IOException e) {
+            return Optional.empty();
         }
     }
 
