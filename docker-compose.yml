@@ -127,6 +127,8 @@ services:
       - search-net
     depends_on:
       - activemq
+    environment:
+      - REPLICATION_FACTOR=1
     restart: unless-stopped
 
   # Indexing service with embedded Hazelcast node
