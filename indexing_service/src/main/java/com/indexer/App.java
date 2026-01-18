@@ -63,6 +63,12 @@ public final class App {
                 hzNode
         );
 
+        // Load existing index files into Hazelcast on startup
+        IndexLoader indexLoader = new IndexLoader(indexRoot, invertedIndex, indexedStore, gson);
+        System.out.println("[INDEXING-SERVICE] Loading existing indexes into Hazelcast...");
+        int loadedCount = indexLoader.loadAll();
+        System.out.println("[INDEXING-SERVICE] Loaded " + loadedCount + " existing indexes");
+
         Javalin app = Javalin.create(cfg -> cfg.http.defaultContentType = "application/json");
 
         // /health + /index
