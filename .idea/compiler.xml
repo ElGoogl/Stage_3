@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="control_module" />
         <module name="benchmarks" />
         <module name="ingestion_service" />
         <module name="search_service" />
@@ -25,6 +24,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="control_module" target="17" />
       <module name="hausarbeit_i143_2025_i23c_c5" target="17" />
       <module name="indexin_service" target="17" />
     </bytecodeTargetLevel>
