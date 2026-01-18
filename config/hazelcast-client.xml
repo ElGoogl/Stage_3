@@ -5,7 +5,7 @@
                   http://www.hazelcast.com/schema/client-config/hazelcast-client-config-5.3.xsd">
 
     <!-- Cluster configuration -->
-    <cluster-name>stage3</cluster-name>
+    <cluster-name>search-cluster</cluster-name>
     <instance-name>default-client</instance-name>
 
     <!-- Network configuration for client connections -->
@@ -44,5 +44,11 @@
         <property name="hazelcast.client.statistics.enabled">true</property>
         <property name="hazelcast.logging.type">slf4j</property>
     </properties>
+
+    <!-- Near cache for read-heavy search queries -->
+    <near-cache name="inverted-index">
+        <invalidate-on-change>true</invalidate-on-change>
+        <in-memory-format>BINARY</in-memory-format>
+    </near-cache>
 
 </hazelcast-client>
